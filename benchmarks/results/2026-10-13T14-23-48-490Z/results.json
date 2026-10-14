@@ -1,0 +1,1940 @@
+[
+  {
+    "id": "form-chromium-rendered-1",
+    "task": "form",
+    "variant": 3,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 12,
+    "modelLatencyMs": 3797.0859570000007,
+    "observeMs": 38.62450100000137,
+    "actionMs": 22.095625000000155,
+    "totalMs": 5674.249708,
+    "startupMs": 462.67320900000004,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 15.736083000000008,
+    "lastObservation": {
+      "text": "Research request Name Category General Market Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Selin",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "currentValue": "market",
+          "currentLabel": "Market",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "currentValue": "market",
+          "currentLabel": "Market",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Selin",
+          "category": "market",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/14fa3333-5837-4fe6-9b4e-be4f820de939",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 932200448,
+      "samples": 52,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 214990848
+    },
+    "screenshot": "form-chromium-rendered-1.png",
+    "evidenceMs": 29.83770900000036,
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-semantic-1",
+    "task": "form",
+    "variant": 3,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 12,
+    "modelLatencyMs": 3549.9853730000013,
+    "observeMs": 24.67945900000541,
+    "actionMs": 10.942208000000392,
+    "totalMs": 5601.038291999999,
+    "startupMs": 648.3187079999998,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 17.87737500000003,
+    "lastObservation": {
+      "text": "Research request Name Category General Market Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Selin",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "market",
+          "currentLabel": "Market",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "market",
+          "currentLabel": "Market",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Selin",
+          "category": "market",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/9631069d-aa0e-4c7a-8802-bef740d06911",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 926941184,
+      "samples": 49,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 205520896
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-semantic-1",
+    "task": "form",
+    "variant": 3,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 12,
+    "modelLatencyMs": 3428.439249000001,
+    "observeMs": 20.232042000003275,
+    "actionMs": 5.0075010000000475,
+    "totalMs": 4911.499542000001,
+    "startupMs": 161.706916000001,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.8346660000006523,
+    "lastObservation": {
+      "text": "Research request Name Category General Market Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Selin",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "market",
+          "currentLabel": "Market",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "market",
+          "currentLabel": "Market",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Selin",
+          "category": "market",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/49b70735-87d8-4a19-a24a-4c02b2e3626d",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33439744,
+      "samples": 47,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 211238912
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-enhanced-1",
+    "task": "form",
+    "variant": 3,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 12,
+    "modelLatencyMs": 3008.120582000003,
+    "observeMs": 15.457460000001447,
+    "actionMs": 4.955999999998312,
+    "totalMs": 4488.577874999999,
+    "startupMs": 162.2241670000003,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 2.259874999999738,
+    "lastObservation": {
+      "text": "Research request Name Category General Market Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Selin",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "currentValue": "market",
+          "currentLabel": "Market",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "currentValue": "market",
+          "currentLabel": "Market",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralMarketOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Selin",
+          "category": "market",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/f6c4f9fc-4e7e-4c11-872c-f7956f0a4d8c",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33554432,
+      "samples": 43,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 109854720
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-semantic-2",
+    "task": "form",
+    "variant": 4,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 4,
+    "modelLatencyMs": 1553.3320829999975,
+    "observeMs": 34.006374999997206,
+    "actionMs": 9.665041000000201,
+    "totalMs": 2680.2534589999996,
+    "startupMs": 462.11854200000016,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 21.65570800000205,
+    "lastObservation": {
+      "text": "Research request Name Category General Analytics Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Robin",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "analytics",
+          "currentLabel": "Analytics",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "analytics",
+          "currentLabel": "Analytics",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Robin",
+          "category": "analytics",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/7ba5d086-bf73-4a98-b24d-8a97f3cca3ae",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 990216192,
+      "samples": 22,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 110297088
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-semantic-2",
+    "task": "form",
+    "variant": 4,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 5,
+    "modelLatencyMs": 1451.0502080000006,
+    "observeMs": 7.318415999994613,
+    "actionMs": 4.649207999998907,
+    "totalMs": 2276.267291999997,
+    "startupMs": 163.9522500000021,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.9660000000003492,
+    "lastObservation": {
+      "text": "Research request Name Category General Analytics Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Robin",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "analytics",
+          "currentLabel": "Analytics",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "analytics",
+          "currentLabel": "Analytics",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Robin",
+          "category": "analytics",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/9b7cda68-be79-4a86-a1ea-abc6da1207b4",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33505280,
+      "samples": 21,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 110985216
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-enhanced-2",
+    "task": "form",
+    "variant": 4,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 4,
+    "modelLatencyMs": 1095.5676660000063,
+    "observeMs": 5.477749999998196,
+    "actionMs": 5.854251000000659,
+    "totalMs": 1829.3099580000016,
+    "startupMs": 159.3100830000003,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.51995800000077,
+    "lastObservation": {
+      "text": "Research request Name Category General Analytics Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Robin",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "currentValue": "analytics",
+          "currentLabel": "Analytics",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "currentValue": "analytics",
+          "currentLabel": "Analytics",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Robin",
+          "category": "analytics",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/a341ea48-762b-4da2-a50c-04989ef491a5",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33423360,
+      "samples": 17,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 115359744
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-rendered-2",
+    "task": "form",
+    "variant": 4,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 5,
+    "modelLatencyMs": 1554.0364599999957,
+    "observeMs": 13.740208999995957,
+    "actionMs": 27.304082999999082,
+    "totalMs": 2721.069208000001,
+    "startupMs": 436.5669170000001,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 15.608917000001384,
+    "lastObservation": {
+      "text": "Research request Name Category General Analytics Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Robin",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "currentValue": "analytics",
+          "currentLabel": "Analytics",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "currentValue": "analytics",
+          "currentLabel": "Analytics",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralAnalyticsOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Robin",
+          "category": "analytics",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/ec924866-adb7-49a4-904b-5a4ff071a6c2",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 1007484928,
+      "samples": 23,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 118571008
+    },
+    "screenshot": "form-chromium-rendered-2.png",
+    "evidenceMs": 32.07262499999706,
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-semantic-3",
+    "task": "form",
+    "variant": 5,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 3,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 5,
+    "modelLatencyMs": 1383.0291249999973,
+    "observeMs": 6.632665999986784,
+    "actionMs": 6.653167000000394,
+    "totalMs": 2273.2127080000027,
+    "startupMs": 161.44766600000003,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.6450409999997646,
+    "lastObservation": {
+      "text": "Research request Name Category General Research Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Mira",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "research",
+          "currentLabel": "Research",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "research",
+          "currentLabel": "Research",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Mira",
+          "category": "research",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/183aa31d-529c-43a1-aa7c-e8c49ebccaaf",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33390592,
+      "samples": 21,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 119062528
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-enhanced-3",
+    "task": "form",
+    "variant": 5,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 3,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 6,
+    "modelLatencyMs": 1751.4660000000222,
+    "observeMs": 8.249625999997079,
+    "actionMs": 6.428124999991269,
+    "totalMs": 2722.089749999999,
+    "startupMs": 159.8225420000017,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.79833299999882,
+    "lastObservation": {
+      "text": "Research request Name Category General Research Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Mira",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "currentValue": "research",
+          "currentLabel": "Research",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "currentValue": "research",
+          "currentLabel": "Research",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Mira",
+          "category": "research",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/b2051c79-bf4f-4c7b-85fc-d7d738b29c4a",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33603584,
+      "samples": 26,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 119308288
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-rendered-3",
+    "task": "form",
+    "variant": 5,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 3,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 6,
+    "modelLatencyMs": 2113.910458999999,
+    "observeMs": 16.07078900000488,
+    "actionMs": 24.8449990000081,
+    "totalMs": 3518.0939579999977,
+    "startupMs": 513.7962919999991,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 16.540666999993846,
+    "lastObservation": {
+      "text": "Research request Name Category General Research Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Mira",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "currentValue": "research",
+          "currentLabel": "Research",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "currentValue": "research",
+          "currentLabel": "Research",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Mira",
+          "category": "research",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/e0c0dc3e-e153-48a9-b834-8fd385824d9e",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 1012465664,
+      "samples": 30,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 120258560
+    },
+    "screenshot": "form-chromium-rendered-3.png",
+    "evidenceMs": 20.227667000006477,
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-semantic-3",
+    "task": "form",
+    "variant": 5,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 3,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 5,
+    "modelLatencyMs": 1490.8372489999965,
+    "observeMs": 13.499875000008615,
+    "actionMs": 10.329123999996227,
+    "totalMs": 2726.8358329999974,
+    "startupMs": 442.34870900000533,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 18.936249999998836,
+    "lastObservation": {
+      "text": "Research request Name Category General Research Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Mira",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "research",
+          "currentLabel": "Research",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "research",
+          "currentLabel": "Research",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralResearchOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Mira",
+          "category": "research",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/e20f594d-72da-46b2-9d1e-b6c6669fccef",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 928088064,
+      "samples": 23,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 127565824
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-enhanced-4",
+    "task": "form",
+    "variant": 6,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 4,
+    "status": "FAIL",
+    "steps": 2,
+    "modelCalls": 6,
+    "modelLatencyMs": 1606.3209990000032,
+    "observeMs": 8.027000000009139,
+    "actionMs": 3.2273329999952693,
+    "totalMs": 2436.245415999998,
+    "startupMs": 160.38654099999985,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.7218749999956344,
+    "lastObservation": {
+      "text": "Research request Name Category General Design Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Deniz",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → Design",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "design",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "currentValue": "general",
+          "currentLabel": "General",
+          "optionLabel": "Design",
+          "frame": 0,
+          "key": "f0n2:select:design"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "currentValue": "general",
+          "currentLabel": "General",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": false,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Deniz",
+          "category": "general",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": true,
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/06a94764-0170-41e8-bd00-143864acefd0",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33439744,
+      "samples": 23,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 134021120
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-rendered-4",
+    "task": "form",
+    "variant": 6,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 4,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 12,
+    "modelLatencyMs": 3375.083708000013,
+    "observeMs": 30.154500999997254,
+    "actionMs": 16.9295409999977,
+    "totalMs": 5216.461125000002,
+    "startupMs": 457.08995799999684,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 14.242082999997365,
+    "lastObservation": {
+      "text": "Research request Name Category General Design Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Deniz",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "currentValue": "design",
+          "currentLabel": "Design",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "currentValue": "design",
+          "currentLabel": "Design",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Deniz",
+          "category": "design",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/08fd1e7a-cd05-48f0-8faf-40289712ef6f",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 947863552,
+      "samples": 47,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 134807552
+    },
+    "screenshot": "form-chromium-rendered-4.png",
+    "evidenceMs": 34.381459000003815,
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-semantic-4",
+    "task": "form",
+    "variant": 6,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 4,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 12,
+    "modelLatencyMs": 3191.949042000022,
+    "observeMs": 24.781168000001344,
+    "actionMs": 8.144207999997889,
+    "totalMs": 5020.133583000003,
+    "startupMs": 413.51266600000235,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 12.213541999997688,
+    "lastObservation": {
+      "text": "Research request Name Category General Design Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Deniz",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "design",
+          "currentLabel": "Design",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "design",
+          "currentLabel": "Design",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Deniz",
+          "category": "design",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/2f997bd8-3219-4a4f-85bc-f7df22cbe0d3",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 925581312,
+      "samples": 46,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 134955008
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-semantic-4",
+    "task": "form",
+    "variant": 6,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 4,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 12,
+    "modelLatencyMs": 3197.7742480000015,
+    "observeMs": 15.461167000008572,
+    "actionMs": 4.54933299998811,
+    "totalMs": 4677.974875,
+    "startupMs": 160.03845799999544,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.5676670000029844,
+    "lastObservation": {
+      "text": "Research request Name Category General Design Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Deniz",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "design",
+          "currentLabel": "Design",
+          "optionLabel": "General",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "currentValue": "design",
+          "currentLabel": "Design",
+          "optionLabel": "Other",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Deniz",
+          "category": "design",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:56678/fixture/072def6e-984d-4f29-a89e-79ef797cd43e",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33488896,
+      "samples": 45,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 136560640
+    },
+    "pageErrors": []
+  }
+]

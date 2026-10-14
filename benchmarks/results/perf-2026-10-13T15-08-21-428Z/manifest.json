@@ -1,0 +1,42 @@
+{
+  "runId": "perf-2026-10-13T15-08-21-428Z",
+  "repeat": 1,
+  "offset": 71,
+  "modes": [
+    "chromium-dom",
+    "chromium-ocr",
+    "lightpanda-dom"
+  ],
+  "tasks": [
+    "research"
+  ],
+  "phases": [
+    "warm"
+  ],
+  "node": "v25.8.2",
+  "platform": "darwin",
+  "arch": "arm64",
+  "model": "jev-1.13.0",
+  "imagesSentToJev": 0,
+  "sourceHashes": {
+    "src/perf.mjs": "9b75679e21f9bc69c71ba7004453d41e7398c83c04babd00ecc64933505302f8",
+    "src/metrics.mjs": "949e2eb474d8f06378d3600481c8c52acc07ce779060dcb962f2ec23422cf253",
+    "src/memprobe.c": "9d74bc014ca7e6f7a90570e7ec9265d13ea3e1940d5cdc40c6ee8e89d1666b86",
+    "src/ocr-client.mjs": "fce26539673af62aa1216a0006ecb07a0a4fefb1b271bb99e88c35276eb2c97b",
+    "src/ocr.swift": "beea4b28b7df359ba2a61cdc2b21899c0f6cd0a68daf51ef0bcedbb73256034c",
+    "src/fixture-worker.mjs": "c7d9a738b6572adab9332efbbfa1ef58d81636ab126f5059d369bc0eab3085ae",
+    "src/backend.mjs": "7c0279c21693108be0eba13b6680a5ecf911856148e955859a5f905410476864",
+    "src/observation.mjs": "ba9625f73d964d6f8fd3b59d7a4da2e8c1940775d028e79a0e411ea84e36f111",
+    "src/policy.mjs": "5a56c9762e67b19226c8c1922e2f935dc05ea348612bd18e9c78363691381be0",
+    "src/tasks.mjs": "795a1d3eaff5ec6f8d33bae6c840ef573c6ae9cdfdc1e8782fd87665c290152b",
+    "src/variants.mjs": "dfce463b1da3f6cede5f04c4f64bc7e10d6e9217be622dff02bb49ccf0f25a8f",
+    "src/fixtures.mjs": "8cafb9f4cce0d026af93c1c48cf0a99f802b0aa0ab9df8dfbb1db425787ee1f6"
+  },
+  "lightpandaVersion": "1.0.0",
+  "ocrEngine": "Apple Vision VNRecognizeTextRequest accurate/en-US, local persistent worker",
+  "memory": "100 ms sampled RSS sum of selected browser process tree, local OCR tree if used, and driver itself. Fixture worker excluded. Shared pages may be double-counted; GPU/system service memory excluded. Not physical footprint/cgroup total.",
+  "isolation": "Cases sequential; a single benchmark browser and optional OCR worker active. User applications remain uncontrolled.",
+  "semantics": "Chromium DOM and OCR use browser-native input; Lightpanda uses enhanced semantic input. OCR input is screenshot only: no DOM/HTML for reading or target mapping. Not a vision LLM benchmark.",
+  "apiCalls": 6,
+  "finished": true
+}

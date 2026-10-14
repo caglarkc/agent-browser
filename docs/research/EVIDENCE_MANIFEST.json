@@ -1,0 +1,1087 @@
+{
+  "retrieved_on": "2026-10-12",
+  "method": "Read-only source/documentation inspection; no test or benchmark execution",
+  "repositories": [
+    {
+      "repository": "ChromeDevTools/chrome-devtools-mcp",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 53303,
+      "pushed_at": "2026-10-11T00:10:07Z",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+          "bytes": 11357
+        },
+        {
+          "path": "README.md",
+          "sha256": "059a0349daaef6bda98eae6d9384ed349ac94b8033b18be817c317a01b472024",
+          "bytes": 6445
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "bea3c0cb967eb534f00b2edd3f079b5f201f0d841d90168de8206e94a926fd14",
+          "bytes": 8143
+        }
+      ]
+    },
+    {
+      "repository": "ServiceNow/BrowserGym",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 1399,
+      "pushed_at": "2026-10-05T23:54:35Z",
+      "license_metadata": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b192c58991e8ff585cc574615d40e74185404d4b96c1109d423071ab1367344b",
+          "bytes": 579
+        },
+        {
+          "path": "README.md",
+          "sha256": "7b685115ef822989fac9093518d16c46f0202736d005eed56e7f9fc36b43f3ee",
+          "bytes": 12750
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "2e8ee5d049ba7add2b333f3ab10644da327503336359ccb3b27d3752bf6cedc1",
+          "bytes": 7033
+        }
+      ]
+    },
+    {
+      "repository": "Skyvern-AI/skyvern",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 23182,
+      "pushed_at": "2026-10-12T00:57:51Z",
+      "license_metadata": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+          "bytes": 34523
+        },
+        {
+          "path": "README.md",
+          "sha256": "68fda945255825907aeada13d19de19209708c14504ac975e63a235f0cd9343b",
+          "bytes": 25305
+        },
+        {
+          "path": "commit.json",
+          "sha256": "95b085529f2ac01f853c6b10211aa8f9f93a6615af12eed7c45dbce2fe8c8dea",
+          "bytes": 11648
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "da4c1f80c14475262669dcadaf2c75cff485f0534e7f27ca7d4b4ced3133c224",
+          "bytes": 7147
+        },
+        {
+          "path": "paths.txt",
+          "sha256": "a5ff68f800fcb271bf697a88a305f82d5fff20fbcf3d80a7f921b2b3d8d73e24",
+          "bytes": 320385
+        },
+        {
+          "path": "releases.json",
+          "sha256": "bad0e0c07ecc881667eee6a0ffedfc703486e0ccbabfea8b353919ab8bf35533",
+          "bytes": 56705
+        },
+        {
+          "path": "source/skyvern/forge/agent.py",
+          "sha256": "6b1f9966315a641b19c0cb4f2a7997aedae79c6039bc4fa80dafea08a73efd24",
+          "bytes": 588961
+        },
+        {
+          "path": "source/skyvern/forge/sdk/workflow/models/google_sheets_blocks.py",
+          "sha256": "95753c39e0eee60224e2d8bf2ef47ef68454152bb5cba58b8533bb567937002f",
+          "bytes": 58224
+        },
+        {
+          "path": "source/skyvern/forge/sdk/workflow/models/workflow.py",
+          "sha256": "2fea084efbe58473f67dad8c1033d9c34aea5bd00a6f2d1fefa08000bdc7d188",
+          "bytes": 24509
+        },
+        {
+          "path": "tree.json",
+          "sha256": "9f62387089c0165d3347a77f2fecdd1053f088309843d4fc08dd97fb75f28bf6",
+          "bytes": 1718697
+        }
+      ],
+      "commit_sha": "f5f3f28a9ce0021a1db24286928a7bff6582a1eb",
+      "commit_tree_sha": "7ad3275b91afd9200bef6da289b65ab93a5a4bf4",
+      "release_sample": [
+        {
+          "tag": "v1.0.55",
+          "published_at": "2026-10-01T22:03:04Z",
+          "prerelease": false,
+          "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v1.0.55"
+        },
+        {
+          "tag": "v1.0.54",
+          "published_at": "2026-09-22T22:57:33Z",
+          "prerelease": false,
+          "url": "https://github.com/Skyvern-AI/skyvern/releases/tag/v1.0.54"
+        }
+      ],
+      "tree_endpoint_ref_sha": "f5f3f28a9ce0021a1db24286928a7bff6582a1eb",
+      "source_ref_matches_commit": true
+    },
+    {
+      "repository": "browser-use/benchmark",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 150,
+      "pushed_at": "2026-10-01T20:28:58Z",
+      "license_metadata": null,
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "d8fb2b8854e1d02f0b45550e89bfd705389dee866addbc5a2168bf3f4f55cc00",
+          "bytes": 21671
+        },
+        {
+          "path": "commit.json",
+          "sha256": "8cb294c675e93e51d7f109c159d43645289f3d76c90410394c453aa375ce8066",
+          "bytes": 12253
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "89f03fa55d221de72acfd02d60a047f84472926a6e2435e28081aac6aebc4883",
+          "bytes": 6785
+        },
+        {
+          "path": "paths.txt",
+          "sha256": "830377d14bdf28e3f843e3355377ddd9a25edc5f168fb62873b9d3fb3fe88a72",
+          "bytes": 7629
+        },
+        {
+          "path": "source/bcode_runner.py",
+          "sha256": "7195df48011274ccf064f7d87f6d129dcaf506209e1e192241ec52bf7ae2a4ea",
+          "bytes": 26680
+        },
+        {
+          "path": "source/findings_judge.py",
+          "sha256": "168593f3f64b99baaabc187ad3c82ddc62967ab9ed6095206890bbce99fd4b0b",
+          "bytes": 14966
+        },
+        {
+          "path": "tree.json",
+          "sha256": "e1780404ba8f58084927a8a097df3278e63bb81cee0115233090bc6f8b53a3c1",
+          "bytes": 50585
+        }
+      ],
+      "commit_sha": "1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74",
+      "commit_tree_sha": "e20f7b9454d088a3a7d6e42cee262b948596ff51",
+      "tree_endpoint_ref_sha": "1e0e2f1ed12d3dfbdfab6b7bff415ec090ff9f74",
+      "source_ref_matches_commit": true
+    },
+    {
+      "repository": "browser-use/browser-use",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 117669,
+      "pushed_at": "2026-10-09T17:36:28Z",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "135c57671b0ee957669b05a0ca00cc06f645496d351e2e732832c6e276da9a5e",
+          "bytes": 1069
+        },
+        {
+          "path": "README.md",
+          "sha256": "251ae2f71548b320d57b58f6690ec47afa001f1ae7832fe8e8c16584e078ca6d",
+          "bytes": 16597
+        },
+        {
+          "path": "commit.json",
+          "sha256": "9d8a87bf85186c198701b203cd1b4d4ea32f290461813c71b7b4cf84df062cc0",
+          "bytes": 14849
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "586a5eb9f3fc33708dcceaacfe5638d7453cbc914979228d90234e2807679692",
+          "bytes": 7216
+        },
+        {
+          "path": "paths.txt",
+          "sha256": "a972569d4544c6960b10b43abe2882621511eb463630510e14e233e07301ead0",
+          "bytes": 19788
+        },
+        {
+          "path": "releases.json",
+          "sha256": "747520b1677d480027e88d5c432105bd5c9f26836ad72a341c270d9403be402c",
+          "bytes": 11311
+        },
+        {
+          "path": "source/browser_use/agent/service.py",
+          "sha256": "10f7c14458ed7089c49f34a06ad7b3ce12212a589d9d000c5cf4d9cc7ddd8479",
+          "bytes": 164119
+        },
+        {
+          "path": "source/browser_use/browser/session.py",
+          "sha256": "797866229df7757c821c44da118b04ec0a78c2c3eb8e10c22eff9c44598dc8d5",
+          "bytes": 162395
+        },
+        {
+          "path": "source/browser_use/browser/watchdogs/security_watchdog.py",
+          "sha256": "7d4aba8c663602f2fa506befe7a7b63a8074452e83c6706929b531953665f6ac",
+          "bytes": 9809
+        },
+        {
+          "path": "source/tests/ci/security/test_ip_blocking.py",
+          "sha256": "f5026c5ba7aaedb584d54c01dcac7cdf59c49362e32bebbeddcc837882b43296",
+          "bytes": 31977
+        },
+        {
+          "path": "tree.json",
+          "sha256": "7c10ca5647ea3e7597464eb5d96749afb877fb9207a7b53e8534fbf0a0a3b6ac",
+          "bytes": 166807
+        }
+      ],
+      "commit_sha": "c75e8476e26d18b7617643bc2ae082fae8eae431",
+      "commit_tree_sha": "d884bd8b7c24db71c448295108a33340c7c67abf",
+      "release_sample": [
+        {
+          "tag": "0.13.11",
+          "published_at": "2026-10-07T04:23:18Z",
+          "prerelease": false,
+          "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.11"
+        },
+        {
+          "tag": "0.13.10",
+          "published_at": "2026-09-04T03:28:53Z",
+          "prerelease": false,
+          "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.10"
+        }
+      ],
+      "tree_endpoint_ref_sha": "c75e8476e26d18b7617643bc2ae082fae8eae431",
+      "source_ref_matches_commit": true
+    },
+    {
+      "repository": "browserbase/stagehand",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 25631,
+      "pushed_at": "2026-10-10T17:38:53Z",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "fac7e7cd1cfc504054ee1fc53c38e0f3099d7357917e85a73792f6511fe0ea96",
+          "bytes": 1073
+        },
+        {
+          "path": "README.md",
+          "sha256": "fb2039ee569e37cf1d652ca26c0a1951a318d4ac3240018b958985c0aec91007",
+          "bytes": 17474
+        },
+        {
+          "path": "commit.json",
+          "sha256": "00a809be5b3df8580255b1a0141748b2279a083c64ebe4f8dda6e6cbfdc1cc57",
+          "bytes": 51656
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "eb9f27798361d8cf50188e6987cf009fca278fc553d8d5f47cb28c0795212440",
+          "bytes": 7394
+        },
+        {
+          "path": "paths.txt",
+          "sha256": "ac981a54be071319dad21a76ad17ab24fff4937fe98a21b53a2d3da9205b683b",
+          "bytes": 84053
+        },
+        {
+          "path": "releases.json",
+          "sha256": "bef0d53fe264e3000c72ab7ac35dee65dc716a8de62ef0b5b17f20e0cc79f4d3",
+          "bytes": 22664
+        },
+        {
+          "path": "source/packages/extension/README.md",
+          "sha256": "b1b09b58d7e50552252c05e1d1ca38103b3572f40e61add4a3d8c9c33306401e",
+          "bytes": 201
+        },
+        {
+          "path": "source/packages/extension/services/cacheService.ts",
+          "sha256": "927196861d1e4b1c3fae9ceeafc1700c672fde714481d4cfff5b0050e0f1893e",
+          "bytes": 12870
+        },
+        {
+          "path": "source/packages/extension/understudy/cdp.ts",
+          "sha256": "3eef6079df6b81e202122fc136c2a1c716d3ea86c604b135f035c09dbcdfad7b",
+          "bytes": 16882
+        },
+        {
+          "path": "source/packages/sdk-ts/package.json",
+          "sha256": "831f97aead1e8f9542e12a6c5e987a53094171ae94c510b97b8d42cc5643b1f8",
+          "bytes": 1658
+        },
+        {
+          "path": "source/packages/sdk-ts/src/stagehand.ts",
+          "sha256": "b39da1538eb8fa011e14fe063166f54bc32e771d8fb978f6501a90eb65768db4",
+          "bytes": 14873
+        },
+        {
+          "path": "tree.json",
+          "sha256": "d777e7a4592ade38a2b0773afdff7476768c51fd167b351da98ce58b6c0bf469",
+          "bytes": 565078
+        }
+      ],
+      "commit_sha": "f261c38b4dc50c39485f924e8599c1d3c6e37dc7",
+      "commit_tree_sha": "44a6a2669a4a6bff8ef0cc07a3b4f5d99fad7c16",
+      "release_sample": [
+        {
+          "tag": "stagehand-server-v3/v3.7.6",
+          "published_at": "2026-08-28T14:22:50Z",
+          "prerelease": false,
+          "url": "https://github.com/browserbase/stagehand/releases/tag/stagehand-server-v3/v3.7.6"
+        },
+        {
+          "tag": "@browserbasehq/stagehand@3.7.3",
+          "published_at": "2026-08-28T14:46:59Z",
+          "prerelease": false,
+          "url": "https://github.com/browserbase/stagehand/releases/tag/%40browserbasehq/stagehand%403.7.3"
+        }
+      ],
+      "tree_endpoint_ref_sha": "f261c38b4dc50c39485f924e8599c1d3c6e37dc7",
+      "source_ref_matches_commit": true
+    },
+    {
+      "repository": "browserless/browserless",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 13806,
+      "pushed_at": "2026-10-09T05:46:08Z",
+      "license_metadata": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "11cc057540a8c1dcea4cddba6ee8b1fec3ccfe8931cb5b6f4dc9eeda72c11691",
+          "bytes": 597
+        },
+        {
+          "path": "README.md",
+          "sha256": "7293861d93f0d23121d434f752268b11b88a56476c1c2b91d41af6ebfed2055b",
+          "bytes": 12430
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "511398d961ad26063eb994ce24128c607178aaf80df3de9cef1b5e4f4900b4fc",
+          "bytes": 7349
+        }
+      ]
+    },
+    {
+      "repository": "chromedp/chromedp",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 13307,
+      "pushed_at": "2026-10-11T04:29:07Z",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "825f37ca7b6235d5f40cea575ce2418b375fb87f295197a00c00dcaea99d82fd",
+          "bytes": 1084
+        },
+        {
+          "path": "README.md",
+          "sha256": "d480b2f27cc8a55fda3530033120e5276dcddb0b08703f19e4bde6f328f696ef",
+          "bytes": 23877
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "d45115794364d6006b2cc71c2a4842c81e841cd20eb7405a5a053a035b670327",
+          "bytes": 6964
+        }
+      ]
+    },
+    {
+      "repository": "dbhurley/plasmate",
+      "fork": true,
+      "default_branch": "master",
+      "stars_snapshot": 1,
+      "pushed_at": "2026-08-10T22:00:45Z",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "a348fa82d4bdc1103bffe408b6b494973f35d01b563f09c72e29595661bb0bcf",
+          "bytes": 10764
+        },
+        {
+          "path": "README.md",
+          "sha256": "2dea649118573912830bb9d5ef5c8a4d2abc0482f1220b4ee455cac1ec25f3e2",
+          "bytes": 22532
+        },
+        {
+          "path": "commit.json",
+          "sha256": "715b2c6be2d7bf4b33039e5e355cdfe262dd928ae343d2e233d48854bd90402f",
+          "bytes": 8528
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "5d67c4489755976be8845d679d9f2a998f7f6d32206a42f07e630b089c8388a2",
+          "bytes": 18829
+        },
+        {
+          "path": "paths.txt",
+          "sha256": "c4ffe50e48c7ee2251a2444612d5770d85aeefe2110757c69b5af5cdf0c7c21d",
+          "bytes": 17219
+        },
+        {
+          "path": "tree.json",
+          "sha256": "88ba2806fe4daa04a6a56af60331ef96ee6c6490a0647e732f37a26f4eae3c75",
+          "bytes": 168061
+        }
+      ],
+      "commit_sha": "2656e4bd47545c6453a3476140b0587b1768555a",
+      "commit_tree_sha": "f1bd37f482f4d43b76d113a3ad0d6a7db6f0019e",
+      "tree_endpoint_ref_sha": "2656e4bd47545c6453a3476140b0587b1768555a",
+      "source_ref_matches_commit": true
+    },
+    {
+      "repository": "go-rod/rod",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 7130,
+      "pushed_at": "2026-08-11T02:18:57Z",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "c1062fb497bca78115c6797bb8629613eaf45ea856b79d187dd2020cef9d327a",
+          "bytes": 1065
+        },
+        {
+          "path": "README.md",
+          "sha256": "40bd33ec3124c8a96239a3e280f276f659757687c24311b6998d722325726380",
+          "bytes": 3469
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "7758c17cfd53038f84ba96010a619b887730ae148e6a6a9d88089a736bbe9abc",
+          "bytes": 6774
+        }
+      ]
+    },
+    {
+      "repository": "h5i-dev/h5i",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 732,
+      "pushed_at": "2026-10-12T00:39:35Z",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        },
+        {
+          "path": "README.md",
+          "sha256": "6cf65784b32c6c03d97914eec103c9cab5d96ea9bf1f82dbf2e4231c77a3c9de",
+          "bytes": 6474
+        },
+        {
+          "path": "commit.json",
+          "sha256": "6e9d09c4f499b004c2cd080e1a71d4e489052b157e437ee432400942db5e789f",
+          "bytes": 8831
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "4a7f7ef2199c02410b804e61ba39d8e10e3165899b7772d0991bb62ebbf0a2d2",
+          "bytes": 6978
+        },
+        {
+          "path": "paths.txt",
+          "sha256": "bae5240df9f8dea3d1a450d8c77d7a2178034826d9d53469a6ba4e1475203bed",
+          "bytes": 24954
+        },
+        {
+          "path": "source/crates/h5i-browser/Cargo.toml",
+          "sha256": "8a20658a9b17c237b2c871866339c34bccaf38a824a53b1c92aa850ff6690a3d",
+          "bytes": 7939
+        },
+        {
+          "path": "source/crates/h5i-browser/src/lib.rs",
+          "sha256": "8ff7e3249b90605da1e6f5ebf05a048e3e30e6288bfc327583c91b3d2ad05f89",
+          "bytes": 4650
+        },
+        {
+          "path": "tree.json",
+          "sha256": "891211b15df00dc13a777092755a1acd3eccefd243d33ba311a0cc81644fcd62",
+          "bytes": 229234
+        }
+      ],
+      "commit_sha": "d98074c2a03acdb9a42b289bc20f6cd5530a6573",
+      "commit_tree_sha": "c5b6beea7473f864e9be3a91eee3704e9f7d6c20",
+      "tree_endpoint_ref_sha": "d98074c2a03acdb9a42b289bc20f6cd5530a6573",
+      "source_ref_matches_commit": true
+    },
+    {
+      "repository": "lightpanda-io/agent-benchmarks",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 2,
+      "pushed_at": "2026-10-10T12:30:46Z",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        },
+        {
+          "path": "README.md",
+          "sha256": "25722a9da664c302a486ef8800df7b4cf3258326f56126575b3d85a28748e129",
+          "bytes": 18084
+        },
+        {
+          "path": "commit.json",
+          "sha256": "acad26e1d2e67bea0042698fee0c54378ab97ae7ab2cfb3bd3acee10de639def",
+          "bytes": 10519
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "e058522a55592b7730ed223c8d084fc8580fd6e2998d5c9eb1b09b059425935a",
+          "bytes": 7395
+        },
+        {
+          "path": "paths.txt",
+          "sha256": "faa24e4fd0cb4ff3e80ec5a4e16568be0264f8c7119e1dbaf02f6c759c8d3ccf",
+          "bytes": 20780
+        },
+        {
+          "path": "source/src/agent_benchmarks/llm_judge.py",
+          "sha256": "29d141dfba4b982eba99e5059ee8a92692ecd2a8781624335b5c469771d6ce5d",
+          "bytes": 13905
+        },
+        {
+          "path": "tree.json",
+          "sha256": "85212b1e9c404a61c02670619a24a7972725eb4ba0d87682ab77e593619d4eef",
+          "bytes": 159687
+        }
+      ],
+      "commit_sha": "1b3864cc47eb8636dff46d63d493ab2e774964bb",
+      "commit_tree_sha": "d6111f0e864f439d2a2ecf5550cc1d6e7dc63c15",
+      "tree_endpoint_ref_sha": "1b3864cc47eb8636dff46d63d493ab2e774964bb",
+      "source_ref_matches_commit": true
+    },
+    {
+      "repository": "lightpanda-io/browser",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 36298,
+      "pushed_at": "2026-10-12T02:25:20Z",
+      "license_metadata": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+          "bytes": 34523
+        },
+        {
+          "path": "LICENSING.md",
+          "sha256": "666d657174d141b6a3062b712da59f4408378c94eed6e49b7bb8f07b03d5bca1",
+          "bytes": 176
+        },
+        {
+          "path": "README.md",
+          "sha256": "83ce79d7980d7cb1e077df67a2409759a83830c475596b688e77f8c362d248a9",
+          "bytes": 17264
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "b434c312e69d8fdd5abba8877d0b24cdc0eae9bb9e2122dc5010ecc1a2163be6",
+          "bytes": 7250
+        },
+        {
+          "path": "releases.json",
+          "sha256": "e62a725af4d889e2ad32a9ac2e799561d6c06bbb4300a621e3924114bc876a02",
+          "bytes": 38564
+        }
+      ],
+      "checkout_commit": "44e378d6113d40a6ef1e66ff8b27e1da34ef1647",
+      "release_sample": [
+        {
+          "tag": "1.0.0",
+          "published_at": "2026-10-02T10:12:01Z",
+          "prerelease": false,
+          "url": "https://github.com/lightpanda-io/browser/releases/tag/1.0.0"
+        },
+        {
+          "tag": "0.4.1",
+          "published_at": "2026-09-15T13:09:42Z",
+          "prerelease": false,
+          "url": "https://github.com/lightpanda-io/browser/releases/tag/0.4.1"
+        }
+      ]
+    },
+    {
+      "repository": "firecrawl/firecrawl",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 190577,
+      "pushed_at": "2026-10-12T01:04:44Z",
+      "license_metadata": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "9b4649365c4f29d8f41301f4cda1e5bd9da51cf1bbb19ab9d568ff57d56e3b33",
+          "bytes": 35064
+        },
+        {
+          "path": "README.md",
+          "sha256": "124279f3a47fb239e60b9b5263f8811ba6a9cdc23b1cb36de56984a6f524f2b2",
+          "bytes": 24755
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "df2aed73384d1b1940e86a74c60dca6ddf3807155bea501972edd4309c1a45c4",
+          "bytes": 7347
+        }
+      ]
+    },
+    {
+      "repository": "microsoft/playwright-cli",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 14002,
+      "pushed_at": "2026-09-28T23:23:12Z",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "45680e2004227e89dec1e2764722acb3cb3576db3d65f80ca74f64f6dce97f5e",
+          "bytes": 25617
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "c328d5882e6e9b47907d5e09014841b69305625885e59dd28ba48746d45077b0",
+          "bytes": 7477
+        }
+      ]
+    },
+    {
+      "repository": "microsoft/playwright-mcp",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 38038,
+      "pushed_at": "2026-10-08T17:51:59Z",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "9a7110fc2d2f964038e5dc49128f908f29f47a574c961cba16085914e879cbda",
+          "bytes": 11552
+        },
+        {
+          "path": "README.md",
+          "sha256": "b33aa71a13d655e96e6b736d0c9de1e5ddea52f205916ca20b876387ff830e87",
+          "bytes": 66837
+        },
+        {
+          "path": "commit.json",
+          "sha256": "1422c2e9ae98290147ddecef416eb65bd6e4a455473722f42429c740fab699da",
+          "bytes": 37057
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "6387934786924fd5489026382e85c244ed22fada690e0777d4e4c25d323eaad9",
+          "bytes": 7265
+        },
+        {
+          "path": "paths.txt",
+          "sha256": "b549db91f2221717c3992f6dfcb4ed85e862c9b2232474db94b30cd828fe2935",
+          "bytes": 734
+        },
+        {
+          "path": "releases.json",
+          "sha256": "1a393679769ecd8164b2eb6dd8c96474775caad8f130255daf63277ec8a29f53",
+          "bytes": 10393
+        },
+        {
+          "path": "source/index.js",
+          "sha256": "28c639173fb79f5cae1ed44519995cea0dd2aee2f4a48a2511f06f153802b946",
+          "bytes": 747
+        },
+        {
+          "path": "source/package.json",
+          "sha256": "624f0ba4d387028bbc734520142fbebb7075a88da8b623f4760adf76aa212f8b",
+          "bytes": 1539
+        },
+        {
+          "path": "source/src/README.md",
+          "sha256": "3d00272808ea1d6e079ae69638aa9f2b713309d0c082ee5d23aa6aa2d58587d5",
+          "bytes": 281
+        },
+        {
+          "path": "source/tests/core.spec.ts",
+          "sha256": "44d262c31ebb03dbabcf8761b2d5ec622b27fe1db1cb5338c0d26730b1e47021",
+          "bytes": 982
+        },
+        {
+          "path": "tree.json",
+          "sha256": "7cf62ee6269c2c90a8fdf0b796450f1221a4f84770cacca3bf8517612174404d",
+          "bytes": 12240
+        }
+      ],
+      "commit_sha": "b8b4183e099f136cbec0388a6088d4aa2f6b9685",
+      "commit_tree_sha": "e790adc85686b57e46b89adee7c2331fa3eddc6b",
+      "release_sample": [
+        {
+          "tag": "v0.0.83",
+          "published_at": "2026-09-28T23:17:11Z",
+          "prerelease": false,
+          "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.83"
+        },
+        {
+          "tag": "v0.0.82",
+          "published_at": "2026-09-18T23:35:04Z",
+          "prerelease": false,
+          "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.82"
+        }
+      ],
+      "tree_endpoint_ref_sha": "b8b4183e099f136cbec0388a6088d4aa2f6b9685",
+      "source_ref_matches_commit": true
+    },
+    {
+      "repository": "pinchtab/pinchtab",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 10369,
+      "pushed_at": "2026-10-06T22:45:38Z",
+      "license_metadata": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "8e526b04f1f02203eebfd55aead0657a7ae87e0591cf8a44fbee19441aa0f116",
+          "bytes": 1069
+        },
+        {
+          "path": "README.md",
+          "sha256": "b90ddd2c3dfe43ab1322b63243f4541e01f06918c46f537bf8440e1f91397928",
+          "bytes": 18797
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "c27250e8c052a0edc1c750ad43500e45e5d1de65ae06cb4a07734f30595f9eec",
+          "bytes": 6958
+        },
+        {
+          "path": "releases.json",
+          "sha256": "fc1ac61c5e2fe315f222cc63f5ff813c0685552d6fbe375ddc0d5b90fe897f64",
+          "bytes": 108162
+        }
+      ],
+      "checkout_commit": "a62662027f233444c579c29fbe42ad90df0d5bc7",
+      "release_sample": [
+        {
+          "tag": "v0.15.2",
+          "published_at": "2026-08-26T12:06:03Z",
+          "prerelease": false,
+          "url": "https://github.com/pinchtab/pinchtab/releases/tag/v0.15.2"
+        },
+        {
+          "tag": "v0.15.1",
+          "published_at": "2026-08-03T15:09:49Z",
+          "prerelease": false,
+          "url": "https://github.com/pinchtab/pinchtab/releases/tag/v0.15.1"
+        }
+      ]
+    },
+    {
+      "repository": "plasmate-labs/plasmate",
+      "fork": false,
+      "default_branch": "master",
+      "stars_snapshot": 38,
+      "pushed_at": "2026-10-12T04:02:08Z",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "b91951130d6b60242b1be33562027954e2fb2e9a497347937639b212e3748e76",
+          "bytes": 24225
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "6c554e840c30b01dbd4c0607956d8ba43c65ad8268f3ab9edbc73163197f0215",
+          "bytes": 7505
+        }
+      ]
+    },
+    {
+      "repository": "steel-dev/steel-browser",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 7787,
+      "pushed_at": "2026-10-09T18:33:11Z",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        },
+        {
+          "path": "README.md",
+          "sha256": "668949f121cb5a8ac262a8d3222a31eaee6692bfc0de9b86e60ae04f885ccc9b",
+          "bytes": 13265
+        },
+        {
+          "path": "commit.json",
+          "sha256": "47d867a9d28ff880d71028afd138c2ca1386950cd9cf876fa991700234b25313",
+          "bytes": 13285
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "fdb18e5e89e1d751010880065361ceedd242ed0f5b0f692d50bece47c256df50",
+          "bytes": 7294
+        },
+        {
+          "path": "paths.txt",
+          "sha256": "e0b8dd6d7db3cd7991498865fd17d6a719cb4d117c9f3f4f52d53273e6126331",
+          "bytes": 12056
+        },
+        {
+          "path": "releases.json",
+          "sha256": "a4c073d69e8a18800b6979761b9eb4c2da306545b9641a951b2e9ed04b30ae00",
+          "bytes": 9662
+        },
+        {
+          "path": "source/api/src/services/leveldb/sessionstorage.ts",
+          "sha256": "69efe4eefd408cc7523baf4bd7e41e4d90f734df1c48c9d32a1c74923bb6ffc8",
+          "bytes": 6664
+        },
+        {
+          "path": "source/api/src/services/session.service.test.ts",
+          "sha256": "a47d7d2be1af26f74204a2634f368736f6fc926c685008801ae10ab60806864c",
+          "bytes": 2689
+        },
+        {
+          "path": "source/api/src/services/session.service.ts",
+          "sha256": "df2d38b6e4a68a7c458cf320ad1f93990043e42fbea506c76e6d457f2c7878f5",
+          "bytes": 10523
+        },
+        {
+          "path": "tree.json",
+          "sha256": "5d423718ab9c0b8208e1bef4a73ed303d88790e39eb0d0f26eb8484a19758a14",
+          "bytes": 105159
+        }
+      ],
+      "commit_sha": "1131a0222a27f391bf8f27cca6f278ddf7ace8dd",
+      "commit_tree_sha": "70f2cb947a16839484842cc3f19d35585c5a3459",
+      "release_sample": [
+        {
+          "tag": "v0.5.4-beta",
+          "published_at": "2026-08-25T19:41:16Z",
+          "prerelease": false,
+          "url": "https://github.com/steel-dev/steel-browser/releases/tag/v0.5.4-beta"
+        },
+        {
+          "tag": "v0.5.3-beta",
+          "published_at": "2026-04-24T19:39:09Z",
+          "prerelease": false,
+          "url": "https://github.com/steel-dev/steel-browser/releases/tag/v0.5.3-beta"
+        }
+      ],
+      "tree_endpoint_ref_sha": "1131a0222a27f391bf8f27cca6f278ddf7ace8dd",
+      "source_ref_matches_commit": true
+    },
+    {
+      "repository": "unclecode/crawl4ai",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 85289,
+      "pushed_at": "2026-10-11T06:06:31Z",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "193fe32704bee15cd74f5153e569cdf830e26445e19798a55daee32da40758aa",
+          "bytes": 9998
+        },
+        {
+          "path": "README.md",
+          "sha256": "41b487a61c0b483bda0541789551bffcb6bfa83adc3b093e4a5066b252b35187",
+          "bytes": 27310
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "50d96e3a782928f4f17c7f701eedd56ea9a4c7f643a9b967f14e71d7392f28d6",
+          "bytes": 6102
+        }
+      ]
+    },
+    {
+      "repository": "vercel-labs/agent-browser",
+      "fork": false,
+      "default_branch": "main",
+      "stars_snapshot": 43832,
+      "pushed_at": "2026-10-11T23:17:03Z",
+      "license_metadata": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "014bb31e83d5c2e76aea1cc6e82217346ab41362f32cb355ad0f5c10aa0aeaff",
+          "bytes": 10931
+        },
+        {
+          "path": "README.md",
+          "sha256": "4a9783ee8ebee10caaedfe2bdd2182539368e60e8eefadaee4cb7bab7fc75c12",
+          "bytes": 105343
+        },
+        {
+          "path": "metadata.json",
+          "sha256": "406502724af46281a275adf9341e0f6491580d346643f87b9f75c938337f0141",
+          "bytes": 7212
+        },
+        {
+          "path": "releases.json",
+          "sha256": "af06df5195af762d227b3d5118f66a5771eea323aecf7812027623fb6356fa39",
+          "bytes": 36362
+        }
+      ],
+      "checkout_commit": "d9570915f4dd6504dee4070379d2c4f79d81dbb2",
+      "release_sample": [
+        {
+          "tag": "v0.39.0",
+          "published_at": "2026-10-09T18:57:59Z",
+          "prerelease": false,
+          "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.39.0"
+        },
+        {
+          "tag": "v0.38.2",
+          "published_at": "2026-10-01T21:44:28Z",
+          "prerelease": false,
+          "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.38.2"
+        }
+      ]
+    }
+  ]
+}

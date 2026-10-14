@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-13T14-13-22-589Z",
+  "policy": "jev",
+  "repeat": 2,
+  "profiles": [
+    "chromium-rendered",
+    "chromium-semantic",
+    "lightpanda-semantic"
+  ],
+  "tasks": [
+    "read",
+    "form",
+    "menu",
+    "autocomplete",
+    "records"
+  ],
+  "order": [
+    {
+      "task": "read",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "read",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "autocomplete",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "autocomplete",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "records",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "records",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "read",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "read",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "form",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "form",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "autocomplete",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "autocomplete",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "records",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "records",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    }
+  ],
+  "node": "v25.8.2",
+  "platform": "darwin",
+  "arch": "arm64",
+  "decisionModel": "jev-1.13.0",
+  "endpoint": "typesafe",
+  "maxCalls": "unlimited",
+  "imagesSentToModel": 0,
+  "measurement": "Fresh browser per case; startup/navigation included in total; RSS samples are browser tree only, not capacity proof; action settling fixed at 150 ms in all profiles",
+  "visualMode": "Scripted canvas probe has fixture-defined coordinates; Jev has no vision fallback",
+  "sourceHashes": {
+    "src/backend.mjs": "b01f2246a0b9329dcc8139d95b6c7311e8ccc8adff15a77e9a6f421a575390d3",
+    "src/observation.mjs": "d0c36c9d16ed83876690bdcf8c251bbc827b8eb5df8194031dbcb4d667c5c6a0",
+    "src/policy.mjs": "321a155e607a3fb14a3513ca36dba0bee01d05970e99742b43d11d4b0c0e7cc9",
+    "src/tasks.mjs": "22083ea82f20ad87cb696eeb0f73fd65967d909c3d1d04aaa1508bfade2c6454",
+    "src/variants.mjs": "4cafad05e158df006b5d72ffcaa9cdfbafd3b72e7361308ec16a1bd932dd3e6c",
+    "src/fixtures.mjs": "146641d9838bbfdc7ecdad141942106fd9b4b223f781765f6d098d0087555221",
+    "src/cli.mjs": "4b836c234ff15beb803f90bc78db3fad27ccdd0cfaf14f9ed369551905d20230"
+  },
+  "lightpanda": {
+    "sha256": "955440053a84754dd64c62f970449a56a2b350cdf43ea5f2e809a73047b8173d",
+    "version": "1.0.0"
+  },
+  "dependencies": "25.13.0"
+}

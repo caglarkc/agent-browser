@@ -1,0 +1,12 @@
+{"id": "form-chromium-rendered-1", "step": 0, "dispatch": {"kind": "select", "label": "Category → Market", "key": "f0n2:select:market"}}
+{"id": "form-chromium-rendered-1", "step": 1, "dispatch": {"kind": "click", "label": "Accept terms", "key": "f0n3:click:"}}
+{"id": "form-chromium-rendered-1", "step": 2, "dispatch": {"kind": "click", "label": "Submit", "key": "f0n4:click:"}}
+{"id": "form-lightpanda-semantic-1", "step": 0, "dispatch": {"kind": "select", "label": "Category → Market", "key": "f0n2:select:market"}}
+{"id": "form-lightpanda-semantic-1", "step": 1, "dispatch": {"kind": "click", "label": "Accept terms", "key": "f0n3:click:"}}
+{"id": "form-lightpanda-semantic-1", "step": 2, "dispatch": {"kind": "click", "label": "Submit", "key": "f0n4:click:"}}
+{"id": "menu-chromium-rendered-1", "step": 0, "dispatch": {"kind": "click", "label": "Open menu", "key": "f0n1:click:"}}
+{"id": "menu-chromium-rendered-1", "step": 1, "dispatch": {"kind": "click", "label": "Market", "key": "f0n2:click:"}}
+{"id": "menu-lightpanda-semantic-1", "step": 0, "dispatch": {"kind": "click", "label": "Open menu", "key": "f0n1:click:"}}
+{"id": "menu-lightpanda-semantic-1", "step": 1, "dispatch": {"kind": "click", "label": "Market", "key": "f0n2:click:"}}
+{"id": "shadow-chromium-rendered-1", "step": 0, "dispatch": {"kind": "click", "label": "Market", "key": "f0n1:click:"}}
+{"id": "shadow-lightpanda-semantic-1", "step": 0, "dispatch": {"kind": "click", "label": "Market", "key": "f0n1:click:"}}

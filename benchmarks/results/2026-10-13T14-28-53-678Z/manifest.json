@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-13T14-28-53-678Z",
+  "policy": "jev",
+  "repeat": 10,
+  "profiles": [
+    "lightpanda-enhanced"
+  ],
+  "tasks": [
+    "read",
+    "form",
+    "upload",
+    "menu",
+    "overlay",
+    "lazy",
+    "shadow",
+    "autocomplete",
+    "records"
+  ],
+  "order": [
+    {
+      "task": "read",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-enhanced",
+      "iteration": 3
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 3
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-enhanced",
+      "iteration": 3
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-enhanced",
+      "iteration": 3
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-enhanced",
+      "iteration": 3
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-enhanced",
+      "iteration": 3
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-enhanced",
+      "iteration": 3
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 3
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 3
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-enhanced",
+      "iteration": 4
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 4
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-enhanced",
+      "iteration": 4
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-enhanced",
+      "iteration": 4
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-enhanced",
+      "iteration": 4
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-enhanced",
+      "iteration": 4
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-enhanced",
+      "iteration": 4
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 4
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 4
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-enhanced",
+      "iteration": 5
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 5
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-enhanced",
+      "iteration": 5
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-enhanced",
+      "iteration": 5
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-enhanced",
+      "iteration": 5
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-enhanced",
+      "iteration": 5
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-enhanced",
+      "iteration": 5
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 5
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 5
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-enhanced",
+      "iteration": 6
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 6
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-enhanced",
+      "iteration": 6
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-enhanced",
+      "iteration": 6
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-enhanced",
+      "iteration": 6
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-enhanced",
+      "iteration": 6
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-enhanced",
+      "iteration": 6
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 6
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 6
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-enhanced",
+      "iteration": 7
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 7
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-enhanced",
+      "iteration": 7
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-enhanced",
+      "iteration": 7
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-enhanced",
+      "iteration": 7
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-enhanced",
+      "iteration": 7
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-enhanced",
+      "iteration": 7
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 7
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 7
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-enhanced",
+      "iteration": 8
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 8
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-enhanced",
+      "iteration": 8
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-enhanced",
+      "iteration": 8
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-enhanced",
+      "iteration": 8
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-enhanced",
+      "iteration": 8
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-enhanced",
+      "iteration": 8
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 8
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 8
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-enhanced",
+      "iteration": 9
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 9
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-enhanced",
+      "iteration": 9
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-enhanced",
+      "iteration": 9
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-enhanced",
+      "iteration": 9
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-enhanced",
+      "iteration": 9
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-enhanced",
+      "iteration": 9
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 9
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 9
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-enhanced",
+      "iteration": 10
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 10
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-enhanced",
+      "iteration": 10
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-enhanced",
+      "iteration": 10
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-enhanced",
+      "iteration": 10
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-enhanced",
+      "iteration": 10
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-enhanced",
+      "iteration": 10
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 10
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 10
+    }
+  ],
+  "node": "v25.8.2",
+  "platform": "darwin",
+  "arch": "arm64",
+  "decisionModel": "jev-1.13.0",
+  "endpoint": "typesafe",
+  "maxCalls": "unlimited",
+  "imagesSentToModel": 0,
+  "measurement": "Fresh browser per case; startup/navigation included in total; RSS samples are browser tree only, not capacity proof; action settling fixed at 150 ms in all profiles",
+  "visualMode": "Scripted canvas probe has fixture-defined coordinates; Jev has no vision fallback",
+  "sourceHashes": {
+    "src/backend.mjs": "7c0279c21693108be0eba13b6680a5ecf911856148e955859a5f905410476864",
+    "src/observation.mjs": "ba9625f73d964d6f8fd3b59d7a4da2e8c1940775d028e79a0e411ea84e36f111",
+    "src/policy.mjs": "df3809a3bd82cbabeded0a12152da85a1c87bf6918fe4035d9787d37b3cc455d",
+    "src/tasks.mjs": "7fc253df0b9a8fd0550cf370b14f2e263edc8242f5fe003e2054f59455024ed9",
+    "src/variants.mjs": "1b6e37ffd65a996f6963b5d6e23832062fd345248ceaf1e1c6b215d5b6d73b4f",
+    "src/fixtures.mjs": "05cb4f823537deb8a396aa62ae0d0dd1921a3b5af04a784c4176b190b567fefd",
+    "src/cli.mjs": "467277af59441ed1d15d4c6ef33c439131d4b6f2a1894afe3f9422cfaeead2ea"
+  },
+  "lightpanda": {
+    "sha256": "955440053a84754dd64c62f970449a56a2b350cdf43ea5f2e809a73047b8173d",
+    "version": "1.0.0"
+  },
+  "dependencies": "25.13.0",
+  "verifyEachStep": true
+}

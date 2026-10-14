@@ -1,0 +1,23 @@
+{
+  "name": "agent-browser-comparison-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "doctor": "node src/cli.mjs doctor",
+    "install:lightpanda": "node src/install-lightpanda.mjs",
+    "smoke": "node src/cli.mjs run --policy scripted --repeat 1",
+    "benchmark": "node src/cli.mjs run --policy scripted --repeat 3",
+    "jev": "node src/cli.mjs run --policy jev --repeat 1 --max-calls 30",
+    "serve": "node src/cli.mjs serve",
+    "perf": "node src/perf.mjs",
+    "live": "node src/live.mjs",
+    "live:report": "node src/build-live-report.mjs"
+  },
+  "dependencies": {
+    "puppeteer-core": "25.13.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

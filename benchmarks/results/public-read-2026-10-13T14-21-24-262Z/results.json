@@ -1,0 +1,62 @@
+[
+  {
+    "probe": "playwright",
+    "profile": "chromium-rendered",
+    "status": "PASS",
+    "model": "jev-1.13.0",
+    "latencyMs": 378.54616699999997,
+    "selected": "https://playwright.dev/docs/actionability",
+    "finalUrl": "https://playwright.dev/docs/actionability",
+    "title": "Auto-waiting | Playwright"
+  },
+  {
+    "probe": "playwright",
+    "profile": "lightpanda-enhanced",
+    "status": "PASS",
+    "model": "jev-1.13.0",
+    "latencyMs": 413.74483299999974,
+    "selected": "https://playwright.dev/docs/actionability",
+    "finalUrl": "https://playwright.dev/docs/actionability",
+    "title": "Auto-waiting | Playwright"
+  },
+  {
+    "probe": "typesafe",
+    "profile": "chromium-rendered",
+    "status": "PASS",
+    "model": "jev-1.13.0",
+    "latencyMs": 284.6855000000005,
+    "selected": "https://docs.typesafe.ai/primitives/choice",
+    "finalUrl": "https://docs.typesafe.ai/primitives/choice",
+    "title": "Choice - TypeSafe"
+  },
+  {
+    "probe": "typesafe",
+    "profile": "lightpanda-enhanced",
+    "status": "PASS",
+    "model": "jev-1.13.0",
+    "latencyMs": 288.3093750000007,
+    "selected": "https://docs.typesafe.ai/primitives/choice",
+    "finalUrl": "https://docs.typesafe.ai/primitives/choice",
+    "title": "Choice - TypeSafe"
+  },
+  {
+    "probe": "lightpanda",
+    "profile": "chromium-rendered",
+    "status": "PASS",
+    "model": "jev-1.13.0",
+    "latencyMs": 295.10904200000004,
+    "selected": "https://lightpanda.io/docs/core-concepts/architecture-overview",
+    "finalUrl": "https://lightpanda.io/docs/core-concepts/architecture-overview",
+    "title": "Architecture Overview - Documentation | Lightpanda"
+  },
+  {
+    "probe": "lightpanda",
+    "profile": "lightpanda-enhanced",
+    "status": "PASS",
+    "model": "jev-1.13.0",
+    "latencyMs": 308.8393329999999,
+    "selected": "https://lightpanda.io/docs/core-concepts/architecture-overview",
+    "finalUrl": "https://lightpanda.io/docs/core-concepts/architecture-overview",
+    "title": "Architecture Overview - Documentation | Lightpanda"
+  }
+]

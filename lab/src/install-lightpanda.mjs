@@ -1,0 +1,13 @@
+import {mkdir,writeFile,chmod,readFile,rename} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+if(process.platform!=='darwin'||process.arch!=='arm64')throw Error('This installer pins the tested macOS arm64 binary. Set LIGHTPANDA_PATH for another platform and record its hash.');
+const version='1.0.0',expected='955440053a84754dd64c62f970449a56a2b350cdf43ea5f2e809a73047b8173d';
+const url=`https://github.com/lightpanda-io/browser/releases/download/${version}/lightpanda-aarch64-macos`;
+const response=await fetch(url,{signal:AbortSignal.timeout(60000)});if(!response.ok)throw Error(`Download HTTP ${response.status}`);
+const bytes=Buffer.from(await response.arrayBuffer()),actual=createHash('sha256').update(bytes).digest('hex');
+if(actual!==expected)throw Error('Binary hash mismatch; not installed');
+await mkdir(path.join(root,'bin'),{recursive:true});const temp=path.join(root,'bin/lightpanda.download');await writeFile(temp,bytes);await chmod(temp,0o755);await rename(temp,path.join(root,'bin/lightpanda'));
+console.log(`Installed Lightpanda ${version}; SHA-256 matched lab-pinned binary.`);

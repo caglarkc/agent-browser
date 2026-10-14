@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-13T13-29-12-465Z",
+  "policy": "jev",
+  "repeat": 1,
+  "profiles": [
+    "chromium-rendered",
+    "chromium-semantic",
+    "lightpanda-semantic"
+  ],
+  "tasks": [
+    "menu"
+  ],
+  "order": [
+    {
+      "task": "menu",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    }
+  ],
+  "node": "v25.8.2",
+  "platform": "darwin",
+  "arch": "arm64",
+  "decisionModel": "jev-1.13.0",
+  "endpoint": "typesafe",
+  "maxCalls": 12,
+  "measurement": "Fresh browser per case; startup/navigation included in total; RSS samples are browser tree only, not capacity proof; action settling fixed at 150 ms in all profiles",
+  "visualMode": "Scripted canvas probe has fixture-defined coordinates; Jev has no vision fallback",
+  "sourceHashes": {
+    "src/backend.mjs": "085f663af8758f787e28d6399dff43fd32bc8bd0eda1a97878aaaec45546b356",
+    "src/observation.mjs": "62439bb2dd49e76efd68012c649ac46489a8a37162e4a9c108ddcdde274d64cb",
+    "src/policy.mjs": "d2cffe56414f531642ead4dff52555c38fe69551deb191575b40c3420c1ee2c5",
+    "src/tasks.mjs": "d09bad90ea01c78531cc586c8396143ccd25d393f3512d308dc8d112e19ecc7b",
+    "src/fixtures.mjs": "e406176dc1863e38b41d78efcd8b3fff96dcccf7cc2e89020925d7edcdb8c05e",
+    "src/cli.mjs": "0b4b08755f649977ed258b16e6515cfe6306964e8f86eb9d7824dcb022649d49"
+  },
+  "lightpanda": {
+    "sha256": "955440053a84754dd64c62f970449a56a2b350cdf43ea5f2e809a73047b8173d",
+    "version": "1.0.0"
+  },
+  "dependencies": "25.13.0"
+}

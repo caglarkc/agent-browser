@@ -1,0 +1,42 @@
+{"id": "form-chromium-rendered-1", "step": 0, "dispatch": {"kind": "fill", "label": "Name", "key": "f0n1:fill:"}}
+{"id": "form-chromium-rendered-1", "step": 1, "dispatch": {"kind": "select", "label": "Category → Research", "key": "f0n2:select:research"}}
+{"id": "form-chromium-rendered-1", "step": 2, "dispatch": {"kind": "click", "label": "Accept terms", "key": "f0n3:click:"}}
+{"id": "form-chromium-rendered-1", "step": 3, "dispatch": {"kind": "click", "label": "Submit", "key": "f0n4:click:"}}
+{"id": "form-chromium-semantic-1", "step": 0, "dispatch": {"kind": "fill", "label": "Name", "key": "f0n1:fill:"}}
+{"id": "form-chromium-semantic-1", "step": 1, "dispatch": {"kind": "select", "label": "Category → Research", "key": "f0n2:select:research"}}
+{"id": "form-chromium-semantic-1", "step": 2, "dispatch": {"kind": "click", "label": "Accept terms", "key": "f0n3:click:"}}
+{"id": "form-chromium-semantic-1", "step": 3, "dispatch": {"kind": "click", "label": "Submit", "key": "f0n4:click:"}}
+{"id": "form-lightpanda-semantic-1", "step": 0, "dispatch": {"kind": "fill", "label": "Name", "key": "f0n1:fill:"}}
+{"id": "form-lightpanda-semantic-1", "step": 1, "dispatch": {"kind": "select", "label": "Category → Research", "key": "f0n2:select:research"}}
+{"id": "form-lightpanda-semantic-1", "step": 2, "dispatch": {"kind": "click", "label": "Accept terms", "key": "f0n3:click:"}}
+{"id": "form-lightpanda-semantic-1", "step": 3, "dispatch": {"kind": "click", "label": "Submit", "key": "f0n4:click:"}}
+{"id": "upload-chromium-rendered-1", "step": 0, "dispatch": {"kind": "upload", "label": "Attachment", "key": "f0n1:upload:"}}
+{"id": "upload-chromium-rendered-1", "step": 1, "dispatch": {"kind": "click", "label": "Submit", "key": "f0n2:click:"}}
+{"id": "upload-chromium-semantic-1", "step": 0, "dispatch": {"kind": "upload", "label": "Attachment", "key": "f0n1:upload:"}}
+{"id": "upload-chromium-semantic-1", "step": 1, "dispatch": {"kind": "click", "label": "Submit", "key": "f0n2:click:"}}
+{"id": "upload-lightpanda-semantic-1", "step": 0, "dispatch": {"kind": "upload", "label": "Attachment", "key": "f0n1:upload:"}}
+{"id": "upload-lightpanda-semantic-1", "step": 1, "dispatch": {"kind": "click", "label": "Submit", "key": "f0n2:click:"}}
+{"id": "menu-chromium-rendered-1", "step": 0, "dispatch": {"kind": "click", "label": "Open menu", "key": "f0n1:click:"}}
+{"id": "menu-chromium-rendered-1", "step": 1, "dispatch": {"kind": "click", "label": "Research", "key": "f0n2:click:"}}
+{"id": "menu-chromium-semantic-1", "step": 0, "dispatch": {"kind": "click", "label": "Open menu", "key": "f0n1:click:"}}
+{"id": "menu-chromium-semantic-1", "step": 1, "dispatch": {"kind": "click", "label": "Research", "key": "f0n2:click:"}}
+{"id": "menu-lightpanda-semantic-1", "step": 0, "dispatch": {"kind": "click", "label": "Open menu", "key": "f0n1:click:"}}
+{"id": "menu-lightpanda-semantic-1", "step": 1, "dispatch": {"kind": "click", "label": "Research", "key": "f0n2:click:"}}
+{"id": "overlay-chromium-rendered-1", "step": 0, "dispatch": {"kind": "click", "label": "Dismiss dialog", "key": "f0n1:click:"}}
+{"id": "overlay-chromium-rendered-1", "step": 1, "dispatch": {"kind": "click", "label": "Continue", "key": "f0n2:click:"}}
+{"id": "overlay-chromium-semantic-1", "step": 0, "dispatch": {"kind": "click", "label": "Dismiss dialog", "key": "f0n2:click:"}}
+{"id": "overlay-chromium-semantic-1", "step": 1, "dispatch": {"kind": "click", "label": "Continue", "key": "f0n1:click:"}}
+{"id": "overlay-lightpanda-semantic-1", "step": 0, "dispatch": {"kind": "click", "label": "Dismiss dialog", "key": "f0n2:click:"}}
+{"id": "overlay-lightpanda-semantic-1", "step": 1, "dispatch": {"kind": "click", "label": "Continue", "key": "f0n1:click:"}}
+{"id": "lazy-chromium-rendered-1", "step": 0, "dispatch": {"kind": "scroll", "label": "Scroll down"}}
+{"id": "lazy-chromium-rendered-1", "step": 1, "dispatch": {"kind": "click", "label": "Record 42", "key": "f0n1:click:"}}
+{"id": "lazy-chromium-semantic-1", "step": 0, "dispatch": {"kind": "scroll", "label": "Scroll down"}}
+{"id": "lazy-chromium-semantic-1", "step": 1, "dispatch": {"kind": "click", "label": "Record 42", "key": "f0n1:click:"}}
+{"id": "lazy-lightpanda-semantic-1", "step": 0, "dispatch": {"kind": "scroll", "label": "Scroll down"}}
+{"id": "lazy-lightpanda-semantic-1", "step": 1, "dispatch": {"kind": "click", "label": "Record 42", "key": "f0n1:click:"}}
+{"id": "shadow-chromium-rendered-1", "step": 0, "dispatch": {"kind": "click", "label": "Research", "key": "f0n1:click:"}}
+{"id": "shadow-chromium-semantic-1", "step": 0, "dispatch": {"kind": "click", "label": "Research", "key": "f0n1:click:"}}
+{"id": "shadow-lightpanda-semantic-1", "step": 0, "dispatch": {"kind": "click", "label": "Research", "key": "f0n1:click:"}}
+{"id": "iframe-chromium-rendered-1", "step": 0, "dispatch": {"kind": "click", "label": "Research", "key": "f1n1:click:"}}
+{"id": "iframe-chromium-semantic-1", "step": 0, "dispatch": {"kind": "click", "label": "Research", "key": "f1n1:click:"}}
+{"id": "canvas-chromium-rendered-1", "step": 0, "dispatch": {"kind": "visual", "label": "Blue rectangle"}}

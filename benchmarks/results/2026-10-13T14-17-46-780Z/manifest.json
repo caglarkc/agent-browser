@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-13T14-17-46-780Z",
+  "policy": "jev",
+  "repeat": 2,
+  "profiles": [
+    "lightpanda-enhanced"
+  ],
+  "tasks": [
+    "css-hidden",
+    "pointer",
+    "form",
+    "autocomplete",
+    "records"
+  ],
+  "order": [
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "css-hidden",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "pointer",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "css-hidden",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "pointer",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "autocomplete",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    },
+    {
+      "task": "records",
+      "profile": "lightpanda-enhanced",
+      "iteration": 2
+    }
+  ],
+  "node": "v25.8.2",
+  "platform": "darwin",
+  "arch": "arm64",
+  "decisionModel": "jev-1.13.0",
+  "endpoint": "typesafe",
+  "maxCalls": "unlimited",
+  "imagesSentToModel": 0,
+  "measurement": "Fresh browser per case; startup/navigation included in total; RSS samples are browser tree only, not capacity proof; action settling fixed at 150 ms in all profiles",
+  "visualMode": "Scripted canvas probe has fixture-defined coordinates; Jev has no vision fallback",
+  "sourceHashes": {
+    "src/backend.mjs": "7c0279c21693108be0eba13b6680a5ecf911856148e955859a5f905410476864",
+    "src/observation.mjs": "ee62bff1788e6184da8c857310cf28e50c8559ea5a8c6bd2a3dfc11aed64b384",
+    "src/policy.mjs": "321a155e607a3fb14a3513ca36dba0bee01d05970e99742b43d11d4b0c0e7cc9",
+    "src/tasks.mjs": "22083ea82f20ad87cb696eeb0f73fd65967d909c3d1d04aaa1508bfade2c6454",
+    "src/variants.mjs": "4cafad05e158df006b5d72ffcaa9cdfbafd3b72e7361308ec16a1bd932dd3e6c",
+    "src/fixtures.mjs": "ba66492b3ebfe0a0433f596351b2004ed4534ad9cd1ba0b75da64fab19207a9c",
+    "src/cli.mjs": "7e88d55d9825086955bfc23a715d00d12e62d69aee9a4001abf56b1f63dfbed2"
+  },
+  "lightpanda": {
+    "sha256": "955440053a84754dd64c62f970449a56a2b350cdf43ea5f2e809a73047b8173d",
+    "version": "1.0.0"
+  },
+  "dependencies": "25.13.0"
+}

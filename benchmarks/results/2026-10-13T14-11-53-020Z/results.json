@@ -1,0 +1,554 @@
+[
+  {
+    "id": "read-chromium-rendered-1",
+    "task": "read",
+    "variant": 3,
+    "profile": "chromium-rendered",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 0,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 17.535375000000045,
+    "actionMs": 0,
+    "totalMs": 701.2993749999998,
+    "startupMs": 510.420167,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 20.584499999999935,
+    "lastObservation": {
+      "text": "Product record Pen 39 TRY Product Price Notebook 204 TRY Not saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": false,
+      "commits": 0,
+      "actual": {
+        "price": "39 TRY"
+      }
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab â€” read",
+    "finalUrl": "http://127.0.0.1:54208/fixture/a7ac0b06-1502-411b-8633-1fde9d8a3bbb",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 902447104,
+      "samples": 2,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 167788544
+    },
+    "screenshot": "read-chromium-rendered-1.png",
+    "evidenceMs": 62.65387499999997,
+    "pageErrors": []
+  },
+  {
+    "id": "read-lightpanda-semantic-1",
+    "task": "read",
+    "variant": 3,
+    "profile": "lightpanda-semantic",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 0,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 1.88537499999984,
+    "actionMs": 0,
+    "totalMs": 291.2722080000001,
+    "startupMs": 179.66945899999996,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 2.060416999999916,
+    "lastObservation": {
+      "text": "Product record Pen 39 TRY Product Price Notebook 204 TRY Not saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": false,
+      "commits": 0,
+      "actual": {
+        "price": "39 TRY"
+      }
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab — read",
+    "finalUrl": "http://127.0.0.1:54208/fixture/6a12ba72-ff47-469d-8ca0-78aa28edcdbb",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 26329088,
+      "samples": 1,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 171999232
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-rendered-1",
+    "task": "form",
+    "variant": 3,
+    "profile": "chromium-rendered",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 15.005834000000505,
+    "actionMs": 35.70941700000003,
+    "totalMs": 1140.942625,
+    "startupMs": 466.1008750000001,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 20.11974999999984,
+    "lastObservation": {
+      "text": "Research request Name Category General Market Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "tag": "input",
+          "value": "Selin",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Selin",
+          "category": "market",
+          "terms": true
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:54208/fixture/f23272c6-e24f-411f-b0cf-aee35be87e10",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 920698880,
+      "samples": 7,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 177291264
+    },
+    "screenshot": "form-chromium-rendered-1.png",
+    "evidenceMs": 37.123291000000336,
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-semantic-1",
+    "task": "form",
+    "variant": 3,
+    "profile": "lightpanda-semantic",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 5.819833000000017,
+    "actionMs": 4.5643740000000435,
+    "totalMs": 739.2067910000001,
+    "startupMs": 162.75587499999983,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.709292000000005,
+    "lastObservation": {
+      "text": "Research request Name Category General Market Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "tag": "input",
+          "value": "Selin",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Selin",
+          "category": "market",
+          "terms": true
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:54208/fixture/a6eb870b-57b4-4bba-9673-97ed3226fe9a",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33030144,
+      "samples": 6,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 177487872
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "menu-chromium-rendered-1",
+    "task": "menu",
+    "variant": 3,
+    "profile": "chromium-rendered",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 2,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 17.329456999998,
+    "actionMs": 54.462666000000354,
+    "totalMs": 1478.7598750000002,
+    "startupMs": 460.4465419999997,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 16.89495899999929,
+    "lastObservation": {
+      "text": "Delayed menu Open menu Market Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open menu",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Market",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "market"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” menu",
+    "finalUrl": "http://127.0.0.1:54208/fixture/b8629faa-4418-4c6b-b022-ec62a88ecf3b",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 919289856,
+      "samples": 10,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 178733056
+    },
+    "screenshot": "menu-chromium-rendered-1.png",
+    "evidenceMs": 28.23608299999978,
+    "pageErrors": []
+  },
+  {
+    "id": "menu-lightpanda-semantic-1",
+    "task": "menu",
+    "variant": 3,
+    "profile": "lightpanda-semantic",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 2,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 10.905706999998984,
+    "actionMs": 3.1635409999998956,
+    "totalMs": 1081.6929170000003,
+    "startupMs": 161.6317909999998,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.6473750000004657,
+    "lastObservation": {
+      "text": "Delayed menu Open menu Market Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open menu",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Market",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "market"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab — menu",
+    "finalUrl": "http://127.0.0.1:54208/fixture/4e8d226d-4921-4220-aeea-f41510104bee",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32555008,
+      "samples": 9,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 179503104
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "shadow-chromium-rendered-1",
+    "task": "shadow",
+    "variant": 3,
+    "profile": "chromium-rendered",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 13.989416000001256,
+    "actionMs": 25.822583000000122,
+    "totalMs": 797.0592079999997,
+    "startupMs": 447.3142079999998,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 15.608749999999418,
+    "lastObservation": {
+      "text": "Shadow component Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Market",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "market"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” shadow",
+    "finalUrl": "http://127.0.0.1:54208/fixture/d586946b-fd43-4ec6-87f9-a73956f0cc77",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 907968512,
+      "samples": 4,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 179830784
+    },
+    "screenshot": "shadow-chromium-rendered-1.png",
+    "evidenceMs": 34.61204199999975,
+    "pageErrors": []
+  },
+  {
+    "id": "shadow-lightpanda-semantic-1",
+    "task": "shadow",
+    "variant": 3,
+    "profile": "lightpanda-semantic",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 2.2737080000006245,
+    "actionMs": 1.9254999999993743,
+    "totalMs": 427.01908300000014,
+    "startupMs": 161.17104199999994,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.4657500000002983,
+    "lastObservation": {
+      "text": "Shadow component Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Market",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "market"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab — shadow",
+    "finalUrl": "http://127.0.0.1:54208/fixture/89586fcb-5f2d-483f-bc87-9ff467b5f826",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32456704,
+      "samples": 3,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 211943424
+    },
+    "pageErrors": []
+  }
+]

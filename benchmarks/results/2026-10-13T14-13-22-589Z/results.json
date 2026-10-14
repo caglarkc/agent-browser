@@ -1,0 +1,2391 @@
+[
+  {
+    "id": "read-chromium-rendered-1",
+    "task": "read",
+    "variant": 1,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 0,
+    "modelCalls": 1,
+    "modelLatencyMs": 456.585292,
+    "observeMs": 27.92491599999994,
+    "actionMs": 0,
+    "totalMs": 1563.47175,
+    "startupMs": 857.3981670000001,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 24.4926660000001,
+    "lastObservation": {
+      "text": "Product record Pen 39 TRY Product Price Notebook 130 TRY Not saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "130 TRY"
+      }
+    },
+    "finalTitle": "Browser Lab â€” read",
+    "finalUrl": "http://127.0.0.1:54318/fixture/bb3bb21f-1895-43e9-98e6-ebecb94d9914",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 909656064,
+      "samples": 7,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 202899456
+    },
+    "screenshot": "read-chromium-rendered-1.png",
+    "evidenceMs": 34.273125000000164,
+    "pageErrors": []
+  },
+  {
+    "id": "read-chromium-semantic-1",
+    "task": "read",
+    "variant": 1,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 0,
+    "modelCalls": 1,
+    "modelLatencyMs": 309.3814160000002,
+    "observeMs": 20.046332999999777,
+    "actionMs": 0,
+    "totalMs": 1365.3134999999997,
+    "startupMs": 778.5905839999996,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 51.33295799999996,
+    "lastObservation": {
+      "text": "Product record Pen 39 TRY Product Price Notebook 130 TRY Not saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "130 TRY"
+      }
+    },
+    "finalTitle": "Browser Lab â€” read",
+    "finalUrl": "http://127.0.0.1:54318/fixture/48eaa51b-f1c8-4e47-bd29-a7586a0a0800",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 903413760,
+      "samples": 6,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 209190912
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "read-lightpanda-semantic-1",
+    "task": "read",
+    "variant": 1,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 0,
+    "modelCalls": 1,
+    "modelLatencyMs": 268.5579160000002,
+    "observeMs": 3.283542000000125,
+    "actionMs": 0,
+    "totalMs": 551.588084,
+    "startupMs": 167.24895800000013,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 3.5804159999997864,
+    "lastObservation": {
+      "text": "Product record Pen 39 TRY Product Price Notebook 130 TRY Not saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "130 TRY"
+      }
+    },
+    "finalTitle": "Browser Lab — read",
+    "finalUrl": "http://127.0.0.1:54318/fixture/681dd0a6-8a42-4e65-b5bf-2faedfbaa5eb",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 31965184,
+      "samples": 4,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 209600512
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-rendered-1",
+    "task": "form",
+    "variant": 1,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 5,
+    "modelLatencyMs": 1312.3531679999996,
+    "observeMs": 16.86541699999998,
+    "actionMs": 36.892666000000645,
+    "totalMs": 2634.26275,
+    "startupMs": 474.8336669999999,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 16.179000000000087,
+    "lastObservation": {
+      "text": "Research request Name Category General Design Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "Deniz",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Deniz",
+          "category": "design",
+          "terms": true
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:54318/fixture/7c563921-0002-4769-8cc7-887586a325bc",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 988774400,
+      "samples": 21,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 211681280
+    },
+    "screenshot": "form-chromium-rendered-1.png",
+    "evidenceMs": 57.790750000000116,
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-semantic-1",
+    "task": "form",
+    "variant": 1,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 5,
+    "modelLatencyMs": 1395.3154170000007,
+    "observeMs": 14.995623999998315,
+    "actionMs": 13.668209000000388,
+    "totalMs": 2671.2503749999996,
+    "startupMs": 472.65150000000085,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 20.95879199999945,
+    "lastObservation": {
+      "text": "Research request Name Category General Design Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "Deniz",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Deniz",
+          "category": "design",
+          "terms": true
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:54318/fixture/4d0f9786-1f4e-4a3f-96c9-e90baa398666",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 990887936,
+      "samples": 22,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 200720384
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-semantic-1",
+    "task": "form",
+    "variant": 1,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 5,
+    "modelLatencyMs": 1320.065958000001,
+    "observeMs": 9.512457999999242,
+    "actionMs": 8.232708999999886,
+    "totalMs": 2218.471625,
+    "startupMs": 162.38216699999975,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 2.3082909999993717,
+    "lastObservation": {
+      "text": "Research request Name Category General Design Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "Deniz",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Deniz",
+          "category": "design",
+          "terms": true
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:54318/fixture/d1d71d87-f253-404e-b856-3d77f01297c8",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33570816,
+      "samples": 20,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 202653696
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "menu-chromium-rendered-1",
+    "task": "menu",
+    "variant": 1,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 2,
+    "modelCalls": 4,
+    "modelLatencyMs": 1147.4320830000015,
+    "observeMs": 39.90920799999731,
+    "actionMs": 17.976208000000042,
+    "totalMs": 2559.7214170000007,
+    "startupMs": 753.962207999999,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 33.79183399999965,
+    "lastObservation": {
+      "text": "Delayed menu Open menu Design Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open menu",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Design",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "design"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” menu",
+    "finalUrl": "http://127.0.0.1:54318/fixture/419a340f-707f-4be7-87d1-c7e6d0e59b32",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 918405120,
+      "samples": 18,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 198590464
+    },
+    "screenshot": "menu-chromium-rendered-1.png",
+    "evidenceMs": 56.960291000001234,
+    "pageErrors": []
+  },
+  {
+    "id": "menu-chromium-semantic-1",
+    "task": "menu",
+    "variant": 1,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 2,
+    "modelCalls": 4,
+    "modelLatencyMs": 1041.0817090000055,
+    "observeMs": 26.487457999999606,
+    "actionMs": 7.144457999998849,
+    "totalMs": 2401.8764159999973,
+    "startupMs": 726.2690000000002,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 33.497583000000304,
+    "lastObservation": {
+      "text": "Delayed menu Open menu Design Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open menu",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Design",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "design"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” menu",
+    "finalUrl": "http://127.0.0.1:54318/fixture/b8451bd5-321c-400d-bb3b-5103c1a18b56",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 914194432,
+      "samples": 17,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 198262784
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "menu-lightpanda-semantic-1",
+    "task": "menu",
+    "variant": 1,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 2,
+    "modelCalls": 4,
+    "modelLatencyMs": 1136.609666999997,
+    "observeMs": 4.672458999997616,
+    "actionMs": 3.982084000002942,
+    "totalMs": 1802.7625000000007,
+    "startupMs": 162.47862499999974,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.5560420000001614,
+    "lastObservation": {
+      "text": "Delayed menu Open menu Design Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open menu",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Design",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "design"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab — menu",
+    "finalUrl": "http://127.0.0.1:54318/fixture/3504b165-ebf4-46a9-a4d3-abd3dbb772f5",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32784384,
+      "samples": 16,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 199409664
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-chromium-rendered-1",
+    "task": "autocomplete",
+    "variant": 1,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 619.9111660000017,
+    "observeMs": 9.414375000000291,
+    "actionMs": 14.144541999998182,
+    "totalMs": 1447.5149999999994,
+    "startupMs": 472.80895800000144,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 14.750499999998283,
+    "lastObservation": {
+      "text": "Destination search City Search Not saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "tag": "input",
+          "value": "Berlin",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "reason": "Policy returned BLOCKED",
+    "verification": {
+      "passed": false,
+      "commits": 0,
+      "actual": []
+    },
+    "finalTitle": "Browser Lab â€” autocomplete",
+    "finalUrl": "http://127.0.0.1:54318/fixture/ed007a4b-cf83-4710-a254-886af6ec4187",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 917798912,
+      "samples": 10,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 200015872
+    },
+    "screenshot": "autocomplete-chromium-rendered-1.png",
+    "evidenceMs": 39.72016599999915,
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-chromium-semantic-1",
+    "task": "autocomplete",
+    "variant": 1,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 5,
+    "modelLatencyMs": 1360.7067919999972,
+    "observeMs": 23.99145800000042,
+    "actionMs": 9.63462499999514,
+    "totalMs": 2580.0803750000014,
+    "startupMs": 477.40679100000125,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 24.285209000001487,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "tag": "input",
+          "value": "Berlin",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Berlin",
+          "selected": "Berlin"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” autocomplete",
+    "finalUrl": "http://127.0.0.1:54318/fixture/4ba016f6-ea08-473b-9e2e-176a4fc55464",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 916078592,
+      "samples": 21,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 206159872
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-lightpanda-semantic-1",
+    "task": "autocomplete",
+    "variant": 1,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 692.0454579999969,
+    "observeMs": 2.9407089999986056,
+    "actionMs": 1.9021670000001905,
+    "totalMs": 1121.0512499999968,
+    "startupMs": 163.34499999999753,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.8482909999984258,
+    "lastObservation": {
+      "text": "Destination search City Search Not saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "tag": "input",
+          "value": "Berlin",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "reason": "Policy returned BLOCKED",
+    "verification": {
+      "passed": false,
+      "commits": 0,
+      "actual": []
+    },
+    "finalTitle": "Browser Lab — autocomplete",
+    "finalUrl": "http://127.0.0.1:54318/fixture/bc84caef-daaf-4310-818b-7e262b61dc2e",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32669696,
+      "samples": 10,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 206307328
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "records-chromium-rendered-1",
+    "task": "records",
+    "variant": 1,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 12,
+    "modelCalls": 12,
+    "modelLatencyMs": 3172.6342090000035,
+    "observeMs": 45.25716500000635,
+    "actionMs": 79.93699999999808,
+    "totalMs": 5858.257125,
+    "startupMs": 544.4379580000023,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 27.572790999998688,
+    "lastObservation": {
+      "text": "Case management Case 105 Open Case 106 Open Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open",
+          "context": "Case 105Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Open",
+          "context": "Case 106Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": false,
+      "commits": 12,
+      "actual": [
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        }
+      ]
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab â€” records",
+    "finalUrl": "http://127.0.0.1:54318/fixture/ec65182c-c287-41d8-869d-3b26f06a24f4",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 962297856,
+      "samples": 52,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 195411968
+    },
+    "screenshot": "records-chromium-rendered-1.png",
+    "evidenceMs": 36.56158400000277,
+    "pageErrors": []
+  },
+  {
+    "id": "records-chromium-semantic-1",
+    "task": "records",
+    "variant": 1,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 12,
+    "modelCalls": 12,
+    "modelLatencyMs": 3176.736708999997,
+    "observeMs": 33.619833999993716,
+    "actionMs": 40.514081999990594,
+    "totalMs": 6153.398874999999,
+    "startupMs": 843.1897909999971,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 30.959915999999794,
+    "lastObservation": {
+      "text": "Case management Case 105 Open Case 106 Open Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open",
+          "context": "Case 105Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Open",
+          "context": "Case 106Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": false,
+      "commits": 12,
+      "actual": [
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        }
+      ]
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab â€” records",
+    "finalUrl": "http://127.0.0.1:54318/fixture/2306df56-8c7e-423e-966d-bd76b07a533a",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 932478976,
+      "samples": 53,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 195510272
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "records-lightpanda-semantic-1",
+    "task": "records",
+    "variant": 1,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 12,
+    "modelCalls": 12,
+    "modelLatencyMs": 2944.96020899999,
+    "observeMs": 17.022626000005403,
+    "actionMs": 31.133917000006477,
+    "totalMs": 5085.888625,
+    "startupMs": 163.71312499999476,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.903375000001688,
+    "lastObservation": {
+      "text": "Case management Case 105 Open Case 106 Open Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open",
+          "context": "Case 105Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Open",
+          "context": "Case 106Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": false,
+      "commits": 12,
+      "actual": [
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        },
+        {
+          "record": 105
+        }
+      ]
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab — records",
+    "finalUrl": "http://127.0.0.1:54318/fixture/2e00f5bf-5ef9-49da-b735-187136bc5cde",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33423360,
+      "samples": 49,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 126484480
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "read-chromium-semantic-2",
+    "task": "read",
+    "variant": 2,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 0,
+    "modelCalls": 1,
+    "modelLatencyMs": 245.84387500000594,
+    "observeMs": 25.609167000002344,
+    "actionMs": 0,
+    "totalMs": 1353.4260839999988,
+    "startupMs": 871.6245830000043,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 30.895375000000058,
+    "lastObservation": {
+      "text": "Product record Pen 39 TRY Product Price Notebook 167 TRY Not saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "167 TRY"
+      }
+    },
+    "finalTitle": "Browser Lab â€” read",
+    "finalUrl": "http://127.0.0.1:54318/fixture/2caa6c02-11d6-4f53-82fe-cd5883a64a66",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 905904128,
+      "samples": 5,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 126484480
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "read-lightpanda-semantic-2",
+    "task": "read",
+    "variant": 2,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 0,
+    "modelCalls": 1,
+    "modelLatencyMs": 280.9908330000035,
+    "observeMs": 1.871832999997423,
+    "actionMs": 0,
+    "totalMs": 554.8992499999949,
+    "startupMs": 162.92566600000282,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 2.204375000001164,
+    "lastObservation": {
+      "text": "Product record Pen 39 TRY Product Price Notebook 167 TRY Not saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "167 TRY"
+      }
+    },
+    "finalTitle": "Browser Lab — read",
+    "finalUrl": "http://127.0.0.1:54318/fixture/82faa978-0c98-4a4a-8355-8f7ef20fd6c4",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32178176,
+      "samples": 4,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 126910464
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "read-chromium-rendered-2",
+    "task": "read",
+    "variant": 2,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 0,
+    "modelCalls": 1,
+    "modelLatencyMs": 269.21833300000435,
+    "observeMs": 19.61737500000163,
+    "actionMs": 0,
+    "totalMs": 1147.3358750000043,
+    "startupMs": 561.5822090000001,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 43.05187500000466,
+    "lastObservation": {
+      "text": "Product record Pen 39 TRY Product Price Notebook 167 TRY Not saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "167 TRY"
+      }
+    },
+    "finalTitle": "Browser Lab â€” read",
+    "finalUrl": "http://127.0.0.1:54318/fixture/a92d124d-7864-4008-bf3d-4c7210ccdf55",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 905428992,
+      "samples": 6,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 126631936
+    },
+    "screenshot": "read-chromium-rendered-2.png",
+    "evidenceMs": 43.189542000000074,
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-semantic-2",
+    "task": "form",
+    "variant": 2,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 5,
+    "modelLatencyMs": 1410.154208,
+    "observeMs": 19.95304100001522,
+    "actionMs": 12.657956999995804,
+    "totalMs": 2874.8196250000037,
+    "startupMs": 629.9075000000012,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 30.76208300000144,
+    "lastObservation": {
+      "text": "Research request Name Category General Support Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "Eren",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Eren",
+          "category": "support",
+          "terms": true
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:54318/fixture/a1eacea1-0e31-4289-bb98-486f4b6b8739",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 931397632,
+      "samples": 22,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 126861312
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-semantic-2",
+    "task": "form",
+    "variant": 2,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 5,
+    "modelLatencyMs": 1335.2335820000008,
+    "observeMs": 7.825500999999349,
+    "actionMs": 8.824415999995836,
+    "totalMs": 2232.380124999996,
+    "startupMs": 162.78899999999703,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 2.065999999998894,
+    "lastObservation": {
+      "text": "Research request Name Category General Support Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "Eren",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Eren",
+          "category": "support",
+          "terms": true
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:54318/fixture/8875bb9f-8c77-455d-a090-a8309dd38a99",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33341440,
+      "samples": 21,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 127926272
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-chromium-rendered-2",
+    "task": "form",
+    "variant": 2,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 5,
+    "modelLatencyMs": 1341.1080009999932,
+    "observeMs": 18.99283199999627,
+    "actionMs": 34.1115409999984,
+    "totalMs": 3084.033500000005,
+    "startupMs": 863.6453750000001,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 25.967917000001762,
+    "lastObservation": {
+      "text": "Research request Name Category General Support Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "Eren",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Eren",
+          "category": "support",
+          "terms": true
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” form",
+    "finalUrl": "http://127.0.0.1:54318/fixture/29f1995e-7828-499c-a9a9-1d9081c05dba",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 933429248,
+      "samples": 22,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 114900992
+    },
+    "screenshot": "form-chromium-rendered-2.png",
+    "evidenceMs": 20.270833000002312,
+    "pageErrors": []
+  },
+  {
+    "id": "menu-chromium-semantic-2",
+    "task": "menu",
+    "variant": 2,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 2,
+    "modelCalls": 4,
+    "modelLatencyMs": 1039.5934159999888,
+    "observeMs": 16.456665999998222,
+    "actionMs": 5.321584000004805,
+    "totalMs": 2310.426542000001,
+    "startupMs": 575.3296660000051,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 37.724709000001894,
+    "lastObservation": {
+      "text": "Delayed menu Open menu Support Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open menu",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Support",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "support"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” menu",
+    "finalUrl": "http://127.0.0.1:54318/fixture/8b70fb6d-13c7-46de-85a9-f2fc468a2a3a",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 912719872,
+      "samples": 17,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 115245056
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "menu-lightpanda-semantic-2",
+    "task": "menu",
+    "variant": 2,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 2,
+    "modelCalls": 4,
+    "modelLatencyMs": 970.5046260000017,
+    "observeMs": 4.841999999989639,
+    "actionMs": 3.9967910000050324,
+    "totalMs": 1635.3246660000004,
+    "startupMs": 162.50904099999752,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 2.1434170000065933,
+    "lastObservation": {
+      "text": "Delayed menu Open menu Support Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open menu",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Support",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "support"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab — menu",
+    "finalUrl": "http://127.0.0.1:54318/fixture/783dfba3-3c28-4edc-80f5-3c7dde10080f",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32522240,
+      "samples": 15,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 115834880
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "menu-chromium-rendered-2",
+    "task": "menu",
+    "variant": 2,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 2,
+    "modelCalls": 4,
+    "modelLatencyMs": 1006.2979180000038,
+    "observeMs": 13.933416999992914,
+    "actionMs": 13.951125000006869,
+    "totalMs": 2120.3483750000014,
+    "startupMs": 515.4161669999958,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 26.525125000000116,
+    "lastObservation": {
+      "text": "Delayed menu Open menu Support Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open menu",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Support",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "support"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” menu",
+    "finalUrl": "http://127.0.0.1:54318/fixture/f486f355-87f9-4d88-b370-a93fd68dcd9e",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 917749760,
+      "samples": 16,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 116801536
+    },
+    "screenshot": "menu-chromium-rendered-2.png",
+    "evidenceMs": 39.339458000002196,
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-chromium-semantic-2",
+    "task": "autocomplete",
+    "variant": 2,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 5,
+    "modelLatencyMs": 1270.3027500000098,
+    "observeMs": 12.74904300000344,
+    "actionMs": 9.061415999996825,
+    "totalMs": 2471.881042000001,
+    "startupMs": 476.9156670000011,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 17.556625000004715,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "tag": "input",
+          "value": "Ankara",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Ankara",
+          "selected": "Ankara"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” autocomplete",
+    "finalUrl": "http://127.0.0.1:54318/fixture/778c3780-0d15-42b0-91e2-389177a5ce0b",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 914735104,
+      "samples": 20,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 117735424
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-lightpanda-semantic-2",
+    "task": "autocomplete",
+    "variant": 2,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 5,
+    "modelLatencyMs": 1258.541208000017,
+    "observeMs": 6.518707000010181,
+    "actionMs": 9.300749000009091,
+    "totalMs": 2079.0790419999976,
+    "startupMs": 160.53829199999745,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 2.379625000001397,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "tag": "input",
+          "value": "Ankara",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Ankara",
+          "selected": "Ankara"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab — autocomplete",
+    "finalUrl": "http://127.0.0.1:54318/fixture/6cd90c75-6a16-404a-9530-48df9bb42a6d",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33210368,
+      "samples": 19,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 118358016
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-chromium-rendered-2",
+    "task": "autocomplete",
+    "variant": 2,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "FAIL",
+    "steps": 3,
+    "modelCalls": 4,
+    "modelLatencyMs": 1598.2837090000103,
+    "observeMs": 13.132833000010578,
+    "actionMs": 23.838623999996344,
+    "totalMs": 2744.7087089999986,
+    "startupMs": 494.1724580000009,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 17.30608399999619,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "tag": "input",
+          "value": "Ankara",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": false,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Ankara",
+          "selected": ""
+        }
+      ]
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab â€” autocomplete",
+    "finalUrl": "http://127.0.0.1:54318/fixture/ac392aa5-c586-4396-ab68-0711ff1b2988",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 941293568,
+      "samples": 22,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 118390784
+    },
+    "screenshot": "autocomplete-chromium-rendered-2.png",
+    "evidenceMs": 32.18191699999443,
+    "pageErrors": []
+  },
+  {
+    "id": "records-chromium-semantic-2",
+    "task": "records",
+    "variant": 2,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "FAIL",
+    "steps": 12,
+    "modelCalls": 12,
+    "modelLatencyMs": 3632.681415999992,
+    "observeMs": 20.163832999998704,
+    "actionMs": 41.19862300000386,
+    "totalMs": 6157.144041000007,
+    "startupMs": 475.5376669999969,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 17.155209000004106,
+    "lastObservation": {
+      "text": "Case management Case 107 Open Case 106 Open Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open",
+          "context": "Case 107Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Open",
+          "context": "Case 106Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": false,
+      "commits": 12,
+      "actual": [
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        }
+      ]
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab â€” records",
+    "finalUrl": "http://127.0.0.1:54318/fixture/a8cabf21-ebfe-430c-9c23-c4e8a919ec95",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 989151232,
+      "samples": 56,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 127909888
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "records-lightpanda-semantic-2",
+    "task": "records",
+    "variant": 2,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "FAIL",
+    "steps": 12,
+    "modelCalls": 12,
+    "modelLatencyMs": 3284.927207999979,
+    "observeMs": 14.801875999983167,
+    "actionMs": 25.396291000011843,
+    "totalMs": 5421.361416999993,
+    "startupMs": 161.846166000003,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.846917000002577,
+    "lastObservation": {
+      "text": "Case management Case 107 Open Case 106 Open Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open",
+          "context": "Case 107Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Open",
+          "context": "Case 106Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": false,
+      "commits": 12,
+      "actual": [
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        }
+      ]
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab — records",
+    "finalUrl": "http://127.0.0.1:54318/fixture/11530655-e83f-40a1-85f3-44a1945a2801",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33325056,
+      "samples": 52,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 141000704
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "records-chromium-rendered-2",
+    "task": "records",
+    "variant": 2,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "FAIL",
+    "steps": 12,
+    "modelCalls": 12,
+    "modelLatencyMs": 3396.193707999977,
+    "observeMs": 23.77658300001349,
+    "actionMs": 73.37795600002573,
+    "totalMs": 5946.173167000001,
+    "startupMs": 471.208083000005,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 15.871500000008382,
+    "lastObservation": {
+      "text": "Case management Case 107 Open Case 106 Open Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open",
+          "context": "Case 107Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Open",
+          "context": "Case 106Open",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": false,
+      "commits": 12,
+      "actual": [
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        },
+        {
+          "record": 106
+        }
+      ]
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab â€” records",
+    "finalUrl": "http://127.0.0.1:54318/fixture/949050e0-b46b-4c97-98e1-ee20e535e45b",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 925892608,
+      "samples": 54,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 142573568
+    },
+    "screenshot": "records-chromium-rendered-2.png",
+    "evidenceMs": 38.2817500000092,
+    "pageErrors": []
+  }
+]

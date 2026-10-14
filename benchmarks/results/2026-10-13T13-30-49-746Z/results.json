@@ -1,0 +1,230 @@
+[
+  {
+    "id": "css-hidden-chromium-rendered-1",
+    "task": "css-hidden",
+    "profile": "chromium-rendered",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 12.590540999999916,
+    "actionMs": 15.272666999999956,
+    "totalMs": 894.824333,
+    "startupMs": 512.925958,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 15.069208000000003,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "research"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” css-hidden",
+    "finalUrl": "http://127.0.0.1:51548/fixture/d3782e58-d1dd-4962-b1bc-21d884b4ebcc",
+    "screenshot": "css-hidden-chromium-rendered-1.png",
+    "pageErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 908345344,
+      "samples": 4,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 169082880
+    }
+  },
+  {
+    "id": "css-hidden-chromium-semantic-1",
+    "task": "css-hidden",
+    "profile": "chromium-semantic",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 1,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 4.548082999999906,
+    "actionMs": 19.490999999999985,
+    "totalMs": 741.5434160000002,
+    "startupMs": 416.0988339999999,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 13.846125000000029,
+    "verification": {
+      "passed": false,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "hidden-wrong"
+        }
+      ]
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab â€” css-hidden",
+    "finalUrl": "http://127.0.0.1:51548/fixture/b1a6e74d-7d98-4d03-bd8f-61af55bf03c8",
+    "pageErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 904036352,
+      "samples": 3,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 171655168
+    }
+  },
+  {
+    "id": "css-hidden-lightpanda-semantic-1",
+    "task": "css-hidden",
+    "profile": "lightpanda-semantic",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 1,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 3.760917000000063,
+    "actionMs": 2.093249999999898,
+    "totalMs": 449.8878749999999,
+    "startupMs": 179.20291599999973,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 3.8680420000000595,
+    "verification": {
+      "passed": false,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "hidden-wrong"
+        }
+      ]
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab — css-hidden",
+    "finalUrl": "http://127.0.0.1:51548/fixture/4f6f38b6-2573-4151-8edf-a687b3190aaf",
+    "pageErrors": [],
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32423936,
+      "samples": 3,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 177029120
+    }
+  },
+  {
+    "id": "pointer-chromium-rendered-1",
+    "task": "pointer",
+    "profile": "chromium-rendered",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 20.062332999999853,
+    "actionMs": 13.543333000000075,
+    "totalMs": 795.8753749999996,
+    "startupMs": 416.384583,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 15.127916999999798,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "research"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” pointer",
+    "finalUrl": "http://127.0.0.1:51548/fixture/462e0cbb-ea8c-4928-a6c6-7d3e5ebfa008",
+    "screenshot": "pointer-chromium-rendered-1.png",
+    "pageErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 912523264,
+      "samples": 4,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 177422336
+    }
+  },
+  {
+    "id": "pointer-chromium-semantic-1",
+    "task": "pointer",
+    "profile": "chromium-semantic",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 1,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 6.671833000000333,
+    "actionMs": 13.78387500000008,
+    "totalMs": 730.2972500000005,
+    "startupMs": 408.408375,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 13.476415999999517,
+    "verification": {
+      "passed": false,
+      "commits": 0,
+      "actual": []
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab â€” pointer",
+    "finalUrl": "http://127.0.0.1:51548/fixture/7ea14001-b250-488d-b89d-3b58bea86c6d",
+    "pageErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 901529600,
+      "samples": 3,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 177946624
+    }
+  },
+  {
+    "id": "pointer-lightpanda-semantic-1",
+    "task": "pointer",
+    "profile": "lightpanda-semantic",
+    "policy": "scripted",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 1,
+    "modelCalls": 0,
+    "modelLatencyMs": 0,
+    "observeMs": 2.030499000000418,
+    "actionMs": 0.8989579999997659,
+    "totalMs": 423.9668750000001,
+    "startupMs": 159.45258300000023,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.7927500000005239,
+    "verification": {
+      "passed": false,
+      "commits": 0,
+      "actual": []
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab — pointer",
+    "finalUrl": "http://127.0.0.1:51548/fixture/a166c73c-0e68-42de-b71e-c08159baabca",
+    "pageErrors": [],
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32096256,
+      "samples": 3,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 178683904
+    }
+  }
+]

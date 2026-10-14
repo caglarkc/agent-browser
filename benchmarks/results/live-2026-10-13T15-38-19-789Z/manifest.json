@@ -1,0 +1,205 @@
+{
+  "tasks": [
+    {
+      "site": "books",
+      "level": 1,
+      "url": "https://books.toscrape.com/",
+      "goal": "Open the product detail page for A Light in the Attic, then report its price in GBP.",
+      "expected": "/catalogue/a-light-in-the-attic_1000/index.html",
+      "price": true,
+      "id": "books-0"
+    },
+    {
+      "site": "books",
+      "level": 1,
+      "url": "https://books.toscrape.com/",
+      "goal": "Open the product detail page for Tipping the Velvet, then report its price in GBP.",
+      "expected": "/catalogue/tipping-the-velvet_999/index.html",
+      "price": true,
+      "id": "books-1"
+    },
+    {
+      "site": "quotes-js",
+      "level": 2,
+      "url": "https://quotes.toscrape.com/js/",
+      "goal": "Navigate to page 2 of the JavaScript quote collection.",
+      "expected": "/js/page/2/",
+      "id": "quotes-js-2"
+    },
+    {
+      "site": "quotes-js",
+      "level": 2,
+      "url": "https://quotes.toscrape.com/js/",
+      "goal": "Navigate to page 3 of the JavaScript quote collection.",
+      "expected": "/js/page/3/",
+      "id": "quotes-js-3"
+    },
+    {
+      "site": "python",
+      "level": 2,
+      "url": "https://docs.python.org/3/library/index.html",
+      "goal": "Find and open the asyncio module documentation from this library index.",
+      "expected": "/3/library/asyncio.html",
+      "id": "python-4"
+    },
+    {
+      "site": "python",
+      "level": 2,
+      "url": "https://docs.python.org/3/library/index.html",
+      "goal": "Find and open the pathlib module documentation from this library index.",
+      "expected": "/3/library/pathlib.html",
+      "id": "python-5"
+    },
+    {
+      "site": "mdn",
+      "level": 3,
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects",
+      "goal": "Open the reference page specifically for the Promise built-in object.",
+      "expected": "/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+      "id": "mdn-6"
+    },
+    {
+      "site": "mdn",
+      "level": 3,
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects",
+      "goal": "Open the reference page specifically for the Array built-in object.",
+      "expected": "/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+      "id": "mdn-7"
+    },
+    {
+      "site": "ajax-oscars",
+      "level": 3,
+      "url": "https://www.scrapethissite.com/pages/ajax-javascript/",
+      "goal": "Load the Oscar films for 2015 and wait until the film results are visible.",
+      "year": 2015,
+      "id": "ajax-oscars-8"
+    },
+    {
+      "site": "ajax-oscars",
+      "level": 3,
+      "url": "https://www.scrapethissite.com/pages/ajax-javascript/",
+      "goal": "Load the Oscar films for 2014 and wait until the film results are visible.",
+      "year": 2014,
+      "id": "ajax-oscars-9"
+    },
+    {
+      "site": "github",
+      "level": 4,
+      "url": "https://github.com/react/react/issues",
+      "goal": "Show closed issues in this repository's Issues view.",
+      "status": "Closed",
+      "id": "github-10"
+    },
+    {
+      "site": "github",
+      "level": 4,
+      "url": "https://github.com/react/react/issues?q=is%3Aissue%20is%3Aclosed",
+      "goal": "Show open issues in this repository's Issues view.",
+      "status": "Open",
+      "id": "github-11"
+    },
+    {
+      "site": "osm",
+      "level": 5,
+      "url": "https://www.openstreetmap.org/way/5013364",
+      "goal": "Open the current Eiffel Tower way object\u2019s own History view showing its revisions. The global recent map edits page does not satisfy this goal.",
+      "expected": "/way/5013364/history",
+      "id": "osm-12"
+    },
+    {
+      "site": "osm",
+      "level": 5,
+      "url": "https://www.openstreetmap.org/way/5013364/history",
+      "goal": "Return from the Eiffel Tower way object\u2019s history to its current-version Details view.",
+      "expected": "/way/5013364",
+      "id": "osm-13"
+    }
+  ],
+  "modes": [
+    "chromium-dom",
+    "chromium-ocr",
+    "lightpanda-dom"
+  ],
+  "oracle": {
+    "books-0": {
+      "price": "\u00a351.77"
+    },
+    "books-1": {
+      "price": "\u00a353.74"
+    },
+    "quotes-js-2": {},
+    "quotes-js-3": {},
+    "python-4": {},
+    "python-5": {},
+    "mdn-6": {},
+    "mdn-7": {},
+    "ajax-oscars-8": {
+      "titles": [
+        "Spotlight  ",
+        "Mad Max: Fury Road ",
+        "The Revenant   ",
+        "Bridge of Spies",
+        "The Big Short  ",
+        "The Danish Girl",
+        "Room   ",
+        "Ex Machina ",
+        "The Hateful Eight  ",
+        "Inside Out ",
+        "Amy",
+        "Bear Story ",
+        "A Girl in the River: The Price of Forgiveness  ",
+        "Son of Saul",
+        "Spectre",
+        "Stutterer  "
+      ]
+    },
+    "ajax-oscars-9": {
+      "titles": [
+        "Birdman",
+        "The Grand Budapest Hotel",
+        "Whiplash",
+        "The Imitation Game",
+        "American Sniper",
+        "Boyhood",
+        "Interstellar",
+        "The Theory of Everything",
+        "Ida",
+        "Selma",
+        "Citizenfour",
+        "Big Hero 6",
+        "Crisis Hotline: Veterans Press 1",
+        "The Phone Call",
+        "Still Alice",
+        "Feast"
+      ]
+    },
+    "github-10": {},
+    "github-11": {},
+    "osm-12": {},
+    "osm-13": {}
+  },
+  "policy": "JEV only; no image sent to JEV; OCR local Apple Vision",
+  "timeoutMs": 35000,
+  "maxDecisions": 14,
+  "repeat": 2,
+  "memory": "100ms sampled process-tree physical footprint and RSS; browser+OCR+Node; remote API excluded",
+  "scope": "Live navigation, book price extraction and AJAX table validation. No search-field, authentication, upload, writing or map interpretation tasks. Complexity ratings describe site characteristics, not universal task difficulty.",
+  "versions": {
+    "node": "v25.8.2",
+    "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "chromium": "155.0.8059.40",
+    "lightpanda": "1.0.0",
+    "model": "jev-1.13.0"
+  },
+  "sha256": {
+    "artifacts/live-2026-10-13T15-38-19-789Z/sources/metrics.mjs": "01f137cc3d0fb1b011a4b834af2d2641b47dc4d915f29bb791ba040080d611eb",
+    "artifacts/live-2026-10-13T15-38-19-789Z/sources/backend.mjs": "7c0279c21693108be0eba13b6680a5ecf911856148e955859a5f905410476864",
+    "artifacts/live-2026-10-13T15-38-19-789Z/sources/live.mjs": "43be5a5c8b3f727a674650c6cc416176f7a516a3cd84b01aff6f0bbaca77aba4",
+    "artifacts/live-2026-10-13T15-38-19-789Z/sources/policy.mjs": "e5cc94c45242ffe7a55e580338539eb05dfa255cae288a6d196d3ddf3646e4ba",
+    "artifacts/live-2026-10-13T15-38-19-789Z/sources/ocr-client.mjs": "fce26539673af62aa1216a0006ecb07a0a4fefb1b271bb99e88c35276eb2c97b",
+    "package-lock.json": "bb3dfffdd7a8d802d13c6c513d2c0819f7cae86a4550997f672f609ba1663e41",
+    "bin/lightpanda": "955440053a84754dd64c62f970449a56a2b350cdf43ea5f2e809a73047b8173d",
+    "bin/browser-lab-ocr": "e5d9850ebde985413d951ff06be3022b85bf2ecc10f6d245df3a69c05a0519d5",
+    "bin/browser-lab-memprobe": "14544592e73b3415ca6e9a9764f66c7f87c22d635e1cd4041c911b797432d420"
+  }
+}

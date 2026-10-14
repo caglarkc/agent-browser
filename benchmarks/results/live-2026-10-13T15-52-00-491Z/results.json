@@ -1,0 +1,1573 @@
+[
+  {
+    "id": "books-0",
+    "site": "books",
+    "level": 1,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 3575.9465839999993,
+      "loadMs": 1791.1082080000006,
+      "observeMs": 12.158207999999831,
+      "jevMs": 615.3837079999985,
+      "actionMs": 948.0610420000012,
+      "verifyMs": 14.697583000000122
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+    "finalEvidence": {
+      "title": "A Light in the Attic | Books to Scrape - Sandbox",
+      "headings": [
+        "A Light in the Attic",
+        "Product Description",
+        "Product Information"
+      ],
+      "text": "Books to Scrape We love being scraped! Home Books Poetry A Light in the Attic A Light in the Attic £51.77 In stock (22 available) Warning! This is a demo website for web scraping purposes. Prices and ratings here were randomly assigned and have no real meaning. Product Description It's hard to imagine a world without A Light in the Attic. This now-classic collection of poetry and drawings from Shel Silverstein celebrates its 20th anniversary with this special edition. Silverstein's humorous and creative verse can amuse the dowdiest of readers. Lemon-faced adults and fidgety kids sit still and read these rhythmic words and laugh and smile and love th It's hard to imagine a world without A Light in the Attic. This now-classic collection of poetry and drawings from Shel Silverstein celebrates its 20th anniversary with this special edition. Silverstein's humorous and creative verse can amuse the dowdiest of readers. Lemon-faced adults and fidgety kids sit still and read these rhythmic words and laugh and smile and love that Silverstein. Need proof of his genius? RockabyeRockabye baby, in the treetopDon't you know a treetopIs no safe place to rock?And who put you up there,And your cradle, too?Baby, I think someone down here'sGot it in for you. Shel, you never sounded so good. ...more Product Information UPC a897fe39b1053632 Product Type Books Price (excl. tax) £51.77 Price (incl. tax) £51.77 Tax £0.00 Availability In stock (22 available) Number of reviews 0"
+    },
+    "reported": "£51.77",
+    "elapsedMs": 6972.618917,
+    "memory": {
+      "samples": 29,
+      "browserPeakFootprintBytes": 389243280,
+      "pipelinePeakFootprintBytes": 438794616,
+      "pipelinePeakRssBytes": 1067859968
+    }
+  },
+  {
+    "id": "books-0",
+    "site": "books",
+    "level": 1,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 3133.0285000000003,
+      "loadMs": 1773.741833,
+      "observeMs": 2587.376333,
+      "jevMs": 667.1805830000012,
+      "actionMs": 536.4971240000013,
+      "verifyMs": 11.216334000000643
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+    "finalEvidence": {
+      "title": "A Light in the Attic | Books to Scrape - Sandbox",
+      "headings": [
+        "A Light in the Attic",
+        "Product Description",
+        "Product Information"
+      ],
+      "text": "Books to Scrape We love being scraped! Home Books Poetry A Light in the Attic A Light in the Attic £51.77 In stock (22 available) Warning! This is a demo website for web scraping purposes. Prices and ratings here were randomly assigned and have no real meaning. Product Description It's hard to imagine a world without A Light in the Attic. This now-classic collection of poetry and drawings from Shel Silverstein celebrates its 20th anniversary with this special edition. Silverstein's humorous and creative verse can amuse the dowdiest of readers. Lemon-faced adults and fidgety kids sit still and read these rhythmic words and laugh and smile and love th It's hard to imagine a world without A Light in the Attic. This now-classic collection of poetry and drawings from Shel Silverstein celebrates its 20th anniversary with this special edition. Silverstein's humorous and creative verse can amuse the dowdiest of readers. Lemon-faced adults and fidgety kids sit still and read these rhythmic words and laugh and smile and love that Silverstein. Need proof of his genius? RockabyeRockabye baby, in the treetopDon't you know a treetopIs no safe place to rock?And who put you up there,And your cradle, too?Baby, I think someone down here'sGot it in for you. Shel, you never sounded so good. ...more Product Information UPC a897fe39b1053632 Product Type Books Price (excl. tax) £51.77 Price (incl. tax) £51.77 Tax £0.00 Availability In stock (22 available) Number of reviews 0"
+    },
+    "reported": "£51.77",
+    "elapsedMs": 8721.064874999998,
+    "memory": {
+      "samples": 39,
+      "browserPeakFootprintBytes": 404841232,
+      "pipelinePeakFootprintBytes": 539279272,
+      "pipelinePeakRssBytes": 1205141504
+    }
+  },
+  {
+    "id": "books-0",
+    "site": "books",
+    "level": 1,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 448.2980839999982,
+      "loadMs": 1376.1755830000002,
+      "observeMs": 14.912667000004149,
+      "jevMs": 639.7412500000028,
+      "actionMs": 459.0544160000027,
+      "verifyMs": 33.703333999997994
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+    "finalEvidence": {
+      "title": "A Light in the Attic | Books to Scrape - Sandbox",
+      "headings": [
+        "A Light in the Attic",
+        "Product Description",
+        "Product Information"
+      ],
+      "text": "Books to Scrape We love being scraped! Home Books Poetry A Light in the Attic A Light in the Attic £51.77 In stock (22 available) Warning! This is a demo website for web scraping purposes. Prices and ratings here were randomly assigned and have no real meaning. Product Description It's hard to imagine a world without A Light in the Attic. This now-classic collection of poetry and drawings from Shel Silverstein celebrates its 20th anniversary with this special edition. Silverstein's humorous and creative verse can amuse the dowdiest of readers. Lemon-faced adults and fidgety kids sit still and read these rhythmic words and laugh and smile and love th It's hard to imagine a world without A Light in the Attic. This now-classic collection of poetry and drawings from Shel Silverstein celebrates its 20th anniversary with this special edition. Silverstein's humorous and creative verse can amuse the dowdiest of readers. Lemon-faced adults and fidgety kids sit still and read these rhythmic words and laugh and smile and love that Silverstein. Need proof of his genius? RockabyeRockabye baby, in the treetopDon't you know a treetopIs no safe place to rock?And who put you up there,And your cradle, too?Baby, I think someone down here'sGot it in for you. Shel, you never sounded so good. ...more Product Information UPC a897fe39b1053632 Product Type Books Price (excl. tax) £51.77 Price (incl. tax) £51.77 Tax £0.00 Availability In stock (22 available) Number of reviews 0"
+    },
+    "reported": "£51.77",
+    "elapsedMs": 2974.6962920000005,
+    "memory": {
+      "samples": 26,
+      "browserPeakFootprintBytes": 18006832,
+      "pipelinePeakFootprintBytes": 72424720,
+      "pipelinePeakRssBytes": 160464896
+    }
+  },
+  {
+    "id": "books-1",
+    "site": "books",
+    "level": 1,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 2788.6874160000007,
+      "loadMs": 1800.8698750000003,
+      "observeMs": 2493.234833999999,
+      "jevMs": 753.9900410000009,
+      "actionMs": 537.8290420000012,
+      "verifyMs": 34.391874999997526
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
+    "finalEvidence": {
+      "title": "Tipping the Velvet | Books to Scrape - Sandbox",
+      "headings": [
+        "Tipping the Velvet",
+        "Product Description",
+        "Product Information",
+        "Products you recently viewed"
+      ],
+      "text": "Books to Scrape We love being scraped! Home Books Historical Fiction Tipping the Velvet Tipping the Velvet £53.74 In stock (20 available) Warning! This is a demo website for web scraping purposes. Prices and ratings here were randomly assigned and have no real meaning. Product Description \"Erotic and absorbing...Written with starling power.\"--\"The New York Times Book Review \" Nan King, an oyster girl, is captivated by the music hall phenomenon Kitty Butler, a male impersonator extraordinaire treading the boards in Canterbury. Through a friend at the box office, Nan manages to visit all her shows and finally meet her heroine. Soon after, she becomes Kitty's \"Erotic and absorbing...Written with starling power.\"--\"The New York Times Book Review \" Nan King, an oyster girl, is captivated by the music hall phenomenon Kitty Butler, a male impersonator extraordinaire treading the boards in Canterbury. Through a friend at the box office, Nan manages to visit all her shows and finally meet her heroine. Soon after, she becomes Kitty's dresser and the two head for the bright lights of Leicester Square where they begin a glittering career as music-hall stars in an all-singing and dancing double act. At the same time, behind closed doors, they admit their attraction to each other and their affair begins. ...more Product Information UPC 90fa61229261140a Product Type Books Price (excl. tax) £53.74 Price (incl. tax) £53.74 Tax £0.00 Availability In stock (20 available) Number of reviews 0 Pro"
+    },
+    "reported": "£53.74",
+    "elapsedMs": 8411.207458,
+    "memory": {
+      "samples": 39,
+      "browserPeakFootprintBytes": 402940424,
+      "pipelinePeakFootprintBytes": 564021152,
+      "pipelinePeakRssBytes": 1217986560
+    }
+  },
+  {
+    "id": "books-1",
+    "site": "books",
+    "level": 1,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 368.6319169999988,
+      "loadMs": 1379.8056249999972,
+      "observeMs": 16.897958999994444,
+      "jevMs": 571.7310010000074,
+      "actionMs": 459.45012499999575,
+      "verifyMs": 23.26383199999691
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
+    "finalEvidence": {
+      "title": "Tipping the Velvet | Books to Scrape - Sandbox",
+      "headings": [
+        "Tipping the Velvet",
+        "Product Description",
+        "Product Information",
+        "Products you recently viewed"
+      ],
+      "text": "Books to Scrape We love being scraped! Home Books Historical Fiction Tipping the Velvet Tipping the Velvet £53.74 In stock (20 available) Warning! This is a demo website for web scraping purposes. Prices and ratings here were randomly assigned and have no real meaning. Product Description \"Erotic and absorbing...Written with starling power.\"--\"The New York Times Book Review \" Nan King, an oyster girl, is captivated by the music hall phenomenon Kitty Butler, a male impersonator extraordinaire treading the boards in Canterbury. Through a friend at the box office, Nan manages to visit all her shows and finally meet her heroine. Soon after, she becomes Kitty's \"Erotic and absorbing...Written with starling power.\"--\"The New York Times Book Review \" Nan King, an oyster girl, is captivated by the music hall phenomenon Kitty Butler, a male impersonator extraordinaire treading the boards in Canterbury. Through a friend at the box office, Nan manages to visit all her shows and finally meet her heroine. Soon after, she becomes Kitty's dresser and the two head for the bright lights of Leicester Square where they begin a glittering career as music-hall stars in an all-singing and dancing double act. At the same time, behind closed doors, they admit their attraction to each other and their affair begins. ...more Product Information UPC 90fa61229261140a Product Type Books Price (excl. tax) £53.74 Price (incl. tax) £53.74 Tax £0.00 Availability In stock (20 available) Number of reviews 0 Pro"
+    },
+    "reported": "£53.74",
+    "elapsedMs": 2823.0849170000038,
+    "memory": {
+      "samples": 25,
+      "browserPeakFootprintBytes": 17892096,
+      "pipelinePeakFootprintBytes": 87860800,
+      "pipelinePeakRssBytes": 174522368
+    }
+  },
+  {
+    "id": "books-1",
+    "site": "books",
+    "level": 1,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 3000.363749999997,
+      "loadMs": 1688.0415830000056,
+      "observeMs": 14.334332999998878,
+      "jevMs": 594.1779160000006,
+      "actionMs": 861.5701259999987,
+      "verifyMs": 13.179126000002725
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
+    "finalEvidence": {
+      "title": "Tipping the Velvet | Books to Scrape - Sandbox",
+      "headings": [
+        "Tipping the Velvet",
+        "Product Description",
+        "Product Information",
+        "Products you recently viewed"
+      ],
+      "text": "Books to Scrape We love being scraped! Home Books Historical Fiction Tipping the Velvet Tipping the Velvet £53.74 In stock (20 available) Warning! This is a demo website for web scraping purposes. Prices and ratings here were randomly assigned and have no real meaning. Product Description \"Erotic and absorbing...Written with starling power.\"--\"The New York Times Book Review \" Nan King, an oyster girl, is captivated by the music hall phenomenon Kitty Butler, a male impersonator extraordinaire treading the boards in Canterbury. Through a friend at the box office, Nan manages to visit all her shows and finally meet her heroine. Soon after, she becomes Kitty's \"Erotic and absorbing...Written with starling power.\"--\"The New York Times Book Review \" Nan King, an oyster girl, is captivated by the music hall phenomenon Kitty Butler, a male impersonator extraordinaire treading the boards in Canterbury. Through a friend at the box office, Nan manages to visit all her shows and finally meet her heroine. Soon after, she becomes Kitty's dresser and the two head for the bright lights of Leicester Square where they begin a glittering career as music-hall stars in an all-singing and dancing double act. At the same time, behind closed doors, they admit their attraction to each other and their affair begins. ...more Product Information UPC 90fa61229261140a Product Type Books Price (excl. tax) £53.74 Price (incl. tax) £53.74 Tax £0.00 Availability In stock (20 available) Number of reviews 0 Pro"
+    },
+    "reported": "£53.74",
+    "elapsedMs": 6174.657083999999,
+    "memory": {
+      "samples": 29,
+      "browserPeakFootprintBytes": 395108848,
+      "pipelinePeakFootprintBytes": 466978432,
+      "pipelinePeakRssBytes": 1091420160
+    }
+  },
+  {
+    "id": "quotes-js-2",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 795.4662499999977,
+      "loadMs": 1373.2281670000011,
+      "observeMs": 4.450583999998344,
+      "jevMs": 252.53366699999606,
+      "actionMs": 483.9920839999977,
+      "verifyMs": 49.0438340000037
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/page/2/",
+    "finalEvidence": {
+      "title": "Quotes to Scrape",
+      "headings": [
+        "Quotes to Scrape"
+      ],
+      "text": "Quotes to Scrape Login “This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.”by Marilyn Monroe Tags: friends heartbreak inspirational life love sisters “It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.”by J.K. Rowling Tags: courage friends “If you can't explain it to a six year old, you don't understand it yourself.”by Albert Einstein Tags: simplicity understand “You may not be her first, her last, or her only"
+    },
+    "elapsedMs": 2960.593832999999,
+    "memory": {
+      "samples": 15,
+      "browserPeakFootprintBytes": 13959960,
+      "pipelinePeakFootprintBytes": 86468592,
+      "pipelinePeakRssBytes": 172163072
+    }
+  },
+  {
+    "id": "quotes-js-2",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 5078.631125,
+      "loadMs": 1903.8209170000046,
+      "observeMs": 13.550165999993624,
+      "jevMs": 452.4744159999973,
+      "actionMs": 1046.4835410000014,
+      "verifyMs": 19.652083000000857
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/page/2/",
+    "finalEvidence": {
+      "title": "Quotes to Scrape",
+      "headings": [
+        "Quotes to Scrape"
+      ],
+      "text": "Quotes to Scrape Login “This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.” by Marilyn Monroe Tags: friends heartbreak inspirational life love sisters “It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.” by J.K. Rowling Tags: courage friends “If you can't explain it to a six year old, you don't understand it yourself.” by Albert Einstein Tags: simplicity understand “You may not be her first, her last, or her o"
+    },
+    "elapsedMs": 8517.748040999999,
+    "memory": {
+      "samples": 16,
+      "browserPeakFootprintBytes": 366485928,
+      "pipelinePeakFootprintBytes": 415203024,
+      "pipelinePeakRssBytes": 1029816320
+    }
+  },
+  {
+    "id": "quotes-js-2",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 5685.843708,
+      "loadMs": 1721.3661670000001,
+      "observeMs": 5907.759873999996,
+      "jevMs": 1050.8055840000088,
+      "actionMs": 1198.9090829999695,
+      "verifyMs": 223.3347489999869
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/page/2/",
+    "finalEvidence": {
+      "title": "Quotes to Scrape",
+      "headings": [
+        "Quotes to Scrape"
+      ],
+      "text": "Quotes to Scrape Login “This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.” by Marilyn Monroe Tags: friends heartbreak inspirational life love sisters “It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.” by J.K. Rowling Tags: courage friends “If you can't explain it to a six year old, you don't understand it yourself.” by Albert Einstein Tags: simplicity understand “You may not be her first, her last, or her o"
+    },
+    "elapsedMs": 15802.224124999993,
+    "memory": {
+      "samples": 41,
+      "browserPeakFootprintBytes": 377610640,
+      "pipelinePeakFootprintBytes": 500286048,
+      "pipelinePeakRssBytes": 1115045888
+    }
+  },
+  {
+    "id": "quotes-js-3",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 5849.507125000004,
+      "loadMs": 1864.7062920000026,
+      "observeMs": 33.83575000001292,
+      "jevMs": 723.9692920000089,
+      "actionMs": 1787.6769170000043,
+      "verifyMs": 36.98945799998182
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/page/3/",
+    "finalEvidence": {
+      "title": "Quotes to Scrape",
+      "headings": [
+        "Quotes to Scrape"
+      ],
+      "text": "Quotes to Scrape Login “I love you without knowing how, or when, or from where. I love you simply, without problems or pride: I love you in this way because I do not know any other way of loving but this, in which there is no I or you, so intimate that your hand upon my chest is my hand, so intimate that when I fall asleep your eyes close.” by Pablo Neruda Tags: love poetry “For every minute you are angry you lose sixty seconds of happiness.” by Ralph Waldo Emerson Tags: happiness “If you judge people, you have no time to love them.” by Mother Teresa Tags: attributed-no-source “Anyone who thinks sitting in church can make you a Christian must also think that sitting in a garage can make you a car.” by Garrison Keillor Tags: humor religion “Beauty is in the eye of the beholder and it may be necessary from time to time to give a stupid or misinformed beholder a black eye.” by Jim Henson Tags: humor “Today you are You, that is truer than true. There is no one alive who is Youer than You.” by Dr. Seuss Tags: comedy life yourself “If you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales.” by Albert Einstein Tags: children fairy-tales “It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.” by J.K. Rowling Tags: “Logic will get you from A to Z; imagination will get you everywhere.” by Albert E"
+    },
+    "elapsedMs": 10299.043333000009,
+    "memory": {
+      "samples": 20,
+      "browserPeakFootprintBytes": 373170576,
+      "pipelinePeakFootprintBytes": 426836528,
+      "pipelinePeakRssBytes": 1040498688
+    }
+  },
+  {
+    "id": "quotes-js-3",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 7,
+    "stages": {
+      "startupMs": 6271.168458,
+      "loadMs": 2108.1171249999898,
+      "observeMs": 16934.819334000014,
+      "jevMs": 2381.8753750000033,
+      "actionMs": 1835.9752500000031,
+      "verifyMs": 216.38524900001357
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/page/3/",
+    "finalEvidence": {
+      "title": "Quotes to Scrape",
+      "headings": [
+        "Quotes to Scrape"
+      ],
+      "text": "Quotes to Scrape Login “I love you without knowing how, or when, or from where. I love you simply, without problems or pride: I love you in this way because I do not know any other way of loving but this, in which there is no I or you, so intimate that your hand upon my chest is my hand, so intimate that when I fall asleep your eyes close.” by Pablo Neruda Tags: love poetry “For every minute you are angry you lose sixty seconds of happiness.” by Ralph Waldo Emerson Tags: happiness “If you judge people, you have no time to love them.” by Mother Teresa Tags: attributed-no-source “Anyone who thinks sitting in church can make you a Christian must also think that sitting in a garage can make you a car.” by Garrison Keillor Tags: humor religion “Beauty is in the eye of the beholder and it may be necessary from time to time to give a stupid or misinformed beholder a black eye.” by Jim Henson Tags: humor “Today you are You, that is truer than true. There is no one alive who is Youer than You.” by Dr. Seuss Tags: comedy life yourself “If you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales.” by Albert Einstein Tags: children fairy-tales “It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.” by J.K. Rowling Tags: “Logic will get you from A to Z; imagination will get you everywhere.” by Albert E"
+    },
+    "elapsedMs": 29754.21854100001,
+    "memory": {
+      "samples": 81,
+      "browserPeakFootprintBytes": 385279696,
+      "pipelinePeakFootprintBytes": 514148136,
+      "pipelinePeakRssBytes": 1173995520
+    }
+  },
+  {
+    "id": "quotes-js-3",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 794.6467499999999,
+      "loadMs": 1392.4087500000023,
+      "observeMs": 20.506291999990935,
+      "jevMs": 570.57662599998,
+      "actionMs": 949.6932919999817,
+      "verifyMs": 315.2973749999801
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/page/3/",
+    "finalEvidence": {
+      "title": "Quotes to Scrape",
+      "headings": [
+        "Quotes to Scrape"
+      ],
+      "text": "Quotes to Scrape Login “I love you without knowing how, or when, or from where. I love you simply, without problems or pride: I love you in this way because I do not know any other way of loving but this, in which there is no I or you, so intimate that your hand upon my chest is my hand, so intimate that when I fall asleep your eyes close.”by Pablo Neruda Tags: love poetry “For every minute you are angry you lose sixty seconds of happiness.”by Ralph Waldo Emerson Tags: happiness “If you judge people, you have no time to love them.”by Mother Teresa Tags: attributed-no-source “Anyone who thinks sitting in church can make you a Christian must also think that sitting in a garage can make you a car.”by Garrison Keillor Tags: humor religion “Beauty is in the eye of the beholder and it may be necessary from time to time to give a stupid or misinformed beholder a black eye.”by Jim Henson Tags: humor “Today you are You, that is truer than true. There is no one alive who is Youer than You.”by Dr. Seuss Tags: comedy life yourself “If you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales.”by Albert Einstein Tags: children fairy-tales “It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.”by J.K. Rowling Tags: “Logic will get you from A to Z; imagination will get you everywhere.”by Albert Einstein T"
+    },
+    "elapsedMs": 4045.9368329999998,
+    "memory": {
+      "samples": 19,
+      "browserPeakFootprintBytes": 15319832,
+      "pipelinePeakFootprintBytes": 71231352,
+      "pipelinePeakRssBytes": 135577600
+    }
+  },
+  {
+    "id": "python-4",
+    "site": "python",
+    "level": 2,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 10,
+    "stages": {
+      "startupMs": 7156.561916999999,
+      "loadMs": 1597.8110829999932,
+      "observeMs": 19754.270292000045,
+      "jevMs": 3423.1865419999813,
+      "actionMs": 3599.2605820000463,
+      "verifyMs": 119.04716599996027
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/index.html",
+    "finalEvidence": {
+      "title": "The Python standard library — Python 3.15.0 documentation",
+      "headings": [
+        "The Python standard library¶"
+      ],
+      "text": "dev (3.16) 3.15.0 3.14 3.13 3.12 3.11 3.10 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0 2.7 2.6 German | Deutsch Greek | Ελληνικά English Spanish | español Persian | فارسی French | français Italian | italiano Japanese | 日本語 Korean | 한국어 Polish | polski Brazilian Portuguese | Português brasileiro Romanian | Românește Russian | Русский Turkish | Türkçe Simplified Chinese | 简体中文 Traditional Chinese | 繁體中文 Theme Auto Light Dark Previous topic Time complexity of operations on built-in types Next topic Introduction This page Report a bug Improve this page Show source 3.15.0 Documentation » The Python standard library The Python standard library This library reference manual describes the standard library distributed with Python. It also describes some of the optional components that are commonly included in Python distributions. Elsewhere, The Python Language Reference describes the exact syntax and semantics of the Python language, and Python built-ins reference describes the built-in functions. Python’s standard library is extensive, offering a wide range of facilities as indicated by the long table of contents listed below. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming. Some of these modules are explicitly designed to encourage and en"
+    },
+    "reason": "Step or time limit",
+    "elapsedMs": 35660.07341700001,
+    "memory": {
+      "samples": 173,
+      "browserPeakFootprintBytes": 385196504,
+      "pipelinePeakFootprintBytes": 531221488,
+      "pipelinePeakRssBytes": 1187397632
+    }
+  },
+  {
+    "id": "python-4",
+    "site": "python",
+    "level": 2,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 549.4170410000079,
+      "loadMs": 841.9152089999989,
+      "observeMs": 40.507331999979215,
+      "jevMs": 606.6632089999912,
+      "actionMs": 464.883124999993,
+      "verifyMs": 26.718209000013303
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/asyncio.html",
+    "finalEvidence": {
+      "title": "asyncio — Asynchronous I/O — Python 3.15.0 documentation",
+      "headings": [
+        "asyncio — Asynchronous I/O¶"
+      ],
+      "text": "dev (3.16) 3.15.0 3.14 3.13 3.12 3.11 3.10 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0 2.7 2.6 German | Deutsch Greek | Ελληνικά English Spanish | español Persian | فارسی French | français Italian | italiano Japanese | 日本語 Korean | 한국어 Polish | polski Brazilian Portuguese | Português brasileiro Romanian | Românește Russian | Русский Turkish | Türkçe Simplified Chinese | 简体中文 Traditional Chinese | 繁體中文 Theme Auto Light Dark Previous topic Networking and Interprocess Communication Next topic Runners This page Report a bug Improve this page Show source Navigation index modules | next | previous | Python » German | Deutsch Greek | Ελληνικά English Spanish | español Persian | فارسی French | français Italian | italiano Japanese | 日本語 Korean | 한국어 Polish | polski Brazilian Portuguese | Português brasileiro Romanian | Românește Russian | Русский Turkish | Türkçe Simplified Chinese | 简体中文 Traditional Chinese | 繁體中文 dev (3.16) 3.15.0 3.14 3.13 3.12 3.11 3.10 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0 2.7 2.6 3.15.0 Documentation » The Python standard library » Networking and Interprocess Communication » asyncio — Asynchronous I/O | Theme Auto Light Dark | asyncio — Asynchronous I/O¶ Hello World! Copy import asyncio async def main(): print('Hello ...') await asyncio.sleep(1) print('... World!') asyncio.run(main()) asyncio is a library to write concurrent code using the async/await syntax. asyncio is used as a foundation for multiple Python asynchronous frameworks that provide high-performance "
+    },
+    "elapsedMs": 2533.8400410000177,
+    "memory": {
+      "samples": 20,
+      "browserPeakFootprintBytes": 15598360,
+      "pipelinePeakFootprintBytes": 78949344,
+      "pipelinePeakRssBytes": 144310272
+    }
+  },
+  {
+    "id": "python-4",
+    "site": "python",
+    "level": 2,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 3287.7903750000114,
+      "loadMs": 1201.9744590000191,
+      "observeMs": 29.324457999988226,
+      "jevMs": 773.18658400001,
+      "actionMs": 678.7152499999793,
+      "verifyMs": 14.49762500001816
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/asyncio.html",
+    "finalEvidence": {
+      "title": "asyncio — Asynchronous I/O — Python 3.15.0 documentation",
+      "headings": [
+        "asyncio — Asynchronous I/O¶"
+      ],
+      "text": "dev (3.16) 3.15.0 3.14 3.13 3.12 3.11 3.10 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0 2.7 2.6 German | Deutsch Greek | Ελληνικά English Spanish | español Persian | فارسی French | français Italian | italiano Japanese | 日本語 Korean | 한국어 Polish | polski Brazilian Portuguese | Português brasileiro Romanian | Românește Russian | Русский Turkish | Türkçe Simplified Chinese | 简体中文 Traditional Chinese | 繁體中文 Theme Auto Light Dark Previous topic Networking and Interprocess Communication Next topic Runners This page Report a bug Improve this page Show source 3.15.0 Documentation » The Python standard library » Networking and Interprocess Communication » asyncio — Asynchronous I/O asyncio — Asynchronous I/O Hello World! import asyncio async def main(): print('Hello ...') await asyncio.sleep(1) print('... World!') asyncio.run(main()) asyncio is a library to write concurrent code using the async/await syntax. asyncio is used as a foundation for multiple Python asynchronous frameworks that provide high-performance network and web-servers, database connection libraries, distributed task queues, etc. asyncio is often a perfect fit for IO-bound and high-level structured network code. See also A conceptual overview of asyncio Explanation of the fundamentals of asyncio. asyncio provides a set of high-level APIs to: run Python coroutines concurrently and have full control over their execution; perform network IO and IPC; control subprocesses; distribute tasks via queues; synchronize concurrent code"
+    },
+    "elapsedMs": 5989.717917000002,
+    "memory": {
+      "samples": 23,
+      "browserPeakFootprintBytes": 407872368,
+      "pipelinePeakFootprintBytes": 468962384,
+      "pipelinePeakRssBytes": 1074561024
+    }
+  },
+  {
+    "id": "python-5",
+    "site": "python",
+    "level": 2,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 343.08941699998104,
+      "loadMs": 704.7463749999879,
+      "observeMs": 16.597291000012774,
+      "jevMs": 311.97770799999125,
+      "actionMs": 458.1622919999936,
+      "verifyMs": 11.562958999973489
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/pathlib.html",
+    "finalEvidence": {
+      "title": "pathlib — Object-oriented filesystem paths — Python 3.15.0 documentation",
+      "headings": [
+        "pathlib — Object-oriented filesystem paths¶",
+        "Basic use¶",
+        "Exceptions¶",
+        "Pure paths¶",
+        "Concrete paths¶",
+        "Pattern language¶",
+        "Comparison to the glob module¶",
+        "Comparison to the os and os.path modules¶",
+        "Protocols¶"
+      ],
+      "text": "dev (3.16) 3.15.0 3.14 3.13 3.12 3.11 3.10 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0 2.7 2.6 German | Deutsch Greek | Ελληνικά English Spanish | español Persian | فارسی French | français Italian | italiano Japanese | 日本語 Korean | 한국어 Polish | polski Brazilian Portuguese | Português brasileiro Romanian | Românește Russian | Русский Turkish | Türkçe Simplified Chinese | 简体中文 Traditional Chinese | 繁體中文 Theme Auto Light Dark Table of Contents pathlib — Object-oriented filesystem paths Basic use Exceptions Pure paths General properties Operators Accessing individual parts Methods and properties Concrete paths Parsing and generating URIs Expanding and resolving paths Querying file type and status Reading and writing files Reading directories Creating files and directories Copying, moving and deleting Permissions and ownership Pattern language Comparison to the glob module Comparison to the os and os.path modules Corresponding tools Protocols Previous topic File and Directory Access Next topic os.path — Common pathname manipulations This page Report a bug Improve this page Show source Navigation index modules | next | previous | Python » German | Deutsch Greek | Ελληνικά English Spanish | español Persian | فارسی French | français Italian | italiano Japanese | 日本語 Korean | 한국어 Polish | polski Brazilian Portuguese | Português brasileiro Romanian | Românește Russian | Русский Turkish | Türkçe Simplified Chinese | 简体中文 Traditional Chinese | 繁體中文 dev (3.16) 3.15.0 3.14 3.13 3.12 3.11 3.10 "
+    },
+    "elapsedMs": 1850.2411670000001,
+    "memory": {
+      "samples": 15,
+      "browserPeakFootprintBytes": 17777432,
+      "pipelinePeakFootprintBytes": 79080488,
+      "pipelinePeakRssBytes": 147243008
+    }
+  },
+  {
+    "id": "python-5",
+    "site": "python",
+    "level": 2,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 2839.785082999995,
+      "loadMs": 986.0395409999765,
+      "observeMs": 16.27045900002122,
+      "jevMs": 415.83687499997905,
+      "actionMs": 754.6836660000263,
+      "verifyMs": 23.267957999982173
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/pathlib.html",
+    "finalEvidence": {
+      "title": "pathlib — Object-oriented filesystem paths — Python 3.15.0 documentation",
+      "headings": [
+        "pathlib — Object-oriented filesystem paths¶",
+        "Basic use¶",
+        "Exceptions¶",
+        "Pure paths¶",
+        "Concrete paths¶",
+        "Pattern language¶",
+        "Comparison to the glob module¶",
+        "Comparison to the os and os.path modules¶",
+        "Protocols¶"
+      ],
+      "text": "dev (3.16) 3.15.0 3.14 3.13 3.12 3.11 3.10 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0 2.7 2.6 German | Deutsch Greek | Ελληνικά English Spanish | español Persian | فارسی French | français Italian | italiano Japanese | 日本語 Korean | 한국어 Polish | polski Brazilian Portuguese | Português brasileiro Romanian | Românește Russian | Русский Turkish | Türkçe Simplified Chinese | 简体中文 Traditional Chinese | 繁體中文 Theme Auto Light Dark Table of Contents pathlib — Object-oriented filesystem paths Basic use Exceptions Pure paths General properties Operators Accessing individual parts Methods and properties Concrete paths Parsing and generating URIs Expanding and resolving paths Querying file type and status Reading and writing files Reading directories Creating files and directories Copying, moving and deleting Permissions and ownership Pattern language Comparison to the glob module Comparison to the os and os.path modules Corresponding tools Protocols Previous topic File and Directory Access Next topic os.path — Common pathname manipulations This page Report a bug Improve this page Show source 3.15.0 Documentation » The Python standard library » File and Directory Access » pathlib — Object-oriented filesystem paths pathlib — Object-oriented filesystem paths Added in version 3.4. Source code: Lib/pathlib/ This module offers classes representing filesystem paths with semantics appropriate for different operating systems. Path classes are divided between pure paths, which provide purely computati"
+    },
+    "elapsedMs": 5043.484708000004,
+    "memory": {
+      "samples": 18,
+      "browserPeakFootprintBytes": 434266968,
+      "pipelinePeakFootprintBytes": 506974968,
+      "pipelinePeakRssBytes": 1107525632
+    }
+  },
+  {
+    "id": "python-5",
+    "site": "python",
+    "level": 2,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 3087.1359590000066,
+      "loadMs": 1027.7490830000024,
+      "observeMs": 4980.458208999975,
+      "jevMs": 1062.4778339999903,
+      "actionMs": 799.5958339999779,
+      "verifyMs": 99.47087499996996
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/pathlib.html",
+    "finalEvidence": {
+      "title": "pathlib — Object-oriented filesystem paths — Python 3.15.0 documentation",
+      "headings": [
+        "pathlib — Object-oriented filesystem paths¶",
+        "Basic use¶",
+        "Exceptions¶",
+        "Pure paths¶",
+        "Concrete paths¶",
+        "Pattern language¶",
+        "Comparison to the glob module¶",
+        "Comparison to the os and os.path modules¶",
+        "Protocols¶"
+      ],
+      "text": "dev (3.16) 3.15.0 3.14 3.13 3.12 3.11 3.10 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0 2.7 2.6 German | Deutsch Greek | Ελληνικά English Spanish | español Persian | فارسی French | français Italian | italiano Japanese | 日本語 Korean | 한국어 Polish | polski Brazilian Portuguese | Português brasileiro Romanian | Românește Russian | Русский Turkish | Türkçe Simplified Chinese | 简体中文 Traditional Chinese | 繁體中文 Theme Auto Light Dark Table of Contents pathlib — Object-oriented filesystem paths Basic use Exceptions Pure paths General properties Operators Accessing individual parts Methods and properties Concrete paths Parsing and generating URIs Expanding and resolving paths Querying file type and status Reading and writing files Reading directories Creating files and directories Copying, moving and deleting Permissions and ownership Pattern language Comparison to the glob module Comparison to the os and os.path modules Corresponding tools Protocols Previous topic File and Directory Access Next topic os.path — Common pathname manipulations This page Report a bug Improve this page Show source 3.15.0 Documentation » The Python standard library » File and Directory Access » pathlib — Object-oriented filesystem paths pathlib — Object-oriented filesystem paths Added in version 3.4. Source code: Lib/pathlib/ This module offers classes representing filesystem paths with semantics appropriate for different operating systems. Path classes are divided between pure paths, which provide purely computati"
+    },
+    "elapsedMs": 11071.495208999986,
+    "memory": {
+      "samples": 62,
+      "browserPeakFootprintBytes": 426271168,
+      "pipelinePeakFootprintBytes": 564860288,
+      "pipelinePeakRssBytes": 1214644224
+    }
+  },
+  {
+    "id": "mdn-6",
+    "site": "mdn",
+    "level": 3,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 2928.005332999979,
+      "loadMs": 1282.9307499999995,
+      "observeMs": 94.96725000001607,
+      "jevMs": 720.78033400001,
+      "actionMs": 1005.4015409999702,
+      "verifyMs": 343.578708999994
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "finalEvidence": {
+      "title": "Promise - JavaScript | MDN",
+      "headings": [
+        "Promise",
+        "In this article",
+        "Description",
+        "Constructor",
+        "Static properties",
+        "Static methods",
+        "Instance properties",
+        "Instance methods",
+        "Examples",
+        "Specifications",
+        "Browser compatibility",
+        "See also",
+        "Help improve MDN"
+      ],
+      "text": "Skip to main content Skip to search Web JavaScript Reference Standard built-in objects Promise Promise Baseline WIDELY AVAILABLE * The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value. To learn about the way promises work and how you can use them, we advise you to read Using promises first. In this article Description Constructor Static properties Static methods Instance properties Instance methods Examples Specifications Browser compatibility See also Description A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future. A Promise is in one of these states: pending: initial state, neither fulfilled nor rejected. fulfilled: meaning that the operation was completed successfully. rejected: meaning that the operation failed. The eventual state of a pending promise can either be fulfilled with a value or rejected with a reason (error). When either of these options occurs, the associated handlers queued up by a promise's then method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there i"
+    },
+    "elapsedMs": 6513.805624999979,
+    "memory": {
+      "samples": 20,
+      "browserPeakFootprintBytes": 506177496,
+      "pipelinePeakFootprintBytes": 581212600,
+      "pipelinePeakRssBytes": 1305591808
+    }
+  },
+  {
+    "id": "mdn-6",
+    "site": "mdn",
+    "level": 3,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 7,
+    "stages": {
+      "startupMs": 3062.9691659999953,
+      "loadMs": 1372.5876669999852,
+      "observeMs": 8766.417124000029,
+      "jevMs": 2318.833707999991,
+      "actionMs": 1352.0518339999544,
+      "verifyMs": 718.1965829999535
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "finalEvidence": {
+      "title": "Promise - JavaScript | MDN",
+      "headings": [
+        "Promise",
+        "In this article",
+        "Description",
+        "Constructor",
+        "Static properties",
+        "Static methods",
+        "Instance properties",
+        "Instance methods",
+        "Examples",
+        "Specifications",
+        "Browser compatibility",
+        "See also",
+        "Help improve MDN"
+      ],
+      "text": "Skip to main content Skip to search Web JavaScript Reference Standard built-in objects Promise Promise Baseline WIDELY AVAILABLE * The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value. To learn about the way promises work and how you can use them, we advise you to read Using promises first. In this article Description Constructor Static properties Static methods Instance properties Instance methods Examples Specifications Browser compatibility See also Description A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future. A Promise is in one of these states: pending: initial state, neither fulfilled nor rejected. fulfilled: meaning that the operation was completed successfully. rejected: meaning that the operation failed. The eventual state of a pending promise can either be fulfilled with a value or rejected with a reason (error). When either of these options occurs, the associated handlers queued up by a promise's then method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there i"
+    },
+    "elapsedMs": 17826.164541000006,
+    "memory": {
+      "samples": 87,
+      "browserPeakFootprintBytes": 477619872,
+      "pipelinePeakFootprintBytes": 599072072,
+      "pipelinePeakRssBytes": 1245020160
+    }
+  },
+  {
+    "id": "mdn-6",
+    "site": "mdn",
+    "level": 3,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 380.07474999999977,
+      "loadMs": 793.1955000000016,
+      "observeMs": 65.53012499999022,
+      "jevMs": 952.5064990000392,
+      "actionMs": 466.3609169999836,
+      "verifyMs": 27.703084000007948
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "finalEvidence": {
+      "title": "Promise - JavaScript | MDN",
+      "headings": [
+        "Promise",
+        "In this article",
+        "Description",
+        "Constructor",
+        "Static properties",
+        "Static methods",
+        "Instance properties",
+        "Instance methods",
+        "Examples",
+        "Specifications",
+        "Browser compatibility",
+        "See also",
+        "Help improve MDN"
+      ],
+      "text": "Skip to main content Skip to search HTML HTML: Markup language HTML reference Elements Global attributes Attributes See all… HTML guides Responsive images HTML cheatsheet Date & time formats See all… Markup languages SVG MathML XML CSS CSS: Styling language CSS reference Properties Selectors At-rules Values See all… CSS guides Box model Animations Flexbox Colors See all… Layout cookbook Column layouts Centering an element Card component See all… JavaScriptJS JavaScript: Scripting language JS reference Standard built-in objects Expressions & operators Statements & declarations Functions See all… JS guides Control flow & error handling Loops and iteration Working with objects Using classes See all… Web APIs Web APIs: Programming interfaces Web API reference File system API Fetch API Geolocation API HTML DOM API Push API Service worker API See all… Web API guides Using the Web animation API Using the Fetch API Working with the History API Using the Web speech API Using web workers All All web technology Technologies Accessibility HTTP URI Web extensions WebAssembly WebDriver See all… Topics Media Performance Privacy Security Progressive web apps Learn Learn web development Frontend developer course Getting started modules Core modules MDN Curriculum Check out the video course from Scrimba, our partner Learn HTML Structuring content with HTML module Learn CSS CSS styling basics module CSS layout module Learn JavaScript Dynamic scripting with JavaScript module Tools Discover our t"
+    },
+    "elapsedMs": 2688.4377920000115,
+    "memory": {
+      "samples": 23,
+      "browserPeakFootprintBytes": 28427032,
+      "pipelinePeakFootprintBytes": 109623048,
+      "pipelinePeakRssBytes": 179568640
+    }
+  },
+  {
+    "id": "mdn-7",
+    "site": "mdn",
+    "level": 3,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 5,
+    "stages": {
+      "startupMs": 3308.1152920000022,
+      "loadMs": 1042.0927920000104,
+      "observeMs": 5164.4517090000445,
+      "jevMs": 1488.074123999977,
+      "actionMs": 1022.9455420000304,
+      "verifyMs": 773.3953340000298
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "finalEvidence": {
+      "title": "Array - JavaScript | MDN",
+      "headings": [
+        "Array",
+        "In this article",
+        "Description",
+        "Constructor",
+        "Static properties",
+        "Static methods",
+        "Instance properties",
+        "Instance methods",
+        "Examples",
+        "Specifications",
+        "Browser compatibility",
+        "See also",
+        "Help improve MDN"
+      ],
+      "text": "Skip to main content Skip to search Web JavaScript Reference Standard built-in objects Array Array Baseline WIDELY AVAILABLE * The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations. In this article Description Constructor Static properties Static methods Instance properties Instance methods Examples Specifications Browser compatibility See also Description In JavaScript, arrays aren't primitives but are instead Array objects with the following core characteristics: JavaScript arrays are resizable and can contain a mix of different data types. (When those characteristics are undesirable, use typed arrays instead.) JavaScript arrays are not associative arrays and so, array elements cannot be accessed using arbitrary strings as indexes, but must be accessed using nonnegative integers (or their respective string form) as indexes. JavaScript arrays are zero-indexed: the first element of an array is at index 0, the second is at index 1, and so on — and the last element is at the value of the array's length property minus 1. JavaScript array-copy operations create shallow copies. (All standard built-in copy operations with any JavaScript objects create shallow copies, rather than deep copies). Array indices Array objects cannot use arbitrary strings as element indexes (as in an associative array) but must use nonnegative integers (or their re"
+    },
+    "elapsedMs": 12820.689332999988,
+    "memory": {
+      "samples": 65,
+      "browserPeakFootprintBytes": 496902904,
+      "pipelinePeakFootprintBytes": 638986208,
+      "pipelinePeakRssBytes": 1316569088
+    }
+  },
+  {
+    "id": "mdn-7",
+    "site": "mdn",
+    "level": 3,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 364.7424170000013,
+      "loadMs": 714.4486250000191,
+      "observeMs": 71.52324999996927,
+      "jevMs": 1114.5712080000376,
+      "actionMs": 461.6590829999768,
+      "verifyMs": 29.63362400000915
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "finalEvidence": {
+      "title": "Array - JavaScript | MDN",
+      "headings": [
+        "Array",
+        "In this article",
+        "Description",
+        "Constructor",
+        "Static properties",
+        "Static methods",
+        "Instance properties",
+        "Instance methods",
+        "Examples",
+        "Specifications",
+        "Browser compatibility",
+        "See also",
+        "Help improve MDN"
+      ],
+      "text": "Skip to main content Skip to search HTML HTML: Markup language HTML reference Elements Global attributes Attributes See all… HTML guides Responsive images HTML cheatsheet Date & time formats See all… Markup languages SVG MathML XML CSS CSS: Styling language CSS reference Properties Selectors At-rules Values See all… CSS guides Box model Animations Flexbox Colors See all… Layout cookbook Column layouts Centering an element Card component See all… JavaScriptJS JavaScript: Scripting language JS reference Standard built-in objects Expressions & operators Statements & declarations Functions See all… JS guides Control flow & error handling Loops and iteration Working with objects Using classes See all… Web APIs Web APIs: Programming interfaces Web API reference File system API Fetch API Geolocation API HTML DOM API Push API Service worker API See all… Web API guides Using the Web animation API Using the Fetch API Working with the History API Using the Web speech API Using web workers All All web technology Technologies Accessibility HTTP URI Web extensions WebAssembly WebDriver See all… Topics Media Performance Privacy Security Progressive web apps Learn Learn web development Frontend developer course Getting started modules Core modules MDN Curriculum Check out the video course from Scrimba, our partner Learn HTML Structuring content with HTML module Learn CSS CSS styling basics module CSS layout module Learn JavaScript Dynamic scripting with JavaScript module Tools Discover our t"
+    },
+    "elapsedMs": 2763.786334000004,
+    "memory": {
+      "samples": 24,
+      "browserPeakFootprintBytes": 28787480,
+      "pipelinePeakFootprintBytes": 137512360,
+      "pipelinePeakRssBytes": 206028800
+    }
+  },
+  {
+    "id": "mdn-7",
+    "site": "mdn",
+    "level": 3,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 2729.4141250000102,
+      "loadMs": 1177.0187079999887,
+      "observeMs": 62.57208300000639,
+      "jevMs": 399.48750000001746,
+      "actionMs": 1274.8167499999981,
+      "verifyMs": 99.72745799997938
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "finalEvidence": {
+      "title": "Array - JavaScript | MDN",
+      "headings": [
+        "Array",
+        "In this article",
+        "Description",
+        "Constructor",
+        "Static properties",
+        "Static methods",
+        "Instance properties",
+        "Instance methods",
+        "Examples",
+        "Specifications",
+        "Browser compatibility",
+        "See also",
+        "Help improve MDN"
+      ],
+      "text": "Skip to main content Skip to search Web JavaScript Reference Standard built-in objects Array Array Baseline WIDELY AVAILABLE * The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations. In this article Description Constructor Static properties Static methods Instance properties Instance methods Examples Specifications Browser compatibility See also Description In JavaScript, arrays aren't primitives but are instead Array objects with the following core characteristics: JavaScript arrays are resizable and can contain a mix of different data types. (When those characteristics are undesirable, use typed arrays instead.) JavaScript arrays are not associative arrays and so, array elements cannot be accessed using arbitrary strings as indexes, but must be accessed using nonnegative integers (or their respective string form) as indexes. JavaScript arrays are zero-indexed: the first element of an array is at index 0, the second is at index 1, and so on — and the last element is at the value of the array's length property minus 1. JavaScript array-copy operations create shallow copies. (All standard built-in copy operations with any JavaScript objects create shallow copies, rather than deep copies). Array indices Array objects cannot use arbitrary strings as element indexes (as in an associative array) but must use nonnegative integers (or their re"
+    },
+    "elapsedMs": 5759.342957999994,
+    "memory": {
+      "samples": 13,
+      "browserPeakFootprintBytes": 498164256,
+      "pipelinePeakFootprintBytes": 608167328,
+      "pipelinePeakRssBytes": 1218822144
+    }
+  },
+  {
+    "id": "ajax-oscars-8",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 4,
+    "stages": {
+      "startupMs": 340.70616699999664,
+      "loadMs": 1488.9820829999808,
+      "observeMs": 7.667167000006884,
+      "jevMs": 1070.686251999985,
+      "actionMs": 2418.519042,
+      "verifyMs": 14.162498999998206
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/",
+    "finalEvidence": {
+      "title": "Oscar Winning Films: AJAX and Javascript | Scrape This Site | A public sandbox for learning web scraping",
+      "headings": [
+        "Oscar Winning Films: AJAX and Javascript\n                            87 items"
+      ],
+      "text": "Scrape This Site Sandbox Lessons FAQ Login Oscar Winning Films: AJAX and Javascript 87 items Click through a bunch of great films. Learn how content is added to the page asynchronously with Javascript and how you can scrape it. Look for ways that you can tell visually when a site is loading content with AJAX. Then, browse through your network tab to see those AJAX requests and scrape them. There are 3 video lessons that show you how to scrape this page. Data via https://en.wikipedia.org/wiki/List_of_Academy_Award-winning_films Choose a Year to View Films 2015 2014 2013 2012 2011 2010 Title Nominations Awards Best PictureSpotlight 6 2 Mad Max: Fury Road 10 6 The Revenant 12 3 Bridge of Spies 6 1 The Big Short 5 1 The Danish Girl 4 1 Room 4 1 Ex Machina 2 1 The Hateful Eight 2 1 Inside Out 2 1 Amy 1 1 Bear Story 1 1 A Girl in the River: The Price of Forgiveness 1 1 Son of Saul 1 1 Spectre 1 1 Stutterer 1 1 Lessons and Videos © Hartley Brody 2023"
+    },
+    "elapsedMs": 5353.197625000001,
+    "memory": {
+      "samples": 48,
+      "browserPeakFootprintBytes": 41829192,
+      "pipelinePeakFootprintBytes": 157796160,
+      "pipelinePeakRssBytes": 221986816
+    }
+  },
+  {
+    "id": "ajax-oscars-8",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 5,
+    "stages": {
+      "startupMs": 2767.9215829999885,
+      "loadMs": 1679.0462080000143,
+      "observeMs": 20.48691800000961,
+      "jevMs": 1646.1831249999814,
+      "actionMs": 3220.8656659999688,
+      "verifyMs": 158.46729100003722
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/#2015",
+    "finalEvidence": {
+      "title": "Oscar Winning Films: AJAX and Javascript | Scrape This Site | A public sandbox for learning web scraping",
+      "headings": [
+        "Oscar Winning Films: AJAX and Javascript\n                            87 items"
+      ],
+      "text": " Scrape This Site Sandbox Lessons FAQ Login Oscar Winning Films: AJAX and Javascript 87 items Click through a bunch of great films. Learn how content is added to the page asynchronously with Javascript and how you can scrape it. Look for ways that you can tell visually when a site is loading content with AJAX. Then, browse through your network tab to see those AJAX requests and scrape them. There are 3 video lessons that show you how to scrape this page. Data via https://en.wikipedia.org/wiki/List_of_Academy_Award-winning_films Choose a Year to View Films 2015 2014 2013 2012 2011 2010 Title Nominations Awards Best Picture Spotlight 6 2 Mad Max: Fury Road 10 6 The Revenant 12 3 Bridge of Spies 6 1 The Big Short 5 1 The Danish Girl 4 1 Room 4 1 Ex Machina 2 1 The Hateful Eight 2 1 Inside Out 2 1 Amy 1 1 Bear Story 1 1 A Girl in the River: The Price of Forgiveness 1 1 Son of Saul 1 1 Spectre 1 1 Stutterer 1 1 Lessons and Videos © Hartley Brody 2023"
+    },
+    "elapsedMs": 9496.382958000002,
+    "memory": {
+      "samples": 61,
+      "browserPeakFootprintBytes": 407725176,
+      "pipelinePeakFootprintBytes": 519416136,
+      "pipelinePeakRssBytes": 1191231488
+    }
+  },
+  {
+    "id": "ajax-oscars-8",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 2937.4874579999887,
+      "loadMs": 1669.3857499999867,
+      "observeMs": 2178.55449900002,
+      "jevMs": 654.0360010000004,
+      "actionMs": 1177.3259170000092,
+      "verifyMs": 169.82754199998453
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/#2015",
+    "finalEvidence": {
+      "title": "Oscar Winning Films: AJAX and Javascript | Scrape This Site | A public sandbox for learning web scraping",
+      "headings": [
+        "Oscar Winning Films: AJAX and Javascript\n                            87 items"
+      ],
+      "text": " Scrape This Site Sandbox Lessons FAQ Login Oscar Winning Films: AJAX and Javascript 87 items Click through a bunch of great films. Learn how content is added to the page asynchronously with Javascript and how you can scrape it. Look for ways that you can tell visually when a site is loading content with AJAX. Then, browse through your network tab to see those AJAX requests and scrape them. There are 3 video lessons that show you how to scrape this page. Data via https://en.wikipedia.org/wiki/List_of_Academy_Award-winning_films Choose a Year to View Films 2015 2014 2013 2012 2011 2010 Title Nominations Awards Best Picture Spotlight 6 2 Mad Max: Fury Road 10 6 The Revenant 12 3 Bridge of Spies 6 1 The Big Short 5 1 The Danish Girl 4 1 Room 4 1 Ex Machina 2 1 The Hateful Eight 2 1 Inside Out 2 1 Amy 1 1 Bear Story 1 1 A Girl in the River: The Price of Forgiveness 1 1 Son of Saul 1 1 Spectre 1 1 Stutterer 1 1 Lessons and Videos © Hartley Brody 2023"
+    },
+    "elapsedMs": 8793.999624999997,
+    "memory": {
+      "samples": 44,
+      "browserPeakFootprintBytes": 405496760,
+      "pipelinePeakFootprintBytes": 604597224,
+      "pipelinePeakRssBytes": 1280065536
+    }
+  },
+  {
+    "id": "ajax-oscars-9",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 3258.627542000002,
+      "loadMs": 1595.4918330000073,
+      "observeMs": 11.52529100002721,
+      "jevMs": 1380.4795840000152,
+      "actionMs": 2001.515999999945,
+      "verifyMs": 51.153208000032464
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/#2014",
+    "finalEvidence": {
+      "title": "Oscar Winning Films: AJAX and Javascript | Scrape This Site | A public sandbox for learning web scraping",
+      "headings": [
+        "Oscar Winning Films: AJAX and Javascript\n                            87 items"
+      ],
+      "text": " Scrape This Site Sandbox Lessons FAQ Login Oscar Winning Films: AJAX and Javascript 87 items Click through a bunch of great films. Learn how content is added to the page asynchronously with Javascript and how you can scrape it. Look for ways that you can tell visually when a site is loading content with AJAX. Then, browse through your network tab to see those AJAX requests and scrape them. There are 3 video lessons that show you how to scrape this page. Data via https://en.wikipedia.org/wiki/List_of_Academy_Award-winning_films Choose a Year to View Films 2015 2014 2013 2012 2011 2010 Title Nominations Awards Best Picture Birdman 9 4 The Grand Budapest Hotel 9 4 Whiplash 5 3 The Imitation Game 8 1 American Sniper 6 1 Boyhood 6 1 Interstellar 5 1 The Theory of Everything 5 1 Ida 2 1 Selma 2 1 Citizenfour 1 1 Big Hero 6 1 1 Crisis Hotline: Veterans Press 1 1 1 The Phone Call 1 1 Still Alice 1 1 Feast 1 1 Lessons and Videos © Hartley Brody 2023"
+    },
+    "elapsedMs": 8301.429917000001,
+    "memory": {
+      "samples": 44,
+      "browserPeakFootprintBytes": 392159752,
+      "pipelinePeakFootprintBytes": 506554312,
+      "pipelinePeakRssBytes": 1124220928
+    }
+  },
+  {
+    "id": "ajax-oscars-9",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 2878.8716669999994,
+      "loadMs": 2096.8002909999923,
+      "observeMs": 2234.9252509999787,
+      "jevMs": 655.6334589999751,
+      "actionMs": 1172.9030000000494,
+      "verifyMs": 342.5483339999919
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/#2014",
+    "finalEvidence": {
+      "title": "Oscar Winning Films: AJAX and Javascript | Scrape This Site | A public sandbox for learning web scraping",
+      "headings": [
+        "Oscar Winning Films: AJAX and Javascript\n                            87 items"
+      ],
+      "text": " Scrape This Site Sandbox Lessons FAQ Login Oscar Winning Films: AJAX and Javascript 87 items Click through a bunch of great films. Learn how content is added to the page asynchronously with Javascript and how you can scrape it. Look for ways that you can tell visually when a site is loading content with AJAX. Then, browse through your network tab to see those AJAX requests and scrape them. There are 3 video lessons that show you how to scrape this page. Data via https://en.wikipedia.org/wiki/List_of_Academy_Award-winning_films Choose a Year to View Films 2015 2014 2013 2012 2011 2010 Title Nominations Awards Best Picture Birdman 9 4 The Grand Budapest Hotel 9 4 Whiplash 5 3 The Imitation Game 8 1 American Sniper 6 1 Boyhood 6 1 Interstellar 5 1 The Theory of Everything 5 1 Ida 2 1 Selma 2 1 Citizenfour 1 1 Big Hero 6 1 1 Crisis Hotline: Veterans Press 1 1 1 The Phone Call 1 1 Still Alice 1 1 Feast 1 1 Lessons and Videos © Hartley Brody 2023"
+    },
+    "elapsedMs": 9385.19650000002,
+    "memory": {
+      "samples": 53,
+      "browserPeakFootprintBytes": 423618184,
+      "pipelinePeakFootprintBytes": 620736256,
+      "pipelinePeakRssBytes": 1288241152
+    }
+  },
+  {
+    "id": "ajax-oscars-9",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 545.5111250000191,
+      "loadMs": 1293.8789589999942,
+      "observeMs": 8.08662600000389,
+      "jevMs": 1116.1834589999635,
+      "actionMs": 1772.9587909999536,
+      "verifyMs": 200.45591600006446
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/",
+    "finalEvidence": {
+      "title": "Oscar Winning Films: AJAX and Javascript | Scrape This Site | A public sandbox for learning web scraping",
+      "headings": [
+        "Oscar Winning Films: AJAX and Javascript\n                            87 items"
+      ],
+      "text": "Scrape This Site Sandbox Lessons FAQ Login Oscar Winning Films: AJAX and Javascript 87 items Click through a bunch of great films. Learn how content is added to the page asynchronously with Javascript and how you can scrape it. Look for ways that you can tell visually when a site is loading content with AJAX. Then, browse through your network tab to see those AJAX requests and scrape them. There are 3 video lessons that show you how to scrape this page. Data via https://en.wikipedia.org/wiki/List_of_Academy_Award-winning_films Choose a Year to View Films 2015 2014 2013 2012 2011 2010 Title Nominations Awards Best PictureBirdman 9 4 The Grand Budapest Hotel 9 4 Whiplash 5 3 The Imitation Game 8 1 American Sniper 6 1 Boyhood 6 1 Interstellar 5 1 The Theory of Everything 5 1 Ida 2 1 Selma 2 1 Citizenfour 1 1 Big Hero 6 1 1 Crisis Hotline: Veterans Press 1 1 1 The Phone Call 1 1 Still Alice 1 1 Feast 1 1 Lessons and Videos © Hartley Brody 2023"
+    },
+    "elapsedMs": 4939.428958000033,
+    "memory": {
+      "samples": 44,
+      "browserPeakFootprintBytes": 42091312,
+      "pipelinePeakFootprintBytes": 158583120,
+      "pipelinePeakRssBytes": 227786752
+    }
+  },
+  {
+    "id": "github-10",
+    "site": "github",
+    "level": 4,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 2852.946834000002,
+      "loadMs": 4524.249375000014,
+      "observeMs": 3455.9830409999704,
+      "jevMs": 716.6992489999975,
+      "actionMs": 1055.3030830000062,
+      "verifyMs": 289.3955010001082
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://github.com/react/react/issues?q=is%3Aissue+state%3Aclosed",
+    "finalEvidence": {
+      "title": "Issues · react/react · GitHub",
+      "headings": [
+        "Navigation Menu",
+        "Repository navigation",
+        "Issues",
+        "Issues",
+        "Issues",
+        "Footer"
+      ],
+      "text": "Skip to content Navigation Menu Sign in react react Repository navigation Code Issues 875 (875) Pull requests 547 (547) Actions Security and quality 8 (8) Insights Issues Assigned to me Created by me Mentioned Recent activity Views Milestones Labels Feedback Preview Collapse sidebar Issues New issue Search issues is:issue state:closed Issues Open 875 (875) Closed 13,880 (13,880) Author Labels Projects Test from the MCP demo Unread react/react#37824 · by Filter by author ericwgreene was closed 1 Bug: Hiding a dehydrated Activity hides every sibling after it Unread react/react#37813 · by Filter by author skrabe was closed 1 Bug: Status: Unconfirmed Unread react/react#37811 · by Filter by author Tejaswi-GUDE was closed Bug: use() crashes in DEV with TypeError: Cannot add property _debugInfo when the thenable is frozen/non-extensible Unread react/react#37795 · by Filter by author zhoubiao188 was closed 1 [DevTools Bug] Cannot add child \"20185\" to parent \"19588\" because parent node was not found in the Store. Component: Developer Tools Status: Unconfirmed Type: Bug Unread react/react#37787 · by Filter by author heocon0720221 was closed 2 Bug: [Flight] Client throws object null is not iterable reviving an AggregateError whose inner errors have no stack frames Unread react/react#37728 · by Filter by author atomy was closed 1 Bug: Resuming a prerender that was aborted while a retried task was rendering drops part of the boundary Unread react/react#37709 · by Filter by author AdzerKI "
+    },
+    "elapsedMs": 12899.33041699999,
+    "memory": {
+      "samples": 52,
+      "browserPeakFootprintBytes": 670884720,
+      "pipelinePeakFootprintBytes": 866675880,
+      "pipelinePeakRssBytes": 1419362304
+    }
+  },
+  {
+    "id": "github-10",
+    "site": "github",
+    "level": 4,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 3,
+    "stages": {
+      "startupMs": 376.8292089999886,
+      "loadMs": 2058.608084000007,
+      "observeMs": 174.72154199995566,
+      "jevMs": 1108.6707090000273,
+      "actionMs": 1023.9874169999384,
+      "verifyMs": 967.256376000063
+    },
+    "httpStatus": 200,
+    "reason": "Premature DONE",
+    "finalUrl": "https://github.com/react/react/issues#",
+    "finalEvidence": {
+      "title": "Issues · react/react · GitHub",
+      "headings": [
+        "Issues",
+        "Issues",
+        "Navigation Menu",
+        "Repository navigation",
+        "Issues",
+        "Footer"
+      ],
+      "text": "Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub CopilotWrite better code with AI GitHub Copilot appDirect agents from issue to merge MCP RegistryIntegrate external tools DEVELOPER WORKFLOWS ActionsAutomate any workflow CodespacesInstant dev environments IssuesPlan and track work Code ReviewManage code changes Code QualityEnforce quality at merge APPLICATION SECURITY GitHub Advanced SecurityFind and fix vulnerabilities Code securitySecure your code as you build Secret protectionStop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZE Enterprises Small and medium teams Startups Nonprofits BY USE CASE App Modernization DevSecOps DevOps CI/CD View all use cases BY INDUSTRY Healthcare Financial services Manufacturing Government View all industries View all solutions Resources EXPLORE BY TOPIC AI Software Development DevOps Security View all topics EXPLORE BY TYPE Customer stories Events & webinars Ebooks & reports Business insights GitHub Skills SUPPORT & SERVICES Documentation Customer support Community forum Trust center Partners View all resources Open Source COMMUNITY GitHub SponsorsFund open source developers PROGRAMS Security Lab Maintainer Community GitHub Stars Archive Program REPOSITORIES Topics Trending Collections Enterprise ENTERPRISE SOLUTIONS Enterprise platformAI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced SecurityEnterprise-grade"
+    },
+    "elapsedMs": 5716.714584000001,
+    "memory": {
+      "samples": 52,
+      "browserPeakFootprintBytes": 142050168,
+      "pipelinePeakFootprintBytes": 257558960,
+      "pipelinePeakRssBytes": 337805312
+    }
+  },
+  {
+    "id": "github-10",
+    "site": "github",
+    "level": 4,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 3248.3727499999804,
+      "loadMs": 5100.7336249999935,
+      "observeMs": 53.83537499996601,
+      "jevMs": 427.0426669999724,
+      "actionMs": 659.7805839999928,
+      "verifyMs": 532.0598749999772
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://github.com/react/react/issues?q=is%3Aissue+state%3Aclosed",
+    "finalEvidence": {
+      "title": "Issues · react/react · GitHub",
+      "headings": [
+        "Navigation Menu",
+        "Repository navigation",
+        "Issues",
+        "Issues",
+        "Issues",
+        "Footer"
+      ],
+      "text": "Skip to content Navigation Menu Sign in react react Repository navigation Code Issues 875 (875) Pull requests 547 (547) Actions Security and quality 8 (8) Insights Issues Assigned to me Created by me Mentioned Recent activity Views Milestones Labels Feedback Preview Collapse sidebar Issues New issue Search issues is:issue state:closed Issues Open 875 (875) Closed 13,880 (13,880) Author Labels Projects Test from the MCP demo Unread react/react#37824 · by Filter by author ericwgreene was closed 1 Bug: Hiding a dehydrated Activity hides every sibling after it Unread react/react#37813 · by Filter by author skrabe was closed 1 Bug: Status: Unconfirmed Unread react/react#37811 · by Filter by author Tejaswi-GUDE was closed Bug: use() crashes in DEV with TypeError: Cannot add property _debugInfo when the thenable is frozen/non-extensible Unread react/react#37795 · by Filter by author zhoubiao188 was closed 1 [DevTools Bug] Cannot add child \"20185\" to parent \"19588\" because parent node was not found in the Store. Component: Developer Tools Status: Unconfirmed Type: Bug Unread react/react#37787 · by Filter by author heocon0720221 was closed 2 Bug: [Flight] Client throws object null is not iterable reviving an AggregateError whose inner errors have no stack frames Unread react/react#37728 · by Filter by author atomy was closed 1 Bug: Resuming a prerender that was aborted while a retried task was rendering drops part of the boundary Unread react/react#37709 · by Filter by author AdzerKI "
+    },
+    "elapsedMs": 10026.81683299999,
+    "memory": {
+      "samples": 19,
+      "browserPeakFootprintBytes": 630400000,
+      "pipelinePeakFootprintBytes": 773519216,
+      "pipelinePeakRssBytes": 1362001920
+    }
+  },
+  {
+    "id": "github-11",
+    "site": "github",
+    "level": 4,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 3,
+    "stages": {
+      "startupMs": 366.1757089999737,
+      "loadMs": 2440.1397080000024,
+      "observeMs": 195.92458299995633,
+      "jevMs": 1035.6830840000184,
+      "actionMs": 1054.2595830000355,
+      "verifyMs": 874.2496660000179
+    },
+    "httpStatus": 200,
+    "reason": "Cannot read properties of undefined (reading 'dispatchEvent')",
+    "elapsedMs": 8218.775167000014,
+    "memory": {
+      "samples": 75,
+      "browserPeakFootprintBytes": 149062520,
+      "pipelinePeakFootprintBytes": 324331128,
+      "pipelinePeakRssBytes": 391659520
+    }
+  },
+  {
+    "id": "github-11",
+    "site": "github",
+    "level": 4,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 3068.4875839999877,
+      "loadMs": 3698.5088749999995,
+      "observeMs": 667.6605409999611,
+      "jevMs": 395.62745800003177,
+      "actionMs": 640.8357500000275,
+      "verifyMs": 1245.3064589999267
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://github.com/react/react/issues?q=is%3Aissue+state%3Aopen",
+    "finalEvidence": {
+      "title": "Issues · react/react · GitHub",
+      "headings": [
+        "Navigation Menu",
+        "Repository navigation",
+        "Issues",
+        "Issues",
+        "Issues",
+        "Footer"
+      ],
+      "text": "Skip to content Navigation Menu Sign in react react Repository navigation Code Issues 875 (875) Pull requests 547 (547) Actions Security and quality 8 (8) Insights Issues Assigned to me Created by me Mentioned Recent activity Views Milestones Labels Feedback Preview Collapse sidebar Issues New issue Search issues is:issue state:open Issues Open 875 (875) Closed 13,880 (13,880) Author Labels Projects Transition never commits: a Flight chunk's synchronous then() pings from inside the render phase while the root is already suspended-with-delay, and the ping is dropped (React 19.2.8, Next 15.5 same-route navigation) Unread react/react#37830 · Filter by author lloydhelio opened Bug: error recovery is disabled when the recovery retry is only interrupted for selective hydration (regression from #37739) Unread react/react#37809 · Filter by author 8tungi opened 1 Transition never commits: a ping from a synchronously resolving Flight chunk is dropped during render (RootSuspendedWithDelay) Unread react/react#37805 · Filter by author Minnyat opened Bug: react-refresh retains roots that unmount before their first render (StrictMode), same leak as #36379 Unread react/react#37804 · Filter by author amosvizer opened 1 [DevTools Bug]: DOM nodes removed from a still-mounted component stay in publicInstanceToDevToolsInstanceMap until reload (8.0.0, DevTools closed) Unread react/react#37802 · Filter by author olinanderson opened 1 Bug: Status: Unconfirmed Unread react/react#37792 · Filter by aut"
+    },
+    "elapsedMs": 9739.648999999976,
+    "memory": {
+      "samples": 21,
+      "browserPeakFootprintBytes": 684057432,
+      "pipelinePeakFootprintBytes": 861570816,
+      "pipelinePeakRssBytes": 1390182400
+    }
+  },
+  {
+    "id": "github-11",
+    "site": "github",
+    "level": 4,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 14,
+    "stages": {
+      "startupMs": 2852.7580409999937,
+      "loadMs": 5036.276332999987,
+      "observeMs": 16683.11758400005,
+      "jevMs": 4343.812501000066,
+      "actionMs": 6446.607001999975,
+      "verifyMs": 94.5817069998011
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://github.com/react/react/issues?q=is%3Aissue%20is%3Aclosed",
+    "finalEvidence": {
+      "title": "Issues · react/react · GitHub",
+      "headings": [
+        "Navigation Menu",
+        "Repository navigation",
+        "Issues",
+        "Issues",
+        "Issues",
+        "Footer"
+      ],
+      "text": "Skip to content Navigation Menu Sign in react react Repository navigation Code Issues 875 (875) Pull requests 547 (547) Actions Security and quality 8 (8) Insights Issues Assigned to me Created by me Mentioned Recent activity Views Milestones Labels Feedback Preview Collapse sidebar Issues New issue Search issues is:issue is:closed Issues 13880 results Author Labels Projects Milestones Test from the MCP demo Unread react/react#37824 · by Filter by author ericwgreene was closed 1 Bug: Hiding a dehydrated Activity hides every sibling after it Unread react/react#37813 · by Filter by author skrabe was closed 1 Bug: Status: Unconfirmed Unread react/react#37811 · by Filter by author Tejaswi-GUDE was closed Bug: use() crashes in DEV with TypeError: Cannot add property _debugInfo when the thenable is frozen/non-extensible Unread react/react#37795 · by Filter by author zhoubiao188 was closed 1 [DevTools Bug] Cannot add child \"20185\" to parent \"19588\" because parent node was not found in the Store. Component: Developer Tools Status: Unconfirmed Type: Bug Unread react/react#37787 · by Filter by author heocon0720221 was closed 2 Bug: [Flight] Client throws object null is not iterable reviving an AggregateError whose inner errors have no stack frames Unread react/react#37728 · by Filter by author atomy was closed 1 Bug: Resuming a prerender that was aborted while a retried task was rendering drops part of the boundary Unread react/react#37709 · by Filter by author AdzerKI was closed 1 [De"
+    },
+    "reason": "Step or time limit",
+    "elapsedMs": 35475.98087500001,
+    "memory": {
+      "samples": 217,
+      "browserPeakFootprintBytes": 601154344,
+      "pipelinePeakFootprintBytes": 846531000,
+      "pipelinePeakRssBytes": 1480753152
+    }
+  },
+  {
+    "id": "osm-12",
+    "site": "osm",
+    "level": 5,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 2,
+    "stages": {
+      "startupMs": 3627.141874999972,
+      "loadMs": 6715.293000000005,
+      "observeMs": 50.65883299999405,
+      "jevMs": 1173.5845839999965,
+      "actionMs": 622.9950829999871,
+      "verifyMs": 10.474875000014435
+    },
+    "httpStatus": 200,
+    "reason": "Premature DONE",
+    "finalUrl": "https://www.openstreetmap.org/way/5013364/history/187",
+    "finalEvidence": {
+      "title": "Way: ‪Eiffel Tower‬ (‪5013364‬) | OpenStreetMap",
+      "headings": [
+        "OpenStreetMap",
+        "Select Language",
+        "",
+        "Way: Eiffel Tower (5013364)",
+        "Welcome to OpenStreetMap!",
+        "Map Layers",
+        "Legend",
+        "Share"
+      ],
+      "text": "OpenStreetMap Edit History Export GPS Traces User Diaries Communities Copyright More Log In Sign Up Where is this? Loading... 30 m 100 ft © OpenStreetMap contributors ♥️ Make a Donation. Website and API terms"
+    },
+    "elapsedMs": 12204.19312499999,
+    "memory": {
+      "samples": 48,
+      "browserPeakFootprintBytes": 490300464,
+      "pipelinePeakFootprintBytes": 665717056,
+      "pipelinePeakRssBytes": 1269481472
+    }
+  },
+  {
+    "id": "osm-12",
+    "site": "osm",
+    "level": 5,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 14,
+    "stages": {
+      "startupMs": 2448.642792000028,
+      "loadMs": 1811.2238329999964,
+      "observeMs": 5638.858247999975,
+      "jevMs": 5463.417790999869,
+      "actionMs": 6553.085501000052,
+      "verifyMs": 5467.639708999952
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.openstreetmap.org/#map=18/48.858260/2.294501",
+    "finalEvidence": {
+      "title": "OpenStreetMap",
+      "headings": [
+        "OpenStreetMap",
+        "Select Language",
+        "",
+        "Welcome to OpenStreetMap!",
+        "Map Layers",
+        "Legend",
+        "Share"
+      ],
+      "text": "OpenStreetMap Edit History Export GPS Traces User Diaries Communities Copyright More Log In Sign Up Where is this? Welcome to OpenStreetMap! OpenStreetMap is a map of the world, created by people like you and free to use under an open license. Hosting is supported by Fastly, OSMF corporate members, and other partners. By using this website or other infrastructure provided by the OpenStreetMap Foundation, you agree to the Terms of Use. Learn More Start Mapping 30 m 100 ft © OpenStreetMap contributors ♥️ Make a Donation. Website and API terms"
+    },
+    "reason": "Step or time limit",
+    "elapsedMs": 27388.208709000028,
+    "memory": {
+      "samples": 240,
+      "browserPeakFootprintBytes": 683797568,
+      "pipelinePeakFootprintBytes": 994792912,
+      "pipelinePeakRssBytes": 1582186496
+    }
+  },
+  {
+    "id": "osm-12",
+    "site": "osm",
+    "level": 5,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 12,
+    "stages": {
+      "startupMs": 190.96537500002887,
+      "loadMs": 1228.2975419999566,
+      "observeMs": 28.195877000165638,
+      "jevMs": 3626.7528320000274,
+      "actionMs": 3189.3061650000163,
+      "verifyMs": 13.231997999944724
+    },
+    "httpStatus": 200,
+    "reason": "Model BLOCKED",
+    "finalUrl": "https://www.openstreetmap.org/history#map=12/48.8584/2.2944",
+    "finalEvidence": {
+      "title": "Changesets | OpenStreetMap",
+      "headings": [
+        "OpenStreetMap",
+        "Select Language",
+        "",
+        "Changesets",
+        "Welcome to OpenStreetMap!",
+        "Map Layers",
+        "Legend",
+        "Share"
+      ],
+      "text": "OpenStreetMap Where is this? GraphHopper OSRM Valhalla Edit Edit with iD (in-browser editor) Edit with Remote Control (JOSM, Potlatch, Merkaartor) History Export GPS Traces User Diaries Communities Copyright Help Donate About Log In Sign Up Select Language Loading... Close Where is this? GraphHopper OSRM Valhalla Loading... Changesets résolution de notes diverses Closed 1 day ago by Fox_45 #190402398 122030 Specify access to places Closed 1 day ago by xanderio #190396449 0300 Intégration des données ATP (Paris ; Foncia) Closed 1 day ago by K12230LF #190383531 0600 Intégration des données ATP (Hauts-de-Seine ; Body Minute) Closed 1 day ago by K12230LF #190383296 0700 Intégration des données ATP (Paris ; Body Minute) Closed 1 day ago by K12230LF #190383295 01600 Intégration des données ATP (Hauts-de-Seine ; Lissac) Closed 1 day ago by K12230LF #190383046 0400 Reverting some fantasy mapping. See https://www.openstreetmap.org/user_blocks/21421 Closed 1 day ago by SomeoneElse_Revert #190372917 03414931 Specify tree denotation Closed 1 day ago by user_5589 #190370969 048700 Specify tree denotation Closed 2 days ago by user_5589 #190348310 019700 Fix seld_checkout typo in preset. See https://github.com/MarcusWolschon/osmeditor4android/issues/3430 Closed 2 days ago by SimonPoole #190339873 01100 Intégration des données ATP (Paris ; Tara Jarmon) Closed 2 days ago by K12230LF #190330771 0400 Intégration des données ATP (Paris ; Lissac) Closed 2 days ago by K12230LF #190330378 0600 Inté"
+    },
+    "elapsedMs": 8280.34395900002,
+    "memory": {
+      "samples": 80,
+      "browserPeakFootprintBytes": 56836936,
+      "pipelinePeakFootprintBytes": 241625704,
+      "pipelinePeakRssBytes": 297844736
+    }
+  },
+  {
+    "id": "osm-13",
+    "site": "osm",
+    "level": 5,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 3,
+    "stages": {
+      "startupMs": 627.2758749999921,
+      "loadMs": 4740.559290999954,
+      "observeMs": 1063.4086239999742,
+      "jevMs": 967.4761680000811,
+      "actionMs": 927.0813749999506,
+      "verifyMs": 7.360540999972727
+    },
+    "httpStatus": 200,
+    "reason": "Model BLOCKED",
+    "finalUrl": "https://www.openstreetmap.org/#map=18/48.858262/2.293562",
+    "finalEvidence": {
+      "title": "OpenStreetMap",
+      "headings": [
+        "OpenStreetMap",
+        "Select Language",
+        "",
+        "Way History: Eiffel Tower (5013364)",
+        "Welcome to OpenStreetMap!",
+        "Map Layers",
+        "Legend",
+        "Share"
+      ],
+      "text": "OpenStreetMap Edit History Export GPS Traces User Diaries Communities Copyright More Log In Sign Up Where is this? 30 m 100 ft © OpenStreetMap contributors ♥️ Make a Donation. Website and API terms"
+    },
+    "elapsedMs": 8338.070542000001,
+    "memory": {
+      "samples": 77,
+      "browserPeakFootprintBytes": 561883120,
+      "pipelinePeakFootprintBytes": 833917432,
+      "pipelinePeakRssBytes": 1480933376
+    }
+  },
+  {
+    "id": "osm-13",
+    "site": "osm",
+    "level": 5,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 14,
+    "stages": {
+      "startupMs": 166.8684999999823,
+      "loadMs": 4266.116374999983,
+      "observeMs": 1037.9577500001178,
+      "jevMs": 4715.590584999998,
+      "actionMs": 0.010041999979875982,
+      "verifyMs": 23.35612599994056
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.openstreetmap.org/way/5013364/history#map=12/48.8583/2.2945",
+    "finalEvidence": {
+      "title": "Way History: ‪Eiffel Tower‬ (‪5013364‬) | OpenStreetMap",
+      "headings": [
+        "OpenStreetMap",
+        "Select Language",
+        "",
+        "Way History: Eiffel Tower (5013364)",
+        "Welcome to OpenStreetMap!",
+        "Map Layers",
+        "Legend",
+        "Share"
+      ],
+      "text": "OpenStreetMap Where is this? GraphHopper OSRM Valhalla Edit Edit with iD (in-browser editor) Edit with Remote Control (JOSM, Potlatch, Merkaartor) History Export GPS Traces User Diaries Communities Copyright Help Donate About Log In Sign Up Select Language Loading... Close Where is this? GraphHopper OSRM Valhalla Loading... Way History: Eiffel Tower (5013364) Version #187 Suppression de l'attribut image:0 Edited 9 days ago by esmenard Changeset #189964534 0 Tags 3dmr 4 addr:city Paris addr:housenumber 5 addr:postcode 75007 addr:street Avenue Anatole France alt_name:sr Ајфелов торањ alt_name:zh-Hans 巴黎铁塔 alt_name:zh-Hant 巴黎鐵塔 architect Stephen Sauvestre building tower building:colour #706550 building:material iron building:part no building:shape pyramidal check_date 2026-09-23 communication:radio fm communication:television dvb-t engineer Gustave Eiffel;Maurice Koechlin;Émile Nouguier fee 10-25€ height 330 heritage 3 heritage:operator mhs historic monument historic:period modern image https://fr.wikipedia.org/wiki/Fichier:Tour_Eiffel_Wikimedia_Commons.jpg importance international landmark 1 layer 2 man_made tower mhs:inscription_date 1964-06-24 min_height 0 name Tour Eiffel name:af Eiffel-toring name:ar برج إيفل name:ast Torrne Eiffel name:ba Эйфель башняһы name:be Вежа Эйфеля name:br Tour Eiffel name:ca Torre Eiffel name:cs Eiffelova věž name:da Eiffeltårnet name:de Eiffelturm name:el Πύργος του Άιφελ name:en Eiffel Tower name:eo Eiffel-Turo name:es Torre Eiffel name:et Eiffe"
+    },
+    "reason": "Step or time limit",
+    "elapsedMs": 10219.963541999983,
+    "memory": {
+      "samples": 99,
+      "browserPeakFootprintBytes": 87147336,
+      "pipelinePeakFootprintBytes": 277703344,
+      "pipelinePeakRssBytes": 338542592
+    }
+  },
+  {
+    "id": "osm-13",
+    "site": "osm",
+    "level": 5,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 14,
+    "stages": {
+      "startupMs": 906.2656669999706,
+      "loadMs": 6046.037458000006,
+      "observeMs": 2026.294581999944,
+      "jevMs": 5313.541499999934,
+      "actionMs": 0.012916999927256256,
+      "verifyMs": 106.80303900013678
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.openstreetmap.org/way/5013364/history#map=18/48.858260/2.294501",
+    "finalEvidence": {
+      "title": "Way History: ‪Eiffel Tower‬ (‪5013364‬) | OpenStreetMap",
+      "headings": [
+        "OpenStreetMap",
+        "Select Language",
+        "",
+        "Way History: Eiffel Tower (5013364)",
+        "Welcome to OpenStreetMap!",
+        "Map Layers",
+        "Legend",
+        "Share"
+      ],
+      "text": "OpenStreetMap Edit History Export GPS Traces User Diaries Communities Copyright More Log In Sign Up Where is this? Way History: Eiffel Tower (5013364) Version #187 Suppression de l'attribut image:0 Edited 9 days ago by esmenard Changeset #189964534 0 Tags 3dmr 4 addr:city Paris addr:housenumber 5 addr:postcode 75007 addr:street Avenue Anatole France alt_name:sr Ајфелов торањ alt_name:zh-Hans 巴黎铁塔 alt_name:zh-Hant 巴黎鐵塔 architect Stephen Sauvestre building tower building:colour #706550 building:material iron building:part no building:shape pyramidal check_date 2026-09-23 communication:radio fm communication:television dvb-t engineer Gustave Eiffel;Maurice Koechlin;Émile Nouguier fee 10-25€ height 330 heritage 3 heritage:operator mhs historic monument historic:period modern image https://fr.wikipedia.org/wiki/Fichier:Tour_Eiffel_Wikimedia_Commons.jpg importance international landmark 1 layer 2 man_made tower mhs:inscription_date 1964-06-24 min_height 0 name Tour Eiffel name:af Eiffel-toring name:ar برج إيفل name:ast Torrne Eiffel name:ba Эйфель башняһы name:be Вежа Эйфеля name:br Tour Eiffel name:ca Torre Eiffel name:cs Eiffelova věž name:da Eiffeltårnet name:de Eiffelturm name:el Πύργος του Άιφελ name:en Eiffel Tower name:eo Eiffel-Turo name:es Torre Eiffel name:et Eiffeli torn name:eu Eiffel dorrea name:fa برج ایفل name:fi Eiffel-torni name:fr Tour Eiffel name:he מגדל אייפל name:hi एफ़िल टॉवर name:hr Eiffelov toranj name:hu Eiffel-torony name:ia Turre Eiffel name:id Menara Eif"
+    },
+    "reason": "Step or time limit",
+    "elapsedMs": 14411.937208999996,
+    "memory": {
+      "samples": 102,
+      "browserPeakFootprintBytes": 598664096,
+      "pipelinePeakFootprintBytes": 784304880,
+      "pipelinePeakRssBytes": 1408155648
+    }
+  }
+]

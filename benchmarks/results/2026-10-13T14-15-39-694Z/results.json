@@ -1,0 +1,742 @@
+[
+  {
+    "id": "autocomplete-chromium-rendered-1",
+    "task": "autocomplete",
+    "variant": 1,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 4,
+    "modelLatencyMs": 1448.021458,
+    "observeMs": 11.88891700000022,
+    "actionMs": 288.83166700000015,
+    "totalMs": 2950.881459,
+    "startupMs": 582.913292,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 15.016875000000027,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "role": "combobox",
+          "tag": "input",
+          "value": "Berlin",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Berlin",
+          "selected": "Berlin"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” autocomplete",
+    "finalUrl": "http://127.0.0.1:54743/fixture/0dfa3559-4094-48cd-8100-2f6f544ef8a9",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 933445632,
+      "samples": 24,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 213827584
+    },
+    "screenshot": "autocomplete-chromium-rendered-1.png",
+    "evidenceMs": 37.73008299999992,
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-chromium-semantic-1",
+    "task": "autocomplete",
+    "variant": 1,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 4,
+    "modelLatencyMs": 1216.1784580000003,
+    "observeMs": 11.085625000000164,
+    "actionMs": 265.8899999999994,
+    "totalMs": 2564.436,
+    "startupMs": 457.71970899999997,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 15.541249999999764,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "role": "combobox",
+          "tag": "input",
+          "value": "Berlin",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Berlin",
+          "selected": "Berlin"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” autocomplete",
+    "finalUrl": "http://127.0.0.1:54743/fixture/5f3c76f8-cfc1-4779-97dd-daa7fa9251ff",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 919633920,
+      "samples": 21,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 215826432
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-lightpanda-semantic-1",
+    "task": "autocomplete",
+    "variant": 1,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 4,
+    "modelLatencyMs": 1014.0677500000002,
+    "observeMs": 6.12224999999944,
+    "actionMs": 269.07045800000014,
+    "totalMs": 2017.9593750000004,
+    "startupMs": 165.6185829999995,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.7649580000006608,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "role": "combobox",
+          "tag": "input",
+          "value": "Berlin",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Berlin",
+          "selected": "Berlin"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — autocomplete",
+    "finalUrl": "http://127.0.0.1:54743/fixture/818875ea-5cdc-4e79-8a73-db2edd9589bb",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33947648,
+      "samples": 18,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 217153536
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "records-chromium-rendered-1",
+    "task": "records",
+    "variant": 1,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 650.8026669999999,
+    "observeMs": 8.90887500000099,
+    "actionMs": 8.054415999999037,
+    "totalMs": 1431.6989999999987,
+    "startupMs": 439.9752499999995,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 21.419292000000496,
+    "lastObservation": {
+      "text": "Case management Case 105 opened. Case details. Saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "record": 105
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” records",
+    "finalUrl": "http://127.0.0.1:54743/fixture/181685cd-3c9c-45bf-bb1f-b666b167901f",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 916783104,
+      "samples": 10,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 203997184
+    },
+    "screenshot": "records-chromium-rendered-1.png",
+    "evidenceMs": 29.294417000000976,
+    "pageErrors": []
+  },
+  {
+    "id": "records-chromium-semantic-1",
+    "task": "records",
+    "variant": 1,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 584.7790000000023,
+    "observeMs": 6.035457999998471,
+    "actionMs": 4.643500000000131,
+    "totalMs": 1369.556125000001,
+    "startupMs": 459.32887499999924,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 17.349207999999635,
+    "lastObservation": {
+      "text": "Case management Case 105 opened. Case details. Saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "record": 105
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” records",
+    "finalUrl": "http://127.0.0.1:54743/fixture/50168c60-8ebd-4b1e-b967-eb5daabd39bb",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 911392768,
+      "samples": 9,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 206061568
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "records-lightpanda-semantic-1",
+    "task": "records",
+    "variant": 1,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 579.5804580000004,
+    "observeMs": 2.476582999999664,
+    "actionMs": 2.329915999998775,
+    "totalMs": 1009.2235410000012,
+    "startupMs": 163.36629100000027,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.8060420000001614,
+    "lastObservation": {
+      "text": "Case management Case 105 opened. Case details. Saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "record": 105
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — records",
+    "finalUrl": "http://127.0.0.1:54743/fixture/3d94948c-c1af-4b11-8325-04d160e4784f",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32866304,
+      "samples": 9,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 206667776
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-chromium-semantic-2",
+    "task": "autocomplete",
+    "variant": 2,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 4,
+    "modelLatencyMs": 1078.8412910000006,
+    "observeMs": 11.687834000000294,
+    "actionMs": 465.7017509999987,
+    "totalMs": 2621.4422080000004,
+    "startupMs": 460.7932499999988,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 14.27599999999984,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "role": "combobox",
+          "tag": "input",
+          "value": "Ankara",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Ankara",
+          "selected": "Ankara"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” autocomplete",
+    "finalUrl": "http://127.0.0.1:54743/fixture/1b13e864-1daa-4f0d-8d56-bdf9d90bab9a",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 938442752,
+      "samples": 22,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 210845696
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-lightpanda-semantic-2",
+    "task": "autocomplete",
+    "variant": 2,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 4,
+    "modelLatencyMs": 1064.3760000000002,
+    "observeMs": 4.655958000001192,
+    "actionMs": 475.8694570000025,
+    "totalMs": 2273.0914159999993,
+    "startupMs": 162.48366700000042,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 2.1100420000002487,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "role": "combobox",
+          "tag": "input",
+          "value": "Ankara",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Ankara",
+          "selected": "Ankara"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — autocomplete",
+    "finalUrl": "http://127.0.0.1:54743/fixture/67cee923-6cfe-4d4d-b4bf-dcdc5acdfeec",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 34127872,
+      "samples": 21,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 211976192
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-chromium-rendered-2",
+    "task": "autocomplete",
+    "variant": 2,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 4,
+    "modelLatencyMs": 1409.7787499999977,
+    "observeMs": 9.322291000000405,
+    "actionMs": 490.0624590000007,
+    "totalMs": 2975.352667000003,
+    "startupMs": 457.77837499999805,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 14.437125000000378,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "role": "combobox",
+          "tag": "input",
+          "value": "Ankara",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Ankara",
+          "selected": "Ankara"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” autocomplete",
+    "finalUrl": "http://127.0.0.1:54743/fixture/0b435010-0068-49a6-b1b5-d8c56d5366f6",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 952418304,
+      "samples": 25,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 112525312
+    },
+    "screenshot": "autocomplete-chromium-rendered-2.png",
+    "evidenceMs": 32.11150000000271,
+    "pageErrors": []
+  },
+  {
+    "id": "records-chromium-semantic-2",
+    "task": "records",
+    "variant": 2,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 592.5614999999998,
+    "observeMs": 6.570290999999997,
+    "actionMs": 4.2089169999999285,
+    "totalMs": 1377.9240000000027,
+    "startupMs": 459.1737910000011,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 16.096042000001034,
+    "lastObservation": {
+      "text": "Case management Case 106 opened. Case details. Saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "record": 106
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” records",
+    "finalUrl": "http://127.0.0.1:54743/fixture/8d604c6a-7179-4bba-8464-39c86108aa9e",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 909541376,
+      "samples": 9,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 115376128
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "records-lightpanda-semantic-2",
+    "task": "records",
+    "variant": 2,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 496.0387090000004,
+    "observeMs": 2.2682500000009895,
+    "actionMs": 2.060750000000553,
+    "totalMs": 921.3820000000014,
+    "startupMs": 160.52737499999785,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.7695830000011483,
+    "lastObservation": {
+      "text": "Case management Case 106 opened. Case details. Saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "record": 106
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — records",
+    "finalUrl": "http://127.0.0.1:54743/fixture/b222cb49-c67d-43d4-b515-f6964cfbddd6",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32735232,
+      "samples": 8,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 118587392
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "records-chromium-rendered-2",
+    "task": "records",
+    "variant": 2,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 627.7890420000003,
+    "observeMs": 7.07050000000163,
+    "actionMs": 6.871790999997756,
+    "totalMs": 1524.0907079999997,
+    "startupMs": 543.283958,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 25.598792000000685,
+    "lastObservation": {
+      "text": "Case management Case 106 opened. Case details. Saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "record": 106
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” records",
+    "finalUrl": "http://127.0.0.1:54743/fixture/b42d57cf-2625-4d91-8e65-3ca4f9f75bc8",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 915292160,
+      "samples": 10,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 118816768
+    },
+    "screenshot": "records-chromium-rendered-2.png",
+    "evidenceMs": 24.11687499999971,
+    "pageErrors": []
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-13T14-18-42-175Z",
+  "policy": "jev",
+  "repeat": 1,
+  "profiles": [
+    "chromium-rendered",
+    "chromium-semantic",
+    "lightpanda-semantic",
+    "lightpanda-enhanced"
+  ],
+  "tasks": [
+    "trusted-pointer"
+  ],
+  "order": [
+    {
+      "task": "trusted-pointer",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "trusted-pointer",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "trusted-pointer",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "trusted-pointer",
+      "profile": "lightpanda-enhanced",
+      "iteration": 1
+    }
+  ],
+  "node": "v25.8.2",
+  "platform": "darwin",
+  "arch": "arm64",
+  "decisionModel": "jev-1.13.0",
+  "endpoint": "typesafe",
+  "maxCalls": "unlimited",
+  "imagesSentToModel": 0,
+  "measurement": "Fresh browser per case; startup/navigation included in total; RSS samples are browser tree only, not capacity proof; action settling fixed at 150 ms in all profiles",
+  "visualMode": "Scripted canvas probe has fixture-defined coordinates; Jev has no vision fallback",
+  "sourceHashes": {
+    "src/backend.mjs": "7c0279c21693108be0eba13b6680a5ecf911856148e955859a5f905410476864",
+    "src/observation.mjs": "ee62bff1788e6184da8c857310cf28e50c8559ea5a8c6bd2a3dfc11aed64b384",
+    "src/policy.mjs": "321a155e607a3fb14a3513ca36dba0bee01d05970e99742b43d11d4b0c0e7cc9",
+    "src/tasks.mjs": "7fc253df0b9a8fd0550cf370b14f2e263edc8242f5fe003e2054f59455024ed9",
+    "src/variants.mjs": "1b6e37ffd65a996f6963b5d6e23832062fd345248ceaf1e1c6b215d5b6d73b4f",
+    "src/fixtures.mjs": "05cb4f823537deb8a396aa62ae0d0dd1921a3b5af04a784c4176b190b567fefd",
+    "src/cli.mjs": "7e88d55d9825086955bfc23a715d00d12e62d69aee9a4001abf56b1f63dfbed2"
+  },
+  "lightpanda": {
+    "sha256": "955440053a84754dd64c62f970449a56a2b350cdf43ea5f2e809a73047b8173d",
+    "version": "1.0.0"
+  },
+  "dependencies": "25.13.0"
+}

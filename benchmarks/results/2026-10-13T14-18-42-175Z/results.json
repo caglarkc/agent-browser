@@ -1,0 +1,238 @@
+[
+  {
+    "id": "trusted-pointer-chromium-rendered-1",
+    "task": "trusted-pointer",
+    "variant": 0,
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 802.27875,
+    "observeMs": 17.827666999999906,
+    "actionMs": 13.259917000000087,
+    "totalMs": 1626.085125,
+    "startupMs": 473.69062499999995,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 17.427124999999933,
+    "lastObservation": {
+      "text": "Trusted pointer control Research Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Research",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "research"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab â€” trusted-pointer",
+    "finalUrl": "http://127.0.0.1:55027/fixture/9ecf0e11-6026-48ce-bfb7-95df3d67e3c3",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 915816448,
+      "samples": 12,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 211943424
+    },
+    "screenshot": "trusted-pointer-chromium-rendered-1.png",
+    "evidenceMs": 23.216042000000016,
+    "pageErrors": []
+  },
+  {
+    "id": "trusted-pointer-chromium-semantic-1",
+    "task": "trusted-pointer",
+    "variant": 0,
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 579.7514160000001,
+    "observeMs": 25.612165999999434,
+    "actionMs": 2.4292500000001382,
+    "totalMs": 1413.5978340000001,
+    "startupMs": 491.8107500000001,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 17.49216699999988,
+    "lastObservation": {
+      "text": "Trusted pointer control Research Not saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Research",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": false,
+      "commits": 0,
+      "actual": []
+    },
+    "falseSuccess": true,
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab â€” trusted-pointer",
+    "finalUrl": "http://127.0.0.1:55027/fixture/02c0592a-b70b-4408-abf7-a703e21fcdcf",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 910786560,
+      "samples": 9,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 215072768
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "trusted-pointer-lightpanda-semantic-1",
+    "task": "trusted-pointer",
+    "variant": 0,
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 465.17520799999966,
+    "observeMs": 2.327749999999469,
+    "actionMs": 2.1174999999998363,
+    "totalMs": 895.5717090000003,
+    "startupMs": 164.45749999999998,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 2.0708749999998872,
+    "lastObservation": {
+      "text": "Trusted pointer control Research Not saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Research",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "unknown-without-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": false,
+      "commits": 0,
+      "actual": []
+    },
+    "falseSuccess": true,
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab — trusted-pointer",
+    "finalUrl": "http://127.0.0.1:55027/fixture/ef8988ff-fee4-454c-bb91-3cd5cd44b38c",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32096256,
+      "samples": 7,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 216023040
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "trusted-pointer-lightpanda-enhanced-1",
+    "task": "trusted-pointer",
+    "variant": 0,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 12,
+    "modelCalls": 12,
+    "modelLatencyMs": 3474.550916000001,
+    "observeMs": 14.863832000000002,
+    "actionMs": 17.797209999999723,
+    "totalMs": 5603.710375000001,
+    "startupMs": 164.37058400000024,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.6402089999992313,
+    "lastObservation": {
+      "text": "Trusted pointer control Research Not saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Research",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "verification": {
+      "passed": false,
+      "commits": 0,
+      "actual": []
+    },
+    "falseSuccess": false,
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab — trusted-pointer",
+    "finalUrl": "http://127.0.0.1:55027/fixture/e5bc5787-e624-4a93-b549-38a311114753",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32768000,
+      "samples": 54,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 206241792
+    },
+    "pageErrors": []
+  }
+]

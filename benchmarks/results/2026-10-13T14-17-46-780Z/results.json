@@ -1,0 +1,720 @@
+[
+  {
+    "id": "form-lightpanda-enhanced-1",
+    "task": "form",
+    "variant": 1,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 5,
+    "modelLatencyMs": 2978.6803729999997,
+    "observeMs": 8.3571249999992,
+    "actionMs": 10.184248999999909,
+    "totalMs": 3916.2541659999997,
+    "startupMs": 189.38208399999996,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 5.067916999999966,
+    "lastObservation": {
+      "text": "Research request Name Category General Design Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Deniz",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralDesignOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Deniz",
+          "category": "design",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:54944/fixture/7b2f14ec-eaab-4302-9503-5129dcd3d844",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33521664,
+      "samples": 37,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 214269952
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "css-hidden-lightpanda-enhanced-1",
+    "task": "css-hidden",
+    "variant": 1,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 582.6206659999998,
+    "observeMs": 2.776499999999942,
+    "actionMs": 2.803000000000793,
+    "totalMs": 1013.9369999999999,
+    "startupMs": 162.77954099999988,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.6867499999998472,
+    "lastObservation": {
+      "text": "CSS visibility boundary Design Design Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Design",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "design"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — css-hidden",
+    "finalUrl": "http://127.0.0.1:54944/fixture/f86801ef-b5af-4a74-8985-f64c56519474",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32702464,
+      "samples": 9,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 215367680
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "pointer-lightpanda-enhanced-1",
+    "task": "pointer",
+    "variant": 1,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 482.9589160000005,
+    "observeMs": 2.2504580000004353,
+    "actionMs": 2.7367910000002666,
+    "totalMs": 912.95975,
+    "startupMs": 166.6327080000001,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.653874999999971,
+    "lastObservation": {
+      "text": "Pointer-event control Design Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Design",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "design"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — pointer",
+    "finalUrl": "http://127.0.0.1:54944/fixture/07aed356-fa1d-452b-9461-4787622223c5",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32669696,
+      "samples": 8,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 215728128
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-lightpanda-enhanced-1",
+    "task": "autocomplete",
+    "variant": 1,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 4,
+    "modelLatencyMs": 1015.4491660000003,
+    "observeMs": 7.789418000000296,
+    "actionMs": 271.294167,
+    "totalMs": 2021.2297080000008,
+    "startupMs": 164.1625840000006,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.82024999999976,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "role": "combobox",
+          "tag": "input",
+          "value": "Berlin",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Berlin",
+          "selected": "Berlin"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — autocomplete",
+    "finalUrl": "http://127.0.0.1:54944/fixture/5a858763-fbf5-4029-811d-b6b219095806",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 34308096,
+      "samples": 19,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 205537280
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "records-lightpanda-enhanced-1",
+    "task": "records",
+    "variant": 1,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 515.29925,
+    "observeMs": 2.807582999999795,
+    "actionMs": 3.2663329999995767,
+    "totalMs": 948.6447079999998,
+    "startupMs": 163.6633750000001,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 2.708082999999533,
+    "lastObservation": {
+      "text": "Case management Case 105 opened. Case details. Saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "record": 105
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — records",
+    "finalUrl": "http://127.0.0.1:54944/fixture/26986c6d-585a-4cf7-94d2-5890e935786b",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32849920,
+      "samples": 8,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 204570624
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "form-lightpanda-enhanced-2",
+    "task": "form",
+    "variant": 2,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 4,
+    "modelCalls": 5,
+    "modelLatencyMs": 1285.618625000001,
+    "observeMs": 6.639250999996875,
+    "actionMs": 7.502290999997058,
+    "totalMs": 2179.0401249999995,
+    "startupMs": 163.12566700000025,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.9844170000014856,
+    "lastObservation": {
+      "text": "Research request Name Category General Support Other Accept terms Submit Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Name",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "Eren",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Category → General",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "general",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:general"
+        },
+        {
+          "node": "2",
+          "label": "Category → Other",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "role": "",
+          "tag": "select",
+          "value": "other",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "select",
+          "frame": 0,
+          "key": "f0n2:select:other"
+        },
+        {
+          "node": "3",
+          "label": "Accept terms",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "role": "",
+          "tag": "input",
+          "value": "on",
+          "checked": true,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n3:click:"
+        },
+        {
+          "node": "4",
+          "label": "Submit",
+          "context": "NameCategoryGeneralSupportOtherAccept termsSubmit",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n4:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "name": "Eren",
+          "category": "support",
+          "terms": true
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — form",
+    "finalUrl": "http://127.0.0.1:54944/fixture/fb08a0f5-852d-442a-9d53-6e6e236979c4",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33538048,
+      "samples": 20,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 206618624
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "css-hidden-lightpanda-enhanced-2",
+    "task": "css-hidden",
+    "variant": 2,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 603.4236260000016,
+    "observeMs": 2.862583000000086,
+    "actionMs": 2.3500420000000304,
+    "totalMs": 1029.3365410000006,
+    "startupMs": 161.6243340000001,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.6145830000004935,
+    "lastObservation": {
+      "text": "CSS visibility boundary Support Support Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Support",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "support"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — css-hidden",
+    "finalUrl": "http://127.0.0.1:54944/fixture/cd0f1ec8-85ed-4d83-8271-121b90fec1e0",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32702464,
+      "samples": 9,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 209846272
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "pointer-lightpanda-enhanced-2",
+    "task": "pointer",
+    "variant": 2,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 642.7995410000003,
+    "observeMs": 2.977750999998534,
+    "actionMs": 2.7835830000003625,
+    "totalMs": 1077.4897920000003,
+    "startupMs": 166.51124999999956,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.3631249999998545,
+    "lastObservation": {
+      "text": "Pointer-event control Support Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Support",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "support"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — pointer",
+    "finalUrl": "http://127.0.0.1:54944/fixture/d10118e8-2fba-49ab-a784-0c24605e4028",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32653312,
+      "samples": 9,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 210370560
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "autocomplete-lightpanda-enhanced-2",
+    "task": "autocomplete",
+    "variant": 2,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 3,
+    "modelCalls": 4,
+    "modelLatencyMs": 1077.9881669999995,
+    "observeMs": 6.111542000000554,
+    "actionMs": 476.646958000003,
+    "totalMs": 2291.4305829999994,
+    "startupMs": 165.2776249999988,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.7086249999993015,
+    "lastObservation": {
+      "text": "Destination search City Search Saved",
+      "candidates": [
+        {
+          "node": "1",
+          "label": "City",
+          "context": "",
+          "role": "combobox",
+          "tag": "input",
+          "value": "Ankara",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "fill",
+          "frame": 0,
+          "key": "f0n1:fill:"
+        },
+        {
+          "node": "2",
+          "label": "Search",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "city": "Ankara",
+          "selected": "Ankara"
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — autocomplete",
+    "finalUrl": "http://127.0.0.1:54944/fixture/f327aeba-0d8e-45c7-a506-b4481515e7fa",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 33931264,
+      "samples": 21,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 211615744
+    },
+    "pageErrors": []
+  },
+  {
+    "id": "records-lightpanda-enhanced-2",
+    "task": "records",
+    "variant": 2,
+    "profile": "lightpanda-enhanced",
+    "policy": "jev",
+    "iteration": 2,
+    "status": "PASS",
+    "steps": 1,
+    "modelCalls": 2,
+    "modelLatencyMs": 503.5905410000014,
+    "observeMs": 2.1567489999979443,
+    "actionMs": 2.5925419999985024,
+    "totalMs": 932.6925420000007,
+    "startupMs": 165.38866600000256,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.6202909999992698,
+    "lastObservation": {
+      "text": "Case management Case 106 opened. Case details. Saved",
+      "candidates": [],
+      "observedFrames": 1,
+      "declaredFrames": 0,
+      "excludedCandidates": 0
+    },
+    "declaredDone": true,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "record": 106
+        }
+      ]
+    },
+    "falseSuccess": false,
+    "finalTitle": "Browser Lab — records",
+    "finalUrl": "http://127.0.0.1:54944/fixture/bbd98f8c-84e6-4091-a742-c48f48a48f4c",
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32915456,
+      "samples": 8,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 211943424
+    },
+    "pageErrors": []
+  }
+]

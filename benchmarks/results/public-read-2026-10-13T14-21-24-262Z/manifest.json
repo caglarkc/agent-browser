@@ -1,0 +1,7 @@
+{
+  "policy": "jev",
+  "imagesSentToModel": 0,
+  "model": "jev-1.13.0",
+  "apiCalls": 6,
+  "scope": "Three public documentation domains; observed link selection followed by direct same-origin GET navigation. Not an interaction/write benchmark."
+}

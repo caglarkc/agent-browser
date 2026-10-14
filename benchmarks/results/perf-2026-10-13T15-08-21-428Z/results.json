@@ -1,0 +1,1011 @@
+[
+  {
+    "id": "warm-chromium-dom-research-1",
+    "mode": "chromium-dom",
+    "phase": "warm",
+    "iteration": 1,
+    "variant": 72,
+    "task": "research",
+    "status": "PASS",
+    "startupMs": 0,
+    "modelCalls": 2,
+    "modelMs": 630.3655829999998,
+    "observeMs": 9.693875999999818,
+    "captureMs": 0,
+    "ocrMs": 0,
+    "ocrRecognitionMs": 0,
+    "actionMs": 14.288250000000062,
+    "settleMs": 152.78224999999998,
+    "verifyMs": 3.486458999999968,
+    "navigationMs": 17.59545900000012,
+    "pageCreateMs": 47.48833400000012,
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "2757 TRY"
+      }
+    },
+    "lastObservation": {
+      "url": "http://127.0.0.1:52352/fixture/3157b553-b88d-4e07-83f6-cc1889b87749",
+      "title": "Browser Lab â€” research",
+      "text": "Research library Notebook specifications Pen specifications Notebook specifications Subscription details from the product document. Billing period Price Monthly price 39 TRY Annual price 2757 TRY Annual billing includes twelve months. Compare the billing periods before reporting the price. Not saved",
+      "textTruncated": false,
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Notebook specifications",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Pen specifications",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "excludedCandidates": 0,
+      "canvas": false,
+      "frameCount": 0,
+      "observedFrames": 1,
+      "recentActions": [
+        {
+          "kind": "click",
+          "target": "Notebook specifications",
+          "value": ""
+        }
+      ]
+    },
+    "backendVersion": "Chrome/155.0.8059.40",
+    "activeMs": 911.2642089999999,
+    "totalMs": 911.2642089999999,
+    "memorySamples": [
+      {
+        "at": 1427.9535,
+        "components": {
+          "34282": {
+            "rssBytes": 762068992,
+            "footprintBytes": 313384112,
+            "processes": 6
+          }
+        },
+        "driverRssBytes": 75595776,
+        "pipelineRssBytes": 837664768,
+        "driverFootprintBytes": 37114416,
+        "pipelineFootprintBytes": 350498528
+      },
+      {
+        "at": 1489.431583,
+        "components": {
+          "34282": {
+            "rssBytes": 885063680,
+            "footprintBytes": 346841488,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 75808768,
+        "pipelineRssBytes": 960872448,
+        "driverFootprintBytes": 37982816,
+        "pipelineFootprintBytes": 384824304
+      },
+      {
+        "at": 1540.908625,
+        "components": {
+          "34282": {
+            "rssBytes": 907919360,
+            "footprintBytes": 349118888,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 77316096,
+        "pipelineRssBytes": 985235456,
+        "driverFootprintBytes": 42308552,
+        "pipelineFootprintBytes": 391427440
+      },
+      {
+        "at": 1614.024666,
+        "components": {
+          "34282": {
+            "rssBytes": 915161088,
+            "footprintBytes": 349233576,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 83542016,
+        "pipelineRssBytes": 998703104,
+        "driverFootprintBytes": 44061952,
+        "pipelineFootprintBytes": 393295528
+      },
+      {
+        "at": 1715.507833,
+        "components": {
+          "34282": {
+            "rssBytes": 918519808,
+            "footprintBytes": 349594024,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 85360640,
+        "pipelineRssBytes": 1003880448,
+        "driverFootprintBytes": 44307712,
+        "pipelineFootprintBytes": 393901736
+      },
+      {
+        "at": 1816.604125,
+        "components": {
+          "34282": {
+            "rssBytes": 919207936,
+            "footprintBytes": 349692328,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 85786624,
+        "pipelineRssBytes": 1004994560,
+        "driverFootprintBytes": 45372840,
+        "pipelineFootprintBytes": 395065168
+      },
+      {
+        "at": 1915.923208,
+        "components": {
+          "34282": {
+            "rssBytes": 923697152,
+            "footprintBytes": 353231272,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 116047872,
+        "pipelineRssBytes": 1039745024,
+        "driverFootprintBytes": 78665416,
+        "pipelineFootprintBytes": 431896688
+      },
+      {
+        "at": 2016.693333,
+        "components": {
+          "34282": {
+            "rssBytes": 926662656,
+            "footprintBytes": 355541416,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 121044992,
+        "pipelineRssBytes": 1047707648,
+        "driverFootprintBytes": 80959704,
+        "pipelineFootprintBytes": 436501120
+      },
+      {
+        "at": 2121.921125,
+        "components": {
+          "34282": {
+            "rssBytes": 927055872,
+            "footprintBytes": 355623336,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 122208256,
+        "pipelineRssBytes": 1049264128,
+        "driverFootprintBytes": 81058008,
+        "pipelineFootprintBytes": 436681344
+      },
+      {
+        "at": 2219.097083,
+        "components": {
+          "34282": {
+            "rssBytes": 927121408,
+            "footprintBytes": 355623336,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 122224640,
+        "pipelineRssBytes": 1049346048,
+        "driverFootprintBytes": 81058008,
+        "pipelineFootprintBytes": 436681344
+      },
+      {
+        "at": 2321.250208,
+        "components": {
+          "34282": {
+            "rssBytes": 927154176,
+            "footprintBytes": 355623336,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 122306560,
+        "pipelineRssBytes": 1049460736,
+        "driverFootprintBytes": 81139928,
+        "pipelineFootprintBytes": 436763264
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 11,
+        "median": 919207936,
+        "p95": 927154176,
+        "max": 927154176,
+        "mean": 903602920.7272727
+      },
+      "ocrTreeRss": {
+        "n": 11,
+        "median": 0,
+        "p95": 0,
+        "max": 0,
+        "mean": 0
+      },
+      "driverRss": {
+        "n": 11,
+        "median": 85786624,
+        "p95": 122306560,
+        "max": 122306560,
+        "mean": 98840203.63636364
+      },
+      "pipelineRss": {
+        "n": 11,
+        "median": 1004994560,
+        "p95": 1049460736,
+        "max": 1049460736,
+        "mean": 1002443124.3636364
+      },
+      "samples": 11,
+      "browserFootprint": {
+        "n": 11,
+        "median": 349692328,
+        "p95": 355623336,
+        "max": 355623336,
+        "mean": 348500646.54545456
+      },
+      "ocrFootprint": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "mean": null
+      },
+      "pipelineFootprint": {
+        "n": 11,
+        "median": 395065168,
+        "p95": 436763264,
+        "max": 436763264,
+        "mean": 407957860.3636364
+      }
+    }
+  },
+  {
+    "id": "warm-chromium-ocr-research-1",
+    "mode": "chromium-ocr",
+    "phase": "warm",
+    "iteration": 1,
+    "variant": 72,
+    "task": "research",
+    "status": "PASS",
+    "startupMs": 0,
+    "modelCalls": 2,
+    "modelMs": 524.0542500000006,
+    "observeMs": 0,
+    "captureMs": 179.32266699999946,
+    "ocrMs": 556.348708,
+    "ocrRecognitionMs": 553.70625,
+    "actionMs": 3.729500000000371,
+    "settleMs": 150.7207499999995,
+    "verifyMs": 1.5511670000000777,
+    "navigationMs": 34.51029100000005,
+    "pageCreateMs": 76.82949999999983,
+    "screenshotBytes": 60422,
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "2757 TRY"
+      }
+    },
+    "lastObservation": {
+      "title": "Screenshot OCR observation",
+      "text": "Research library\nNotebook specifications\nPen specifications\nNotebook specifications\nSubscription details from the product document.\nBilling period\nPrice\nMonthly price 39 TRY\nAnnual price 2757 TRY\nAnnual billing includes twelve months. Compare the billing periods before reporting the price.\nNot saved",
+      "candidates": [
+        {
+          "key": "ocr_0",
+          "kind": "ocr-click",
+          "label": "Research library",
+          "context": "Research library",
+          "x": 169.0264559200919,
+          "y": 55.518327992473935,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_1",
+          "kind": "ocr-click",
+          "label": "Notebook specifications",
+          "context": "Notebook specifications Pen specifications",
+          "x": 149.0000001,
+          "y": 132.0000002,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_2",
+          "kind": "ocr-click",
+          "label": "Pen specifications",
+          "context": "Notebook specifications Pen specifications",
+          "x": 361.00000146,
+          "y": 129.99999992,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_3",
+          "kind": "ocr-click",
+          "label": "Notebook specifications",
+          "context": "Notebook specifications",
+          "x": 186.00000003333332,
+          "y": 203.00000021666665,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_4",
+          "kind": "ocr-click",
+          "label": "Subscription details from the product document.",
+          "context": "Subscription details from the product document.",
+          "x": 227.0000038999999,
+          "y": 248.99999994,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_5",
+          "kind": "ocr-click",
+          "label": "Billing period",
+          "context": "Billing period Price",
+          "x": 90.99999995075342,
+          "y": 292.00000016689086,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_6",
+          "kind": "ocr-click",
+          "label": "Price",
+          "context": "Billing period Price",
+          "x": 186.99999932500003,
+          "y": 291.000000075,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_7",
+          "kind": "ocr-click",
+          "label": "Monthly price 39 TRY",
+          "context": "Monthly price 39 TRY",
+          "x": 124.00000149999998,
+          "y": 315.9999999,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_8",
+          "kind": "ocr-click",
+          "label": "Annual price 2757 TRY",
+          "context": "Annual price 2757 TRY",
+          "x": 132.99999927500002,
+          "y": 342.00000024999997,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_9",
+          "kind": "ocr-click",
+          "label": "Annual billing includes twelve months. Compare the billing periods before reporting the price.",
+          "context": "Annual billing includes twelve months. Compare the billing periods before reporting the price.",
+          "x": 406.0000074799999,
+          "y": 383.99999999999994,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_10",
+          "kind": "ocr-click",
+          "label": "Not saved",
+          "context": "Not saved",
+          "x": 71.99999930043217,
+          "y": 422.0000001029798,
+          "visibility": "screenshot-ocr"
+        }
+      ],
+      "source": "pixels-only OCR; no DOM or HTML",
+      "recentActions": [
+        {
+          "kind": "ocr-click",
+          "target": "Notebook specifications"
+        }
+      ]
+    },
+    "backendVersion": "Chrome/155.0.8059.40",
+    "activeMs": 1530.810333,
+    "totalMs": 1530.810333,
+    "memorySamples": [
+      {
+        "at": 3607.507416,
+        "components": {
+          "34456": {
+            "rssBytes": 779960320,
+            "footprintBytes": 326508080,
+            "processes": 6
+          },
+          "34473": {
+            "rssBytes": 54853632,
+            "footprintBytes": 70386384,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 115785728,
+        "pipelineRssBytes": 950599680,
+        "driverFootprintBytes": 74438872,
+        "pipelineFootprintBytes": 471333336
+      },
+      {
+        "at": 3744.979,
+        "components": {
+          "34456": {
+            "rssBytes": 895909888,
+            "footprintBytes": 358802264,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 54853632,
+            "footprintBytes": 70386384,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 115818496,
+        "pipelineRssBytes": 1066582016,
+        "driverFootprintBytes": 74471640,
+        "pipelineFootprintBytes": 503660288
+      },
+      {
+        "at": 3861.557,
+        "components": {
+          "34456": {
+            "rssBytes": 925335552,
+            "footprintBytes": 358032216,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 54853632,
+            "footprintBytes": 77218512,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 115884032,
+        "pipelineRssBytes": 1096073216,
+        "driverFootprintBytes": 74897672,
+        "pipelineFootprintBytes": 510148400
+      },
+      {
+        "at": 3919.221208,
+        "components": {
+          "34456": {
+            "rssBytes": 923140096,
+            "footprintBytes": 356541272,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 56967168,
+            "footprintBytes": 82690768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 116260864,
+        "pipelineRssBytes": 1096368128,
+        "driverFootprintBytes": 74946824,
+        "pipelineFootprintBytes": 514178864
+      },
+      {
+        "at": 4044.892458,
+        "components": {
+          "34456": {
+            "rssBytes": 923222016,
+            "footprintBytes": 356574040,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 66224128,
+            "footprintBytes": 84247248,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 116260864,
+        "pipelineRssBytes": 1105707008,
+        "driverFootprintBytes": 74946824,
+        "pipelineFootprintBytes": 515768112
+      },
+      {
+        "at": 4113.465041,
+        "components": {
+          "34456": {
+            "rssBytes": 923238400,
+            "footprintBytes": 356574040,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 66207744,
+            "footprintBytes": 82445008,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 116310016,
+        "pipelineRssBytes": 1105756160,
+        "driverFootprintBytes": 74995976,
+        "pipelineFootprintBytes": 514015024
+      },
+      {
+        "at": 4201.134041,
+        "components": {
+          "34456": {
+            "rssBytes": 923238400,
+            "footprintBytes": 356574040,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 66207744,
+            "footprintBytes": 82445008,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 116326400,
+        "pipelineRssBytes": 1105772544,
+        "driverFootprintBytes": 75012360,
+        "pipelineFootprintBytes": 514031408
+      },
+      {
+        "at": 4299.051375,
+        "components": {
+          "34456": {
+            "rssBytes": 923238400,
+            "footprintBytes": 356574040,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 66207744,
+            "footprintBytes": 82445008,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 112590848,
+        "pipelineRssBytes": 1102036992,
+        "driverFootprintBytes": 61806856,
+        "pipelineFootprintBytes": 500825904
+      },
+      {
+        "at": 4404.526,
+        "components": {
+          "34456": {
+            "rssBytes": 930349056,
+            "footprintBytes": 362177368,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 66207744,
+            "footprintBytes": 81887952,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 112820224,
+        "pipelineRssBytes": 1109377024,
+        "driverFootprintBytes": 61823240,
+        "pipelineFootprintBytes": 505888560
+      },
+      {
+        "at": 4515.891916,
+        "components": {
+          "34456": {
+            "rssBytes": 930398208,
+            "footprintBytes": 369517400,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 66207744,
+            "footprintBytes": 81887952,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 112836608,
+        "pipelineRssBytes": 1109442560,
+        "driverFootprintBytes": 61839624,
+        "pipelineFootprintBytes": 513244976
+      },
+      {
+        "at": 4742.013958,
+        "components": {
+          "34456": {
+            "rssBytes": 930988032,
+            "footprintBytes": 367207256,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 68288512,
+            "footprintBytes": 85213904,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 112836608,
+        "pipelineRssBytes": 1112113152,
+        "driverFootprintBytes": 61839624,
+        "pipelineFootprintBytes": 514260784
+      },
+      {
+        "at": 4815.461,
+        "components": {
+          "34456": {
+            "rssBytes": 931233792,
+            "footprintBytes": 367207256,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 79380480,
+            "footprintBytes": 101253864,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 112836608,
+        "pipelineRssBytes": 1123450880,
+        "driverFootprintBytes": 61839624,
+        "pipelineFootprintBytes": 530300744
+      },
+      {
+        "at": 4912.793833,
+        "components": {
+          "34456": {
+            "rssBytes": 931250176,
+            "footprintBytes": 362521432,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 82345984,
+            "footprintBytes": 98779880,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 112885760,
+        "pipelineRssBytes": 1126481920,
+        "driverFootprintBytes": 62101768,
+        "pipelineFootprintBytes": 523403080
+      },
+      {
+        "at": 5007.840708,
+        "components": {
+          "34456": {
+            "rssBytes": 931086336,
+            "footprintBytes": 360014680,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 82345984,
+            "footprintBytes": 98779880,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 113098752,
+        "pipelineRssBytes": 1126531072,
+        "driverFootprintBytes": 62101768,
+        "pipelineFootprintBytes": 520896328
+      },
+      {
+        "at": 5106.211666,
+        "components": {
+          "34456": {
+            "rssBytes": 931643392,
+            "footprintBytes": 360014680,
+            "processes": 7
+          },
+          "34473": {
+            "rssBytes": 82345984,
+            "footprintBytes": 98779880,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 113098752,
+        "pipelineRssBytes": 1127088128,
+        "driverFootprintBytes": 62134536,
+        "pipelineFootprintBytes": 520929096
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 15,
+        "median": 925335552,
+        "p95": 931643392,
+        "max": 931643392,
+        "mean": 915615470.9333333
+      },
+      "ocrTreeRss": {
+        "n": 15,
+        "median": 66207744,
+        "p95": 82345984,
+        "max": 82345984,
+        "mean": 67566523.73333333
+      },
+      "driverRss": {
+        "n": 15,
+        "median": 113098752,
+        "p95": 116326400,
+        "max": 116326400,
+        "mean": 114376704
+      },
+      "pipelineRss": {
+        "n": 15,
+        "median": 1105772544,
+        "p95": 1127088128,
+        "max": 1127088128,
+        "mean": 1097558698.6666667
+      },
+      "samples": 15,
+      "browserFootprint": {
+        "n": 15,
+        "median": 358802264,
+        "p95": 369517400,
+        "max": 369517400,
+        "mean": 358322670.93333334
+      },
+      "ocrFootprint": {
+        "n": 15,
+        "median": 82445008,
+        "p95": 101253864,
+        "max": 101253864,
+        "mean": 85256508.8
+      },
+      "pipelineFootprint": {
+        "n": 15,
+        "median": 514031408,
+        "p95": 530300744,
+        "max": 530300744,
+        "mean": 511525660.26666665
+      }
+    }
+  },
+  {
+    "id": "warm-lightpanda-dom-research-1",
+    "mode": "lightpanda-dom",
+    "phase": "warm",
+    "iteration": 1,
+    "variant": 72,
+    "task": "research",
+    "status": "PASS",
+    "startupMs": 0,
+    "modelCalls": 2,
+    "modelMs": 614.7593750000005,
+    "observeMs": 8.689916999999696,
+    "captureMs": 0,
+    "ocrMs": 0,
+    "ocrRecognitionMs": 0,
+    "actionMs": 5.249833000000763,
+    "settleMs": 150.8125830000008,
+    "verifyMs": 0.9949590000005628,
+    "navigationMs": 4.899042000000009,
+    "pageCreateMs": 8.776707999999417,
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "2757 TRY"
+      }
+    },
+    "lastObservation": {
+      "url": "http://127.0.0.1:52352/fixture/9fde7e48-8d13-4e90-a17b-e27235bcfcc8",
+      "title": "Browser Lab — research",
+      "text": "Research library Notebook specifications Pen specifications Notebook specifications Subscription details from the product document. Billing period Price Monthly price 39 TRY Annual price 2757 TRY Annual billing includes twelve months. Compare the billing periods before reporting the price. Not saved",
+      "textTruncated": false,
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Notebook specifications",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Pen specifications",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "excludedCandidates": 0,
+      "canvas": false,
+      "frameCount": 0,
+      "observedFrames": 1,
+      "recentActions": [
+        {
+          "kind": "click",
+          "target": "Notebook specifications",
+          "value": ""
+        }
+      ]
+    },
+    "backendVersion": "Chrome/124.0.6367.29",
+    "activeMs": 797.0640839999996,
+    "totalMs": 797.0640839999996,
+    "memorySamples": [
+      {
+        "at": 5543.366375,
+        "components": {
+          "34691": {
+            "rssBytes": 32784384,
+            "footprintBytes": 11240144,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 113524736,
+        "pipelineRssBytes": 146309120,
+        "driverFootprintBytes": 62593336,
+        "pipelineFootprintBytes": 73833480
+      },
+      {
+        "at": 5647.119583,
+        "components": {
+          "34691": {
+            "rssBytes": 33964032,
+            "footprintBytes": 11240144,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 113852416,
+        "pipelineRssBytes": 147816448,
+        "driverFootprintBytes": 62871912,
+        "pipelineFootprintBytes": 74112056
+      },
+      {
+        "at": 5734.239666,
+        "components": {
+          "34691": {
+            "rssBytes": 33964032,
+            "footprintBytes": 11240144,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 113885184,
+        "pipelineRssBytes": 147849216,
+        "driverFootprintBytes": 62888296,
+        "pipelineFootprintBytes": 74128440
+      },
+      {
+        "at": 5830.502541,
+        "components": {
+          "34691": {
+            "rssBytes": 33964032,
+            "footprintBytes": 11240144,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 113885184,
+        "pipelineRssBytes": 147849216,
+        "driverFootprintBytes": 62888296,
+        "pipelineFootprintBytes": 74128440
+      },
+      {
+        "at": 5934.027833,
+        "components": {
+          "34691": {
+            "rssBytes": 34357248,
+            "footprintBytes": 11256528,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 113934336,
+        "pipelineRssBytes": 148291584,
+        "driverFootprintBytes": 62937448,
+        "pipelineFootprintBytes": 74193976
+      },
+      {
+        "at": 6033.777666,
+        "components": {
+          "34691": {
+            "rssBytes": 34357248,
+            "footprintBytes": 11256528,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 113950720,
+        "pipelineRssBytes": 148307968,
+        "driverFootprintBytes": 62970216,
+        "pipelineFootprintBytes": 74226744
+      },
+      {
+        "at": 6129.281291,
+        "components": {
+          "34691": {
+            "rssBytes": 34390016,
+            "footprintBytes": 11289296,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 113983488,
+        "pipelineRssBytes": 148373504,
+        "driverFootprintBytes": 63002984,
+        "pipelineFootprintBytes": 74292280
+      },
+      {
+        "at": 6229.338708,
+        "components": {
+          "34691": {
+            "rssBytes": 34390016,
+            "footprintBytes": 11289296,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 114409472,
+        "pipelineRssBytes": 148799488,
+        "driverFootprintBytes": 63511032,
+        "pipelineFootprintBytes": 74800328
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 8,
+        "median": 33964032,
+        "p95": 34390016,
+        "max": 34390016,
+        "mean": 34021376
+      },
+      "ocrTreeRss": {
+        "n": 8,
+        "median": 0,
+        "p95": 0,
+        "max": 0,
+        "mean": 0
+      },
+      "driverRss": {
+        "n": 8,
+        "median": 113885184,
+        "p95": 114409472,
+        "max": 114409472,
+        "mean": 113928192
+      },
+      "pipelineRss": {
+        "n": 8,
+        "median": 147849216,
+        "p95": 148799488,
+        "max": 148799488,
+        "mean": 147949568
+      },
+      "samples": 8,
+      "browserFootprint": {
+        "n": 8,
+        "median": 11240144,
+        "p95": 11289296,
+        "max": 11289296,
+        "mean": 11256528
+      },
+      "ocrFootprint": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "mean": null
+      },
+      "pipelineFootprint": {
+        "n": 8,
+        "median": 74128440,
+        "p95": 74800328,
+        "max": 74800328,
+        "mean": 74214468
+      }
+    }
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "menu-chromium-rendered-1",
+    "task": "menu",
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "FAIL",
+    "steps": 12,
+    "modelCalls": 12,
+    "modelLatencyMs": 3609.8107089999976,
+    "observeMs": 25.773456999999553,
+    "actionMs": 74.30929199999923,
+    "totalMs": 6279.132375,
+    "startupMs": 507.37112499999995,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 30.420375000000035,
+    "verification": {
+      "passed": false,
+      "commits": 0,
+      "actual": []
+    },
+    "reason": "Independent fixture oracle did not confirm exactly one correct result",
+    "finalTitle": "Browser Lab â€” menu",
+    "finalUrl": "http://127.0.0.1:51510/fixture/6191f457-97ec-4321-bf71-2bd12f72241e",
+    "screenshot": "menu-chromium-rendered-1.png",
+    "pageErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 980598784,
+      "samples": 57,
+      "maxProcesses": 8,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 216039424
+    }
+  },
+  {
+    "task": "menu",
+    "profile": "chromium-semantic",
+    "iteration": 1,
+    "status": "NOT_RUN",
+    "reason": "Global call budget reached"
+  },
+  {
+    "task": "menu",
+    "profile": "lightpanda-semantic",
+    "iteration": 1,
+    "status": "NOT_RUN",
+    "reason": "Global call budget reached"
+  }
+]

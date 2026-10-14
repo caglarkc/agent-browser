@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-13T14-09-30-769Z",
+  "policy": "jev",
+  "repeat": 2,
+  "profiles": [
+    "chromium-rendered",
+    "chromium-semantic",
+    "lightpanda-semantic"
+  ],
+  "tasks": [
+    "read",
+    "form",
+    "upload",
+    "menu",
+    "overlay",
+    "lazy",
+    "shadow",
+    "iframe",
+    "css-hidden",
+    "pointer",
+    "canvas"
+  ],
+  "order": [
+    {
+      "task": "read",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "read",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "upload",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "upload",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "overlay",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "overlay",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "lazy",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "lazy",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "shadow",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "shadow",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "iframe",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "iframe",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "iframe",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "css-hidden",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "css-hidden",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "css-hidden",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "pointer",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "pointer",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "pointer",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "canvas",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "canvas",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "canvas",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "read",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "read",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "form",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "form",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "upload",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "upload",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "overlay",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "overlay",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "lazy",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "lazy",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "shadow",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "shadow",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "iframe",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "iframe",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "iframe",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "css-hidden",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "css-hidden",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "css-hidden",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "pointer",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "pointer",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "pointer",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    },
+    {
+      "task": "canvas",
+      "profile": "chromium-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "canvas",
+      "profile": "lightpanda-semantic",
+      "iteration": 2
+    },
+    {
+      "task": "canvas",
+      "profile": "chromium-rendered",
+      "iteration": 2
+    }
+  ],
+  "node": "v25.8.2",
+  "platform": "darwin",
+  "arch": "arm64",
+  "decisionModel": "jev-1.13.0",
+  "endpoint": "typesafe",
+  "maxCalls": "unlimited",
+  "imagesSentToModel": 0,
+  "measurement": "Fresh browser per case; startup/navigation included in total; RSS samples are browser tree only, not capacity proof; action settling fixed at 150 ms in all profiles",
+  "visualMode": "Scripted canvas probe has fixture-defined coordinates; Jev has no vision fallback",
+  "sourceHashes": {
+    "src/backend.mjs": "b01f2246a0b9329dcc8139d95b6c7311e8ccc8adff15a77e9a6f421a575390d3",
+    "src/observation.mjs": "62439bb2dd49e76efd68012c649ac46489a8a37162e4a9c108ddcdde274d64cb",
+    "src/policy.mjs": "92ad176c43decddc16e0044084e57dda9bd90d0d8dfd8fd431e5f4f089c1b5bf",
+    "src/tasks.mjs": "e31428dd5d3b1bc2a7dc8b74c848d567e06cede4a8cd3fe90e969306d7a003e8",
+    "src/fixtures.mjs": "150022e4766b2b96f7548a933a034af70a2f93f3212cd42fdbafc423f41e8c28",
+    "src/cli.mjs": "c1a91aac2994e013268dfa4e39396ed7f27ba8018f882a842d1d0a3b21cb3292"
+  },
+  "lightpanda": {
+    "sha256": "955440053a84754dd64c62f970449a56a2b350cdf43ea5f2e809a73047b8173d",
+    "version": "1.0.0"
+  },
+  "dependencies": "25.13.0"
+}

@@ -1,0 +1,539 @@
+{
+  "runId": "2026-10-13T14-25-03-883Z",
+  "imagesSentToModel": 0,
+  "total": {
+    "n": 180,
+    "pass": 177,
+    "fail": 3,
+    "unsupported": 0,
+    "notRun": 0,
+    "successRate": 0.9833333333333333,
+    "wilson95Descriptive": {
+      "low": 0.9521509421982017,
+      "high": 0.9943160163139086
+    },
+    "calls": 546,
+    "medianSuccessMs": 1677.319875000001,
+    "p95SuccessMs": 2908.017084,
+    "penalizedP95Ms": 2953.1777920000022,
+    "falseSuccess": 0,
+    "duplicateCommits": 2,
+    "incorrectOrDuplicateCommits": 2,
+    "errors": 0
+  },
+  "byProfile": {
+    "chromium-rendered": {
+      "all": {
+        "n": 90,
+        "pass": 89,
+        "fail": 1,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 0.9888888888888889,
+        "wilson95Descriptive": {
+          "low": 0.9397144555232022,
+          "high": 0.9980359664644876
+        },
+        "calls": 278,
+        "medianSuccessMs": 1933.4990000000107,
+        "p95SuccessMs": 3025.933124999996,
+        "penalizedP95Ms": 3035.204207999981,
+        "falseSuccess": 0,
+        "duplicateCommits": 1,
+        "incorrectOrDuplicateCommits": 1,
+        "errors": 0
+      },
+      "core": {
+        "n": 90,
+        "pass": 89,
+        "fail": 1,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 0.9888888888888889,
+        "wilson95Descriptive": {
+          "low": 0.9397144555232022,
+          "high": 0.9980359664644876
+        },
+        "calls": 278,
+        "medianSuccessMs": 1933.4990000000107,
+        "p95SuccessMs": 3025.933124999996,
+        "penalizedP95Ms": 3035.204207999981,
+        "falseSuccess": 0,
+        "duplicateCommits": 1,
+        "incorrectOrDuplicateCommits": 1,
+        "errors": 0
+      },
+      "boundaries": {
+        "n": 0,
+        "pass": 0,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": null,
+        "wilson95Descriptive": null,
+        "calls": 0,
+        "medianSuccessMs": null,
+        "p95SuccessMs": null,
+        "penalizedP95Ms": null,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      }
+    },
+    "lightpanda-enhanced": {
+      "all": {
+        "n": 90,
+        "pass": 88,
+        "fail": 2,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 0.9777777777777777,
+        "wilson95Descriptive": {
+          "low": 0.9225532261919241,
+          "high": 0.9938846862051364
+        },
+        "calls": 268,
+        "medianSuccessMs": 1311.1421669999982,
+        "p95SuccessMs": 2259.701000000001,
+        "penalizedP95Ms": 2460.932124999992,
+        "falseSuccess": 0,
+        "duplicateCommits": 1,
+        "incorrectOrDuplicateCommits": 1,
+        "errors": 0
+      },
+      "core": {
+        "n": 90,
+        "pass": 88,
+        "fail": 2,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 0.9777777777777777,
+        "wilson95Descriptive": {
+          "low": 0.9225532261919241,
+          "high": 0.9938846862051364
+        },
+        "calls": 268,
+        "medianSuccessMs": 1311.1421669999982,
+        "p95SuccessMs": 2259.701000000001,
+        "penalizedP95Ms": 2460.932124999992,
+        "falseSuccess": 0,
+        "duplicateCommits": 1,
+        "incorrectOrDuplicateCommits": 1,
+        "errors": 0
+      },
+      "boundaries": {
+        "n": 0,
+        "pass": 0,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": null,
+        "wilson95Descriptive": null,
+        "calls": 0,
+        "medianSuccessMs": null,
+        "p95SuccessMs": null,
+        "penalizedP95Ms": null,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      }
+    }
+  },
+  "byTask": {
+    "read": {
+      "chromium-rendered": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 10,
+        "medianSuccessMs": 1005.4477499999994,
+        "p95SuccessMs": 1352.925208,
+        "penalizedP95Ms": 1352.925208,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      },
+      "lightpanda-enhanced": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 10,
+        "medianSuccessMs": 512.0074169999998,
+        "p95SuccessMs": 618.2435419999965,
+        "penalizedP95Ms": 618.2435419999965,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      }
+    },
+    "form": {
+      "chromium-rendered": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 48,
+        "medianSuccessMs": 2753.0146669999813,
+        "p95SuccessMs": 3329.7685409999976,
+        "penalizedP95Ms": 3329.7685409999976,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      },
+      "lightpanda-enhanced": {
+        "n": 10,
+        "pass": 9,
+        "fail": 1,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 0.9,
+        "wilson95Descriptive": {
+          "low": 0.5958436145024278,
+          "high": 0.9821242504842788
+        },
+        "calls": 48,
+        "medianSuccessMs": 2135.691,
+        "p95SuccessMs": 2476.784000000014,
+        "penalizedP95Ms": 20000,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      }
+    },
+    "upload": {
+      "chromium-rendered": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 30,
+        "medianSuccessMs": 1933.4990000000107,
+        "p95SuccessMs": 2112.3205830000225,
+        "penalizedP95Ms": 2112.3205830000225,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      },
+      "lightpanda-enhanced": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 30,
+        "medianSuccessMs": 1340.9449999999779,
+        "p95SuccessMs": 1600.9651250000024,
+        "penalizedP95Ms": 1600.9651250000024,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      }
+    },
+    "menu": {
+      "chromium-rendered": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 40,
+        "medianSuccessMs": 2264.4880840000114,
+        "p95SuccessMs": 2853.6260410000104,
+        "penalizedP95Ms": 2853.6260410000104,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      },
+      "lightpanda-enhanced": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 39,
+        "medianSuccessMs": 1767.9709580000053,
+        "p95SuccessMs": 1945.747250000015,
+        "penalizedP95Ms": 1945.747250000015,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      }
+    },
+    "overlay": {
+      "chromium-rendered": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 30,
+        "medianSuccessMs": 1887.7704999999842,
+        "p95SuccessMs": 2158.416333000001,
+        "penalizedP95Ms": 2158.416333000001,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      },
+      "lightpanda-enhanced": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 30,
+        "medianSuccessMs": 1360.365291000002,
+        "p95SuccessMs": 1518.4167920000036,
+        "penalizedP95Ms": 1518.4167920000036,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      }
+    },
+    "lazy": {
+      "chromium-rendered": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 30,
+        "medianSuccessMs": 1852.598125000004,
+        "p95SuccessMs": 1979.5399580000012,
+        "penalizedP95Ms": 1979.5399580000012,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      },
+      "lightpanda-enhanced": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 20,
+        "medianSuccessMs": 905.5617499999935,
+        "p95SuccessMs": 987.3561670000054,
+        "penalizedP95Ms": 987.3561670000054,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      }
+    },
+    "shadow": {
+      "chromium-rendered": {
+        "n": 10,
+        "pass": 9,
+        "fail": 1,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 0.9,
+        "wilson95Descriptive": {
+          "low": 0.5958436145024278,
+          "high": 0.9821242504842788
+        },
+        "calls": 30,
+        "medianSuccessMs": 1485.5949580000015,
+        "p95SuccessMs": 1792.5472909999953,
+        "penalizedP95Ms": 20000,
+        "falseSuccess": 0,
+        "duplicateCommits": 1,
+        "incorrectOrDuplicateCommits": 1,
+        "errors": 0
+      },
+      "lightpanda-enhanced": {
+        "n": 10,
+        "pass": 9,
+        "fail": 1,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 0.9,
+        "wilson95Descriptive": {
+          "low": 0.5958436145024278,
+          "high": 0.9821242504842788
+        },
+        "calls": 31,
+        "medianSuccessMs": 935.078375000041,
+        "p95SuccessMs": 1285.7609170000069,
+        "penalizedP95Ms": 20000,
+        "falseSuccess": 0,
+        "duplicateCommits": 1,
+        "incorrectOrDuplicateCommits": 1,
+        "errors": 0
+      }
+    },
+    "autocomplete": {
+      "chromium-rendered": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 40,
+        "medianSuccessMs": 2674.5939160000125,
+        "p95SuccessMs": 3212.4176669999724,
+        "penalizedP95Ms": 3212.4176669999724,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      },
+      "lightpanda-enhanced": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 40,
+        "medianSuccessMs": 2185.497792000009,
+        "p95SuccessMs": 2485.017875000005,
+        "penalizedP95Ms": 2485.017875000005,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      }
+    },
+    "records": {
+      "chromium-rendered": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 20,
+        "medianSuccessMs": 1388.2071250000154,
+        "p95SuccessMs": 1779.6352079999924,
+        "penalizedP95Ms": 1779.6352079999924,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      },
+      "lightpanda-enhanced": {
+        "n": 10,
+        "pass": 10,
+        "fail": 0,
+        "unsupported": 0,
+        "notRun": 0,
+        "successRate": 1,
+        "wilson95Descriptive": {
+          "low": 0.7224598312333834,
+          "high": 1
+        },
+        "calls": 20,
+        "medianSuccessMs": 910.9058750000113,
+        "p95SuccessMs": 1049.5381659999985,
+        "penalizedP95Ms": 1049.5381659999985,
+        "falseSuccess": 0,
+        "duplicateCommits": 0,
+        "incorrectOrDuplicateCommits": 0,
+        "errors": 0
+      }
+    }
+  },
+  "paired": {
+    "lightpanda-enhanced": {
+      "n": 90,
+      "bothPass": 87,
+      "onlyChromiumPass": 2,
+      "onlyOtherPass": 1,
+      "neitherPass": 0
+    }
+  },
+  "limitations": [
+    "Synthetic task families; repeated/related variants are not independent real websites. Wilson intervals are descriptive under an independence assumption, not a general-web confidence bound.",
+    "Field values are supplied by the trusted task contract; no free-form text generation or high-level LLM planning is tested.",
+    "Chromium-rendered still sends zero images to JEV, but uses real layout and browser-generated input. Lightpanda-enhanced uses style filtering and synthetic untrusted pointer events, not real layout.",
+    "Memory is sampled process-tree RSS on macOS; not a Linux total-product cgroup capacity test."
+  ]
+}

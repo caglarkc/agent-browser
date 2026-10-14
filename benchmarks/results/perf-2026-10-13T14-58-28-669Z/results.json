@@ -1,0 +1,2536 @@
+[
+  {
+    "id": "cold-chromium-dom-read-1",
+    "mode": "chromium-dom",
+    "phase": "cold",
+    "iteration": 1,
+    "variant": 61,
+    "task": "read",
+    "status": "PASS",
+    "startupMs": 1789.4377909999998,
+    "modelCalls": 1,
+    "modelMs": 1088.1481670000003,
+    "observeMs": 5.394999999999982,
+    "captureMs": 0,
+    "ocrMs": 0,
+    "ocrRecognitionMs": 0,
+    "actionMs": 0,
+    "settleMs": 0,
+    "verifyMs": 3.371332999999595,
+    "navigationMs": 53.67708300000004,
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "2350 TRY"
+      }
+    },
+    "lastObservation": {
+      "url": "http://127.0.0.1:65331/fixture/d6ce6fb0-66cb-49ea-8b8e-6cdb6173879a",
+      "title": "Browser Lab â€” read",
+      "text": "Product record Pen 39 TRY Product Price Notebook 2350 TRY Not saved",
+      "textTruncated": false,
+      "candidates": [],
+      "excludedCandidates": 0,
+      "canvas": false,
+      "frameCount": 0,
+      "observedFrames": 1,
+      "recentActions": []
+    },
+    "backendVersion": "Chrome/155.0.8059.40",
+    "activeMs": 1335.034792,
+    "totalMs": 3124.4725829999998,
+    "memorySamples": [
+      {
+        "at": 2508.590667,
+        "components": {
+          "10692": {
+            "rssBytes": 713932800,
+            "processes": 6
+          }
+        },
+        "driverRssBytes": 62947328,
+        "pipelineRssBytes": 776880128
+      },
+      {
+        "at": 2631.518375,
+        "components": {
+          "10692": {
+            "rssBytes": 866402304,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 65290240,
+        "pipelineRssBytes": 931692544
+      },
+      {
+        "at": 2728.695125,
+        "components": {
+          "10692": {
+            "rssBytes": 877035520,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 73383936,
+        "pipelineRssBytes": 950419456
+      },
+      {
+        "at": 2826.511792,
+        "components": {
+          "10692": {
+            "rssBytes": 877084672,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 75628544,
+        "pipelineRssBytes": 952713216
+      },
+      {
+        "at": 2925.462667,
+        "components": {
+          "10692": {
+            "rssBytes": 877854720,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 76840960,
+        "pipelineRssBytes": 954695680
+      },
+      {
+        "at": 3026.320709,
+        "components": {
+          "10692": {
+            "rssBytes": 877854720,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 78364672,
+        "pipelineRssBytes": 956219392
+      },
+      {
+        "at": 3129.570084,
+        "components": {
+          "10692": {
+            "rssBytes": 880607232,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 79986688,
+        "pipelineRssBytes": 960593920
+      },
+      {
+        "at": 3230.45725,
+        "components": {
+          "10692": {
+            "rssBytes": 882556928,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 82264064,
+        "pipelineRssBytes": 964820992
+      },
+      {
+        "at": 3333.201292,
+        "components": {
+          "10692": {
+            "rssBytes": 882556928,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 82460672,
+        "pipelineRssBytes": 965017600
+      },
+      {
+        "at": 3437.074959,
+        "components": {
+          "10692": {
+            "rssBytes": 882819072,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 84606976,
+        "pipelineRssBytes": 967426048
+      },
+      {
+        "at": 3542.619292,
+        "components": {
+          "10692": {
+            "rssBytes": 884047872,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 84639744,
+        "pipelineRssBytes": 968687616
+      },
+      {
+        "at": 3646.12425,
+        "components": {
+          "10692": {
+            "rssBytes": 884506624,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 84639744,
+        "pipelineRssBytes": 969146368
+      },
+      {
+        "at": 3764.540834,
+        "components": {
+          "10692": {
+            "rssBytes": 859389952,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 107331584,
+        "pipelineRssBytes": 966721536
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 13,
+        "median": 877854720,
+        "p95": 884506624,
+        "max": 884506624,
+        "mean": 865126872.6153846
+      },
+      "ocrTreeRss": {
+        "n": 13,
+        "median": 0,
+        "p95": 0,
+        "max": 0,
+        "mean": 0
+      },
+      "driverRss": {
+        "n": 13,
+        "median": 79986688,
+        "p95": 107331584,
+        "max": 107331584,
+        "mean": 79875780.92307693
+      },
+      "pipelineRss": {
+        "n": 13,
+        "median": 960593920,
+        "p95": 969146368,
+        "max": 969146368,
+        "mean": 945002653.5384616
+      },
+      "samples": 13
+    }
+  },
+  {
+    "id": "cold-chromium-ocr-read-1",
+    "mode": "chromium-ocr",
+    "phase": "cold",
+    "iteration": 1,
+    "variant": 61,
+    "task": "read",
+    "status": "PASS",
+    "startupMs": 2440.155667,
+    "modelCalls": 1,
+    "modelMs": 308.0695830000004,
+    "observeMs": 0,
+    "captureMs": 86.67466699999932,
+    "ocrMs": 3766.030667,
+    "ocrRecognitionMs": 2526.177458,
+    "actionMs": 0,
+    "settleMs": 0,
+    "verifyMs": 1.6100840000017342,
+    "navigationMs": 31.316792000000532,
+    "screenshotBytes": 16981,
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "2350 TRY"
+      }
+    },
+    "lastObservation": {
+      "title": "Screenshot OCR observation",
+      "text": "Product record\nPen\n39 TRY\nProduct Price\nNotebook 2350 TRY\nNot saved",
+      "candidates": [
+        {
+          "key": "ocr_0",
+          "kind": "ocr-click",
+          "label": "Product record",
+          "context": "Product record",
+          "x": 156.99999821428574,
+          "y": 55.000000100000015,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_1",
+          "kind": "ocr-click",
+          "label": "Pen",
+          "context": "Pen 39 TRY",
+          "x": 50.00000019999999,
+          "y": 114.99999991250002,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_2",
+          "kind": "ocr-click",
+          "label": "39 TRY",
+          "context": "Pen 39 TRY",
+          "x": 146.999999224237,
+          "y": 114.00000057073453,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_3",
+          "kind": "ocr-click",
+          "label": "Product Price",
+          "context": "Product Price",
+          "x": 109.99999875000002,
+          "y": 137.99999975,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_4",
+          "kind": "ocr-click",
+          "label": "Notebook 2350 TRY",
+          "context": "Notebook 2350 TRY",
+          "x": 116.99999881428572,
+          "y": 163.0000001,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_5",
+          "kind": "ocr-click",
+          "label": "Not saved",
+          "context": "Not saved",
+          "x": 73.0000008187058,
+          "y": 204.99999988990555,
+          "visibility": "screenshot-ocr"
+        }
+      ],
+      "source": "pixels-only OCR; no DOM or HTML",
+      "recentActions": []
+    },
+    "backendVersion": "Chrome/155.0.8059.40",
+    "activeMs": 4464.8213749999995,
+    "totalMs": 6904.9770419999995,
+    "memorySamples": [
+      {
+        "at": 6421.833625,
+        "components": {
+          "10880": {
+            "rssBytes": 648265728,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 90963968,
+        "pipelineRssBytes": 739262464
+      },
+      {
+        "at": 6485.163042,
+        "components": {
+          "10880": {
+            "rssBytes": 757612544,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 92684288,
+        "pipelineRssBytes": 850329600
+      },
+      {
+        "at": 6621.73975,
+        "components": {
+          "10880": {
+            "rssBytes": 821149696,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 95993856,
+        "pipelineRssBytes": 917176320
+      },
+      {
+        "at": 6722.95325,
+        "components": {
+          "10880": {
+            "rssBytes": 830324736,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 97681408,
+        "pipelineRssBytes": 928038912
+      },
+      {
+        "at": 6772.958667,
+        "components": {
+          "10880": {
+            "rssBytes": 838238208,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 97779712,
+        "pipelineRssBytes": 936050688
+      },
+      {
+        "at": 6873.197459,
+        "components": {
+          "10880": {
+            "rssBytes": 838352896,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98156544,
+        "pipelineRssBytes": 936542208
+      },
+      {
+        "at": 6959.578709,
+        "components": {
+          "10880": {
+            "rssBytes": 838352896,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98762752,
+        "pipelineRssBytes": 937148416
+      },
+      {
+        "at": 7058.348834,
+        "components": {
+          "10880": {
+            "rssBytes": 838352896,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98762752,
+        "pipelineRssBytes": 937148416
+      },
+      {
+        "at": 7158.808459,
+        "components": {
+          "10880": {
+            "rssBytes": 838369280,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98762752,
+        "pipelineRssBytes": 937164800
+      },
+      {
+        "at": 7262.482084,
+        "components": {
+          "10880": {
+            "rssBytes": 838369280,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98762752,
+        "pipelineRssBytes": 937164800
+      },
+      {
+        "at": 7362.291459,
+        "components": {
+          "10880": {
+            "rssBytes": 841138176,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98959360,
+        "pipelineRssBytes": 940130304
+      },
+      {
+        "at": 7464.251667,
+        "components": {
+          "10880": {
+            "rssBytes": 841629696,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98959360,
+        "pipelineRssBytes": 940621824
+      },
+      {
+        "at": 7577.42075,
+        "components": {
+          "10880": {
+            "rssBytes": 843333632,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98959360,
+        "pipelineRssBytes": 942325760
+      },
+      {
+        "at": 7682.018292,
+        "components": {
+          "10880": {
+            "rssBytes": 844120064,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 99254272,
+        "pipelineRssBytes": 943407104
+      },
+      {
+        "at": 7946.006542,
+        "components": {
+          "10880": {
+            "rssBytes": 835026944,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 32768,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 100155392,
+        "pipelineRssBytes": 935215104
+      },
+      {
+        "at": 8017.491917,
+        "components": {
+          "10880": {
+            "rssBytes": 817954816,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 11026432,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 100155392,
+        "pipelineRssBytes": 929136640
+      },
+      {
+        "at": 8123.200334,
+        "components": {
+          "10880": {
+            "rssBytes": 795164672,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 19316736,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 100155392,
+        "pipelineRssBytes": 914636800
+      },
+      {
+        "at": 8343.066084,
+        "components": {
+          "10880": {
+            "rssBytes": 795164672,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 21643264,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 100171776,
+        "pipelineRssBytes": 916979712
+      },
+      {
+        "at": 8526.00975,
+        "components": {
+          "10880": {
+            "rssBytes": 785661952,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 22396928,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 100188160,
+        "pipelineRssBytes": 908247040
+      },
+      {
+        "at": 8602.305792,
+        "components": {
+          "10880": {
+            "rssBytes": 788512768,
+            "processes": 8
+          },
+          "10900": {
+            "rssBytes": 29802496,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 100188160,
+        "pipelineRssBytes": 918503424
+      },
+      {
+        "at": 8760.35775,
+        "components": {
+          "10880": {
+            "rssBytes": 851017728,
+            "processes": 8
+          },
+          "10900": {
+            "rssBytes": 31408128,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98697216,
+        "pipelineRssBytes": 981123072
+      },
+      {
+        "at": 8970.837709,
+        "components": {
+          "10880": {
+            "rssBytes": 836009984,
+            "processes": 8
+          },
+          "10900": {
+            "rssBytes": 35979264,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98500608,
+        "pipelineRssBytes": 970489856
+      },
+      {
+        "at": 9126.724042,
+        "components": {
+          "10880": {
+            "rssBytes": 787578880,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 36192256,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98533376,
+        "pipelineRssBytes": 922304512
+      },
+      {
+        "at": 9264.624667,
+        "components": {
+          "10880": {
+            "rssBytes": 790102016,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 45072384,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98533376,
+        "pipelineRssBytes": 933707776
+      },
+      {
+        "at": 9563.305,
+        "components": {
+          "10880": {
+            "rssBytes": 783499264,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 53886976,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98516992,
+        "pipelineRssBytes": 935903232
+      },
+      {
+        "at": 10345.748042,
+        "components": {
+          "10880": {
+            "rssBytes": 783564800,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 54034432,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 97992704,
+        "pipelineRssBytes": 935591936
+      },
+      {
+        "at": 10523.78925,
+        "components": {
+          "10880": {
+            "rssBytes": 783777792,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 55853056,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98156544,
+        "pipelineRssBytes": 937787392
+      },
+      {
+        "at": 10580.873125,
+        "components": {
+          "10880": {
+            "rssBytes": 784433152,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 55853056,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98238464,
+        "pipelineRssBytes": 938524672
+      },
+      {
+        "at": 10675.195125,
+        "components": {
+          "10880": {
+            "rssBytes": 784515072,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 55853056,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98336768,
+        "pipelineRssBytes": 938704896
+      },
+      {
+        "at": 10778.04425,
+        "components": {
+          "10880": {
+            "rssBytes": 784515072,
+            "processes": 7
+          },
+          "10900": {
+            "rssBytes": 55853056,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 98336768,
+        "pipelineRssBytes": 938704896
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 30,
+        "median": 817954816,
+        "p95": 844120064,
+        "max": 851017728,
+        "mean": 808136977.0666667
+      },
+      "ocrTreeRss": {
+        "n": 30,
+        "median": 32768,
+        "p95": 55853056,
+        "max": 55853056,
+        "mean": 19488768
+      },
+      "driverRss": {
+        "n": 30,
+        "median": 98533376,
+        "p95": 100188160,
+        "max": 100188160,
+        "mean": 98310007.46666667
+      },
+      "pipelineRss": {
+        "n": 30,
+        "median": 936050688,
+        "p95": 970489856,
+        "max": 981123072,
+        "mean": 925935752.5333333
+      },
+      "samples": 30
+    }
+  },
+  {
+    "id": "cold-lightpanda-dom-read-1",
+    "mode": "lightpanda-dom",
+    "phase": "cold",
+    "iteration": 1,
+    "variant": 61,
+    "task": "read",
+    "status": "PASS",
+    "startupMs": 195.12708300000122,
+    "modelCalls": 1,
+    "modelMs": 276.396999999999,
+    "observeMs": 98.69754199999988,
+    "captureMs": 0,
+    "ocrMs": 0,
+    "ocrRecognitionMs": 0,
+    "actionMs": 0,
+    "settleMs": 0,
+    "verifyMs": 2.1965000000000146,
+    "navigationMs": 16.35375000000022,
+    "verification": {
+      "passed": true,
+      "commits": 0,
+      "actual": {
+        "price": "2350 TRY"
+      }
+    },
+    "lastObservation": {
+      "url": "http://127.0.0.1:65331/fixture/24df8e5a-2d1f-4fb9-9ebe-43dbba0035b4",
+      "title": "Browser Lab — read",
+      "text": "Product record Pen 39 TRY Product Price Notebook 2350 TRY Not saved",
+      "textTruncated": false,
+      "candidates": [],
+      "excludedCandidates": 0,
+      "canvas": false,
+      "frameCount": 0,
+      "observedFrames": 1,
+      "recentActions": []
+    },
+    "backendVersion": "Chrome/124.0.6367.29",
+    "activeMs": 488.68595900000037,
+    "totalMs": 683.8130420000016,
+    "memorySamples": [
+      {
+        "at": 11207.241167,
+        "components": {
+          "11268": {
+            "rssBytes": 24346624,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 99090432,
+        "pipelineRssBytes": 123437056
+      },
+      {
+        "at": 11280.407125,
+        "components": {
+          "11268": {
+            "rssBytes": 29622272,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 99123200,
+        "pipelineRssBytes": 128745472
+      },
+      {
+        "at": 11599.4565,
+        "components": {
+          "11268": {
+            "rssBytes": 31916032,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 99139584,
+        "pipelineRssBytes": 131055616
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 3,
+        "median": 29622272,
+        "p95": 31916032,
+        "max": 31916032,
+        "mean": 28628309.333333332
+      },
+      "ocrTreeRss": {
+        "n": 3,
+        "median": 0,
+        "p95": 0,
+        "max": 0,
+        "mean": 0
+      },
+      "driverRss": {
+        "n": 3,
+        "median": 99123200,
+        "p95": 99139584,
+        "max": 99139584,
+        "mean": 99117738.66666667
+      },
+      "pipelineRss": {
+        "n": 3,
+        "median": 128745472,
+        "p95": 131055616,
+        "max": 131055616,
+        "mean": 127746048
+      },
+      "samples": 3
+    }
+  },
+  {
+    "id": "cold-chromium-dom-menu-1",
+    "mode": "chromium-dom",
+    "phase": "cold",
+    "iteration": 1,
+    "variant": 61,
+    "task": "menu",
+    "status": "PASS",
+    "startupMs": 1818.9776669999992,
+    "modelCalls": 3,
+    "modelMs": 770.8035410000011,
+    "observeMs": 24.26629099999991,
+    "captureMs": 0,
+    "ocrMs": 0,
+    "ocrRecognitionMs": 0,
+    "actionMs": 24.297625000001062,
+    "settleMs": 386.1491669999996,
+    "verifyMs": 1.9034979999996722,
+    "navigationMs": 161.58420800000022,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "design"
+        }
+      ]
+    },
+    "lastObservation": {
+      "url": "http://127.0.0.1:65331/fixture/3367000f-80c8-47ae-b936-10664d539a30",
+      "title": "Browser Lab â€” menu",
+      "text": "Delayed menu Open menu Design Not saved",
+      "textTruncated": false,
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open menu",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Design",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "excludedCandidates": 0,
+      "canvas": false,
+      "frameCount": 0,
+      "observedFrames": 1,
+      "recentActions": [
+        {
+          "kind": "click",
+          "target": "Open menu",
+          "value": ""
+        }
+      ]
+    },
+    "backendVersion": "Chrome/155.0.8059.40",
+    "activeMs": 1543.8874170000017,
+    "totalMs": 3362.865084000001,
+    "memorySamples": [
+      {
+        "at": 13689.921875,
+        "components": {
+          "11305": {
+            "rssBytes": 714244096,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 99090432,
+        "pipelineRssBytes": 813334528
+      },
+      {
+        "at": 13981.048375,
+        "components": {
+          "11305": {
+            "rssBytes": 859340800,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 99352576,
+        "pipelineRssBytes": 958693376
+      },
+      {
+        "at": 14115.63525,
+        "components": {
+          "11305": {
+            "rssBytes": 907706368,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 99368960,
+        "pipelineRssBytes": 1007075328
+      },
+      {
+        "at": 14210.541042,
+        "components": {
+          "11305": {
+            "rssBytes": 909443072,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 99385344,
+        "pipelineRssBytes": 1008828416
+      },
+      {
+        "at": 14308.6465,
+        "components": {
+          "11305": {
+            "rssBytes": 915357696,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 100024320,
+        "pipelineRssBytes": 1015382016
+      },
+      {
+        "at": 14409.367292,
+        "components": {
+          "11305": {
+            "rssBytes": 915783680,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 100024320,
+        "pipelineRssBytes": 1015808000
+      },
+      {
+        "at": 14511.562125,
+        "components": {
+          "11305": {
+            "rssBytes": 915849216,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 100106240,
+        "pipelineRssBytes": 1015955456
+      },
+      {
+        "at": 14612.335459,
+        "components": {
+          "11305": {
+            "rssBytes": 916209664,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 100106240,
+        "pipelineRssBytes": 1016315904
+      },
+      {
+        "at": 14714.32825,
+        "components": {
+          "11305": {
+            "rssBytes": 916242432,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 100417536,
+        "pipelineRssBytes": 1016659968
+      },
+      {
+        "at": 14815.302375,
+        "components": {
+          "11305": {
+            "rssBytes": 916275200,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 100450304,
+        "pipelineRssBytes": 1016725504
+      },
+      {
+        "at": 14915.581125,
+        "components": {
+          "11305": {
+            "rssBytes": 916275200,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 100450304,
+        "pipelineRssBytes": 1016725504
+      },
+      {
+        "at": 15017.511834,
+        "components": {
+          "11305": {
+            "rssBytes": 916684800,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 100450304,
+        "pipelineRssBytes": 1017135104
+      },
+      {
+        "at": 15117.3115,
+        "components": {
+          "11305": {
+            "rssBytes": 918011904,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 101433344,
+        "pipelineRssBytes": 1019445248
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 13,
+        "median": 915849216,
+        "p95": 918011904,
+        "max": 918011904,
+        "mean": 895186471.3846154
+      },
+      "ocrTreeRss": {
+        "n": 13,
+        "median": 0,
+        "p95": 0,
+        "max": 0,
+        "mean": 0
+      },
+      "driverRss": {
+        "n": 13,
+        "median": 100106240,
+        "p95": 101433344,
+        "max": 101433344,
+        "mean": 100050786.46153846
+      },
+      "pipelineRss": {
+        "n": 13,
+        "median": 1015955456,
+        "p95": 1019445248,
+        "max": 1019445248,
+        "mean": 995237257.8461539
+      },
+      "samples": 13
+    }
+  },
+  {
+    "id": "cold-chromium-ocr-menu-1",
+    "mode": "chromium-ocr",
+    "phase": "cold",
+    "iteration": 1,
+    "variant": 61,
+    "task": "menu",
+    "status": "PASS",
+    "startupMs": 539.7282500000001,
+    "modelCalls": 3,
+    "modelMs": 1033.044750000001,
+    "observeMs": 0,
+    "captureMs": 143.78125000000182,
+    "ocrMs": 511.3997499999987,
+    "ocrRecognitionMs": 506.11058299999996,
+    "actionMs": 4.788916999998037,
+    "settleMs": 386.6401250000017,
+    "verifyMs": 1.4159159999999247,
+    "navigationMs": 35.3548750000009,
+    "screenshotBytes": 36946,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "design"
+        }
+      ]
+    },
+    "lastObservation": {
+      "title": "Screenshot OCR observation",
+      "text": "Delayed menu\nOpen menu\nDesign\nNot saved",
+      "candidates": [
+        {
+          "key": "ocr_0",
+          "kind": "ocr-click",
+          "label": "Delayed menu",
+          "context": "Delayed menu",
+          "x": 152.000002,
+          "y": 56.99999991666666,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_1",
+          "kind": "ocr-click",
+          "label": "Open menu",
+          "context": "Open menu",
+          "x": 98.9999991,
+          "y": 131.99999980000004,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_2",
+          "kind": "ocr-click",
+          "label": "Design",
+          "context": "Design",
+          "x": 78.99999942000001,
+          "y": 193.00000005999996,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_3",
+          "kind": "ocr-click",
+          "label": "Not saved",
+          "context": "Not saved",
+          "x": 71.99999930077661,
+          "y": 251.00000056645325,
+          "visibility": "screenshot-ocr"
+        }
+      ],
+      "source": "pixels-only OCR; no DOM or HTML",
+      "recentActions": [
+        {
+          "kind": "ocr-click",
+          "target": "Open menu"
+        }
+      ]
+    },
+    "backendVersion": "Chrome/155.0.8059.40",
+    "activeMs": 2183.246791999998,
+    "totalMs": 2722.975041999998,
+    "memorySamples": [
+      {
+        "at": 15862.506,
+        "components": {
+          "11484": {
+            "rssBytes": 712015872,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 5390336,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 101564416,
+        "pipelineRssBytes": 818970624
+      },
+      {
+        "at": 15965.712959,
+        "components": {
+          "11484": {
+            "rssBytes": 890257408,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 7585792,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 101613568,
+        "pipelineRssBytes": 999456768
+      },
+      {
+        "at": 16066.277292,
+        "components": {
+          "11484": {
+            "rssBytes": 904937472,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 13910016,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 102612992,
+        "pipelineRssBytes": 1021460480
+      },
+      {
+        "at": 16174.566875,
+        "components": {
+          "11484": {
+            "rssBytes": 905625600,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 22740992,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 104644608,
+        "pipelineRssBytes": 1033011200
+      },
+      {
+        "at": 16288.566584,
+        "components": {
+          "11484": {
+            "rssBytes": 906248192,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 39272448,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 106627072,
+        "pipelineRssBytes": 1052147712
+      },
+      {
+        "at": 16383.047917,
+        "components": {
+          "11484": {
+            "rssBytes": 909803520,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 53673984,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 108511232,
+        "pipelineRssBytes": 1071988736
+      },
+      {
+        "at": 16509.312625,
+        "components": {
+          "11484": {
+            "rssBytes": 911376384,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 52625408,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 108593152,
+        "pipelineRssBytes": 1072594944
+      },
+      {
+        "at": 16592.045792,
+        "components": {
+          "11484": {
+            "rssBytes": 911572992,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 52625408,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 108593152,
+        "pipelineRssBytes": 1072791552
+      },
+      {
+        "at": 16681.948792,
+        "components": {
+          "11484": {
+            "rssBytes": 916537344,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 52625408,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 108642304,
+        "pipelineRssBytes": 1077805056
+      },
+      {
+        "at": 16777.580459,
+        "components": {
+          "11484": {
+            "rssBytes": 916783104,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 52625408,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 110215168,
+        "pipelineRssBytes": 1079623680
+      },
+      {
+        "at": 16879.410459,
+        "components": {
+          "11484": {
+            "rssBytes": 916946944,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 54870016,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 112312320,
+        "pipelineRssBytes": 1084129280
+      },
+      {
+        "at": 16980.22825,
+        "components": {
+          "11484": {
+            "rssBytes": 917700608,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 57491456,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 114409472,
+        "pipelineRssBytes": 1089601536
+      },
+      {
+        "at": 17081.988875,
+        "components": {
+          "11484": {
+            "rssBytes": 918405120,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 57491456,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117129216,
+        "pipelineRssBytes": 1093025792
+      },
+      {
+        "at": 17182.004209,
+        "components": {
+          "11484": {
+            "rssBytes": 918405120,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 57491456,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117129216,
+        "pipelineRssBytes": 1093025792
+      },
+      {
+        "at": 17285.517334,
+        "components": {
+          "11484": {
+            "rssBytes": 918601728,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 57491456,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117145600,
+        "pipelineRssBytes": 1093238784
+      },
+      {
+        "at": 17397.698625,
+        "components": {
+          "11484": {
+            "rssBytes": 919748608,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 59539456,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117145600,
+        "pipelineRssBytes": 1096433664
+      },
+      {
+        "at": 17484.579042,
+        "components": {
+          "11484": {
+            "rssBytes": 919748608,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 60129280,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117227520,
+        "pipelineRssBytes": 1097105408
+      },
+      {
+        "at": 17588.958584,
+        "components": {
+          "11484": {
+            "rssBytes": 919748608,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 60129280,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117227520,
+        "pipelineRssBytes": 1097105408
+      },
+      {
+        "at": 17689.807125,
+        "components": {
+          "11484": {
+            "rssBytes": 919781376,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 60129280,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117243904,
+        "pipelineRssBytes": 1097154560
+      },
+      {
+        "at": 17792.139084,
+        "components": {
+          "11484": {
+            "rssBytes": 919781376,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 60129280,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117260288,
+        "pipelineRssBytes": 1097170944
+      },
+      {
+        "at": 17908.071,
+        "components": {
+          "11484": {
+            "rssBytes": 924712960,
+            "processes": 7
+          },
+          "11500": {
+            "rssBytes": 60129280,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117309440,
+        "pipelineRssBytes": 1102151680
+      },
+      {
+        "at": 17994.690417,
+        "components": {
+          "11484": {
+            "rssBytes": 940212224,
+            "processes": 8
+          },
+          "11500": {
+            "rssBytes": 60129280,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117309440,
+        "pipelineRssBytes": 1117650944
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 22,
+        "median": 916946944,
+        "p95": 924712960,
+        "max": 940212224,
+        "mean": 906315962.1818181
+      },
+      "ocrTreeRss": {
+        "n": 22,
+        "median": 54870016,
+        "p95": 60129280,
+        "max": 60129280,
+        "mean": 48101189.81818182
+      },
+      "driverRss": {
+        "n": 22,
+        "median": 112312320,
+        "p95": 117309440,
+        "max": 117309440,
+        "mean": 111839418.18181819
+      },
+      "pipelineRss": {
+        "n": 22,
+        "median": 1084129280,
+        "p95": 1102151680,
+        "max": 1117650944,
+        "mean": 1066256570.1818181
+      },
+      "samples": 22
+    }
+  },
+  {
+    "id": "cold-lightpanda-dom-menu-1",
+    "mode": "lightpanda-dom",
+    "phase": "cold",
+    "iteration": 1,
+    "variant": 61,
+    "task": "menu",
+    "status": "PASS",
+    "startupMs": 166.19666700000016,
+    "modelCalls": 3,
+    "modelMs": 1160.6265839999978,
+    "observeMs": 9.045084000001225,
+    "captureMs": 0,
+    "ocrMs": 0,
+    "ocrRecognitionMs": 0,
+    "actionMs": 10.890541999997367,
+    "settleMs": 382.6247509999994,
+    "verifyMs": 1.8188759999975446,
+    "navigationMs": 3.180333000000246,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "design"
+        }
+      ]
+    },
+    "lastObservation": {
+      "url": "http://127.0.0.1:65331/fixture/f6f7b9cc-97ef-4d11-9991-7bd5380b57df",
+      "title": "Browser Lab — menu",
+      "text": "Delayed menu Open menu Design Not saved",
+      "textTruncated": false,
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open menu",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Design",
+          "context": "",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "excludedCandidates": 0,
+      "canvas": false,
+      "frameCount": 0,
+      "observedFrames": 1,
+      "recentActions": [
+        {
+          "kind": "click",
+          "target": "Open menu",
+          "value": ""
+        }
+      ]
+    },
+    "backendVersion": "Chrome/124.0.6367.29",
+    "activeMs": 1576.1281249999993,
+    "totalMs": 1742.3247919999994,
+    "memorySamples": [
+      {
+        "at": 18349.423084,
+        "components": {
+          "11770": {
+            "rssBytes": 26476544,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117407744,
+        "pipelineRssBytes": 143884288
+      },
+      {
+        "at": 18450.257625,
+        "components": {
+          "11770": {
+            "rssBytes": 32325632,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117473280,
+        "pipelineRssBytes": 149798912
+      },
+      {
+        "at": 18552.325542,
+        "components": {
+          "11770": {
+            "rssBytes": 32325632,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117473280,
+        "pipelineRssBytes": 149798912
+      },
+      {
+        "at": 18654.23275,
+        "components": {
+          "11770": {
+            "rssBytes": 32325632,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117473280,
+        "pipelineRssBytes": 149798912
+      },
+      {
+        "at": 18756.753917,
+        "components": {
+          "11770": {
+            "rssBytes": 32325632,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117637120,
+        "pipelineRssBytes": 149962752
+      },
+      {
+        "at": 18859.408667,
+        "components": {
+          "11770": {
+            "rssBytes": 32571392,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117637120,
+        "pipelineRssBytes": 150208512
+      },
+      {
+        "at": 18962.984667,
+        "components": {
+          "11770": {
+            "rssBytes": 32571392,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117637120,
+        "pipelineRssBytes": 150208512
+      },
+      {
+        "at": 19062.053167,
+        "components": {
+          "11770": {
+            "rssBytes": 32604160,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117702656,
+        "pipelineRssBytes": 150306816
+      },
+      {
+        "at": 19159.124042,
+        "components": {
+          "11770": {
+            "rssBytes": 32653312,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117702656,
+        "pipelineRssBytes": 150355968
+      },
+      {
+        "at": 19262.405625,
+        "components": {
+          "11770": {
+            "rssBytes": 32653312,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117702656,
+        "pipelineRssBytes": 150355968
+      },
+      {
+        "at": 19365.97575,
+        "components": {
+          "11770": {
+            "rssBytes": 32653312,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117702656,
+        "pipelineRssBytes": 150355968
+      },
+      {
+        "at": 19469.297834,
+        "components": {
+          "11770": {
+            "rssBytes": 32653312,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117702656,
+        "pipelineRssBytes": 150355968
+      },
+      {
+        "at": 19571.998542,
+        "components": {
+          "11770": {
+            "rssBytes": 32653312,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117702656,
+        "pipelineRssBytes": 150355968
+      },
+      {
+        "at": 19671.10525,
+        "components": {
+          "11770": {
+            "rssBytes": 32653312,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117932032,
+        "pipelineRssBytes": 150585344
+      },
+      {
+        "at": 19770.252584,
+        "components": {
+          "11770": {
+            "rssBytes": 32915456,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117932032,
+        "pipelineRssBytes": 150847488
+      },
+      {
+        "at": 19873.354209,
+        "components": {
+          "11770": {
+            "rssBytes": 32915456,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117964800,
+        "pipelineRssBytes": 150880256
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 16,
+        "median": 32604160,
+        "p95": 32915456,
+        "max": 32915456,
+        "mean": 32204800
+      },
+      "ocrTreeRss": {
+        "n": 16,
+        "median": 0,
+        "p95": 0,
+        "max": 0,
+        "mean": 0
+      },
+      "driverRss": {
+        "n": 16,
+        "median": 117702656,
+        "p95": 117964800,
+        "max": 117964800,
+        "mean": 117673984
+      },
+      "pipelineRss": {
+        "n": 16,
+        "median": 150306816,
+        "p95": 150880256,
+        "max": 150880256,
+        "mean": 149878784
+      },
+      "samples": 16
+    }
+  },
+  {
+    "id": "cold-chromium-dom-records-1",
+    "mode": "chromium-dom",
+    "phase": "cold",
+    "iteration": 1,
+    "variant": 61,
+    "task": "records",
+    "status": "PASS",
+    "startupMs": 1084.3522090000006,
+    "modelCalls": 1,
+    "modelMs": 413.01758300000074,
+    "observeMs": 6.210916999996698,
+    "captureMs": 0,
+    "ocrMs": 0,
+    "ocrRecognitionMs": 0,
+    "actionMs": 10.432709000000614,
+    "settleMs": 151.29695899999933,
+    "verifyMs": 0.7283749999987776,
+    "navigationMs": 19.1259579999969,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "record": 165
+        }
+      ]
+    },
+    "lastObservation": {
+      "url": "http://127.0.0.1:65331/fixture/0e3c3521-c68e-4537-846f-2d88ebd7d3bc",
+      "title": "Browser Lab â€” records",
+      "text": "Case management Case 165 Open Case 166 Open Not saved",
+      "textTruncated": false,
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open",
+          "context": "Case 165Open",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Open",
+          "context": "Case 166Open",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "layout-checked",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "excludedCandidates": 0,
+      "canvas": false,
+      "frameCount": 0,
+      "observedFrames": 1,
+      "recentActions": []
+    },
+    "backendVersion": "Chrome/155.0.8059.40",
+    "activeMs": 694.3452920000018,
+    "totalMs": 1778.6975010000024,
+    "memorySamples": [
+      {
+        "at": 21169.251,
+        "components": {
+          "11964": {
+            "rssBytes": 713129984,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 117997568,
+        "pipelineRssBytes": 831127552
+      },
+      {
+        "at": 21248.9155,
+        "components": {
+          "11964": {
+            "rssBytes": 888750080,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 118046720,
+        "pipelineRssBytes": 1006796800
+      },
+      {
+        "at": 21362.111584,
+        "components": {
+          "11964": {
+            "rssBytes": 904200192,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 118079488,
+        "pipelineRssBytes": 1022279680
+      },
+      {
+        "at": 21463.755709,
+        "components": {
+          "11964": {
+            "rssBytes": 904429568,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 118079488,
+        "pipelineRssBytes": 1022509056
+      },
+      {
+        "at": 21566.380334,
+        "components": {
+          "11964": {
+            "rssBytes": 904904704,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 118079488,
+        "pipelineRssBytes": 1022984192
+      },
+      {
+        "at": 21667.337334,
+        "components": {
+          "11964": {
+            "rssBytes": 905494528,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 118439936,
+        "pipelineRssBytes": 1023934464
+      },
+      {
+        "at": 21769.83925,
+        "components": {
+          "11964": {
+            "rssBytes": 911114240,
+            "processes": 7
+          }
+        },
+        "driverRssBytes": 118456320,
+        "pipelineRssBytes": 1029570560
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 7,
+        "median": 904429568,
+        "p95": 911114240,
+        "max": 911114240,
+        "mean": 876003328
+      },
+      "ocrTreeRss": {
+        "n": 7,
+        "median": 0,
+        "p95": 0,
+        "max": 0,
+        "mean": 0
+      },
+      "driverRss": {
+        "n": 7,
+        "median": 118079488,
+        "p95": 118456320,
+        "max": 118456320,
+        "mean": 118168429.71428572
+      },
+      "pipelineRss": {
+        "n": 7,
+        "median": 1022509056,
+        "p95": 1029570560,
+        "max": 1029570560,
+        "mean": 994171757.7142857
+      },
+      "samples": 7
+    }
+  },
+  {
+    "id": "cold-chromium-ocr-records-1",
+    "mode": "chromium-ocr",
+    "phase": "cold",
+    "iteration": 1,
+    "variant": 61,
+    "task": "records",
+    "status": "PASS",
+    "startupMs": 580.3509159999994,
+    "modelCalls": 1,
+    "modelMs": 431.86837500000183,
+    "observeMs": 0,
+    "captureMs": 61.11079100000279,
+    "ocrMs": 378.5985419999997,
+    "ocrRecognitionMs": 372.245666,
+    "actionMs": 4.960417000002053,
+    "settleMs": 151.85608299999876,
+    "verifyMs": 1.0252500000024156,
+    "navigationMs": 26.284499999997934,
+    "screenshotBytes": 16826,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "record": 165
+        }
+      ]
+    },
+    "lastObservation": {
+      "title": "Screenshot OCR observation",
+      "text": "Case management\nCase 165\nOpen\nCase 166\nOpen\nNot saved",
+      "candidates": [
+        {
+          "key": "ocr_0",
+          "kind": "ocr-click",
+          "label": "Case management",
+          "context": "Case management",
+          "x": 189.9999977428572,
+          "y": 57.000000071428595,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_1",
+          "kind": "ocr-click",
+          "label": "Case 165",
+          "context": "Case 165 Open",
+          "x": 73.00000064942053,
+          "y": 132.99999991226503,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_2",
+          "kind": "ocr-click",
+          "label": "Open",
+          "context": "Case 165 Open",
+          "x": 153.000000075,
+          "y": 135.000000275,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_3",
+          "kind": "ocr-click",
+          "label": "Case 166",
+          "context": "Case 166 Open",
+          "x": 73.00000030081523,
+          "y": 197.9999998012283,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_4",
+          "kind": "ocr-click",
+          "label": "Open",
+          "context": "Case 166 Open",
+          "x": 151.99999934890147,
+          "y": 200.00000003272086,
+          "visibility": "screenshot-ocr"
+        },
+        {
+          "key": "ocr_5",
+          "kind": "ocr-click",
+          "label": "Not saved",
+          "context": "Not saved",
+          "x": 72.99999918036418,
+          "y": 260.0000000836486,
+          "visibility": "screenshot-ocr"
+        }
+      ],
+      "source": "pixels-only OCR; no DOM or HTML",
+      "recentActions": []
+    },
+    "backendVersion": "Chrome/155.0.8059.40",
+    "activeMs": 1186.715583000001,
+    "totalMs": 1767.0664990000005,
+    "memorySamples": [
+      {
+        "at": 22620.768292,
+        "components": {
+          "12063": {
+            "rssBytes": 710868992,
+            "processes": 6
+          },
+          "12079": {
+            "rssBytes": 5816320,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 118636544,
+        "pipelineRssBytes": 835321856
+      },
+      {
+        "at": 22742.492459,
+        "components": {
+          "12063": {
+            "rssBytes": 889323520,
+            "processes": 7
+          },
+          "12079": {
+            "rssBytes": 7569408,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 118669312,
+        "pipelineRssBytes": 1015562240
+      },
+      {
+        "at": 22844.044792,
+        "components": {
+          "12063": {
+            "rssBytes": 906461184,
+            "processes": 7
+          },
+          "12079": {
+            "rssBytes": 7569408,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 118702080,
+        "pipelineRssBytes": 1032732672
+      },
+      {
+        "at": 22928.006917,
+        "components": {
+          "12063": {
+            "rssBytes": 904282112,
+            "processes": 7
+          },
+          "12079": {
+            "rssBytes": 21331968,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 118800384,
+        "pipelineRssBytes": 1044414464
+      },
+      {
+        "at": 23023.0385,
+        "components": {
+          "12063": {
+            "rssBytes": 904429568,
+            "processes": 7
+          },
+          "12079": {
+            "rssBytes": 30195712,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 119078912,
+        "pipelineRssBytes": 1053704192
+      },
+      {
+        "at": 23152.740042,
+        "components": {
+          "12063": {
+            "rssBytes": 904462336,
+            "processes": 7
+          },
+          "12079": {
+            "rssBytes": 49971200,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 119078912,
+        "pipelineRssBytes": 1073512448
+      },
+      {
+        "at": 23262.536417,
+        "components": {
+          "12063": {
+            "rssBytes": 906870784,
+            "processes": 7
+          },
+          "12079": {
+            "rssBytes": 56590336,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 119078912,
+        "pipelineRssBytes": 1082540032
+      },
+      {
+        "at": 23340.303875,
+        "components": {
+          "12063": {
+            "rssBytes": 907083776,
+            "processes": 7
+          },
+          "12079": {
+            "rssBytes": 56590336,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 119111680,
+        "pipelineRssBytes": 1082785792
+      },
+      {
+        "at": 23431.526459,
+        "components": {
+          "12063": {
+            "rssBytes": 907460608,
+            "processes": 7
+          },
+          "12079": {
+            "rssBytes": 56590336,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 119111680,
+        "pipelineRssBytes": 1083162624
+      },
+      {
+        "at": 23536.091792,
+        "components": {
+          "12063": {
+            "rssBytes": 907575296,
+            "processes": 7
+          },
+          "12079": {
+            "rssBytes": 56590336,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 119111680,
+        "pipelineRssBytes": 1083277312
+      },
+      {
+        "at": 23652.951125,
+        "components": {
+          "12063": {
+            "rssBytes": 907591680,
+            "processes": 7
+          },
+          "12079": {
+            "rssBytes": 56590336,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 119128064,
+        "pipelineRssBytes": 1083310080
+      },
+      {
+        "at": 23741.343209,
+        "components": {
+          "12063": {
+            "rssBytes": 913489920,
+            "processes": 7
+          },
+          "12079": {
+            "rssBytes": 56590336,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 116801536,
+        "pipelineRssBytes": 1086881792
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 12,
+        "median": 906461184,
+        "p95": 913489920,
+        "max": 913489920,
+        "mean": 889158314.6666666
+      },
+      "ocrTreeRss": {
+        "n": 12,
+        "median": 49971200,
+        "p95": 56590336,
+        "max": 56590336,
+        "mean": 38499669.333333336
+      },
+      "driverRss": {
+        "n": 12,
+        "median": 119078912,
+        "p95": 119128064,
+        "max": 119128064,
+        "mean": 118775808
+      },
+      "pipelineRss": {
+        "n": 12,
+        "median": 1073512448,
+        "p95": 1086881792,
+        "max": 1086881792,
+        "mean": 1046433792
+      },
+      "samples": 12
+    }
+  },
+  {
+    "id": "cold-lightpanda-dom-records-1",
+    "mode": "lightpanda-dom",
+    "phase": "cold",
+    "iteration": 1,
+    "variant": 61,
+    "task": "records",
+    "status": "PASS",
+    "startupMs": 162.6494160000002,
+    "modelCalls": 1,
+    "modelMs": 272.7765419999996,
+    "observeMs": 2.1542499999995925,
+    "captureMs": 0,
+    "ocrMs": 0,
+    "ocrRecognitionMs": 0,
+    "actionMs": 9.366958999999042,
+    "settleMs": 152.23549999999886,
+    "verifyMs": 0.5826669999987644,
+    "navigationMs": 3.845083000000159,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "record": 165
+        }
+      ]
+    },
+    "lastObservation": {
+      "url": "http://127.0.0.1:65331/fixture/18b3f98e-a4a7-475c-896c-3b18681533ed",
+      "title": "Browser Lab — records",
+      "text": "Case management Case 165 Open Case 166 Open Not saved",
+      "textTruncated": false,
+      "candidates": [
+        {
+          "node": "1",
+          "label": "Open",
+          "context": "Case 165Open",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n1:click:"
+        },
+        {
+          "node": "2",
+          "label": "Open",
+          "context": "Case 166Open",
+          "role": "",
+          "tag": "button",
+          "value": "",
+          "checked": false,
+          "visibility": "style-checked-no-layout",
+          "kind": "click",
+          "frame": 0,
+          "key": "f0n2:click:"
+        }
+      ],
+      "excludedCandidates": 0,
+      "canvas": false,
+      "frameCount": 0,
+      "observedFrames": 1,
+      "recentActions": []
+    },
+    "backendVersion": "Chrome/124.0.6367.29",
+    "activeMs": 453.4579169999997,
+    "totalMs": 616.1073329999999,
+    "memorySamples": [
+      {
+        "at": 24135.311375,
+        "components": {
+          "12222": {
+            "rssBytes": 26492928,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117080064,
+        "pipelineRssBytes": 143572992
+      },
+      {
+        "at": 24246.115792,
+        "components": {
+          "12222": {
+            "rssBytes": 32604160,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117161984,
+        "pipelineRssBytes": 149766144
+      },
+      {
+        "at": 24340.224417,
+        "components": {
+          "12222": {
+            "rssBytes": 32604160,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117161984,
+        "pipelineRssBytes": 149766144
+      },
+      {
+        "at": 24448.850167,
+        "components": {
+          "12222": {
+            "rssBytes": 33275904,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117194752,
+        "pipelineRssBytes": 150470656
+      },
+      {
+        "at": 24533.706167,
+        "components": {
+          "12222": {
+            "rssBytes": 33275904,
+            "processes": 1
+          }
+        },
+        "driverRssBytes": 117194752,
+        "pipelineRssBytes": 150470656
+      }
+    ],
+    "memory": {
+      "browserTreeRss": {
+        "n": 5,
+        "median": 32604160,
+        "p95": 33275904,
+        "max": 33275904,
+        "mean": 31650611.2
+      },
+      "ocrTreeRss": {
+        "n": 5,
+        "median": 0,
+        "p95": 0,
+        "max": 0,
+        "mean": 0
+      },
+      "driverRss": {
+        "n": 5,
+        "median": 117161984,
+        "p95": 117194752,
+        "max": 117194752,
+        "mean": 117158707.2
+      },
+      "pipelineRss": {
+        "n": 5,
+        "median": 149766144,
+        "p95": 150470656,
+        "max": 150470656,
+        "mean": 148809318.4
+      },
+      "samples": 5
+    }
+  }
+]

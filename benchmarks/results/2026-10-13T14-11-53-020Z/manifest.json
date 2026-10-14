@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-13T14-11-53-020Z",
+  "policy": "scripted",
+  "repeat": 1,
+  "profiles": [
+    "chromium-rendered",
+    "lightpanda-semantic"
+  ],
+  "tasks": [
+    "read",
+    "form",
+    "menu",
+    "shadow"
+  ],
+  "order": [
+    {
+      "task": "read",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "shadow",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    }
+  ],
+  "node": "v25.8.2",
+  "platform": "darwin",
+  "arch": "arm64",
+  "decisionModel": null,
+  "endpoint": null,
+  "maxCalls": 0,
+  "imagesSentToModel": 0,
+  "measurement": "Fresh browser per case; startup/navigation included in total; RSS samples are browser tree only, not capacity proof; action settling fixed at 150 ms in all profiles",
+  "visualMode": "Scripted canvas probe has fixture-defined coordinates; Jev has no vision fallback",
+  "sourceHashes": {
+    "src/backend.mjs": "b01f2246a0b9329dcc8139d95b6c7311e8ccc8adff15a77e9a6f421a575390d3",
+    "src/observation.mjs": "62439bb2dd49e76efd68012c649ac46489a8a37162e4a9c108ddcdde274d64cb",
+    "src/policy.mjs": "92ad176c43decddc16e0044084e57dda9bd90d0d8dfd8fd431e5f4f089c1b5bf",
+    "src/tasks.mjs": "e31428dd5d3b1bc2a7dc8b74c848d567e06cede4a8cd3fe90e969306d7a003e8",
+    "src/variants.mjs": "7f93bd73cffceeaefcd384e9e32d0e83750d990b326f90ae97acbaa1f6c8d737",
+    "src/fixtures.mjs": "98287337a1746ada4c9f69f1c076e0242662bc4663682952570b39b88350889a",
+    "src/cli.mjs": "4b836c234ff15beb803f90bc78db3fad27ccdd0cfaf14f9ed369551905d20230"
+  },
+  "lightpanda": {
+    "sha256": "955440053a84754dd64c62f970449a56a2b350cdf43ea5f2e809a73047b8173d",
+    "version": "1.0.0"
+  },
+  "dependencies": "25.13.0"
+}

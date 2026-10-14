@@ -1,0 +1,1110 @@
+[
+  {
+    "id": "books-0",
+    "site": "books",
+    "level": 1,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 3107.8822090000003,
+      "loadMs": 3442.350125000001,
+      "observeMs": 2439.4610009999997,
+      "jevMs": 829.1811660000003,
+      "actionMs": 1723.5452490000007,
+      "verifyMs": 1.0302080000001297
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+    "reported": "£51.77",
+    "elapsedMs": 11548.201167000001,
+    "memory": {
+      "samples": 28,
+      "browserPeakFootprintBytes": 380494272,
+      "pipelinePeakFootprintBytes": 439368104,
+      "pipelinePeakRssBytes": 1037008896
+    }
+  },
+  {
+    "id": "books-0",
+    "site": "books",
+    "level": 1,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 3676.663875000002,
+      "loadMs": 1843.519124999999,
+      "observeMs": 2719.048541,
+      "jevMs": 707.5294590000012,
+      "actionMs": 547.7921659999993,
+      "verifyMs": 2.317876000000979
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+    "reported": "£51.77",
+    "elapsedMs": 9498.166458,
+    "memory": {
+      "samples": 37,
+      "browserPeakFootprintBytes": 401236416,
+      "pipelinePeakFootprintBytes": 536919472,
+      "pipelinePeakRssBytes": 1144176640
+    }
+  },
+  {
+    "id": "books-0",
+    "site": "books",
+    "level": 1,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 2,
+    "stages": {
+      "startupMs": 421.08333400000265,
+      "loadMs": 1399.2332919999972,
+      "observeMs": 44.13037500000064,
+      "jevMs": 671.4417920000014,
+      "actionMs": 468.252457999999,
+      "verifyMs": 0.12066699999923003
+    },
+    "httpStatus": 200,
+    "reason": "Premature DONE",
+    "finalUrl": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+    "elapsedMs": 3005.9917920000007,
+    "memory": {
+      "samples": 20,
+      "browserPeakFootprintBytes": 18203392,
+      "pipelinePeakFootprintBytes": 63888608,
+      "pipelinePeakRssBytes": 131563520
+    }
+  },
+  {
+    "id": "books-1",
+    "site": "books",
+    "level": 1,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 4787.987542000003,
+      "loadMs": 1683.731332999996,
+      "observeMs": 4560.618709000009,
+      "jevMs": 1014.6718329999931,
+      "actionMs": 939.0275000000038,
+      "verifyMs": 0.364291999998386
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
+    "reported": "£53.74",
+    "elapsedMs": 12988.232167000002,
+    "memory": {
+      "samples": 48,
+      "browserPeakFootprintBytes": 388653504,
+      "pipelinePeakFootprintBytes": 523550560,
+      "pipelinePeakRssBytes": 1159249920
+    }
+  },
+  {
+    "id": "books-1",
+    "site": "books",
+    "level": 1,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 2,
+    "stages": {
+      "startupMs": 406.32633299999725,
+      "loadMs": 1464.7899590000015,
+      "observeMs": 28.651707999997598,
+      "jevMs": 602.3102919999947,
+      "actionMs": 466.31683400000475,
+      "verifyMs": 0.19899900000018533
+    },
+    "httpStatus": 200,
+    "reason": "Premature DONE",
+    "finalUrl": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
+    "elapsedMs": 2971.027083000001,
+    "memory": {
+      "samples": 25,
+      "browserPeakFootprintBytes": 17990400,
+      "pipelinePeakFootprintBytes": 66870928,
+      "pipelinePeakRssBytes": 132055040
+    }
+  },
+  {
+    "id": "books-1",
+    "site": "books",
+    "level": 1,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 3394.2307079999955,
+      "loadMs": 1675.7807089999988,
+      "observeMs": 10.785249999993539,
+      "jevMs": 634.4226250000065,
+      "actionMs": 784.1429170000047,
+      "verifyMs": 0.19150100000115344
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
+    "reported": "£53.74",
+    "elapsedMs": 6500.310874999996,
+    "memory": {
+      "samples": 25,
+      "browserPeakFootprintBytes": 390848864,
+      "pipelinePeakFootprintBytes": 440270160,
+      "pipelinePeakRssBytes": 1044414464
+    }
+  },
+  {
+    "id": "quotes-js-2",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 350.6637499999997,
+      "loadMs": 1372.9406660000022,
+      "observeMs": 7.187041999997746,
+      "jevMs": 243.00908300000447,
+      "actionMs": 460.6834999999992,
+      "verifyMs": 0.2170830000031856
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/page/2/",
+    "elapsedMs": 2435.014166999994,
+    "memory": {
+      "samples": 21,
+      "browserPeakFootprintBytes": 14680856,
+      "pipelinePeakFootprintBytes": 64544616,
+      "pipelinePeakRssBytes": 128925696
+    }
+  },
+  {
+    "id": "quotes-js-2",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 3163.866458999997,
+      "loadMs": 1939.0102909999987,
+      "observeMs": 1209.5845830000035,
+      "jevMs": 361.1828749999986,
+      "actionMs": 800.3973339999939,
+      "verifyMs": 0.27870800000528106
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/page/2/",
+    "elapsedMs": 7474.530749999998,
+    "memory": {
+      "samples": 27,
+      "browserPeakFootprintBytes": 372875928,
+      "pipelinePeakFootprintBytes": 422756144,
+      "pipelinePeakRssBytes": 1036337152
+    }
+  },
+  {
+    "id": "quotes-js-2",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 14,
+    "stages": {
+      "startupMs": 3265.9007920000004,
+      "loadMs": 1830.078290999998,
+      "observeMs": 7893.732707000003,
+      "jevMs": 6174.694332999992,
+      "actionMs": 0.015957999989041127,
+      "verifyMs": 2.1915849999932107
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/",
+    "reason": "Step or time limit",
+    "elapsedMs": 19169.053709000007,
+    "memory": {
+      "samples": 112,
+      "browserPeakFootprintBytes": 367878568,
+      "pipelinePeakFootprintBytes": 520258984,
+      "pipelinePeakRssBytes": 1141620736
+    }
+  },
+  {
+    "id": "quotes-js-3",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 1178.0112079999963,
+      "loadMs": 2290.6691250000003,
+      "observeMs": 4.814624999999069,
+      "jevMs": 591.7667500000098,
+      "actionMs": 1362.755707999997,
+      "verifyMs": 0.2953760000091279
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/page/3/",
+    "elapsedMs": 5428.677208000008,
+    "memory": {
+      "samples": 43,
+      "browserPeakFootprintBytes": 381887248,
+      "pipelinePeakFootprintBytes": 453396360,
+      "pipelinePeakRssBytes": 1053966336
+    }
+  },
+  {
+    "id": "quotes-js-3",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 14,
+    "stages": {
+      "startupMs": 674.4950839999947,
+      "loadMs": 2318.9355839999916,
+      "observeMs": 3326.1490420000046,
+      "jevMs": 3826.3441250000324,
+      "actionMs": 0.016458999991300516,
+      "verifyMs": 0.6680399999895599
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/",
+    "reason": "Step or time limit",
+    "elapsedMs": 10149.090417,
+    "memory": {
+      "samples": 93,
+      "browserPeakFootprintBytes": 379756992,
+      "pipelinePeakFootprintBytes": 554077624,
+      "pipelinePeakRssBytes": 1139277824
+    }
+  },
+  {
+    "id": "quotes-js-3",
+    "site": "quotes-js",
+    "level": 2,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 1822.4492080000055,
+      "loadMs": 1554.0598330000066,
+      "observeMs": 263.16449999999895,
+      "jevMs": 860.0669579999812,
+      "actionMs": 937.1441669999913,
+      "verifyMs": 0.3647499999933643
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://quotes.toscrape.com/js/page/3/",
+    "elapsedMs": 5443.692458000005,
+    "memory": {
+      "samples": 14,
+      "browserPeakFootprintBytes": 15270656,
+      "pipelinePeakFootprintBytes": 94252360,
+      "pipelinePeakRssBytes": 147865600
+    }
+  },
+  {
+    "id": "python-4",
+    "site": "python",
+    "level": 2,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 9,
+    "stages": {
+      "startupMs": 4457.827208000002,
+      "loadMs": 1030.8964170000108,
+      "observeMs": 4221.083292999989,
+      "jevMs": 2628.210623999985,
+      "actionMs": 2448.8284599999897,
+      "verifyMs": 0.5388739999762038
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/asyncio.html",
+    "elapsedMs": 14789.551500000001,
+    "memory": {
+      "samples": 103,
+      "browserPeakFootprintBytes": 404153080,
+      "pipelinePeakFootprintBytes": 606458904,
+      "pipelinePeakRssBytes": 1088913408
+    }
+  },
+  {
+    "id": "python-4",
+    "site": "python",
+    "level": 2,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 14,
+    "stages": {
+      "startupMs": 188.80441599999904,
+      "loadMs": 827.5221250000031,
+      "observeMs": 100.29066800000146,
+      "jevMs": 4537.181627000013,
+      "actionMs": 1710.910916000008,
+      "verifyMs": 0.7250009999843314
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/index.html",
+    "reason": "Step or time limit",
+    "elapsedMs": 7369.102375000002,
+    "memory": {
+      "samples": 71,
+      "browserPeakFootprintBytes": 15500032,
+      "pipelinePeakFootprintBytes": 107165520,
+      "pipelinePeakRssBytes": 162824192
+    }
+  },
+  {
+    "id": "python-4",
+    "site": "python",
+    "level": 2,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 679.4134170000034,
+      "loadMs": 1348.7836249999964,
+      "observeMs": 12.630917000002228,
+      "jevMs": 730.7546250000014,
+      "actionMs": 538.0775419999845,
+      "verifyMs": 0.1578319999971427
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/asyncio.html",
+    "elapsedMs": 3310.44933399999,
+    "memory": {
+      "samples": 27,
+      "browserPeakFootprintBytes": 411280072,
+      "pipelinePeakFootprintBytes": 519004064,
+      "pipelinePeakRssBytes": 1105788928
+    }
+  },
+  {
+    "id": "python-5",
+    "site": "python",
+    "level": 2,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 168.75266600001487,
+      "loadMs": 684.9078340000124,
+      "observeMs": 7.159875000012107,
+      "jevMs": 282.439584000007,
+      "actionMs": 457.8218750000233,
+      "verifyMs": 0.08512400000472553
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/pathlib.html",
+    "elapsedMs": 1601.4111250000133,
+    "memory": {
+      "samples": 15,
+      "browserPeakFootprintBytes": 17826584,
+      "pipelinePeakFootprintBytes": 128254008,
+      "pipelinePeakRssBytes": 183910400
+    }
+  },
+  {
+    "id": "python-5",
+    "site": "python",
+    "level": 2,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 693.1059160000004,
+      "loadMs": 1701.0603330000013,
+      "observeMs": 7.579125000018394,
+      "jevMs": 293.53241699998034,
+      "actionMs": 574.2533750000002,
+      "verifyMs": 0.11679199998616241
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/pathlib.html",
+    "elapsedMs": 3269.877416000003,
+    "memory": {
+      "samples": 27,
+      "browserPeakFootprintBytes": 410935720,
+      "pipelinePeakFootprintBytes": 520052664,
+      "pipelinePeakRssBytes": 1126711296
+    }
+  },
+  {
+    "id": "python-5",
+    "site": "python",
+    "level": 2,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 756.5852920000034,
+      "loadMs": 3627.635958000028,
+      "observeMs": 1688.7014979999803,
+      "jevMs": 1410.9222510000109,
+      "actionMs": 722.9884999999776,
+      "verifyMs": 0.20862599994870834
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://docs.python.org/3/library/pathlib.html",
+    "elapsedMs": 8208.084333000006,
+    "memory": {
+      "samples": 73,
+      "browserPeakFootprintBytes": 436920864,
+      "pipelinePeakFootprintBytes": 648668312,
+      "pipelinePeakRssBytes": 1185693696
+    }
+  },
+  {
+    "id": "mdn-6",
+    "site": "mdn",
+    "level": 3,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 790.0783750000119,
+      "loadMs": 1163.0663749999949,
+      "observeMs": 30.331415999971796,
+      "jevMs": 833.6596669999999,
+      "actionMs": 1095.9094170000171,
+      "verifyMs": 0.13808399997651577
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "elapsedMs": 3913.8635420000064,
+    "memory": {
+      "samples": 32,
+      "browserPeakFootprintBytes": 507602808,
+      "pipelinePeakFootprintBytes": 619915064,
+      "pipelinePeakRssBytes": 1301053440
+    }
+  },
+  {
+    "id": "mdn-6",
+    "site": "mdn",
+    "level": 3,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 7,
+    "stages": {
+      "startupMs": 557.2983749999839,
+      "loadMs": 1291.5369580000115,
+      "observeMs": 1710.144250000012,
+      "jevMs": 1998.8628749999625,
+      "actionMs": 1209.1544190000277,
+      "verifyMs": 0.4502479999791831
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "elapsedMs": 6768.566540999978,
+    "memory": {
+      "samples": 62,
+      "browserPeakFootprintBytes": 500787064,
+      "pipelinePeakFootprintBytes": 708176488,
+      "pipelinePeakRssBytes": 1378009088
+    }
+  },
+  {
+    "id": "mdn-6",
+    "site": "mdn",
+    "level": 3,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 189.89429200001177,
+      "loadMs": 623.4434579999943,
+      "observeMs": 27.526376000023447,
+      "jevMs": 982.3424999999697,
+      "actionMs": 456.2311659999832,
+      "verifyMs": 0.2665839999972377
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "elapsedMs": 2280.4794999999867,
+    "memory": {
+      "samples": 21,
+      "browserPeakFootprintBytes": 29033264,
+      "pipelinePeakFootprintBytes": 145671040,
+      "pipelinePeakRssBytes": 216432640
+    }
+  },
+  {
+    "id": "mdn-7",
+    "site": "mdn",
+    "level": 3,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 5,
+    "stages": {
+      "startupMs": 621.2536250000121,
+      "loadMs": 908.5210000000079,
+      "observeMs": 1507.2869590000191,
+      "jevMs": 1517.6189160000067,
+      "actionMs": 957.5402079999913,
+      "verifyMs": 0.28454200000851415
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "elapsedMs": 5513.454666000005,
+    "memory": {
+      "samples": 49,
+      "browserPeakFootprintBytes": 467116648,
+      "pipelinePeakFootprintBytes": 674260504,
+      "pipelinePeakRssBytes": 1277820928
+    }
+  },
+  {
+    "id": "mdn-7",
+    "site": "mdn",
+    "level": 3,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 168.2819160000072,
+      "loadMs": 582.5072079999954,
+      "observeMs": 21.248832999990555,
+      "jevMs": 867.4371669999964,
+      "actionMs": 454.4446679999819,
+      "verifyMs": 0.18950000003678724
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "elapsedMs": 2094.8490410000086,
+    "memory": {
+      "samples": 20,
+      "browserPeakFootprintBytes": 31343384,
+      "pipelinePeakFootprintBytes": 147719160,
+      "pipelinePeakRssBytes": 222396416
+    }
+  },
+  {
+    "id": "mdn-7",
+    "site": "mdn",
+    "level": 3,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 593.0678330000082,
+      "loadMs": 1009.6552910000028,
+      "observeMs": 13.905375000002095,
+      "jevMs": 288.52049999998417,
+      "actionMs": 512.1036670000176,
+      "verifyMs": 0.07933300000149757
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "elapsedMs": 2417.5912499999977,
+    "memory": {
+      "samples": 19,
+      "browserPeakFootprintBytes": 468148936,
+      "pipelinePeakFootprintBytes": 584721344,
+      "pipelinePeakRssBytes": 1184907264
+    }
+  },
+  {
+    "id": "ajax-oscars-8",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 165.04112499998882,
+      "loadMs": 1775.8470840000082,
+      "observeMs": 3.469582999998238,
+      "jevMs": 745.7777910000004,
+      "actionMs": 1794.731832999998,
+      "verifyMs": 4.5447499999718275
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/",
+    "elapsedMs": 4489.728084000002,
+    "memory": {
+      "samples": 43,
+      "browserPeakFootprintBytes": 42107720,
+      "pipelinePeakFootprintBytes": 158074016,
+      "pipelinePeakRssBytes": 230440960
+    }
+  },
+  {
+    "id": "ajax-oscars-8",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 604.3346249999886,
+      "loadMs": 1917.0374160000065,
+      "observeMs": 3.401040999975521,
+      "jevMs": 787.7042090000177,
+      "actionMs": 1785.3250010000484,
+      "verifyMs": 6.480249999993248
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/#2015",
+    "elapsedMs": 5104.581708999991,
+    "memory": {
+      "samples": 45,
+      "browserPeakFootprintBytes": 413574312,
+      "pipelinePeakFootprintBytes": 526280192,
+      "pipelinePeakRssBytes": 1151516672
+    }
+  },
+  {
+    "id": "ajax-oscars-8",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 807.2690000000002,
+      "loadMs": 2736.831084000005,
+      "observeMs": 823.062001000013,
+      "jevMs": 820.3676669999841,
+      "actionMs": 1773.2031669999997,
+      "verifyMs": 4.882916999980807
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/#2015",
+    "elapsedMs": 6966.1293749999895,
+    "memory": {
+      "samples": 62,
+      "browserPeakFootprintBytes": 446146856,
+      "pipelinePeakFootprintBytes": 663517232,
+      "pipelinePeakRssBytes": 1364426752
+    }
+  },
+  {
+    "id": "ajax-oscars-9",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 618.7578329999815,
+      "loadMs": 2298.0412910000014,
+      "observeMs": 3.7232509999885224,
+      "jevMs": 836.5852090000117,
+      "actionMs": 1772.2899169999873,
+      "verifyMs": 32.144917999976315
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/#2014",
+    "elapsedMs": 5561.943333000003,
+    "memory": {
+      "samples": 50,
+      "browserPeakFootprintBytes": 409478408,
+      "pipelinePeakFootprintBytes": 562330368,
+      "pipelinePeakRssBytes": 1178009600
+    }
+  },
+  {
+    "id": "ajax-oscars-9",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 582.1062500000116,
+      "loadMs": 1883.8408329999947,
+      "observeMs": 1256.245625999989,
+      "jevMs": 906.7947070000228,
+      "actionMs": 1114.7312919999822,
+      "verifyMs": 32.26883199997246
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/#2014",
+    "elapsedMs": 5778.145041000011,
+    "memory": {
+      "samples": 48,
+      "browserPeakFootprintBytes": 415999312,
+      "pipelinePeakFootprintBytes": 680462272,
+      "pipelinePeakRssBytes": 1268039680
+    }
+  },
+  {
+    "id": "ajax-oscars-9",
+    "site": "ajax-oscars",
+    "level": 3,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 3,
+    "stages": {
+      "startupMs": 189.60516700000153,
+      "loadMs": 1125.9362079999992,
+      "observeMs": 2.9179169999842998,
+      "jevMs": 748.646665999986,
+      "actionMs": 1760.1083339999896,
+      "verifyMs": 3.9307079999998678
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://www.scrapethissite.com/pages/ajax-javascript/",
+    "elapsedMs": 3831.5632499999774,
+    "memory": {
+      "samples": 36,
+      "browserPeakFootprintBytes": 42206048,
+      "pipelinePeakFootprintBytes": 220848968,
+      "pipelinePeakRssBytes": 231358464
+    }
+  },
+  {
+    "id": "github-10",
+    "site": "github",
+    "level": 4,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 696.7217910000181,
+      "loadMs": 2488.971125000011,
+      "observeMs": 1224.2048329999961,
+      "jevMs": 680.0836249999993,
+      "actionMs": 477.4127499999886,
+      "verifyMs": 14.253667000011774
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://github.com/react/react/issues?q=is%3Aissue+state%3Aclosed",
+    "elapsedMs": 5583.400458000018,
+    "memory": {
+      "samples": 49,
+      "browserPeakFootprintBytes": 674833168,
+      "pipelinePeakFootprintBytes": 940639808,
+      "pipelinePeakRssBytes": 1473413120
+    }
+  },
+  {
+    "id": "github-10",
+    "site": "github",
+    "level": 4,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 2,
+    "stages": {
+      "startupMs": 168.48716699998477,
+      "loadMs": 1098.1142499999842,
+      "observeMs": 32.269083999999566,
+      "jevMs": 616.5920010000118,
+      "actionMs": 480.45008300000336,
+      "verifyMs": 26.11433300000499
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://github.com/react/react/issues?q=is%3Aissue+state%3Aclosed",
+    "elapsedMs": 2422.565208999993,
+    "memory": {
+      "samples": 23,
+      "browserPeakFootprintBytes": 143819640,
+      "pipelinePeakFootprintBytes": 322282504,
+      "pipelinePeakRssBytes": 383057920
+    }
+  },
+  {
+    "id": "github-10",
+    "site": "github",
+    "level": 4,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 823.6272079999908,
+      "loadMs": 1834.0548750000016,
+      "observeMs": 6.160416999977315,
+      "jevMs": 302.1178749999963,
+      "actionMs": 493.9247500000056,
+      "verifyMs": 9.838457999983802
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://github.com/react/react/issues?q=is%3Aissue+state%3Aclosed",
+    "elapsedMs": 3469.9697079999896,
+    "memory": {
+      "samples": 27,
+      "browserPeakFootprintBytes": 637608864,
+      "pipelinePeakFootprintBytes": 820036608,
+      "pipelinePeakRssBytes": 1404682240
+    }
+  },
+  {
+    "id": "github-11",
+    "site": "github",
+    "level": 4,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 14,
+    "stages": {
+      "startupMs": 167.52804199999082,
+      "loadMs": 1780.3479159999988,
+      "observeMs": 116.46712399998796,
+      "jevMs": 4874.837833999976,
+      "actionMs": 5458.272876000032,
+      "verifyMs": 29.406626999989385
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://github.com/react/react/issues?q=is%3Aissue%20is%3Aclosed",
+    "reason": "Step or time limit",
+    "elapsedMs": 12431.168291999988,
+    "memory": {
+      "samples": 121,
+      "browserPeakFootprintBytes": 134988664,
+      "pipelinePeakFootprintBytes": 318022640,
+      "pipelinePeakRssBytes": 377356288
+    }
+  },
+  {
+    "id": "github-11",
+    "site": "github",
+    "level": 4,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "PASS",
+    "steps": 1,
+    "stages": {
+      "startupMs": 597.8692919999885,
+      "loadMs": 1901.3373750000028,
+      "observeMs": 7.505875000002561,
+      "jevMs": 328.5681249999907,
+      "actionMs": 536.9619579999999,
+      "verifyMs": 10.641333000006853
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://github.com/react/react/issues",
+    "elapsedMs": 3383.108041999978,
+    "memory": {
+      "samples": 28,
+      "browserPeakFootprintBytes": 648356768,
+      "pipelinePeakFootprintBytes": 829555976,
+      "pipelinePeakRssBytes": 1390395392
+    }
+  },
+  {
+    "id": "github-11",
+    "site": "github",
+    "level": 4,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 14,
+    "stages": {
+      "startupMs": 591.551833000005,
+      "loadMs": 1830.7728329999954,
+      "observeMs": 3985.153333000024,
+      "jevMs": 4094.217749000003,
+      "actionMs": 6369.3313319999725,
+      "verifyMs": 50.592000000033295
+    },
+    "httpStatus": 200,
+    "finalUrl": "https://github.com/react/react/issues?q=is%3Aissue%20is%3Aclosed",
+    "reason": "Step or time limit",
+    "elapsedMs": 16926.003915999987,
+    "memory": {
+      "samples": 162,
+      "browserPeakFootprintBytes": 596059064,
+      "pipelinePeakFootprintBytes": 859605120,
+      "pipelinePeakRssBytes": 1502527488
+    }
+  },
+  {
+    "id": "osm-12",
+    "site": "osm",
+    "level": 5,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 3,
+    "stages": {
+      "startupMs": 563.8265419999952,
+      "loadMs": 1810.6537499999977,
+      "observeMs": 17.04545700000017,
+      "jevMs": 876.5997910000151,
+      "actionMs": 1140.3303739999828,
+      "verifyMs": 0.1270829999994021
+    },
+    "httpStatus": 200,
+    "reason": "Premature DONE",
+    "finalUrl": "https://www.openstreetmap.org/history#map=18/48.858260/2.294501",
+    "elapsedMs": 4409.224749999994,
+    "memory": {
+      "samples": 39,
+      "browserPeakFootprintBytes": 523920528,
+      "pipelinePeakFootprintBytes": 709183472,
+      "pipelinePeakRssBytes": 1285799936
+    }
+  },
+  {
+    "id": "osm-12",
+    "site": "osm",
+    "level": 5,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 3,
+    "stages": {
+      "startupMs": 613.308583999984,
+      "loadMs": 1593.3184579999943,
+      "observeMs": 1082.0695839999826,
+      "jevMs": 923.2173739999998,
+      "actionMs": 1340.6322080000245,
+      "verifyMs": 0.10512399999424815
+    },
+    "httpStatus": 200,
+    "reason": "Model BLOCKED",
+    "finalUrl": "https://www.openstreetmap.org/traces",
+    "elapsedMs": 5553.265167000005,
+    "memory": {
+      "samples": 50,
+      "browserPeakFootprintBytes": 546497584,
+      "pipelinePeakFootprintBytes": 820841248,
+      "pipelinePeakRssBytes": 1377370112
+    }
+  },
+  {
+    "id": "osm-12",
+    "site": "osm",
+    "level": 5,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 3,
+    "stages": {
+      "startupMs": 167.27650000000722,
+      "loadMs": 1377.0982919999806,
+      "observeMs": 13.275625999987824,
+      "jevMs": 1008.2903750000114,
+      "actionMs": 915.0596239999868,
+      "verifyMs": 0.11829200002830476
+    },
+    "httpStatus": 200,
+    "reason": "Premature DONE",
+    "finalUrl": "https://www.openstreetmap.org/history#map=12/48.8584/2.2944",
+    "elapsedMs": 3481.7394579999964,
+    "memory": {
+      "samples": 33,
+      "browserPeakFootprintBytes": 51495728,
+      "pipelinePeakFootprintBytes": 240658352,
+      "pipelinePeakRssBytes": 291504128
+    }
+  },
+  {
+    "id": "osm-13",
+    "site": "osm",
+    "level": 5,
+    "mode": "chromium-ocr",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 0,
+    "stages": {
+      "startupMs": 604.3848749999888,
+      "loadMs": 5885.259208000032,
+      "observeMs": 1969.7099579999922,
+      "jevMs": 0,
+      "actionMs": 0,
+      "verifyMs": 0.054875000030733645
+    },
+    "httpStatus": 200,
+    "reason": "fetch failed",
+    "elapsedMs": 18974.279207999993,
+    "memory": {
+      "samples": 160,
+      "browserPeakFootprintBytes": 534438960,
+      "pipelinePeakFootprintBytes": 809192176,
+      "pipelinePeakRssBytes": 1317470208
+    }
+  },
+  {
+    "id": "osm-13",
+    "site": "osm",
+    "level": 5,
+    "mode": "lightpanda-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 1,
+    "stages": {
+      "startupMs": 195.48395800002618,
+      "loadMs": 6367.797040999983,
+      "observeMs": 102.53133399999933,
+      "jevMs": 356.9732499999809,
+      "actionMs": 0,
+      "verifyMs": 0.08225000003585592
+    },
+    "httpStatus": 200,
+    "reason": "Premature DONE",
+    "finalUrl": "https://www.openstreetmap.org/way/5013364/history#map=12/48.8583/2.2945",
+    "elapsedMs": 7023.182167000021,
+    "memory": {
+      "samples": 68,
+      "browserPeakFootprintBytes": 83854176,
+      "pipelinePeakFootprintBytes": 270034768,
+      "pipelinePeakRssBytes": 278429696
+    }
+  },
+  {
+    "id": "osm-13",
+    "site": "osm",
+    "level": 5,
+    "mode": "chromium-dom",
+    "rep": 0,
+    "status": "FAIL",
+    "steps": 1,
+    "stages": {
+      "startupMs": 784.1875419999706,
+      "loadMs": 5096.9442500000005,
+      "observeMs": 152.1315830000094,
+      "jevMs": 375.6662919999799,
+      "actionMs": 0,
+      "verifyMs": 0.047666999977082014
+    },
+    "httpStatus": 200,
+    "reason": "Premature DONE",
+    "finalUrl": "https://www.openstreetmap.org/way/5013364/history#map=18/48.858260/2.294501",
+    "elapsedMs": 6409.214707999956,
+    "memory": {
+      "samples": 56,
+      "browserPeakFootprintBytes": 568533944,
+      "pipelinePeakFootprintBytes": 755468224,
+      "pipelinePeakRssBytes": 1271873536
+    }
+  }
+]

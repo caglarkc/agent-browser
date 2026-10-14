@@ -1,0 +1,118 @@
+[
+  {
+    "id": "menu-chromium-rendered-1",
+    "task": "menu",
+    "profile": "chromium-rendered",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 2,
+    "modelCalls": 3,
+    "modelLatencyMs": 1202.6534579999998,
+    "observeMs": 15.640374999999835,
+    "actionMs": 14.226831999999831,
+    "totalMs": 2233.230417,
+    "startupMs": 506.873167,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 17.28341599999999,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "research"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” menu",
+    "finalUrl": "http://127.0.0.1:51607/fixture/7f83ff56-c663-4b5b-8a84-6a1e7be4ec19",
+    "screenshot": "menu-chromium-rendered-1.png",
+    "pageErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 917553152,
+      "samples": 17,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 212746240
+    }
+  },
+  {
+    "id": "menu-chromium-semantic-1",
+    "task": "menu",
+    "profile": "chromium-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 2,
+    "modelCalls": 3,
+    "modelLatencyMs": 889.154125,
+    "observeMs": 9.136791999999787,
+    "actionMs": 5.995624999999563,
+    "totalMs": 1773.0572079999997,
+    "startupMs": 410.0872919999997,
+    "backendVersion": "Chrome/155.0.8059.40",
+    "navigationMs": 14.62179100000003,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "research"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab â€” menu",
+    "finalUrl": "http://127.0.0.1:51607/fixture/15dd74c2-c65f-43ca-8c9e-5fe2b1615a0a",
+    "pageErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 912179200,
+      "samples": 14,
+      "maxProcesses": 7,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 214269952
+    }
+  },
+  {
+    "id": "menu-lightpanda-semantic-1",
+    "task": "menu",
+    "profile": "lightpanda-semantic",
+    "policy": "jev",
+    "iteration": 1,
+    "status": "PASS",
+    "steps": 2,
+    "modelCalls": 3,
+    "modelLatencyMs": 848.6361660000011,
+    "observeMs": 3.4792090000000826,
+    "actionMs": 4.721249000000171,
+    "totalMs": 1428.5147909999996,
+    "startupMs": 159.62708400000065,
+    "backendVersion": "Chrome/124.0.6367.29",
+    "navigationMs": 1.5332909999997355,
+    "verification": {
+      "passed": true,
+      "commits": 1,
+      "actual": [
+        {
+          "selected": "research"
+        }
+      ]
+    },
+    "finalTitle": "Browser Lab — menu",
+    "finalUrl": "http://127.0.0.1:51607/fixture/42762cb2-f28f-4454-b13d-3873d93ff13f",
+    "pageErrors": [],
+    "memory": {
+      "sampledBrowserTreePeakRssBytes": 32571392,
+      "samples": 13,
+      "maxProcesses": 1,
+      "intervalMs": 100,
+      "method": "macOS ps RSS sum; shared pages may be double-counted; not cgroup total product memory",
+      "harnessRssBytes": 215203840
+    }
+  }
+]

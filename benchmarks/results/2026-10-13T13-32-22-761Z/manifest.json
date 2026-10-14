@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-13T13-32-22-761Z",
+  "policy": "scripted",
+  "repeat": 1,
+  "profiles": [
+    "chromium-rendered",
+    "chromium-semantic",
+    "lightpanda-semantic"
+  ],
+  "tasks": [
+    "read",
+    "form",
+    "upload",
+    "menu",
+    "overlay",
+    "lazy",
+    "shadow",
+    "iframe",
+    "css-hidden",
+    "pointer",
+    "canvas"
+  ],
+  "order": [
+    {
+      "task": "read",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "read",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "read",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "form",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "upload",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "upload",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "upload",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "menu",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "overlay",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "overlay",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "overlay",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "lazy",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "lazy",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "lazy",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "shadow",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "shadow",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "shadow",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "iframe",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "iframe",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "iframe",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "css-hidden",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "css-hidden",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "css-hidden",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "pointer",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "pointer",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "pointer",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "canvas",
+      "profile": "chromium-rendered",
+      "iteration": 1
+    },
+    {
+      "task": "canvas",
+      "profile": "chromium-semantic",
+      "iteration": 1
+    },
+    {
+      "task": "canvas",
+      "profile": "lightpanda-semantic",
+      "iteration": 1
+    }
+  ],
+  "node": "v25.8.2",
+  "platform": "darwin",
+  "arch": "arm64",
+  "decisionModel": null,
+  "endpoint": null,
+  "maxCalls": 0,
+  "measurement": "Fresh browser per case; startup/navigation included in total; RSS samples are browser tree only, not capacity proof; action settling fixed at 150 ms in all profiles",
+  "visualMode": "Scripted canvas probe has fixture-defined coordinates; Jev has no vision fallback",
+  "sourceHashes": {
+    "src/backend.mjs": "b01f2246a0b9329dcc8139d95b6c7311e8ccc8adff15a77e9a6f421a575390d3",
+    "src/observation.mjs": "62439bb2dd49e76efd68012c649ac46489a8a37162e4a9c108ddcdde274d64cb",
+    "src/policy.mjs": "ad9facec5f6890149a13f3b6fcb97afc136e052cd32c6cf69e65ee3ae73c34df",
+    "src/tasks.mjs": "d09bad90ea01c78531cc586c8396143ccd25d393f3512d308dc8d112e19ecc7b",
+    "src/fixtures.mjs": "79ab6dca368eef8a87054b01cb9acb6b0bf9297f48ad261d7ef22cb2ac675816",
+    "src/cli.mjs": "58e17f9d9c5a0c87fd5a5a88abc7377781d9daa274e7fbc3f1e1ca606b2214f1"
+  },
+  "lightpanda": {
+    "sha256": "955440053a84754dd64c62f970449a56a2b350cdf43ea5f2e809a73047b8173d",
+    "version": "1.0.0"
+  },
+  "dependencies": "25.13.0"
+}
