@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/banner.svg" alt="Agent Browser Runtime — JEV decisions, Lightpanda DOM, verified outcomes. 73% less task time and 84% less local memory in the matched live benchmark." width="100%" /></p>
+<p align="center"><img src="docs/assets/banner.svg" alt="Agent Browser — JEV decisions, Lightpanda DOM, verified outcomes. 73% less task time and 84% less local memory in the matched live benchmark." width="100%" /></p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-7ee7b5?style=flat-square" alt="MIT license" /></a>
@@ -7,7 +7,7 @@
   <a href="https://github.com/lightpanda-io/browser"><img src="https://img.shields.io/badge/browser-Lightpanda_DOM-7ee7b5?style=flat-square" alt="Lightpanda DOM" /></a>
 </p>
 
-# Agent Browser Runtime
+# Agent Browser
 
 **Web automation built around structured observations, typed decisions, and independently verified results.**
 
@@ -92,8 +92,8 @@ The repository contains the working benchmark laboratory and design documents. T
 The fully measured configuration is **macOS arm64**, Node.js ≥22, system Google Chrome, and Lightpanda 1.0.0. The OCR helper uses Apple Vision; the physical memory helper uses macOS APIs. Other platforms require additional setup and fresh measurements.
 
 ```sh
-git clone https://github.com/caglarkc/agent-browser-runtime.git
-cd agent-browser-runtime/lab
+git clone https://github.com/caglarkc/agent-browser.git
+cd agent-browser/lab
 npm ci --ignore-scripts
 npm run install:lightpanda
 npm test

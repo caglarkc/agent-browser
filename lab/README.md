@@ -44,7 +44,7 @@ Chromium semantic / Lightpanda semantic aynı uygulama sözleşmesini karşıla�
 ## Çalıştırma
 
 ```sh
-cd agent-browser-runtime/lab
+cd agent-browser/lab
 npm ci --ignore-scripts
 npm run install:lightpanda
 npm test
