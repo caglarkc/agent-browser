@@ -1,5 +1,7 @@
 # Agent Browser Runtime — MVP planı
 
+> Tarihsel belge: 15 Ekim 2026 itibarıyla agent odaklı tarayıcının güncel kapsamı [BROWSER_REQUIREMENTS.md](BROWSER_REQUIREMENTS.md), uygulama/limit/kabul planı [BROWSER_PLAN.md](BROWSER_PLAN.md) ile belirlenir. Aşağıdaki eski kapsam ve G/K eşikleri güncel ürünün kabul koşulu değildir.
+
 Sürüm: **2.0**. Tarih: **2 Ekim 2026**. Durum: planlama; çalışma zamanı kanıtı yok.
 
 Bu belge v1.0'ı geçersiz kılar. [Görev sözleşmeleri](TASK_CONTRACTS.md) ve [kabul protokolü](ACCEPTANCE.md) normatif eklerdir. İşlem anlamı/durum geçişlerinde görev sözleşmesi, ölçüm/eşiklerde kabul protokolü esas alınır. Çelişki bulunursa test PASS verilmez; belgeler birlikte düzeltilir. [Teknik değerlendirme](TECHNICAL_REVIEW.md) izlenebilirlik kaydıdır; arşiv dosyaları yalnız tarihçedir.

@@ -1,5 +1,7 @@
 # Görev, işlem ve yürütme sözleşmeleri
 
+> Tarihsel belge: 15 Ekim 2026 itibarıyla agent odaklı tarayıcının güncel kapsamı [BROWSER_REQUIREMENTS.md](BROWSER_REQUIREMENTS.md), uygulama/limit/kabul planı [BROWSER_PLAN.md](BROWSER_PLAN.md) ile belirlenir. Aşağıdaki eski kapsam ve G/K eşikleri güncel ürünün kabul koşulu değildir.
+
 Sürüm: 2.0. Tarih: 2 Ekim 2026. [MVP planının](MVP_PLAN.md) normatif eki. Bu belge uygulanacak tasarımdır; örnek fixture adresleri henüz çalışan servis değildir.
 
 ## 1. Güvenilir görev tanımı

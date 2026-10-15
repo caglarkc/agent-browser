@@ -149,7 +149,7 @@ The reports retain their original Turkish text. Published evidence normalizes lo
 
 ## Roadmap
 
-Improve control context and stale-target handling, support dynamic site transitions more reliably, expand read-only task diversity, and measure Linux concurrency. The historical **60-session / 500 MB** figure is a design target, **not an achieved benchmark**.
+The [browser requirements](docs/BROWSER_REQUIREMENTS.md) define an agent-only browser with profiles, tabs, logins, site blocking and access for multiple agents. Human interaction is limited to a private-input extension invoked by an agent when sensitive information is needed; it provides no page viewing, navigation or tab control. The [implementation plan](docs/BROWSER_PLAN.md) builds these around the Lightpanda engine, with structured observations, reliable DOM actions and agent CLI/API access. Model adapters are browser clients. The four failed GitHub/OpenStreetMap scenarios and the full live task set remain compatibility checks. Chromium remains a comparison baseline. The historical **60-session / 500 MB** figure is a later design target, **not an achieved benchmark**.
 
 ## License and credits
 

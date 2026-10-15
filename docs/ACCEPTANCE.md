@@ -1,5 +1,7 @@
 # Kabul, karşılaştırma ve ölçüm protokolü
 
+> Tarihsel belge: 15 Ekim 2026 itibarıyla agent odaklı tarayıcının güncel kapsamı [BROWSER_REQUIREMENTS.md](BROWSER_REQUIREMENTS.md), uygulama/limit/kabul planı [BROWSER_PLAN.md](BROWSER_PLAN.md) ile belirlenir. Aşağıdaki eski kapsam ve G/K eşikleri güncel ürünün kabul koşulu değildir.
+
 Sürüm: 2.0. Tarih: 2 Ekim 2026. [MVP planının](MVP_PLAN.md) normatif eki. Aşağıdaki sayısal eşikler ürün tasarım kararıdır; vendor garantisi veya ölçülmüş sonuç değildir. Bütün koşuların bugünkü durumu **NOT_RUN**.
 
 ## 1. Corpus ve koşu manifesti
