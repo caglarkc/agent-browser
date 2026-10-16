@@ -1,0 +1,56 @@
+[
+  {
+    "config": {
+      "name": "default-reload",
+      "capture": "default",
+      "reloadMs": 30000
+    },
+    "status": "PASS",
+    "errors": [],
+    "workerPid": 26453,
+    "seconds": 120.001041916,
+    "network": {
+      "requests": 4767,
+      "responseBodyBytes": 310477512
+    },
+    "gcProbe": {
+      "status": "UNAVAILABLE",
+      "message": "Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"
+    },
+    "leakedWorkerPids": [],
+    "checks": 240,
+    "workerFootprint": {
+      "firstWindowMedianBytes": 34702056,
+      "lastWindowMedianBytes": 37831400,
+      "lastBytes": 34243304,
+      "maxBytes": 43041512
+    },
+    "workerCpuTimeWeightedPercent": 3.6118811903269865
+  },
+  {
+    "config": {
+      "name": "default-continuous",
+      "capture": "default",
+      "reloadMs": 0
+    },
+    "status": "FAIL",
+    "errors": [
+      {
+        "message": "OBSERVATION_GAP"
+      },
+      {
+        "message": "OBSERVATION_GAP"
+      }
+    ],
+    "workerPid": 28178,
+    "leakedWorkerPids": [],
+    "checks": 190,
+    "workerFootprint": {
+      "firstWindowMedianBytes": 33850064,
+      "lastWindowMedianBytes": 39813840,
+      "lastBytes": 44024528,
+      "maxBytes": 44024528
+    },
+    "workerCpuTimeWeightedPercent": 2.615573494220055
+  }
+]

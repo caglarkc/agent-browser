@@ -1,0 +1,18 @@
+{"starting":"default-reload","seconds":120}
+{"name":"default-reload","seconds":0,"workerMiB":25.110061645507812}
+{"name":"default-reload","seconds":30,"workerMiB":35.86006164550781}
+{"name":"default-reload","seconds":60,"workerMiB":36.68818664550781}
+{"name":"default-reload","seconds":91,"workerMiB":42.70381164550781}
+{"config":{"name":"default-reload","capture":"default","reloadMs":30000},"status":"PASS","errors":[],"workerPid":30177,"seconds":120.00245970799999,"network":{"requests":4728,"responseBodyBytes":307921608},"gcProbe":{"status":"UNAVAILABLE","message":"Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"},"leakedWorkerPids":[],"checks":240,"workerFootprint":{"firstWindowMedianBytes":34964176,"lastWindowMedianBytes":44040912,"lastBytes":42992336,"maxBytes":47956688},"workerCpuTimeWeightedPercent":3.7919371258096883}
+{"starting":"default-continuous","seconds":120}
+{"name":"default-continuous","seconds":0,"workerMiB":26.235061645507812}
+{"name":"default-continuous","seconds":30,"workerMiB":34.71943664550781}
+{"name":"default-continuous","seconds":60,"workerMiB":38.20381164550781}
+{"name":"default-continuous","seconds":90,"workerMiB":39.71943664550781}
+{"config":{"name":"default-continuous","capture":"default","reloadMs":0},"status":"PASS","errors":[],"workerPid":32034,"seconds":120.00039662500001,"network":{"requests":4711,"responseBodyBytes":308740096},"gcProbe":{"status":"UNAVAILABLE","message":"Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"},"leakedWorkerPids":[],"checks":240,"workerFootprint":{"firstWindowMedianBytes":34702032,"lastWindowMedianBytes":42238672,"lastBytes":48333520,"maxBytes":48333520},"workerCpuTimeWeightedPercent":2.7155433962877957}
+{"starting":"zero-capture-continuous","seconds":120}
+{"name":"zero-capture-continuous","seconds":0,"workerMiB":21.37566375732422}
+{"name":"zero-capture-continuous","seconds":30,"workerMiB":23.51628875732422}
+{"name":"zero-capture-continuous","seconds":60,"workerMiB":25.51628875732422}
+{"name":"zero-capture-continuous","seconds":90,"workerMiB":27.250686645507812}
+{"config":{"name":"zero-capture-continuous","capture":"zero","reloadMs":0},"status":"PASS","errors":[],"workerPid":33718,"seconds":120.00035487499999,"network":{"requests":4779,"responseBodyBytes":313196544},"gcProbe":{"status":"UNAVAILABLE","message":"Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"},"leakedWorkerPids":[],"checks":240,"workerFootprint":{"firstWindowMedianBytes":23790264,"lastWindowMedianBytes":29311696,"lastBytes":29983440,"maxBytes":29983440},"workerCpuTimeWeightedPercent":2.3114197080895074}

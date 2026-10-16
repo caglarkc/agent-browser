@@ -1,0 +1,25 @@
+TEST_FILTER="fetch releases settled resolver roots" zig build -Dversion=1.1.0-agent-a1+44e378d test -freference-trace
+[0Kexpected 0, found 32
+[31m
+================================================================================
+"WebApi: fetch releases settled resolver roots" - TestExpectedEqual[0m
+[31m================================================================================[0m
+(empty stack trace)
+[31m.[0m[31m
+0 of 1 test passed[0m
+
+Slowest 1 test: 
+  68.78ms	WebApi: fetch releases settled resolver roots
+[31m
+Failed Test Summary: [0m
+[31m- WebApi: fetch releases settled resolver roots[0m
+test
++- run test failure
+error: process exited with code 1
+failed command: ./.zig-cache/o/62450ec06ac364c18ec5d41c46c74241/test
+
+Build Summary: 62/64 steps succeeded (1 failed)
+test transitive failure
++- run test failure
+
+make: *** [test] Error 1

@@ -1,0 +1,26 @@
+{
+  "config": {
+    "name": "default-continuous",
+    "capture": "default",
+    "reloadMs": 0
+  },
+  "status": "FAIL",
+  "errors": [
+    {
+      "message": "OBSERVATION_GAP"
+    },
+    {
+      "message": "OBSERVATION_GAP"
+    }
+  ],
+  "workerPid": 28178,
+  "leakedWorkerPids": [],
+  "checks": 190,
+  "workerFootprint": {
+    "firstWindowMedianBytes": 33850064,
+    "lastWindowMedianBytes": 39813840,
+    "lastBytes": 44024528,
+    "maxBytes": 44024528
+  },
+  "workerCpuTimeWeightedPercent": 2.615573494220055
+}

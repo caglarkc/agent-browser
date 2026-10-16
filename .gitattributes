@@ -1,0 +1,6 @@
+# Empty context lines in unified patches require a leading space.
+*.patch -whitespace
+# Preserve native test/build output verbatim, including terminal spacing.
+browser/results/*/native/*.txt -whitespace
+# Matplotlib emits spaced multiline path coordinates in generated SVG files.
+browser/results/*/*.svg -whitespace

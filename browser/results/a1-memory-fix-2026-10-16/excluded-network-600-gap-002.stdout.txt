@@ -1,0 +1,3 @@
+{"starting":"default-continuous","seconds":600}
+{"name":"default-continuous","seconds":0,"workerMiB":24.969436645507812}
+{"config":{"name":"default-continuous","capture":"default","reloadMs":0},"status":"FAIL","errors":[{"message":"OBSERVATION_GAP"},{"message":"OBSERVATION_GAP"}],"workerPid":35206,"leakedWorkerPids":[],"checks":30,"workerFootprint":{"firstWindowMedianBytes":32228048,"lastWindowMedianBytes":32228048,"lastBytes":37896912,"maxBytes":37896912},"workerCpuTimeWeightedPercent":2.9552578343425138}

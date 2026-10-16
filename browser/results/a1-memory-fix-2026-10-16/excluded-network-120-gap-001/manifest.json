@@ -1,0 +1,49 @@
+{
+  "startedAt": "2026-10-16T14:04:51.114Z",
+  "smoke": false,
+  "seconds": 120,
+  "schedule": [
+    {
+      "name": "default-reload",
+      "capture": "default",
+      "reloadMs": 30000
+    },
+    {
+      "name": "default-continuous",
+      "capture": "default",
+      "reloadMs": 0
+    },
+    {
+      "name": "zero-capture-continuous",
+      "capture": "zero",
+      "reloadMs": 0
+    }
+  ],
+  "sources": {
+    "scripts/diagnose-network-memory.mjs": "a25bc1bf2dea953dc73384f480013ad4a64a6095ee0a8f83c9357c79425bd844",
+    "scripts/resource-fixture.mjs": "b0e4aabd54763546a191494c0d1a70c6ba3b3551ed7fe7d3a28b55b5cc1cde7d",
+    "src/resources.mjs": "93522216be0b103694674aa3b7fab280770a4ce685db9f337867a13653101648",
+    "src/engine.mjs": "58406e4b01288aaafb2aa7a120047ec3f66236d79e9e8a8a6b98b0a2598cb3e2",
+    "src/errors.mjs": "142fffa7531939d1e9f3aa8b28548a81d7f9d51292199f08d68d2fed3192f7c3",
+    "native/resource-probe.c": "65b3b51a541ddbd000cd4dc726d3070d5e4afc0192ec774544bc9b0ec4ebd0c4",
+    "engine/manifest.json": "6f35aca540b914fb9c4d3a39214ca59f540af8cefb2bb4d73cd44c235effb3cd",
+    "engine/source.json": "ee85c65a9c81126af7d272aebf2f88d24aa89567637f0b805ccebe040a81ff6e",
+    "engine/multitab.patch": "be6ee5ecc34d7f85ba581a4afd3d2b20e4de1cec90304b0647073f0fcb6743bc",
+    "package.json": "7909bc4d3d63a626c6bed2f214a7616ed1fa562a4f3db42a702ea0ac43de6bad",
+    "package-lock.json": "fa5be686f5d77625216b964e671766a29e254d54493c31a178742f51e257e4d9"
+  },
+  "machine": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "node": "v25.8.2",
+    "cpu": "Apple M4",
+    "logicalCores": 10,
+    "ramBytes": 17179869184
+  },
+  "probeSha256": "61d2d30bb6cb7e9486e2a97663c6cdb9737b38fe604a76c697fb7853ca142418",
+  "binary": {
+    "sha256": "4a4faeb1048f36c53e961b6bfd2cf4612e1bd4ae3c6f568b932ce751db747f40"
+  },
+  "commit": "2d05f285dc04539abe4edfc1c111bb1050112b18",
+  "methodology": "Separate post-matrix engine diagnostic: one fresh native worker and fixture per condition, ten native pages. Same verified engine, Puppeteer, fixture and resource sampler. Default vs zero Network capture budgets, with/without 30 s reload. No capture override in default cases; worker behavior is pinned by the recorded engine source/patch. Optional --seconds and --case select a longer run without changing workload logic. Shared diagnostic Node survives conditions; compare worker metrics, not driver memory as fresh-process equivalents."
+}

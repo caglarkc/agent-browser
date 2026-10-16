@@ -1,0 +1,10 @@
+TEST_FILTER="Frame:" zig build -Dversion=1.1.0-agent-a1-memory1+44e378d test -freference-trace
+[0K[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m
+22 of 22 tests passed[0m
+
+Slowest 5 tests: 
+  39.26ms	Frame: httpMetadata after navigation
+  37.71ms	Frame: superseded documents omit DOMContentLoaded and load
+  30.79ms	Frame: a failed navigation commits an error document over the superseded one
+  20.87ms	Frame: pending or discarded replacements do not resume old load events
+  17.52ms	Frame: static immediate meta refresh navigates

@@ -92,3 +92,17 @@ node scripts/verify-resource-followups.mjs artifacts/<run-id>
 ```
 
 Publication rejects observation gaps above 3 seconds and duration overruns above 5 seconds. The network follow-up also enforces these during collection. An interrupted first follow-up set was excluded; its old PASS marker is explicitly rejected by the recorded verifier test. The optional post-run GC command is unsupported by this engine and stays UNAVAILABLE. Plotting/interpretation helpers are offline analysis tools; matplotlib is optional and not a runtime dependency.
+
+### A1 memory regression
+
+The native fetch-root fix and bounded inspector capture policy are described in [A1_MEMORY_FIX](../docs/A1_MEMORY_FIX.md). Capture ceilings are engine limits, not a whole-process RAM cap. After building the pinned engine and resource probe, create a fresh output directory and copy the published `protocol.json` from `results/a1-memory-fix-2026-10-16/` into it **before** measurements. Record a new `recordedAt` timestamp without changing the gates, then run:
+
+```sh
+caffeinate -i node scripts/diagnose-network-memory.mjs artifacts/memory-check/network-120
+caffeinate -i node scripts/diagnose-network-memory.mjs artifacts/memory-check/network-600 --case=default-continuous --seconds=600
+node scripts/verify-memory-fix.mjs artifacts/memory-check results/a1-resources-2026-10-16T07-29-23-666Z/followups/network
+```
+
+The verifier checks workload/probe identity, timing, progress, cleanup and the pre-recorded memory gates. Use a new output directory per experiment. A rejected run must be retained and explained, not silently overwritten. On platforms without `caffeinate`, use an equivalent sleep inhibitor; the resource probe currently requires macOS.
+
+For native Debug regressions, run `make test F=cdp` and the `WebApi: fetch`, `WebApi: Cache`, `Session:`, `Frame:` and `WebApi: Storage` filters in the patched source tree with the pinned version/toolchains. The failing baseline reproduction and exact settled-root test excerpt are preserved in the new evidence. Optional standalone chart generation uses `python scripts/plot-memory-fix.py <memory-evidence> <baseline-network>` with matplotlib.

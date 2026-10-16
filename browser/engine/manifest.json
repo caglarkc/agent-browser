@@ -2,15 +2,15 @@
   "schemaVersion": 1,
   "upstreamCommit": "44e378d6113d40a6ef1e66ff8b27e1da34ef1647",
   "archiveSha256": "cc2cfafcc8b9e39c738b10c6a701b8df54f978581f979f2e4ff157effaf15f0a",
-  "patchSha256": "cd3bc998e1e8ccb183376f91d3245a7e8ce61fa1991d64e6f238b987dd0e0fbf",
-  "sourceTreeSha256": "832667990fe45e19f781481e6c2445d689eb08ec520ab8772bae3c105eeb02ed",
-  "binarySha256": "ebdcd3f8bdb61922237d9b1a376d3f3146ca9e625fb554c01bfe7aaeab1972a3",
+  "patchSha256": "be6ee5ecc34d7f85ba581a4afd3d2b20e4de1cec90304b0647073f0fcb6743bc",
+  "sourceTreeSha256": "cb265f4a9dbcfa6408dc6839af7b18e77018247b9e65e182e95be6ce2354e83d",
+  "binarySha256": "4a4faeb1048f36c53e961b6bfd2cf4612e1bd4ae3c6f568b932ce751db747f40",
   "buildMode": "ReleaseFast",
   "snapshot": true,
-  "version": "1.1.0-agent-a1+44e378d",
+  "version": "1.1.0-agent-a1-memory1+44e378d",
   "zig": "0.17.0",
   "rust": "rustc 1.99.0 (b940084d7 2026-09-28)",
   "platform": "darwin",
   "arch": "arm64",
-  "builtAt": "2026-10-15T10:45:58.503Z"
+  "builtAt": "2026-10-16T14:03:07.925Z"
 }

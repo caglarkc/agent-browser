@@ -1,0 +1,8 @@
+TEST_FILTER="WebApi: Cache" zig build -Dversion=1.1.0-agent-a1-memory1+44e378d test -freference-trace
+[0K[32m.[0m[32m.[0m[32m.[0m[32m
+3 of 3 tests passed[0m
+
+Slowest 3 tests: 
+  51.37ms	WebApi: CacheStorage
+  12.18ms	WebApi: CacheStorage disabled
+  8.61ms	WebApi: CacheStorage addAll torn down in flight

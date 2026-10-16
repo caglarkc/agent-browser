@@ -3,8 +3,9 @@
   "upstream": "https://github.com/lightpanda-io/browser",
   "commit": "44e378d6113d40a6ef1e66ff8b27e1da34ef1647",
   "archiveSha256": "cc2cfafcc8b9e39c738b10c6a701b8df54f978581f979f2e4ff157effaf15f0a",
-  "patchSha256": "cd3bc998e1e8ccb183376f91d3245a7e8ce61fa1991d64e6f238b987dd0e0fbf",
+  "patchSha256": "be6ee5ecc34d7f85ba581a4afd3d2b20e4de1cec90304b0647073f0fcb6743bc",
   "patchedSourceHashes": {
+    "src/App.zig": "9a6ec53c3b94cb8ac9a192aa0c0212622cdc5d66c2db8f16bf62d5d349d8f110",
     "src/Notification.zig": "64267c1b5bb418a8234b8820e44ec560500590d555cdc2736f348c3fda63139a",
     "src/browser/Frame.zig": "6f55a02ecc6e2d460e1e30021e3815f8c4e81c878c0bbad8d6f7b1b4e19ad1a9",
     "src/browser/Session.zig": "9c081ca48baf18eca8a047e5e26113807cea740040765ed665cebaf414f5fa7d",
@@ -12,16 +13,18 @@
     "src/browser/webapi/History.zig": "da435f24a326db087c4e028fa4a2411aa93aa26eca346d19b7c1af12376b2fab",
     "src/browser/webapi/Window.zig": "fdd407d4a88003dc31e70b264ccf2c7443daaf8900948c36e06db4d1013e2569",
     "src/browser/webapi/navigation/NavigationHistoryEntry.zig": "9355fc846a704d287153ad58923f83459fb1bd1f6d78aa3d1670d267f6322ba0",
+    "src/browser/webapi/net/Fetch.zig": "1df16229dfd83e2df5f10cd4df84ecbe81d856905918b2c4cccf93a673ffb5a4",
     "src/server/Driver.zig": "a946f62cc6ed03e04c557870494831d10e55668c74675c700ef75ec588f802d8",
     "src/server/bidi/browsing_context.zig": "d989e86c8d83798e57f4c9cd1fd42d9dbd09fd9075f233c179239011c9f930a1",
-    "src/server/cdp/CDP.zig": "6f3be5b606d0dd6656fa834697eea70fb7e9bfa4f241bdaa584932ed7e8f3ef7",
+    "src/server/cdp/CDP.zig": "09c7cc3c511eaf316c33262b2e2d0fed1cd1d2848948780de53a8d043ec584bf",
     "src/server/cdp/domains/browser.zig": "43424d0eef122f68e528657ac006d5df5ef6740c2a73035931df986b7d37032a",
-    "src/server/cdp/domains/page.zig": "b2ec7b7e105cc4e9482f8d498cea2fb23e8296290f0d16dfbe119d3c26b120f3",
+    "src/server/cdp/domains/network.zig": "b66321c4fb5f1836c03a5b0391eccc80bb05b493fae7fc3bf5573b2d364d0860",
+    "src/server/cdp/domains/page.zig": "6de881430c7439f1e50d8c37c807e588f4a7ed9669e6cb973446cc51d346dce0",
     "src/server/cdp/domains/target.zig": "96748697a6e03e7337ae47dcc8e87bccf17e19c75dc6181c9e71e64bf4731075"
   },
   "zigVersion": "0.17.0",
   "rustVersion": "1.99.0",
-  "version": "1.1.0-agent-a1+44e378d",
+  "version": "1.1.0-agent-a1-memory1+44e378d",
   "license": "AGPL-3.0-or-later",
   "prebuiltV8": {
     "darwin-arm64": {
@@ -29,6 +32,6 @@
       "sha256": "dc14027e53df891399522f6089296acfdf37207afaca1e49dd05c446d3fc475f"
     }
   },
-  "sourceTreeSha256": "832667990fe45e19f781481e6c2445d689eb08ec520ab8772bae3c105eeb02ed",
+  "sourceTreeSha256": "cb265f4a9dbcfa6408dc6839af7b18e77018247b9e65e182e95be6ce2354e83d",
   "sourceFileCount": 1262
 }

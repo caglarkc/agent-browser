@@ -8,6 +8,10 @@ The patch runs multiple native Pages inside one Session and one process/profile.
 
 Native `window.open` storage copying is covered here. Full popup target discovery, popup lifetime independent from its opener, comprehensive frame observation and DOM Storage events belong to the later compatibility/DOM work; the A1 public host creates explicit native page targets. The V8 inspector group is still shared inside a trusted profile; its internal context announcements are not a per-agent authorization boundary. OS/egress enforcement, persisted encrypted profiles and private input remain later phases.
 
+## A1 memory lifecycle
+
+The combined patch also releases persisted fetch resolver roots on success, error/abort and pending shutdown. Inspector payload retention is bounded: 1 MiB response bodies and 256 KiB POST copies per target, 256 KiB per response, 64 KiB per POST, 128 response/request entries each, and 8 MiB payload allocation capacity across every target/CDP connection in a worker. Client buffer requests are clamped to these ceilings; payload capture may be evicted/skipped while the page's HTTP request continues. Closing a target or disabling Network frees its capture allocations. These are capture limits, not a whole-process RAM cap. See the [memory investigation and measurements](../../docs/A1_MEMORY_FIX.md).
+
 ## Build
 
 Requires Node >=22, Python-independent POSIX `make`, `patch`, `tar`, `curl`, Git, Zig **0.17.0**, Rust **1.99.0**, and the platform's native compiler/SDK. The build helper also finds the project-local toolchains under ignored `engine-work/tools` when present.

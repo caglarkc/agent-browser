@@ -1,0 +1,9 @@
+{
+  "recordedAt": "2026-10-16T14:30:23.514893+00:00",
+  "beforeVerifierSha256": "7056a926970b869f2eacd98c919f4385a49b14f13f07a59728de0c03dcc41888",
+  "afterVerifierSha256": "90f2021eec03f259e28c9f287d63f3072caea536e53d7a74e3046dc757d901cc",
+  "reason": "Verifier bug: diagnostic uses a fixed delay after sequential observations, not a fixed-rate schedule. 600 s produced 118 batches; nominal count assertion falsely required 119. Corrected to verify all ten tabs cover start/end (10 s tolerance) with <=10 s between observations; all recorded checks must pass. Sampler also skips setInterval ticks while a probe is in flight. Removed the exact nominal sample-count assumption; existing monotonic duration coverage and every <=3000 ms interval remain mandatory.",
+  "measurementChanged": false,
+  "memoryAndSamplingGatesChanged": false,
+  "protocolSha256": "dd1791ae98f44ff70e4740e370c3ec0c6e659d9561af067c57b42c5dc28356af"
+}

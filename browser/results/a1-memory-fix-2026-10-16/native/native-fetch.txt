@@ -1,0 +1,12 @@
+TEST_FILTER="WebApi: fetch" zig build -Dversion=1.1.0-agent-a1-memory1+44e378d test -freference-trace
+Using prebuilt V8: .lp-cache/prebuilt-v8/v0.5.9/libc_v8_15.5.35.13_macos_aarch64.a
+Lightpanda 1.1.0-agent-a1-memory1+44e378d
+[0K[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m
+5 of 5 tests passed[0m
+
+Slowest 5 tests: 
+  258.95ms	WebApi: fetch
+  62.83ms	WebApi: fetch response survives resolver root release
+  28.70ms	WebApi: fetch pending resolver roots are safe on page shutdown
+  27.86ms	WebApi: fetch releases settled resolver roots
+  10.08ms	WebApi: fetch releases rejected and aborted resolver roots

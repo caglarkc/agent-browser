@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "verifiedAt": "2026-10-16T14:33:23.004Z",
+  "protocolSha256": "dd1791ae98f44ff70e4740e370c3ec0c6e659d9561af067c57b42c5dc28356af",
+  "baseline": "../a1-resources-2026-10-16T07-29-23-666Z/followups/network",
+  "rows": [
+    {
+      "batch": "network-120",
+      "name": "default-reload",
+      "seconds": 120.00245970799999,
+      "checks": 240,
+      "requests": 4728,
+      "responseBodyMiB": 293.6569290161133,
+      "firstMiB": 33.34443664550781,
+      "lastMiB": 42.00068664550781,
+      "peakMiB": 45.73506164550781,
+      "baselinePeakMiB": 336.3916778564453,
+      "baselineSeconds": 120.000529917,
+      "cpuOneCorePercent": 3.7919371258096883,
+      "rssPeakMiB": 63.8125,
+      "lifetimePeakMiB": 46.56318664550781,
+      "fdPeak": 14,
+      "threadPeak": 16,
+      "sampleGapMaxMs": 1777.2753749999974,
+      "diskReadBytes": 0,
+      "diskWriteBytes": 0,
+      "gcProbe": {
+        "status": "UNAVAILABLE",
+        "message": "Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"
+      }
+    },
+    {
+      "batch": "network-120",
+      "name": "default-continuous",
+      "seconds": 120.00039662500001,
+      "checks": 240,
+      "requests": 4711,
+      "responseBodyMiB": 294.4375,
+      "firstMiB": 33.09443664550781,
+      "lastMiB": 40.28193664550781,
+      "peakMiB": 46.09443664550781,
+      "baselinePeakMiB": 736.2513046264648,
+      "baselineSeconds": 120.000111125,
+      "cpuOneCorePercent": 2.7155433962877957,
+      "rssPeakMiB": 52.875,
+      "lifetimePeakMiB": 46.09443664550781,
+      "fdPeak": 14,
+      "threadPeak": 15,
+      "sampleGapMaxMs": 2600.36387500001,
+      "diskReadBytes": 0,
+      "diskWriteBytes": 0,
+      "gcProbe": {
+        "status": "UNAVAILABLE",
+        "message": "Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"
+      }
+    },
+    {
+      "batch": "network-120",
+      "name": "zero-capture-continuous",
+      "seconds": 120.00035487499999,
+      "checks": 240,
+      "requests": 4779,
+      "responseBodyMiB": 298.6875,
+      "firstMiB": 22.68816375732422,
+      "lastMiB": 27.953811645507812,
+      "peakMiB": 28.594436645507812,
+      "baselinePeakMiB": 417.8447799682617,
+      "baselineSeconds": 120.00109491600003,
+      "cpuOneCorePercent": 2.3114197080895074,
+      "rssPeakMiB": 42.40625,
+      "lifetimePeakMiB": 28.594436645507812,
+      "fdPeak": 14,
+      "threadPeak": 16,
+      "sampleGapMaxMs": 1101.492958000017,
+      "diskReadBytes": 0,
+      "diskWriteBytes": 0,
+      "gcProbe": {
+        "status": "UNAVAILABLE",
+        "message": "Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"
+      }
+    },
+    {
+      "batch": "network-600",
+      "name": "default-continuous",
+      "seconds": 600.000119541,
+      "checks": 1180,
+      "requests": 23662,
+      "responseBodyMiB": 1478.875,
+      "firstMiB": 32.46943664550781,
+      "lastMiB": 50.344459533691406,
+      "peakMiB": 51.563209533691406,
+      "baselinePeakMiB": 736.2513046264648,
+      "baselineSeconds": 120.000111125,
+      "cpuOneCorePercent": 1.6032958183123225,
+      "rssPeakMiB": 84.640625,
+      "lifetimePeakMiB": 51.610084533691406,
+      "fdPeak": 14,
+      "threadPeak": 16,
+      "sampleGapMaxMs": 2794.2055420000106,
+      "diskReadBytes": 0,
+      "diskWriteBytes": 0,
+      "gcProbe": {
+        "status": "UNAVAILABLE",
+        "message": "Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"
+      },
+      "previous120MiB": 44.68818664550781,
+      "last120MiB": 48.328834533691406
+    }
+  ],
+  "note": "Same local workload/probe/dependencies; engine and diagnostic selection differ. Runs are sequential and single repetitions. This is a regression guard, not a whole-process cap or A7 acceptance."
+}

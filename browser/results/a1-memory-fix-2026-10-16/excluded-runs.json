@@ -1,0 +1,35 @@
+[
+  {
+    "excludedAt": "2026-10-16T14:09:56.266969+00:00",
+    "excludedDirectory": "excluded-network-120-gap-001",
+    "excludedWholeBatch": true,
+    "reason": "OBSERVATION_GAP; fixed 3000 ms gate exceeded. Keep all successful/failed cases from this batch, use none for accepted comparison.",
+    "violations": [
+      {
+        "at": 1792159713701,
+        "elapsedMs": 4304.741917000007,
+        "probeMs": 3021.8136670000094,
+        "systemCpuBusyPercent": 72.73580478648522,
+        "systemPressureLevel": 2
+      }
+    ],
+    "externalLoad": "Read-only process snapshot showed other CPU-heavy Node/Chrome processes and Spotlight activity. No unrelated process was stopped; association is not proof of the scheduling cause.",
+    "replacement": "Fresh complete 120-second batch, unchanged protocol/workload/engine."
+  },
+  {
+    "excludedAt": "2026-10-16T14:18:38.409622+00:00",
+    "excludedDirectory": "excluded-network-600-gap-002",
+    "excludedWholeBatch": true,
+    "reason": "OBSERVATION_GAP; fixed 3000 ms gate exceeded. Short 120-second batch is independent and remains complete.",
+    "violations": [
+      {
+        "at": 1792160195629,
+        "elapsedMs": 3095.3235000000004,
+        "probeMs": 2788.5827919999992,
+        "systemCpuBusyPercent": 73.87045813586099,
+        "systemPressureLevel": 2
+      }
+    ],
+    "replacement": "Fresh 600-second condition, unchanged protocol/workload/engine."
+  }
+]

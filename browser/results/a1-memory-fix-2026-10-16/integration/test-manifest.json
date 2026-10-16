@@ -1,0 +1,58 @@
+{
+  "startedAt": "2026-10-16T14:04:16.293Z",
+  "recordedAt": "2026-10-16T14:04:42.821Z",
+  "command": [
+    "/opt/homebrew/Cellar/node/25.8.2/bin/node",
+    "--test",
+    "--test-concurrency=1",
+    "--test-reporter=tap",
+    "test/cli.test.mjs",
+    "test/fixture-progress.test.mjs",
+    "test/host.test.mjs",
+    "test/memory.test.mjs",
+    "test/native-tabs.test.mjs",
+    "test/resources.test.mjs"
+  ],
+  "exitCode": 0,
+  "tests": 23,
+  "passed": 23,
+  "failed": 0,
+  "binary": {
+    "sha256": "4a4faeb1048f36c53e961b6bfd2cf4612e1bd4ae3c6f568b932ce751db747f40"
+  },
+  "testSourceHashes": {
+    "test/cli.test.mjs": "e7794d1a97e5dd6b0765b2d9ec4faab45cfdc583e7cf2666c3afc46e8bd3bd34",
+    "test/fixture-progress.test.mjs": "78f8ce6a068961764c593d2d50b8bab998dfc243e3789bcb7f54079cfe932f51",
+    "test/host.test.mjs": "5032ea03d3880c73178e597033d46de0de459278af10d43e294daf863589df14",
+    "test/memory.test.mjs": "02a613824bcfafeb35f8b33634e53790e48c384cd1d4a9ff79cd1f6b268f0d52",
+    "test/native-tabs.test.mjs": "8f0d0e81fe17cfe8fbc30002985ba040fa52275e32bf1e0212f0e465b7946f1f",
+    "test/resources.test.mjs": "1c4276ded1e84802468b1e27e1cebffbefc3e068edf5d78199c65ce0c9384b42",
+    "test/fixtures.mjs": "d3c1dad693fac713f7def69680d44a98e079aec76232cdb92deb49461ad07763",
+    "src/cli.mjs": "f8533c5a6c690d44e3ef7fda75c1fb47aecf673116af4f459e516f92e2f741b2",
+    "src/fixture-progress.mjs": "f5792191f32ebb3b81ac44401fe2f69addb42b2c3e06b044adba29bfbcc18e46",
+    "src/host.mjs": "02ae80703f311a13b33d11076cd13631114f3d2ae3f2d2621d159fb001c73267",
+    "src/engine.mjs": "58406e4b01288aaafb2aa7a120047ec3f66236d79e9e8a8a6b98b0a2598cb3e2",
+    "src/errors.mjs": "142fffa7531939d1e9f3aa8b28548a81d7f9d51292199f08d68d2fed3192f7c3",
+    "src/memory.mjs": "3ffee22d51493b6967e9ffb078f68fd07592240917f770f15fac18448f49f6e9",
+    "src/resources.mjs": "93522216be0b103694674aa3b7fab280770a4ce685db9f337867a13653101648",
+    "native/resource-probe.c": "65b3b51a541ddbd000cd4dc726d3070d5e4afc0192ec774544bc9b0ec4ebd0c4",
+    "scripts/build-resource-probe.mjs": "de4336fb12e80ba25aa56d7e19520351d976e3b1431666b9d7210abbbd2543b7",
+    "scripts/resource-case.mjs": "6a026ad11ec5d30818480a79b3a19b75dbcf6b6c368a3b2b2616aa7f1c354b68",
+    "scripts/resource-fixture.mjs": "b0e4aabd54763546a191494c0d1a70c6ba3b3551ed7fe7d3a28b55b5cc1cde7d",
+    "scripts/measure-resources.mjs": "79059f09f8f76ca5bbd5e5674d097b76d9281e13e8dda7048d72260cad8e4c50",
+    "engine/source.json": "ee85c65a9c81126af7d272aebf2f88d24aa89567637f0b805ccebe040a81ff6e",
+    "engine/manifest.json": "6f35aca540b914fb9c4d3a39214ca59f540af8cefb2bb4d73cd44c235effb3cd",
+    "engine/multitab.patch": "be6ee5ecc34d7f85ba581a4afd3d2b20e4de1cec90304b0647073f0fcb6743bc",
+    "package.json": "7909bc4d3d63a626c6bed2f214a7616ed1fa562a4f3db42a702ea0ac43de6bad",
+    "package-lock.json": "fa5be686f5d77625216b964e671766a29e254d54493c31a178742f51e257e4d9"
+  },
+  "tapSha256": "5e581f55ddfee99235f997a97362e83e6dc20191f3300aa126dbbd200d248f03",
+  "corpus": {
+    "T01": {
+      "variants": 10,
+      "repetitions": 3,
+      "tabsPerCase": 3
+    }
+  },
+  "note": "Native real targets, shared profile state, independent tab/frame history, opener/noopener storage, profile isolation, lifecycle/kill, quotas and CLI. No JEV calls."
+}

@@ -1,0 +1,25 @@
+test "WebApi: fetch releases settled resolver roots" {
+    const page = try testing.pageTest("cdp/empty_iframe.html", .{});
+    defer page.close();
+    const frame = page.frame().?;
+    const baseline = frame.js.page.globals.list.items.len;
+    {
+        var ls: js.Local.Scope = undefined;
+        frame.js.localScope(&ls);
+        defer ls.deinit();
+        try ls.local.eval(
+            \\globalThis.fetchRootCount = 0;
+            \\(async () => {
+            \\  for (let i = 0; i < 32; i++) {
+            \\    const r = await fetch('/echo_body', {method:'POST', body:'payload'});
+            \\    if (await r.text() !== 'payload') throw new Error('body mismatch');
+            \\    globalThis.fetchRootCount++;
+            \\  }
+            \\})().catch(e => { globalThis.fetchRootError = String(e); });
+        , null);
+    }
+    var runner = page.session.runner(.{});
+    try runner.waitForScript(page.frame_id, "globalThis.fetchRootCount === 32", 3000);
+    try testing.expectEqual(baseline, frame.js.page.globals.list.items.len);
+}
+

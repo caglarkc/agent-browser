@@ -1,0 +1,33 @@
+{
+  "recordedBeforeFixedBinaryMeasurements": true,
+  "workload": "Same resource-fixture: 10 native tabs, each 64KiB fetch every 250ms, max 2 pending per tab; one fresh worker/fixture per case",
+  "schedule": [
+    {
+      "directory": "network-120",
+      "cases": [
+        "default-reload",
+        "default-continuous",
+        "zero-capture-continuous"
+      ],
+      "seconds": 120
+    },
+    {
+      "directory": "network-600",
+      "cases": [
+        "default-continuous"
+      ],
+      "seconds": 600
+    }
+  ],
+  "gates": {
+    "sampleGapMaxMs": 3000,
+    "durationOverrunMaxSeconds": 5,
+    "workerPeakMaxMiB": 160,
+    "lastMinusFirst30SecondMedianMaxMiB": 32,
+    "longRunLastMinusPrevious120SecondMedianMaxMiB": 16,
+    "progressChecksAllPass": true,
+    "leftoverWorkerCount": 0
+  },
+  "scope": "Local synthetic regression guard for this memory fix; not a whole-process hard cap, real-site SLA, statistical confidence interval or A7 capacity acceptance. CPU is measured, not thresholded. Both old/new samples retained.",
+  "recordedAt": "2026-10-16T13:20:49.347742+00:00"
+}

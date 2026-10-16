@@ -10,14 +10,20 @@ import {startWorker,binaryIdentity,workerEnvironment} from '../src/engine.mjs';
 import {readResources,RESOURCE_PROBE} from '../src/resources.mjs';
 const root=fileURLToPath(new URL('..',import.meta.url));
 const out=path.resolve(process.argv[2]);await mkdir(out,{recursive:true});
-const smoke=process.argv.includes('--smoke'),seconds=smoke?3:120;
+const smoke=process.argv.includes('--smoke');
+const option=name=>process.argv.find(arg=>arg.startsWith(name+'='))?.slice(name.length+1);
+const seconds=smoke?3:Number(option('--seconds')??120);
+if(!Number.isInteger(seconds)||seconds<1||seconds>1800)throw Error('Invalid diagnostic duration');
+const only=option('--case');
 const hash=b=>createHash('sha256').update(b).digest('hex');
 const sources={};
-for(const name of ['scripts/diagnose-network-memory.mjs','scripts/resource-fixture.mjs','src/resources.mjs','src/engine.mjs','src/errors.mjs','native/resource-probe.c','engine/manifest.json','package.json','package-lock.json']){
+for(const name of ['scripts/diagnose-network-memory.mjs','scripts/resource-fixture.mjs','src/resources.mjs','src/engine.mjs','src/errors.mjs','native/resource-probe.c','engine/manifest.json','engine/source.json','engine/multitab.patch','package.json','package-lock.json']){
  const data=await readFile(path.join(root,name));sources[name]=hash(data);const dest=path.join(out,'sources',name);await mkdir(path.dirname(dest),{recursive:true});await writeFile(dest,data);
 }
-const schedule=[{name:'default-reload',capture:'default',reloadMs:30000},{name:'default-continuous',capture:'default',reloadMs:0},{name:'zero-capture-continuous',capture:'zero',reloadMs:0}];
-await writeFile(out+'/manifest.json',JSON.stringify({startedAt:new Date().toISOString(),smoke,seconds,schedule,sources,machine:{platform:process.platform,arch:process.arch,node:process.version,cpu:os.cpus()[0]?.model,logicalCores:os.cpus().length,ramBytes:os.totalmem()},probeSha256:hash(await readFile(RESOURCE_PROBE)),binary:await binaryIdentity(),commit:execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),methodology:'Separate post-matrix engine diagnostic: one fresh native worker and fixture per condition, ten native pages. Same verified engine, Puppeteer, fixture and resource sampler. Default vs zero Network capture budgets, with/without 30 s reload. Not a product default change. Shared diagnostic Node survives conditions; compare worker metrics, not driver memory as fresh-process equivalents.'},null,2)+'\n');
+const cases=[{name:'default-reload',capture:'default',reloadMs:30000},{name:'default-continuous',capture:'default',reloadMs:0},{name:'zero-capture-continuous',capture:'zero',reloadMs:0}];
+if(only&&!cases.some(c=>c.name===only))throw Error('Invalid diagnostic case');
+const schedule=only?cases.filter(c=>c.name===only):cases;
+await writeFile(out+'/manifest.json',JSON.stringify({startedAt:new Date().toISOString(),smoke,seconds,schedule,sources,machine:{platform:process.platform,arch:process.arch,node:process.version,cpu:os.cpus()[0]?.model,logicalCores:os.cpus().length,ramBytes:os.totalmem()},probeSha256:hash(await readFile(RESOURCE_PROBE)),binary:await binaryIdentity(),commit:execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),methodology:'Separate post-matrix engine diagnostic: one fresh native worker and fixture per condition, ten native pages. Same verified engine, Puppeteer, fixture and resource sampler. Default vs zero Network capture budgets, with/without 30 s reload. No capture override in default cases; worker behavior is pinned by the recorded engine source/patch. Optional --seconds and --case select a longer run without changing workload logic. Shared diagnostic Node survives conditions; compare worker metrics, not driver memory as fresh-process equivalents.'},null,2)+'\n');
 const results=[];let stopping=false;
 for(const signal of ['SIGINT','SIGTERM'])process.once(signal,()=>stopping=true);
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));

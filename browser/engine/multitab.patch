@@ -1,3 +1,22 @@
+--- a/src/App.zig
++++ b/src/App.zig
+@@ -44,12 +44,16 @@
+ telemetry: Telemetry,
+ watchdog: Watchdog,
+ allocator: Allocator,
++// Event-loop owned, shared by every CDP connection/target in this worker.
++cdp_capture_bytes: usize = 0,
+ arena_pool: ArenaPool,
+ app_dir_path: ?[]const u8,
+ 
+ regex_context: *Regex.Context,
+ default_sanitizer: *Sanitizer,
+ render_fonts: screenshot.Fonts,
++
++pub const max_cdp_capture_bytes = 8 * 1024 * 1024;
+ 
+ pub fn init(allocator: Allocator, config: *const Config) !*App {
+     const platform = try Platform.init(.{
 --- a/src/Notification.zig
 +++ b/src/Notification.zig
 @@ -135,7 +135,7 @@
@@ -391,6 +410,215 @@
  
      for (navigation._entries.items, 0..) |entry, i| {
          if (std.mem.eql(u8, entry._id, self._id)) {
+--- a/src/browser/webapi/net/Fetch.zig
++++ b/src/browser/webapi/net/Fetch.zig
+@@ -53,6 +53,7 @@
+ pub const InitOpts = Request.InitOpts;
+ 
+ const Sink = union(enum) {
++    settled,
+     promise: js.PromiseResolver.Global,
+     completion: Completion,
+ };
+@@ -107,7 +108,9 @@
+         else => return err,
+     };
+ 
+-    try submit(request, body, .{ .promise = try resolver.persist() }, exec);
++    const persisted = try resolver.persist();
++    errdefer persisted.release();
++    try submit(request, body, .{ .promise = persisted }, exec);
+     return resolver.promise();
+ }
+ 
+@@ -318,7 +321,10 @@
+         .len = self._buf.items.len,
+     });
+ 
+-    const resolver = switch (self._sink) {
++    const sink = self._sink;
++    self._sink = .settled;
++    const resolver = switch (sink) {
++        .settled => return,
+         .promise => |resolver| resolver,
+         .completion => |completion| {
+             self._owns_response = false;
+@@ -331,11 +337,13 @@
+     self._exec.js.localScope(&ls);
+     defer ls.deinit();
+ 
++    const local_resolver = ls.toLocal(resolver);
++    resolver.release();
+     response._signal = signal;
+     const js_val = try ls.local.zigValueToJs(self._response, .{});
+     self._owns_response = false;
+     response._arena.report();
+-    return ls.toLocal(resolver).resolve("fetch done", js_val);
++    return local_resolver.resolve("fetch done", js_val);
+ }
+ 
+ fn httpErrorCallback(ctx: *anyopaque, err: anyerror) void {
+@@ -365,7 +373,10 @@
+         response.deinit(self._exec.page);
+     };
+ 
+-    const resolver = switch (self._sink) {
++    const sink = self._sink;
++    self._sink = .settled;
++    const resolver = switch (sink) {
++        .settled => return,
+         .promise => |resolver| resolver,
+         .completion => |completion| return completion.callback(completion.ctx, .err),
+     };
+@@ -374,9 +385,11 @@
+     self._exec.js.localScope(&ls);
+     defer ls.deinit();
+ 
++    const local_resolver = ls.toLocal(resolver);
++    resolver.release();
+     if (self._abort_reason) |reason| {
+         if (AbortSignal.reasonJsValue(reason, &ls.local)) |js_val| {
+-            return ls.toLocal(resolver).reject("fetch aborted", js_val);
++            return local_resolver.reject("fetch aborted", js_val);
+         } else |_| {}
+     }
+ 
+@@ -390,12 +403,12 @@
+         if (ls.local.zigValueToJs(response, .{})) |js_val| {
+             owns_response = false;
+             response._arena.report();
+-            return ls.toLocal(resolver).resolve("fetch done", js_val);
++            return local_resolver.resolve("fetch done", js_val);
+         } else |_| {}
+     }
+ 
+     // fetch() must reject with a TypeError on network errors per spec
+-    ls.toLocal(resolver).rejectError("fetch error", .{ .type_error = "fetch error" });
++    local_resolver.rejectError("fetch error", .{ .type_error = "fetch error" });
+ }
+ 
+ // Called by _signal when it aborts. Synchronously fires httpErrorCallback
+@@ -421,13 +434,16 @@
+ 
+     if (self._owns_response) {
+         const sink = self._sink;
++        self._sink = .settled;
++        self._owns_response = false;
++        if (sink == .promise) sink.promise.release();
+         var response = self._response;
+         response._http_transfer = null;
+         response.deinit(self._exec.page);
+         // Do not access `self` after this point: the Fetch struct was
+         // allocated from response._arena which has been released.
+         switch (sink) {
+-            .promise => {},
++            .promise, .settled => {},
+             .completion => |completion| completion.callback(completion.ctx, .shutdown),
+         }
+     }
+@@ -438,3 +454,102 @@
+     try testing.htmlRunner("net/fetch.html", .{});
+     try testing.htmlRunner("net/fetch_hash_route.html", .{});
+ }
++
++test "WebApi: fetch releases settled resolver roots" {
++    const page = try testing.pageTest("cdp/empty_iframe.html", .{});
++    defer page.close();
++    const frame = page.frame().?;
++    const baseline = frame.js.page.globals.list.items.len;
++    {
++        var ls: js.Local.Scope = undefined;
++        frame.js.localScope(&ls);
++        defer ls.deinit();
++        try ls.local.eval(
++            \\globalThis.fetchRootCount = 0;
++            \\(async () => {
++            \\  for (let i = 0; i < 32; i++) {
++            \\    const r = await fetch('/echo_body', {method:'POST', body:'payload'});
++            \\    if (await r.text() !== 'payload') throw new Error('body mismatch');
++            \\    globalThis.fetchRootCount++;
++            \\  }
++            \\})().catch(e => { globalThis.fetchRootError = String(e); });
++        , null);
++    }
++    var runner = page.session.runner(.{});
++    try runner.waitForScript(page.frame_id, "globalThis.fetchRootCount === 32", 3000);
++    try testing.expectEqual(baseline, frame.js.page.globals.list.items.len);
++}
++
++test "WebApi: fetch releases rejected and aborted resolver roots" {
++    const page = try testing.pageTest("cdp/empty_iframe.html", .{});
++    defer page.close();
++    const frame = page.frame().?;
++    const baseline = frame.js.page.globals.list.items.len;
++    {
++        var ls: js.Local.Scope = undefined;
++        frame.js.localScope(&ls);
++        defer ls.deinit();
++        try ls.local.eval(
++            \\globalThis.fetchFailureCount = 0;
++            \\(async () => {
++            \\  for (let i = 0; i < 8; i++) {
++            \\    try { await fetch('http://127.0.0.1:1/unreachable'); } catch (_) { globalThis.fetchFailureCount++; }
++            \\    const controller = new AbortController();
++            \\    const pending = fetch('/xhr/hang', {signal:controller.signal});
++            \\    controller.abort();
++            \\    try { await pending; } catch (_) { globalThis.fetchFailureCount++; }
++            \\  }
++            \\})();
++        , null);
++    }
++    var runner = page.session.runner(.{});
++    try runner.waitForScript(page.frame_id, "globalThis.fetchFailureCount === 16", 5000);
++    try testing.expectEqual(baseline, frame.js.page.globals.list.items.len);
++}
++
++test "WebApi: fetch response survives resolver root release" {
++    const page = try testing.pageTest("cdp/empty_iframe.html", .{});
++    defer page.close();
++    const frame = page.frame().?;
++    const baseline = frame.js.page.globals.list.items.len;
++    {
++        var ls: js.Local.Scope = undefined;
++        frame.js.localScope(&ls);
++        defer ls.deinit();
++        try ls.local.eval(
++            \\fetch('/echo_body', {method:'POST',body:'retained'}).then(r => { globalThis.keptResponse = r; });
++        , null);
++    }
++    var runner = page.session.runner(.{});
++    try runner.waitForScript(page.frame_id, "!!globalThis.keptResponse", 3000);
++    try testing.expectEqual(baseline, frame.js.page.globals.list.items.len);
++    {
++        var ls: js.Local.Scope = undefined;
++        frame.js.localScope(&ls);
++        defer ls.deinit();
++        try ls.local.eval(
++            \\keptResponse.text().then(body => { globalThis.retainedBody = body; });
++        , null);
++    }
++    try runner.waitForScript(page.frame_id, "globalThis.retainedBody === 'retained'", 3000);
++}
++
++test "WebApi: fetch pending resolver roots are safe on page shutdown" {
++    const page = try testing.pageTest("cdp/empty_iframe.html", .{});
++    const frame = page.frame().?;
++    const baseline = frame.js.page.globals.list.items.len;
++    {
++        var ls: js.Local.Scope = undefined;
++        frame.js.localScope(&ls);
++        defer ls.deinit();
++        try ls.local.eval(
++            \\for (let i = 0; i < 8; i++) fetch('/xhr/hang').catch(() => {});
++        , null);
++    }
++    try testing.expectEqual(baseline + 8, frame.js.page.globals.list.items.len);
++    // Debug allocator/global-slot checks exercise shutdown before completion.
++    page.close();
++    const next = try testing.pageTest("cdp/empty_iframe.html", .{});
++    defer next.close();
++    try testing.expectEqual(0, next.frame().?.js.page.globals.list.items.len);
++}
 --- a/src/server/Driver.zig
 +++ b/src/server/Driver.zig
 @@ -257,9 +257,11 @@
@@ -577,7 +805,17 @@
      // (live) page/frame through this handle — see `mainFrame` / `mainPage`. The
      // handle's frame_id is stable across navigations (the replacement reuses
      // it). null until the first page is created.
-@@ -565,15 +614,15 @@
+@@ -537,7 +586,8 @@
+ 
+     // Request bodies retained for Network.getRequestPostData, which can be
+     // called after the transfer is gone. Capped at max_post_data_size.
+-    captured_requests: std.AutoHashMapUnmanaged(CapturedKey, []const u8),
++    captured_requests: std.AutoArrayHashMapUnmanaged(CapturedKey, []const u8),
++    captured_requests_size: usize = 0,
+ 
+     // When network is enabled, we'll capture the transfer.id -> body
+     // This is awfully memory intensive, but our underlying http client and
+@@ -565,15 +615,15 @@
      webmcp_invocations: std.AutoHashMapUnmanaged(u32, *@import("domains/webmcp.zig").Invocation) = .empty,
  
      fn init(self: *BrowserContext, id: []const u8, cdp: *CDP) !void {
@@ -601,7 +839,7 @@
          }
  
          var registry = NodeRegistry.init(allocator);
-@@ -591,7 +640,9 @@
+@@ -591,7 +641,9 @@
              .node_registry = registry,
              .node_search_list = undefined,
              .isolated_worlds = .empty,
@@ -612,7 +850,7 @@
              .arena = cdp.browser_context_arena.allocator(),
              .notification_arena = cdp.notification_arena.allocator(),
              .intercept_state = try InterceptState.init(allocator),
-@@ -599,9 +650,11 @@
+@@ -599,9 +651,11 @@
              .captured_responses = .empty,
              .notification = notification,
          };
@@ -624,7 +862,7 @@
          try notification.register(.frame_remove, self, onFrameRemove);
          try notification.register(.frame_created, self, onFrameCreated);
          try notification.register(.frame_navigate, self, onFrameNavigate);
-@@ -622,7 +675,7 @@
+@@ -622,7 +676,7 @@
          // resetContextGroup detach the inspector from all contexts.
          // It appends async tasks, so we make sure we run the message loop
          // before deinit it.
@@ -633,7 +871,12 @@
          self.detachAllSessions();
  
          // abort all intercepted requests before closing the session/page
-@@ -655,7 +708,7 @@
+@@ -651,11 +705,12 @@
+ 
+         self.notification.unregisterAll(self);
+         self.clearCapturedResponses();
++        self.clearCapturedRequests();
+ 
          // If the session has a frame, we need to clear it first. The page
          // context is always nested inside of the isolated world context,
          // so we need to shutdown the page one first.
@@ -642,7 +885,7 @@
  
          self.node_registry.deinit();
          self.node_search_list.deinit();
-@@ -664,7 +717,7 @@
+@@ -664,7 +719,7 @@
  
          // Session.deinit (called via closeSession above) already cleared this
          // notification off any ownerless CorsGate/RobotsGate transfers.
@@ -651,7 +894,7 @@
  
          if (self.http_proxy_changed) {
              // has to be called after browser.closeSession, since it won't
-@@ -676,8 +729,9 @@
+@@ -676,8 +731,9 @@
          if (self.user_agent_changed) {
              browser.http_client.clearUserAgentOverride();
          }
@@ -662,7 +905,91 @@
      }
  
      pub fn reset(self: *BrowserContext) void {
-@@ -965,6 +1019,7 @@
+@@ -828,38 +884,58 @@
+         self.notification.unregister(.http_response_header_done, self);
+         self.notification.unregister(.http_request_served_from_cache, self);
+         self.clearCapturedResponses();
++        self.clearCapturedRequests();
+     }
+ 
+     pub fn clearCapturedResponses(self: *BrowserContext) void {
+-        const allocator = self.cdp.allocator;
+-        for (self.captured_responses.values()) |*resp| {
+-            if (resp.data) |*data| {
+-                data.deinit(allocator);
+-            }
+-        }
+-        self.captured_responses.deinit(allocator);
++        for (self.captured_responses.values()) |*resp| self.evictCapturedResponse(resp);
++        self.captured_responses.deinit(self.cdp.allocator);
+         self.captured_responses = .empty;
+-        self.captured_responses_size = 0;
++    }
++
++    pub fn clearCapturedRequests(self: *BrowserContext) void {
++        for (self.captured_requests.values()) |body| {
++            self.cdp.app.cdp_capture_bytes -= body.len;
++            self.cdp.allocator.free(body);
++        }
++        self.captured_requests.deinit(self.cdp.allocator);
++        self.captured_requests = .empty;
++        self.captured_requests_size = 0;
++    }
++
++    fn removeCapturedRequest(self: *BrowserContext, key: CapturedKey) void {
++        if (self.captured_requests.fetchOrderedRemove(key)) |entry| {
++            self.captured_requests_size -= entry.value.len;
++            self.cdp.app.cdp_capture_bytes -= entry.value.len;
++            self.cdp.allocator.free(entry.value);
++        }
+     }
+ 
+     fn evictCapturedResponse(self: *BrowserContext, resp: *CapturedResponse) void {
+         if (resp.data) |*data| {
+             self.captured_responses_size -= data.items.len;
++            self.cdp.app.cdp_capture_bytes -= data.capacity;
+             data.deinit(self.cdp.allocator);
+             resp.data = null;
+         }
+     }
+ 
+-    // Evict captured responses, ordered by age, until we can fit `size` more bytes
++    fn trimCapturedEntries(self: *BrowserContext) void {
++        while (self.captured_responses.count() >= network_domain.max_capture_entries) {
++            const key = self.captured_responses.keys()[0];
++            self.evictCapturedResponse(&self.captured_responses.values()[0]);
++            _ = self.captured_responses.orderedRemove(key);
++            self.removeCapturedRequest(key);
++        }
++    }
++
++    // Bounded payloads plus bounded metadata. Never evict another target's live
++    // state to service this one: a full worker budget simply skips capture.
+     fn ensureCapturedSpace(self: *BrowserContext, size: usize) void {
+         for (self.captured_responses.values()) |*resp| {
+-            if (self.captured_responses_size + size <= self.network_limits.total) {
+-                return;
+-            }
+-            const data = resp.data orelse continue;
+-            if (data.items.len == 0) {
+-                continue;
+-            }
++            if (self.captured_responses_size + size <= self.network_limits.total and
++                self.cdp.app.cdp_capture_bytes + size <= App.max_cdp_capture_bytes) return;
++            if (resp.data == null) continue;
+             self.evictCapturedResponse(resp);
+         }
+     }
+@@ -904,6 +980,8 @@
+             world.deinit();
+         }
+         self.isolated_worlds.clearRetainingCapacity();
++        self.clearCapturedResponses();
++        self.clearCapturedRequests();
+         self.target_id = null;
+     }
+ 
+@@ -965,6 +1043,7 @@
  
      fn onDownloadWillBegin(ctx: *anyopaque, msg: *const Notification.DownloadWillBegin) !void {
          const self: *BrowserContext = @ptrCast(@alignCast(ctx));
@@ -670,7 +997,7 @@
          return @import("domains/browser.zig").downloadWillBegin(self, msg);
      }
  
-@@ -985,31 +1040,67 @@
+@@ -985,31 +1064,67 @@
  
      fn onModelContextToolAdded(ctx: *anyopaque, event: *const Notification.ModelContextToolEvent) !void {
          const self: *BrowserContext = @ptrCast(@alignCast(ctx));
@@ -740,7 +1067,7 @@
          const arena = self.acquireNotificationArena();
          defer self.releaseNotificationArena();
          return @import("domains/page.zig").frameNavigated(arena, self, msg);
-@@ -1017,36 +1108,43 @@
+@@ -1017,46 +1132,64 @@
  
      fn onFrameNavigateFailed(ctx: *anyopaque, msg: *const Notification.FrameNavigateFailed) !void {
          const self: *BrowserContext = @ptrCast(@alignCast(ctx));
@@ -784,7 +1111,33 @@
          {
              // capture the request
              const transfer = msg.transfer;
-@@ -1066,6 +1164,7 @@
+             const key = keyFromTransfer(transfer);
+             const body = transfer.req.body orelse "";
+-            if (body.len == 0 or body.len > network_domain.max_post_data_size) {
+-                _ = self.captured_requests.remove(key);
+-            } else {
+-                const owned_body = try self.frame_arena.dupe(u8, body);
+-                try self.captured_requests.put(self.frame_arena, key, owned_body);
++            self.removeCapturedRequest(key);
++            if (body.len > 0 and body.len <= network_domain.max_post_data_size) {
++                while (self.captured_requests.count() > 0 and
++                    (self.captured_requests.count() >= network_domain.max_capture_entries or
++                        self.captured_requests_size + body.len > network_domain.max_request_capture or
++                        self.cdp.app.cdp_capture_bytes + body.len > App.max_cdp_capture_bytes))
++                {
++                    self.removeCapturedRequest(self.captured_requests.keys()[0]);
++                }
++                if (self.cdp.app.cdp_capture_bytes + body.len <= App.max_cdp_capture_bytes) {
++                    const owned = try self.cdp.allocator.dupe(u8, body);
++                    errdefer self.cdp.allocator.free(owned);
++                    try self.captured_requests.put(self.cdp.allocator, key, owned);
++                    self.captured_requests_size += owned.len;
++                    self.cdp.app.cdp_capture_bytes += owned.len;
++                }
+             }
+         }
+         const arena = self.acquireNotificationArena();
+@@ -1066,6 +1199,7 @@
  
      fn onHttpRequestIntercept(ctx: *anyopaque, msg: *const Notification.RequestIntercept) !void {
          const self: *BrowserContext = @ptrCast(@alignCast(ctx));
@@ -792,7 +1145,7 @@
          const arena = self.acquireNotificationArena();
          defer self.releaseNotificationArena();
          try @import("domains/fetch.zig").requestIntercept(arena, self, msg);
-@@ -1073,21 +1172,25 @@
+@@ -1073,21 +1207,25 @@
  
      fn onHttpRequestFail(ctx: *anyopaque, msg: *const Notification.RequestFail) !void {
          const self: *BrowserContext = @ptrCast(@alignCast(ctx));
@@ -818,7 +1171,7 @@
          return @import("domains/page.zig").javascriptDialogOpening(self, msg);
      }
  
-@@ -1100,6 +1203,7 @@
+@@ -1100,11 +1238,13 @@
  
      fn onHttpResponseHeadersDone(ctx: *anyopaque, msg: *const Notification.ResponseHeaderDone) !void {
          const self: *BrowserContext = @ptrCast(@alignCast(ctx));
@@ -826,7 +1179,22 @@
          const arena = self.acquireNotificationArena();
          defer self.releaseNotificationArena();
  
-@@ -1138,11 +1242,13 @@
+         // Prepare the captured response value.
+         const key = keyFromTransfer(msg.transfer);
++        if (!self.captured_responses.contains(key)) self.trimCapturedEntries();
+         const gop = try self.captured_responses.getOrPut(self.cdp.allocator, key);
+         if (!gop.found_existing) {
+             gop.value_ptr.* = .{
+@@ -1113,7 +1253,7 @@
+                     if (body_len > self.network_limits.resource) {
+                         break :blk null;
+                     }
+-                    break :blk try std.ArrayList(u8).initCapacity(self.cdp.allocator, body_len);
++                    break :blk .empty;
+                 },
+                 // Encode the data in base64 by default, but don't encode
+                 // for well known content-type.
+@@ -1138,14 +1278,17 @@
  
      fn onHttpRequestDone(ctx: *anyopaque, msg: *const Notification.RequestDone) !void {
          const self: *BrowserContext = @ptrCast(@alignCast(ctx));
@@ -839,8 +1207,32 @@
 +        if (!(self.ownsTransfer(msg.transfer))) return;
  
          const key = keyFromTransfer(msg.transfer);
-         const resp = self.captured_responses.getPtr(key) orelse lp.assert(false, "onHttpResponseData missing captured response", .{});
-@@ -1164,6 +1270,7 @@
+-        const resp = self.captured_responses.getPtr(key) orelse lp.assert(false, "onHttpResponseData missing captured response", .{});
++        // A long-running transfer may outlive bounded capture metadata eviction.
++        const resp = self.captured_responses.getPtr(key) orelse return;
+ 
+         const data = &(resp.data orelse return);
+         const chunk = msg.data;
+@@ -1155,15 +1298,22 @@
+         }
+         // Can evict `resp` itself when it's the oldest, hence the re-check.
+         self.ensureCapturedSpace(chunk.len);
+-        if (resp.data == null) {
+-            return;
+-        }
+-        try data.appendSlice(self.cdp.allocator, chunk);
++        if (resp.data == null) return;
++        if (self.captured_responses_size + chunk.len > limits.total or
++            self.cdp.app.cdp_capture_bytes + chunk.len > App.max_cdp_capture_bytes)
++        {
++            return self.evictCapturedResponse(resp);
++        }
++        const old_capacity = data.capacity;
++        try data.ensureTotalCapacityPrecise(self.cdp.allocator, data.items.len + chunk.len);
++        self.cdp.app.cdp_capture_bytes += data.capacity - old_capacity;
++        data.appendSliceAssumeCapacity(chunk);
+         self.captured_responses_size += chunk.len;
+     }
  
      fn onHttpRequestAuthRequired(ctx: *anyopaque, data: *const Notification.RequestAuthRequired) !void {
          const self: *BrowserContext = @ptrCast(@alignCast(ctx));
@@ -848,7 +1240,7 @@
          const arena = self.acquireNotificationArena();
          defer self.releaseNotificationArena();
          try @import("domains/fetch.zig").requestAuthRequired(arena, self, data);
-@@ -1171,11 +1278,13 @@
+@@ -1171,11 +1321,13 @@
  
      fn onHttpRequestServedFromCache(ctx: *anyopaque, msg: *const Notification.RequestServedFromCache) !void {
          const self: *BrowserContext = @ptrCast(@alignCast(ctx));
@@ -862,7 +1254,7 @@
          const arena = self.acquireNotificationArena();
          defer self.releaseNotificationArena();
          return @import("domains/console.zig").consoleMessage(arena, self, msg);
-@@ -1183,6 +1292,7 @@
+@@ -1183,6 +1335,7 @@
  
      fn onRuntimeConsoleMessage(ctx: *anyopaque, msg: *const Notification.ConsoleMessage) !void {
          const self: *BrowserContext = @ptrCast(@alignCast(ctx));
@@ -870,7 +1262,7 @@
          const arena = self.acquireNotificationArena();
          defer self.releaseNotificationArena();
          return @import("domains/runtime.zig").consoleMessage(arena, self, msg);
-@@ -1190,6 +1300,7 @@
+@@ -1190,6 +1343,7 @@
  
      fn onExceptionThrown(ctx: *anyopaque, msg: *const Notification.ExceptionThrown) !void {
          const self: *BrowserContext = @ptrCast(@alignCast(ctx));
@@ -878,7 +1270,7 @@
          const arena = self.acquireNotificationArena();
          defer self.releaseNotificationArena();
          return @import("domains/runtime.zig").exceptionThrown(arena, self, msg);
-@@ -1278,6 +1389,9 @@
+@@ -1278,6 +1432,9 @@
      /// Forwards `cmd`'s raw JSON to the inspector session of the session it was sent through.
      pub fn callInspector(self: *BrowserContext, cmd: *const Command) !void {
          const inspector_session = try self.inspectorSession(cmd.input.session_id);
@@ -912,6 +1304,144 @@
          .getVersion => return getVersion(cmd),
          .setPermission => return setPermission(cmd),
          .setWindowBounds => return setWindowBounds(cmd),
+--- a/src/server/cdp/domains/network.zig
++++ b/src/server/cdp/domains/network.zig
+@@ -38,13 +38,17 @@
+ const log = lp.log;
+ const Allocator = std.mem.Allocator;
+ pub const max_post_data_size = 64 * 1024;
++pub const max_total_capture = 1024 * 1024;
++pub const max_resource_capture = 256 * 1024;
++pub const max_capture_entries = 128;
++pub const max_request_capture = 256 * 1024;
+ 
+ // Network.enable's buffer parameters.
+ pub const BufferLimits = struct {
+     // total bytes that we'll capture before evicting older entries
+-    total: usize = 200 * 1000 * 1000,
++    total: usize = max_total_capture,
+     // max bytes-per-capture that we'll retain
+-    resource: usize = 20 * 1000 * 1000,
++    resource: usize = max_resource_capture,
+     post_data: usize = max_post_data_size,
+ };
+ 
+@@ -122,14 +126,14 @@
+ 
+     var limits: BufferLimits = .{};
+     if (params.maxTotalBufferSize) |max| {
+-        limits.total = max;
++        limits.total = @min(max, max_total_capture);
+     }
+     if (params.maxResourceBufferSize) |max| {
+-        limits.resource = max;
++        limits.resource = @min(max, max_resource_capture);
+     }
+     if (params.maxPostDataSize) |max| {
+-        // 0 is Chrome's "no limit".
+-        limits.post_data = if (max == 0) std.math.maxInt(usize) else max;
++        // Agent workers retain a hard ceiling even when the client requests no limit.
++        limits.post_data = if (max == 0) max_post_data_size else @min(max, max_post_data_size);
+     }
+     try bc.networkEnable(limits);
+     return cmd.sendResult(null, .{});
+@@ -1770,3 +1774,96 @@
+         .request = .{ .url = api_url },
+     }, .{ .session_id = "SID-NW" });
+ }
++
++test "cdp.Network: capture metadata and POST bytes stay bounded" {
++    var ctx = try testing.context();
++    defer ctx.deinit();
++    const bc = try ctx.loadBrowserContext(.{ .id = "BID-BOUNDS" });
++    const page = try bc.session.createPage();
++    bc.page_handle = page;
++    bc.target_id = id.toFrameId(page.frame_id);
++    try bc.networkEnable(.{ .total = 0, .resource = 0 });
++    const body: [4096]u8 = @splat('x');
++    for (0..300) |_| {
++        _ = try EchoDriver.run(bc, page.frame_id, &body, null);
++        try testing.expect(bc.captured_responses.count() <= max_capture_entries);
++        try testing.expect(bc.captured_requests.count() <= max_capture_entries);
++        try testing.expect(bc.captured_requests_size <= max_request_capture);
++        try testing.expectEqual(0, bc.captured_responses_size);
++    }
++    try testing.expectEqual(max_capture_entries, bc.captured_responses.count());
++    try testing.expectEqual(max_request_capture, bc.captured_requests_size);
++    try testing.expectEqual(max_request_capture, ctx.cdp().app.cdp_capture_bytes);
++    try bc.closeTarget();
++    try testing.expectEqual(0, ctx.cdp().app.cdp_capture_bytes);
++    try testing.expectEqual(0, bc.captured_responses.count());
++    try testing.expectEqual(0, bc.captured_requests.count());
++}
++
++test "cdp.Network: worker capture budget spans real sibling targets" {
++    var ctx = try testing.context();
++    defer ctx.deinit();
++    const root = try ctx.loadBrowserContext(.{ .id = "BID-WORKER" });
++    var targets: [12]*CDP.BrowserContext = undefined;
++    const body: [4096]u8 = @splat('w');
++    for (&targets, 0..) |*slot, index| {
++        const bc = if (index == 0) root else try ctx.cdp().allocatePageTarget();
++        slot.* = bc;
++        const page = try bc.session.createPage();
++        bc.page_handle = page;
++        bc.target_id = id.toFrameId(page.frame_id);
++        try bc.networkEnable(.{});
++        for (0..200) |_| {
++            _ = try EchoDriver.run(bc, page.frame_id, &body, null);
++            try testing.expect(ctx.cdp().app.cdp_capture_bytes <= @import("../../../App.zig").max_cdp_capture_bytes);
++        }
++    }
++    // The offered payload exceeds the shared budget, while all requests finish.
++    try testing.expect(ctx.cdp().app.cdp_capture_bytes > 7 * 1024 * 1024);
++    for (targets) |bc| bc.networkDisable();
++    try testing.expectEqual(0, ctx.cdp().app.cdp_capture_bytes);
++    // Capture remains usable after budget is returned.
++    try root.networkEnable(.{});
++    _ = try EchoDriver.run(root, root.page_handle.?.frame_id, "again", null);
++    try testing.expectEqual(5, root.captured_responses_size);
++    root.networkDisable();
++    try testing.expectEqual(0, ctx.cdp().app.cdp_capture_bytes);
++}
++
++test "cdp.Network: client cannot raise hard capture ceilings" {
++    var ctx = try testing.context();
++    defer ctx.deinit();
++    const bc = try ctx.loadBrowserContext(.{ .id = "BID-CLAMP", .session_id = "SID-CLAMP" });
++    try ctx.processMessage(.{
++        .id = 1,
++        .method = "Network.enable",
++        .params = .{ .maxTotalBufferSize = 4000000000, .maxResourceBufferSize = 4000000000, .maxPostDataSize = 0 },
++    });
++    try ctx.expectSentResult(null, .{ .id = 1 });
++    try testing.expectEqual(max_total_capture, bc.network_limits.total);
++    try testing.expectEqual(max_resource_capture, bc.network_limits.resource);
++    try testing.expectEqual(max_post_data_size, bc.network_limits.post_data);
++}
++
++test "cdp.Network: active transfer survives capture metadata removal" {
++    var ctx = try testing.context();
++    defer ctx.deinit();
++    const bc = try ctx.loadBrowserContext(.{ .id = "BID-LATE" });
++    const page = try bc.session.createPage();
++    try bc.networkEnable(.{});
++    const Dropper = struct {
++        bc: *CDP.BrowserContext,
++        fn onHeaders(raw: *anyopaque, _: *const Notification.ResponseHeaderDone) !void {
++            const self: *@This() = @ptrCast(@alignCast(raw));
++            self.bc.clearCapturedResponses();
++        }
++    };
++    var dropper: Dropper = .{ .bc = bc };
++    try bc.notification.register(.http_response_header_done, &dropper, Dropper.onHeaders);
++    defer bc.notification.unregister(.http_response_header_done, &dropper);
++    _ = try EchoDriver.run(bc, page.frame_id, "body arrives after metadata disappears", null);
++    try testing.expectEqual(0, bc.captured_responses.count());
++    try testing.expectEqual(0, bc.captured_responses_size);
++    bc.networkDisable();
++    try testing.expectEqual(0, ctx.cdp().app.cdp_capture_bytes);
++}
 --- a/src/server/cdp/domains/page.zig
 +++ b/src/server/cdp/domains/page.zig
 @@ -449,7 +449,7 @@
@@ -959,6 +1489,15 @@
          bc.main_world_touched = false;
      }
  
+@@ -619,7 +618,7 @@
+         // terms, this is called a "renderer" and the cache-duration can be
+         // controlled via Network.configureDurableMessages (which we don't
+         // support).
+-        bc.captured_requests = .empty;
++        bc.clearCapturedRequests();
+         bc.clearCapturedResponses();
+     }
+ }
 --- a/src/server/cdp/domains/target.zig
 +++ b/src/server/cdp/domains/target.zig
 @@ -64,19 +64,22 @@

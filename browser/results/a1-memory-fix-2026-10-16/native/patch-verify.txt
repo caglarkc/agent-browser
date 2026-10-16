@@ -1,0 +1,21 @@
+
+> agent-browser-core@0.1.0-a1 engine:verify
+> node scripts/build-engine.mjs --verify-patch
+
+patching file 'src/App.zig'
+patching file 'src/Notification.zig'
+patching file 'src/browser/Frame.zig'
+patching file 'src/browser/Session.zig'
+patching file 'src/browser/webapi/Console.zig'
+patching file 'src/browser/webapi/History.zig'
+patching file 'src/browser/webapi/Window.zig'
+patching file 'src/browser/webapi/navigation/NavigationHistoryEntry.zig'
+patching file 'src/browser/webapi/net/Fetch.zig'
+patching file 'src/server/Driver.zig'
+patching file 'src/server/bidi/browsing_context.zig'
+patching file 'src/server/cdp/CDP.zig'
+patching file 'src/server/cdp/domains/browser.zig'
+patching file 'src/server/cdp/domains/network.zig'
+patching file 'src/server/cdp/domains/page.zig'
+patching file 'src/server/cdp/domains/target.zig'
+Pinned archive + native patch verified in a fresh source tree

@@ -1,0 +1,24 @@
+{
+  "verifiedAt": "2026-10-16T14:31:12.614904+00:00",
+  "verifierSha256": "90f2021eec03f259e28c9f287d63f3072caea536e53d7a74e3046dc757d901cc",
+  "cases": [
+    {
+      "mutation": "gap",
+      "exitCode": 1,
+      "expectedRejection": "Observation gap",
+      "rejectedAsExpected": true
+    },
+    {
+      "mutation": "peak",
+      "exitCode": 1,
+      "expectedRejection": "Worker peak memory regression",
+      "rejectedAsExpected": true
+    },
+    {
+      "mutation": "progress",
+      "exitCode": 1,
+      "expectedRejection": "Progress failure",
+      "rejectedAsExpected": true
+    }
+  ]
+}

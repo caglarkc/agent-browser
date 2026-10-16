@@ -1,0 +1,22 @@
+{"starting":"default-continuous","seconds":600}
+{"name":"default-continuous","seconds":0,"workerMiB":25.031936645507812}
+{"name":"default-continuous","seconds":30,"workerMiB":33.62568664550781}
+{"name":"default-continuous","seconds":60,"workerMiB":35.79756164550781}
+{"name":"default-continuous","seconds":90,"workerMiB":41.09443664550781}
+{"name":"default-continuous","seconds":120,"workerMiB":43.00068664550781}
+{"name":"default-continuous","seconds":150,"workerMiB":42.37568664550781}
+{"name":"default-continuous","seconds":180,"workerMiB":44.81318664550781}
+{"name":"default-continuous","seconds":210,"workerMiB":47.21943664550781}
+{"name":"default-continuous","seconds":240,"workerMiB":43.50068664550781}
+{"name":"default-continuous","seconds":270,"workerMiB":43.50068664550781}
+{"name":"default-continuous","seconds":300,"workerMiB":44.09443664550781}
+{"name":"default-continuous","seconds":331,"workerMiB":44.18818664550781}
+{"name":"default-continuous","seconds":361,"workerMiB":43.92256164550781}
+{"name":"default-continuous","seconds":391,"workerMiB":44.46943664550781}
+{"name":"default-continuous","seconds":421,"workerMiB":44.68818664550781}
+{"name":"default-continuous","seconds":451,"workerMiB":45.891334533691406}
+{"name":"default-continuous","seconds":481,"workerMiB":46.813209533691406}
+{"name":"default-continuous","seconds":511,"workerMiB":47.438209533691406}
+{"name":"default-continuous","seconds":541,"workerMiB":48.328834533691406}
+{"name":"default-continuous","seconds":571,"workerMiB":49.891334533691406}
+{"config":{"name":"default-continuous","capture":"default","reloadMs":0},"status":"PASS","errors":[],"workerPid":36280,"seconds":600.000119541,"network":{"requests":23662,"responseBodyBytes":1550712832},"gcProbe":{"status":"UNAVAILABLE","message":"Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"},"leakedWorkerPids":[],"checks":1180,"workerFootprint":{"firstWindowMedianBytes":34046672,"lastWindowMedianBytes":52789992,"lastBytes":52789992,"maxBytes":54067944},"workerCpuTimeWeightedPercent":1.6032958183123225}
