@@ -1,0 +1,68 @@
+{
+  "recordedAt": "2026-10-15T10:38:03.250568+00:00",
+  "upstreamCommit": "44e378d6113d40a6ef1e66ff8b27e1da34ef1647",
+  "patchSha256": "cd3bc998e1e8ccb183376f91d3245a7e8ce61fa1991d64e6f238b987dd0e0fbf",
+  "sourceTreeSha256": "832667990fe45e19f781481e6c2445d689eb08ec520ab8772bae3c105eeb02ed",
+  "version": "1.1.0-agent-a1+44e378d",
+  "buildMode": "Debug",
+  "leakDetectorEnabled": true,
+  "suites": [
+    {
+      "name": "CDP",
+      "command": [
+        "make",
+        "test",
+        "F=cdp",
+        "ZIGFLAGS=-Dversion=1.1.0-agent-a1+44e378d"
+      ],
+      "exitCode": 0,
+      "passed": 263,
+      "tests": 263,
+      "log": "native-cdp-tests.log",
+      "sha256": "46d57c388e57b3219622bf5c88294b57443c9353bd4f26f0e80fe909e70f30b8"
+    },
+    {
+      "name": "Session",
+      "command": [
+        "make",
+        "test",
+        "F=Session:",
+        "ZIGFLAGS=-Dversion=1.1.0-agent-a1+44e378d"
+      ],
+      "exitCode": 0,
+      "passed": 4,
+      "tests": 4,
+      "log": "native-session-tests.log",
+      "sha256": "fb2caebf7c1b2947d11c6fc5db84e92de060a539bee1726a3295aefb30ebaf27"
+    },
+    {
+      "name": "Storage",
+      "command": [
+        "make",
+        "test",
+        "F=WebApi: Storage",
+        "ZIGFLAGS=-Dversion=1.1.0-agent-a1+44e378d"
+      ],
+      "exitCode": 0,
+      "passed": 1,
+      "tests": 1,
+      "log": "native-storage-tests.log",
+      "sha256": "a7308d9c3f39688949ad78fc0cff056e20cb05cec39f50db4958e097e4adc21a"
+    },
+    {
+      "name": "Frame",
+      "command": [
+        "make",
+        "test",
+        "F=Frame:",
+        "ZIGFLAGS=-Dversion=1.1.0-agent-a1+44e378d"
+      ],
+      "exitCode": 0,
+      "passed": 22,
+      "tests": 22,
+      "log": "native-frame-tests.log",
+      "sha256": "09135519eb5376e8c5dae38300b04886e875b1ec1af984496ef6cc44c0722c02"
+    }
+  ],
+  "note": "ANSI color and carriage returns removed from native logs. Debug native tests use the same pinned patched sources as the ReleaseFast product build."
+}

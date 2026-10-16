@@ -1,6 +1,6 @@
 # Lightpanda tabanlı kendi görselsiz tarayıcımızı oluşturma planı
 
-Güncelleme: 15 Ekim 2026. Durum: uygulama planı.
+Güncelleme: 16 Ekim 2026. Durum: uygulama planı; A1 tamamlandı.
 
 Amaç, Lightpanda motorunu kullanan kendi tarayıcımızı oluşturmak: kendi süreç ve oturum yönetimi, sekmeleri, gezinme geçmişi, DOM gözlem modeli, etkileşim API’si, hata davranışları ve kurulabilir paketi. Tarayıcı ekran görüntüsü, OCR veya grafik arayüz gerektirmeden çalışacak. JEV bu tarayıcıyı kullanabilen karar katmanı olacak; tarayıcının temel işlevleri model olmadan da çağrılabilecek.
 
@@ -121,6 +121,8 @@ Bu aşamalar [B01–B43 gereksinimlerini](BROWSER_REQUIREMENTS.md) ürün teslim
 Her aşama teslimi; çalışan kod, komut/API sözleşmesi, test sonucu ve destek/engel kaydı içerir. Yalnız tasarım yazmak aşamayı geçirmez. Zorunlu bir yeteneğin NOT_RUN veya BLOCKED olması o kapıyı açık bırakır. Canvas gibi kapsam dışı yeteneğin açık UNSUPPORTED sonucu, o yeteneğin desteklendiği anlamına gelmez.
 
 ### Aşama 1 Profil sekme ve worker modeli
+
+**16 Ekim uygulama durumu: A1 TAMAMLANDI.** [A1 çekirdeği](../browser/README.md), [native motor patch’i](../browser/engine/multitab.patch), [kaynak/derleme pinleri](../browser/engine/source.json), [kabul raporu ve ham kanıtlar](A1_RESULTS.md) ile [ADR 001](adr/001-a1-worker-profile-topology.md) teslim edildi. Aynı profilin gerçek Page/CDP target’ları; ayrı frame/tab geçmişi, ortak cookie/localStorage, tab’a özel sessionStorage ve opener/noopener semantiğiyle doğrulandı. Optimize motor entegrasyon takımı 19/19, native CDP/Session/Storage/Frame regresyonları toplam 290/290 geçti. 1 profil × 1 tab, 1 profil × 10 tab ve 4 profil × 1 tab topolojileri 600’er saniye PASS verdi; sırasıyla 120/1.200/480 içerik ve JS kontrolü başarılı, worker sızıntısı sıfır. Ürün footprint medyanları 54,05 / 58,94 / 111,70 MiB’dir; ortak Node host bir kez sayılmıştır. A2 güvenlik/egress, A4 private input, A5 kalıcılık/çok-agent koordinasyonu ve A7 60/500 MB kapasite kapıları açıktır. Eski Lightpanda 1.0.0 kısıtı etiketli ham motor probunda tarihsel kanıt olarak korunur; ürün yolu source-pinli patched motordur.
 
 **B-ID kapsamı:** B15–B17, B22, B41–B43; B01/B02/B07 için altyapı. **Başlangıç limitleri:** L01–L04, L12–L14.
 
@@ -326,4 +328,4 @@ Limitlerin kabulde denenmesi sadece normal yol değildir: sınırın hemen altı
 
 İlk iş `browser/` altında agent profil/session/tab sözleşmesini ve worker topolojisi ADR’sini oluşturmak, A1’in T01/T02/T11 test altyapısını kurmak ve erken ölçümü yapmaktır. Ardından A2 kimlik/ağ/OS sınırları gelir. Live benchmark veya JEV entegrasyonu bu kapıların önüne geçmez.
 
-Güncel özellikler için BROWSER_REQUIREMENTS, aşama/limit/kabul için bu belge esas alınır. Çelişkide PASS verilmez; birlikte düzeltilir. Eski MVP_PLAN, ACCEPTANCE ve TASK_CONTRACTS tarihsel tasarımdır; yararlı ilkeleri yeni testlere taşınır, eski G/K eşikleri bu ürünün otomatik kabul koşulu değildir. Kaynak ve benchmark snapshot’ları tarihsel kanıt olarak değiştirilmez. Değişiklikler çalışma ağacında diff olarak bırakılır; bu plan güncellemesi commit, dağıtım veya canlı API çalıştırma içermez.
+Güncel özellikler için BROWSER_REQUIREMENTS, aşama/limit/kabul için bu belge esas alınır. Çelişkide PASS verilmez; birlikte düzeltilir. Eski MVP_PLAN, ACCEPTANCE ve TASK_CONTRACTS tarihsel tasarımdır; yararlı ilkeleri yeni testlere taşınır, eski G/K eşikleri bu ürünün otomatik kabul koşulu değildir. Kaynak ve benchmark snapshot’ları tarihsel kanıt olarak değiştirilmez. **Kalıcı teslim kuralı:** Kullanıcı ilgili iş için açıkça farklı bir talimat vermedikçe tamamlanan her kod, motor, test, kanıt, belge ve plan değişikliği gerekli doğrulamadan sonra commit edilir ve GitHub’a push edilir. Yalnız yerel diff bırakmak teslim değildir. Push sonrasında uzak dal commit’i yerel HEAD ile karşılaştırılır; başarısız push açıkça raporlanır. Secret, credential, binary/cache ve ilgisiz kullanıcı değişiklikleri commit’e alınmaz; force push yapılmaz. Ayrıntılı çalışma kuralı kök [AGENTS.md](../AGENTS.md) dosyasındadır. Commit/push, dağıtım veya canlı API çalıştırma yetkisi anlamına gelmez.

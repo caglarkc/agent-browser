@@ -1,0 +1,11 @@
+TEST_FILTER="cdp" zig build -Dversion=1.1.0-agent-a1+44e378d test -freference-trace
+
+.......................................................................................................................................................................................................................................................................
+263 of 263 tests passed
+
+Slowest 5 tests: 
+  258.14ms	cdp.input: dispatchMouseEvent mouseWheel scrolls a scroll container, not the viewport
+  130.66ms	cdp.frame: isolated world follows a child's redirected origin
+  124.53ms	cdp.lp: action tools
+  70.19ms	cdp.input: chorded mousedown focuses its target unless pointerdown or mousedown was cancelled
+  50.17ms	cdp.lp: waitForSelector

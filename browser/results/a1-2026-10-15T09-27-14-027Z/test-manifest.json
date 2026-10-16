@@ -1,0 +1,24 @@
+{
+  "recordedAt": "2026-10-15T09:48:21.926870+00:00",
+  "command": "node --test --test-concurrency=1 --test-reporter=tap test/*.test.mjs",
+  "exitCode": 0,
+  "tests": 14,
+  "passed": 14,
+  "failed": 0,
+  "testSourceHashes": {
+    "test/cli.test.mjs": "e7794d1a97e5dd6b0765b2d9ec4faab45cfdc583e7cf2666c3afc46e8bd3bd34",
+    "test/host.test.mjs": "8dc804444e4202b388ea095fadf82964ec6c30de34d9a49478b265db4d26141b",
+    "test/memory.test.mjs": "02a613824bcfafeb35f8b33634e53790e48c384cd1d4a9ff79cd1f6b268f0d52",
+    "src/cli.mjs": "f8533c5a6c690d44e3ef7fda75c1fb47aecf673116af4f459e516f92e2f741b2"
+  },
+  "tapSha256": "0636fa91c202e1ecaef1d80bca483db5c950548005e130640e0ff5af7edaf18c",
+  "labRegression": {
+    "command": "npm test",
+    "tests": 10,
+    "passed": 10,
+    "failed": 0,
+    "exitCode": 0,
+    "liveApiCalls": 0
+  },
+  "note": "Tests validate supported behavior and explicit engine rejection. Multi-tab T01/A1 gate is BLOCKED_ENGINE."
+}

@@ -1,0 +1,7 @@
+TEST_FILTER="WebApi: Storage" zig build -Dversion=1.1.0-agent-a1+44e378d test -freference-trace
+
+.
+1 of 1 test passed
+
+Slowest 1 test: 
+  18.59ms	WebApi: Storage

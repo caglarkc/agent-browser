@@ -1,0 +1,265 @@
+{
+  "status": "PASS",
+  "runId": "a1-2026-10-16T06-40-50-588Z",
+  "results": [
+    {
+      "name": "1p-1t",
+      "topology": {
+        "profiles": 1,
+        "tabsPerProfile": 1
+      },
+      "status": "PASS",
+      "checks": 120,
+      "errors": [],
+      "secondsRequested": 600,
+      "workerPids": [
+        1930
+      ],
+      "workerCount": 1,
+      "tabCount": 1,
+      "sustainedSeconds": 600.001823125,
+      "elapsedMs": 600228.415958,
+      "leakedWorkerPids": [],
+      "allPhases": {
+        "samples": 601,
+        "productFootprintBytes": {
+          "n": 601,
+          "median": 56744104,
+          "p95": 83630536,
+          "max": 119183720
+        },
+        "productRssBytes": {
+          "n": 601,
+          "median": 104906752,
+          "p95": 181977088,
+          "max": 182337536
+        },
+        "driverFootprintBytes": {
+          "n": 601,
+          "median": 45323784,
+          "p95": 72914752,
+          "max": 108975840
+        },
+        "workerFootprintBytes": {
+          "n": 600,
+          "median": 11059872,
+          "p95": 11469472,
+          "max": 11551392
+        },
+        "processes": {
+          "n": 601,
+          "median": 2,
+          "p95": 2,
+          "max": 2
+        }
+      },
+      "sustained": {
+        "samples": 600,
+        "productFootprintBytes": {
+          "n": 600,
+          "median": 56678568,
+          "p95": 83630536,
+          "max": 119183720
+        },
+        "productRssBytes": {
+          "n": 600,
+          "median": 104906752,
+          "p95": 181977088,
+          "max": 182337536
+        },
+        "driverFootprintBytes": {
+          "n": 600,
+          "median": 45258248,
+          "p95": 72914752,
+          "max": 108975840
+        },
+        "workerFootprintBytes": {
+          "n": 600,
+          "median": 11059872,
+          "p95": 11469472,
+          "max": 11551392
+        },
+        "processes": {
+          "n": 600,
+          "median": 2,
+          "p95": 2,
+          "max": 2
+        }
+      }
+    },
+    {
+      "name": "1p-10t",
+      "topology": {
+        "profiles": 1,
+        "tabsPerProfile": 10
+      },
+      "status": "PASS",
+      "checks": 1200,
+      "errors": [],
+      "secondsRequested": 600,
+      "workerPids": [
+        10087
+      ],
+      "workerCount": 1,
+      "tabCount": 10,
+      "sustainedSeconds": 600.0010920420001,
+      "elapsedMs": 600261.2195410001,
+      "leakedWorkerPids": [],
+      "allPhases": {
+        "samples": 601,
+        "productFootprintBytes": {
+          "n": 601,
+          "median": 61807744,
+          "p95": 64134056,
+          "max": 90692328
+        },
+        "productRssBytes": {
+          "n": 601,
+          "median": 148652032,
+          "p95": 150208512,
+          "max": 150355968
+        },
+        "driverFootprintBytes": {
+          "n": 601,
+          "median": 46471648,
+          "p95": 48748808,
+          "max": 71587912
+        },
+        "workerFootprintBytes": {
+          "n": 600,
+          "median": 15336096,
+          "p95": 15794848,
+          "max": 19268256
+        },
+        "processes": {
+          "n": 601,
+          "median": 2,
+          "p95": 2,
+          "max": 2
+        }
+      },
+      "sustained": {
+        "samples": 600,
+        "productFootprintBytes": {
+          "n": 600,
+          "median": 61807744,
+          "p95": 64134056,
+          "max": 90692328
+        },
+        "productRssBytes": {
+          "n": 600,
+          "median": 148652032,
+          "p95": 150208512,
+          "max": 150355968
+        },
+        "driverFootprintBytes": {
+          "n": 600,
+          "median": 46422496,
+          "p95": 48748808,
+          "max": 71587912
+        },
+        "workerFootprintBytes": {
+          "n": 600,
+          "median": 15336096,
+          "p95": 15794848,
+          "max": 19268256
+        },
+        "processes": {
+          "n": 600,
+          "median": 2,
+          "p95": 2,
+          "max": 2
+        }
+      }
+    },
+    {
+      "name": "4p-1t",
+      "topology": {
+        "profiles": 4,
+        "tabsPerProfile": 1
+      },
+      "status": "PASS",
+      "checks": 480,
+      "errors": [],
+      "secondsRequested": 600,
+      "workerPids": [
+        15434,
+        15435,
+        15436,
+        15437
+      ],
+      "workerCount": 4,
+      "tabCount": 4,
+      "sustainedSeconds": 600.0003255,
+      "elapsedMs": 600802.716334,
+      "leakedWorkerPids": [],
+      "allPhases": {
+        "samples": 602,
+        "productFootprintBytes": {
+          "n": 602,
+          "median": 117125840,
+          "p95": 153437560,
+          "max": 154502640
+        },
+        "productRssBytes": {
+          "n": 602,
+          "median": 196165632,
+          "p95": 278642688,
+          "max": 281362432
+        },
+        "driverFootprintBytes": {
+          "n": 602,
+          "median": 71968920,
+          "p95": 107559672,
+          "max": 108329840
+        },
+        "workerFootprintBytes": {
+          "n": 601,
+          "median": 44993152,
+          "p95": 45894272,
+          "max": 46172800
+        },
+        "processes": {
+          "n": 602,
+          "median": 5,
+          "p95": 5,
+          "max": 5
+        }
+      },
+      "sustained": {
+        "samples": 601,
+        "productFootprintBytes": {
+          "n": 601,
+          "median": 117125840,
+          "p95": 153437560,
+          "max": 154502640
+        },
+        "productRssBytes": {
+          "n": 601,
+          "median": 196165632,
+          "p95": 278642688,
+          "max": 281362432
+        },
+        "driverFootprintBytes": {
+          "n": 601,
+          "median": 71968920,
+          "p95": 107559672,
+          "max": 108329840
+        },
+        "workerFootprintBytes": {
+          "n": 601,
+          "median": 44993152,
+          "p95": 45894272,
+          "max": 46172800
+        },
+        "processes": {
+          "n": 601,
+          "median": 5,
+          "p95": 5,
+          "max": 5
+        }
+      }
+    }
+  ],
+  "reason": null
+}

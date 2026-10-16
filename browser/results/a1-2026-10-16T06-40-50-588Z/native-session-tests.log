@@ -1,0 +1,10 @@
+TEST_FILTER="Session:" zig build -Dversion=1.1.0-agent-a1+44e378d test -freference-trace
+
+....
+4 of 4 tests passed
+
+Slowest 4 tests: 
+  10.25ms	ToolSession: isolates interleave on one thread and tear down balanced
+  4.42ms	Session: a root navigation whose submit fails commits an error document
+  3.05ms	Session: retiring a pending page destroys it once
+  2.16ms	Session: console capture runs no page JS

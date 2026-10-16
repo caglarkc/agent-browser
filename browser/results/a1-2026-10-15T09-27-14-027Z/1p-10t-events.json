@@ -1,0 +1,70 @@
+{
+  "gap": false,
+  "events": [
+    {
+      "sequence": 1,
+      "type": "PROFILE_READY",
+      "hostId": "9a2de00a-fcf4-485c-bb25-5e1b57b9f335",
+      "at": 1792057034784,
+      "id": "profile-0",
+      "principalId": "synthetic-0",
+      "policyId": "local-fixture",
+      "state": "READY",
+      "sessionId": "1db62101-3f79-44da-991a-8fd45b38fb55",
+      "workerId": "73f073f6-7850-429e-b20f-5ffce2447679",
+      "pid": 30487
+    },
+    {
+      "sequence": 2,
+      "type": "TAB_OPENED",
+      "hostId": "9a2de00a-fcf4-485c-bb25-5e1b57b9f335",
+      "at": 1792057034791,
+      "id": "26b1b469-2781-46e2-8703-5f27417873be",
+      "profileId": "profile-0",
+      "sessionId": "1db62101-3f79-44da-991a-8fd45b38fb55",
+      "workerId": "73f073f6-7850-429e-b20f-5ffce2447679",
+      "state": "OPEN",
+      "documentEpoch": 0,
+      "url": "about:blank"
+    },
+    {
+      "sequence": 3,
+      "type": "TAB_NAVIGATED",
+      "hostId": "9a2de00a-fcf4-485c-bb25-5e1b57b9f335",
+      "at": 1792057034792,
+      "id": "26b1b469-2781-46e2-8703-5f27417873be",
+      "profileId": "profile-0",
+      "sessionId": "1db62101-3f79-44da-991a-8fd45b38fb55",
+      "workerId": "73f073f6-7850-429e-b20f-5ffce2447679",
+      "state": "OPEN",
+      "documentEpoch": 1,
+      "url": "http://127.0.0.1:55325/work?label=profile-0-tab-0"
+    },
+    {
+      "sequence": 4,
+      "type": "TAB_CLOSED",
+      "hostId": "9a2de00a-fcf4-485c-bb25-5e1b57b9f335",
+      "at": 1792057034815,
+      "id": "26b1b469-2781-46e2-8703-5f27417873be",
+      "profileId": "profile-0",
+      "sessionId": "1db62101-3f79-44da-991a-8fd45b38fb55",
+      "workerId": "73f073f6-7850-429e-b20f-5ffce2447679",
+      "state": "CLOSED",
+      "documentEpoch": 1,
+      "url": "http://127.0.0.1:55325/work?label=profile-0-tab-0"
+    },
+    {
+      "sequence": 5,
+      "type": "PROFILE_CLOSED",
+      "hostId": "9a2de00a-fcf4-485c-bb25-5e1b57b9f335",
+      "at": 1792057034816,
+      "id": "profile-0",
+      "principalId": "synthetic-0",
+      "policyId": "local-fixture",
+      "state": "CLOSED",
+      "sessionId": "1db62101-3f79-44da-991a-8fd45b38fb55",
+      "workerId": "73f073f6-7850-429e-b20f-5ffce2447679",
+      "pid": null
+    }
+  ]
+}

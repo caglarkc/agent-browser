@@ -1,0 +1,259 @@
+[
+  {
+    "name": "1p-1t",
+    "topology": {
+      "profiles": 1,
+      "tabsPerProfile": 1
+    },
+    "status": "PASS",
+    "checks": 120,
+    "errors": [],
+    "secondsRequested": 600,
+    "workerPids": [
+      23820
+    ],
+    "workerCount": 1,
+    "tabCount": 1,
+    "sustainedSeconds": 600.000578375,
+    "elapsedMs": 600223.6930409999,
+    "leakedWorkerPids": [],
+    "allPhases": {
+      "samples": 601,
+      "productFootprintBytes": {
+        "n": 601,
+        "median": 51206768,
+        "p95": 64641912,
+        "max": 115513896
+      },
+      "productRssBytes": {
+        "n": 601,
+        "median": 93224960,
+        "p95": 178405376,
+        "max": 179240960
+      },
+      "driverFootprintBytes": {
+        "n": 601,
+        "median": 40326616,
+        "p95": 53532888,
+        "max": 105404320
+      },
+      "workerFootprintBytes": {
+        "n": 600,
+        "median": 11158176,
+        "p95": 11322016,
+        "max": 11371168
+      },
+      "processes": {
+        "n": 601,
+        "median": 2,
+        "p95": 2,
+        "max": 2
+      }
+    },
+    "sustained": {
+      "samples": 600,
+      "productFootprintBytes": {
+        "n": 600,
+        "median": 51058520,
+        "p95": 64641912,
+        "max": 115513896
+      },
+      "productRssBytes": {
+        "n": 600,
+        "median": 93224960,
+        "p95": 178405376,
+        "max": 179240960
+      },
+      "driverFootprintBytes": {
+        "n": 600,
+        "median": 39950192,
+        "p95": 53532888,
+        "max": 105404320
+      },
+      "workerFootprintBytes": {
+        "n": 600,
+        "median": 11158176,
+        "p95": 11322016,
+        "max": 11371168
+      },
+      "processes": {
+        "n": 600,
+        "median": 2,
+        "p95": 2,
+        "max": 2
+      }
+    }
+  },
+  {
+    "name": "1p-10t",
+    "topology": {
+      "profiles": 1,
+      "tabsPerProfile": 10
+    },
+    "status": "BLOCKED_ENGINE",
+    "checks": 0,
+    "errors": [
+      {
+        "code": "UNSUPPORTED_CAPABILITY",
+        "message": "Pinned Lightpanda supports one page per CDP session; a second tab needs an engine change"
+      }
+    ],
+    "secondsRequested": 600,
+    "elapsedMs": 198.80279200000223,
+    "leakedWorkerPids": [],
+    "allPhases": {
+      "samples": 2,
+      "productFootprintBytes": {
+        "n": 2,
+        "median": 48306440,
+        "p95": 84532136,
+        "max": 84532136
+      },
+      "productRssBytes": {
+        "n": 2,
+        "median": 78053376,
+        "p95": 135397376,
+        "max": 135397376
+      },
+      "driverFootprintBytes": {
+        "n": 2,
+        "median": 48306440,
+        "p95": 74684704,
+        "max": 74684704
+      },
+      "workerFootprintBytes": {
+        "n": 1,
+        "median": 9847432,
+        "p95": 9847432,
+        "max": 9847432
+      },
+      "processes": {
+        "n": 2,
+        "median": 1,
+        "p95": 2,
+        "max": 2
+      }
+    },
+    "sustained": {
+      "samples": 0,
+      "productFootprintBytes": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "max": null
+      },
+      "productRssBytes": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "max": null
+      },
+      "driverFootprintBytes": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "max": null
+      },
+      "workerFootprintBytes": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "max": null
+      },
+      "processes": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "max": null
+      }
+    }
+  },
+  {
+    "name": "4p-1t",
+    "topology": {
+      "profiles": 4,
+      "tabsPerProfile": 1
+    },
+    "status": "PASS",
+    "checks": 484,
+    "errors": [],
+    "secondsRequested": 600,
+    "workerPids": [
+      30502,
+      30503,
+      30504,
+      30509
+    ],
+    "workerCount": 4,
+    "tabCount": 4,
+    "sustainedSeconds": 600.0030473749998,
+    "elapsedMs": 600704.0646249999,
+    "leakedWorkerPids": [],
+    "allPhases": {
+      "samples": 602,
+      "productFootprintBytes": {
+        "n": 602,
+        "median": 112554680,
+        "p95": 116864296,
+        "max": 155526336
+      },
+      "productRssBytes": {
+        "n": 602,
+        "median": 293715968,
+        "p95": 297451520,
+        "max": 298074112
+      },
+      "driverFootprintBytes": {
+        "n": 602,
+        "median": 70985760,
+        "p95": 75491984,
+        "max": 115874440
+      },
+      "workerFootprintBytes": {
+        "n": 601,
+        "median": 41372216,
+        "p95": 41618072,
+        "max": 41683608
+      },
+      "processes": {
+        "n": 602,
+        "median": 5,
+        "p95": 5,
+        "max": 5
+      }
+    },
+    "sustained": {
+      "samples": 601,
+      "productFootprintBytes": {
+        "n": 601,
+        "median": 112554680,
+        "p95": 116864296,
+        "max": 155526336
+      },
+      "productRssBytes": {
+        "n": 601,
+        "median": 293715968,
+        "p95": 297451520,
+        "max": 298074112
+      },
+      "driverFootprintBytes": {
+        "n": 601,
+        "median": 70985760,
+        "p95": 75491984,
+        "max": 115874440
+      },
+      "workerFootprintBytes": {
+        "n": 601,
+        "median": 41372216,
+        "p95": 41618072,
+        "max": 41683608
+      },
+      "processes": {
+        "n": 601,
+        "median": 5,
+        "p95": 5,
+        "max": 5
+      }
+    }
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "upstream": "https://github.com/lightpanda-io/browser",
+  "commit": "44e378d6113d40a6ef1e66ff8b27e1da34ef1647",
+  "archiveSha256": "cc2cfafcc8b9e39c738b10c6a701b8df54f978581f979f2e4ff157effaf15f0a",
+  "patchSha256": "cd3bc998e1e8ccb183376f91d3245a7e8ce61fa1991d64e6f238b987dd0e0fbf",
+  "patchedSourceHashes": {
+    "src/Notification.zig": "64267c1b5bb418a8234b8820e44ec560500590d555cdc2736f348c3fda63139a",
+    "src/browser/Frame.zig": "6f55a02ecc6e2d460e1e30021e3815f8c4e81c878c0bbad8d6f7b1b4e19ad1a9",
+    "src/browser/Session.zig": "9c081ca48baf18eca8a047e5e26113807cea740040765ed665cebaf414f5fa7d",
+    "src/browser/webapi/Console.zig": "141363d7221a55abc289a24ca209c928426a68f321ffd599a5a3a3e2bb64a099",
+    "src/browser/webapi/History.zig": "da435f24a326db087c4e028fa4a2411aa93aa26eca346d19b7c1af12376b2fab",
+    "src/browser/webapi/Window.zig": "fdd407d4a88003dc31e70b264ccf2c7443daaf8900948c36e06db4d1013e2569",
+    "src/browser/webapi/navigation/NavigationHistoryEntry.zig": "9355fc846a704d287153ad58923f83459fb1bd1f6d78aa3d1670d267f6322ba0",
+    "src/server/Driver.zig": "a946f62cc6ed03e04c557870494831d10e55668c74675c700ef75ec588f802d8",
+    "src/server/bidi/browsing_context.zig": "d989e86c8d83798e57f4c9cd1fd42d9dbd09fd9075f233c179239011c9f930a1",
+    "src/server/cdp/CDP.zig": "6f3be5b606d0dd6656fa834697eea70fb7e9bfa4f241bdaa584932ed7e8f3ef7",
+    "src/server/cdp/domains/browser.zig": "43424d0eef122f68e528657ac006d5df5ef6740c2a73035931df986b7d37032a",
+    "src/server/cdp/domains/page.zig": "b2ec7b7e105cc4e9482f8d498cea2fb23e8296290f0d16dfbe119d3c26b120f3",
+    "src/server/cdp/domains/target.zig": "96748697a6e03e7337ae47dcc8e87bccf17e19c75dc6181c9e71e64bf4731075"
+  },
+  "zigVersion": "0.17.0",
+  "rustVersion": "1.99.0",
+  "version": "1.1.0-agent-a1+44e378d",
+  "license": "AGPL-3.0-or-later",
+  "prebuiltV8": {
+    "darwin-arm64": {
+      "path": ".lp-cache/prebuilt-v8/v0.5.9/libc_v8_15.5.35.13_macos_aarch64.a",
+      "sha256": "dc14027e53df891399522f6089296acfdf37207afaca1e49dd05c446d3fc475f"
+    }
+  },
+  "sourceTreeSha256": "832667990fe45e19f781481e6c2445d689eb08ec520ab8772bae3c105eeb02ed",
+  "sourceFileCount": 1262
+}

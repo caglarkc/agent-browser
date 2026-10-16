@@ -136,6 +136,7 @@ npm run live:report -- artifacts/live-<timestamp>
 | Location | Contents |
 | :--- | :--- |
 | [lab/](lab/README.md) | Runnable fixtures, browser drivers, typed decision client and tests |
+| [browser/](browser/README.md) | A1 Lightpanda-only profile/worker core, local SDK, lifecycle tests and early memory harness; native multi-tab gate remains blocked |
 | [benchmarks/](benchmarks/README.md) | Published run results, manifests, summaries and source snapshots |
 | [Live results](lab/LIVE_RESULTS.md) | Final adapter v2, 42 trials |
 | [Earlier live results](lab/LIVE_BASELINE_RESULTS.md) | Adapter v1, 84 trials |

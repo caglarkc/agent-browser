@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "runId": "a1-2026-10-16T06-40-50-588Z",
+  "startedAt": "2026-10-16T06:40:50.598Z",
+  "platform": "darwin",
+  "arch": "arm64",
+  "osRelease": "25.6.0",
+  "node": "v25.8.2",
+  "commit": "b295f77ffe87c5789feaeff017003df3c6c2d684",
+  "sourceHashes": {
+    "src/host.mjs": "02ae80703f311a13b33d11076cd13631114f3d2ae3f2d2621d159fb001c73267",
+    "src/fixture-progress.mjs": "f5792191f32ebb3b81ac44401fe2f69addb42b2c3e06b044adba29bfbcc18e46",
+    "src/engine.mjs": "58406e4b01288aaafb2aa7a120047ec3f66236d79e9e8a8a6b98b0a2598cb3e2",
+    "src/errors.mjs": "142fffa7531939d1e9f3aa8b28548a81d7f9d51292199f08d68d2fed3192f7c3",
+    "src/memory.mjs": "3ffee22d51493b6967e9ffb078f68fd07592240917f770f15fac18448f49f6e9",
+    "test/fixtures.mjs": "d3c1dad693fac713f7def69680d44a98e079aec76232cdb92deb49461ad07763",
+    "scripts/fixture-worker.mjs": "5ddf180f73a0277cb4785a5250d97895519b441dade3f1b33eca7bc4b1f5edd7",
+    "scripts/measure.mjs": "ffe4f8e9d1d9124e955c5fd18ceab119de7c62ff452ca1ede8fe3db17626c9c8",
+    "package.json": "5d36e24337a73ede8edff55cffd9c3767f367ccac40ccc0c463e6d04245eed0b",
+    "package-lock.json": "fa5be686f5d77625216b964e671766a29e254d54493c31a178742f51e257e4d9",
+    "engine/source.json": "555089ad76216fa0415569a78c0c7c51bdab667fa147f030972465306e971269",
+    "engine/manifest.json": "7f304d9669725ba510296996f731bf652187e54fa82196998b2f9374dfb4b2e3",
+    "engine/multitab.patch": "cd3bc998e1e8ccb183376f91d3245a7e8ce61fa1991d64e6f238b987dd0e0fbf",
+    "scripts/build-engine.mjs": "4582d67870488e29d5ca960e28023e0314a4e272b40b3bb0e8ac08d0354973bf"
+  },
+  "binary": {
+    "sha256": "ebdcd3f8bdb61922237d9b1a376d3f3146ca9e625fb554c01bfe7aaeab1972a3"
+  },
+  "binaryVersion": "1.1.0-agent-a1+44e378d",
+  "memprobeSha256": "14544592e73b3415ca6e9a9764f66c7f87c22d635e1cd4041c911b797432d420",
+  "secondsPerSupportedTopology": 600,
+  "sampleIntervalMs": 1000,
+  "actionIntervalMs": 5000,
+  "reloadIntervalMs": 30000,
+  "progressRule": "Each tab must advance its native 500ms DOM timer between sustained inspections; native reload explicitly starts a fresh baseline. Frozen/stalled JS is FAIL even with intact DOM.",
+  "topologyOrder": [
+    {
+      "profiles": 1,
+      "tabsPerProfile": 1
+    },
+    {
+      "profiles": 1,
+      "tabsPerProfile": 10
+    },
+    {
+      "profiles": 4,
+      "tabsPerProfile": 1
+    }
+  ],
+  "scope": "A1 local synthetic fixtures only. No JEV, credentials, Chrome, OCR or external sites. No A2 sandbox/egress guarantee.",
+  "measurement": "macOS physical footprint primary when complete; RSS separate. Product=one shared Node host/measurement driver + unique worker process trees. Separate fixture child excluded. Setup sampled; sustained phase reported separately. Memory sampler overhead in driver included.",
+  "guard": "2 GiB sampled footprint (RSS if footprint unavailable), not an OS hard limit. 500MB capacity is not this test."
+}

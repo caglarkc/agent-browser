@@ -1,0 +1,11 @@
+TEST_FILTER="Frame:" zig build -Dversion=1.1.0-agent-a1+44e378d test -freference-trace
+
+......................
+22 of 22 tests passed
+
+Slowest 5 tests: 
+  25.53ms	Frame: httpMetadata after navigation
+  17.88ms	Frame: superseded documents omit DOMContentLoaded and load
+  9.20ms	Frame: pending or discarded replacements do not resume old load events
+  5.95ms	Frame: a failed navigation commits an error document over the superseded one
+  5.58ms	Frame: document.open can cancel navigation once parsing has finished

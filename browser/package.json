@@ -1,0 +1,20 @@
+{
+  "name": "agent-browser-core",
+  "version": "0.1.0-a1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "measure": "node scripts/measure.mjs",
+    "cli": "node src/cli.mjs",
+    "engine:build": "node scripts/build-engine.mjs",
+    "engine:verify": "node scripts/build-engine.mjs --verify-patch",
+    "test:record": "node scripts/record-tests.mjs"
+  },
+  "dependencies": {
+    "puppeteer-core": "25.13.0"
+  }
+}

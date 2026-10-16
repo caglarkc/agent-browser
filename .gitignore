@@ -4,5 +4,11 @@ node_modules/
 !.env.example
 lab/bin/
 lab/artifacts/
+browser/artifacts/
+browser/engine-work/
+browser/bin/
 .DS_Store
 *.log
+
+# Published native acceptance evidence; other runtime logs stay ignored.
+!browser/results/*/native-*-tests.log

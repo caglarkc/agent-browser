@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "runId": "a1-2026-10-15T09-27-14-027Z",
+  "startedAt": "2026-10-15T09:27:14.035Z",
+  "platform": "darwin",
+  "arch": "arm64",
+  "osRelease": "25.6.0",
+  "node": "v25.8.2",
+  "commit": "b295f77ffe87c5789feaeff017003df3c6c2d684",
+  "sourceHashes": {
+    "src/host.mjs": "f9265c13db88c76bbc800aa28741d317a2a7aa3fe614e2fba25f84f7d8e6c926",
+    "src/engine.mjs": "4b235393f6c0bad4a35292c631b9f3512c1f6c43b52f6a78f24038fc0a383279",
+    "src/errors.mjs": "142fffa7531939d1e9f3aa8b28548a81d7f9d51292199f08d68d2fed3192f7c3",
+    "src/memory.mjs": "3ffee22d51493b6967e9ffb078f68fd07592240917f770f15fac18448f49f6e9",
+    "test/fixtures.mjs": "fe1e38342d308acd6cafe0fec603699195013959b8b03242dbb5e0a7b0483049",
+    "scripts/fixture-worker.mjs": "5ddf180f73a0277cb4785a5250d97895519b441dade3f1b33eca7bc4b1f5edd7",
+    "scripts/measure.mjs": "6011ad4ace90c24066263bd1a79ffb481c2900e47c2b8faad34d2b22909c6d67",
+    "package.json": "78c17a90b0c1bde0ec3c00b6c2f26794f2726c19d8559cc07157ab6807ec6fae",
+    "package-lock.json": "fa5be686f5d77625216b964e671766a29e254d54493c31a178742f51e257e4d9"
+  },
+  "binary": {
+    "sha256": "955440053a84754dd64c62f970449a56a2b350cdf43ea5f2e809a73047b8173d"
+  },
+  "binaryVersion": "1.0.0",
+  "memprobeSha256": "14544592e73b3415ca6e9a9764f66c7f87c22d635e1cd4041c911b797432d420",
+  "secondsPerSupportedTopology": 600,
+  "sampleIntervalMs": 1000,
+  "actionIntervalMs": 5000,
+  "reloadIntervalMs": 30000,
+  "topologyOrder": [
+    {
+      "profiles": 1,
+      "tabsPerProfile": 1
+    },
+    {
+      "profiles": 1,
+      "tabsPerProfile": 10
+    },
+    {
+      "profiles": 4,
+      "tabsPerProfile": 1
+    }
+  ],
+  "scope": "A1 local synthetic fixtures only. No JEV, credentials, Chrome, OCR or external sites. No A2 sandbox/egress guarantee.",
+  "measurement": "macOS physical footprint primary when complete; RSS separate. Product=one shared Node host/measurement driver + unique worker process trees. Separate fixture child excluded. Setup sampled; sustained phase reported separately. Memory sampler overhead in driver included.",
+  "guard": "2 GiB sampled footprint (RSS if footprint unavailable), not an OS hard limit. 500MB capacity is not this test."
+}
