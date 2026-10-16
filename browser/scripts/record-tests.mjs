@@ -8,7 +8,7 @@ const root=fileURLToPath(new URL('..',import.meta.url));
 const out=path.resolve(process.argv[2]||path.join(root,'artifacts','tests-'+new Date().toISOString().replace(/[:.]/g,'-')));
 await mkdir(out,{recursive:true});
 const tests=(await readdir(path.join(root,'test'))).filter(name=>name.endsWith('.test.mjs')).sort().map(name=>'test/'+name);
-const names=[...tests,'test/fixtures.mjs','src/cli.mjs','src/fixture-progress.mjs','src/host.mjs','src/engine.mjs','src/errors.mjs','src/memory.mjs','engine/source.json','engine/manifest.json','engine/multitab.patch','package.json','package-lock.json'];
+const names=[...tests,'test/fixtures.mjs','src/cli.mjs','src/fixture-progress.mjs','src/host.mjs','src/engine.mjs','src/errors.mjs','src/memory.mjs','src/resources.mjs','native/resource-probe.c','scripts/build-resource-probe.mjs','scripts/resource-case.mjs','scripts/resource-fixture.mjs','scripts/measure-resources.mjs','engine/source.json','engine/manifest.json','engine/multitab.patch','package.json','package-lock.json'];
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 const testSourceHashes={};
 for(const name of names){const bytes=await readFile(path.join(root,name));testSourceHashes[name]=hash(bytes);const dest=path.join(out,'sources',name);await mkdir(path.dirname(dest),{recursive:true});await writeFile(dest,bytes);}

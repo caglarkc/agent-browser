@@ -1,0 +1,148 @@
+TAP version 13
+# Subtest: machine CLI uses explicit methods and EOF closes its worker
+ok 1 - machine CLI uses explicit methods and EOF closes its worker
+  ---
+  duration_ms: 522.401458
+  type: 'test'
+  ...
+# Subtest: soak rejects frozen JS and wrong tabs; reload explicitly starts a fresh counter baseline
+ok 2 - soak rejects frozen JS and wrong tabs; reload explicitly starts a fresh counter baseline
+  ---
+  duration_ms: 1.216417
+  type: 'test'
+  ...
+# Subtest: profile bindings, positive limits and engine environment are bounded
+ok 3 - profile bindings, positive limits and engine environment are bounded
+  ---
+  duration_ms: 2.321917
+  type: 'test'
+  ...
+# Subtest: real Lightpanda page: JS, independent epoch and native back/forward/reload
+ok 4 - real Lightpanda page: JS, independent epoch and native back/forward/reload
+  ---
+  duration_ms: 237.125334
+  type: 'test'
+  ...
+# Subtest: native same-profile tabs share cookies/localStorage, isolate sessionStorage and history
+ok 5 - native same-profile tabs share cookies/localStorage, isolate sessionStorage and history
+  ---
+  duration_ms: 239.476709
+  type: 'test'
+  ...
+# Subtest: raw pinned-engine probe reproduces TargetAlreadyLoaded without host policy
+ok 6 - raw pinned-engine probe reproduces TargetAlreadyLoaded without host policy
+  ---
+  duration_ms: 207.176
+  type: 'test'
+  ...
+# Subtest: two profile workers have distinct PIDs and no cookie/local/session storage leakage
+ok 7 - two profile workers have distinct PIDs and no cookie/local/session storage leakage
+  ---
+  duration_ms: 429.407709
+  type: 'test'
+  ...
+# Subtest: cross-host profile lock survives collision, releases only after worker exit
+ok 8 - cross-host profile lock survives collision, releases only after worker exit
+  ---
+  duration_ms: 398.043083
+  type: 'test'
+  ...
+# Subtest: worker kill marks its tab lost, preserves other profile and invalidates old IDs
+ok 9 - worker kill marks its tab lost, preserves other profile and invalidates old IDs
+  ---
+  duration_ms: 624.841209
+  type: 'test'
+  ...
+# Subtest: worker and tab quotas reserve admission under concurrent creation; events are bounded
+ok 10 - worker and tab quotas reserve admission under concurrent creation; events are bounded
+  ---
+  duration_ms: 208.04425
+  type: 'test'
+  ...
+# Subtest: failed startup releases owned profile lock and closed host rejects new work
+ok 11 - failed startup releases owned profile lock and closed host rejects new work
+  ---
+  duration_ms: 196.429417
+  type: 'test'
+  ...
+# Subtest: closing during worker startup joins pending work and leaves no engine process
+ok 12 - closing during worker startup joins pending work and leaves no engine process
+  ---
+  duration_ms: 197.98325
+  type: 'test'
+  ...
+# Subtest: global tab reservation also applies across different profile queues
+ok 13 - global tab reservation also applies across different profile queues
+  ---
+  duration_ms: 394.019542
+  type: 'test'
+  ...
+# Subtest: memory union counts a shared driver once and unavailable footprint is null
+ok 14 - memory union counts a shared driver once and unavailable footprint is null
+  ---
+  duration_ms: 31.073833
+  type: 'test'
+  ...
+# Subtest: memory distributions keep maxima and never turn missing values into zero
+ok 15 - memory distributions keep maxima and never turn missing values into zero
+  ---
+  duration_ms: 1.442167
+  type: 'test'
+  ...
+# Subtest: ten native targets coexist with independent DOM, network events and ticking JS
+ok 16 - ten native targets coexist with independent DOM, network events and ticking JS
+  ---
+  duration_ms: 463.657583
+  type: 'test'
+  ...
+# Subtest: live native storage is shared only by origin/profile, sessionStorage belongs to the tab
+ok 17 - live native storage is shared only by origin/profile, sessionStorage belongs to the tab
+  ---
+  duration_ms: 230.9215
+  type: 'test'
+  ...
+# Subtest: opener sessionStorage is a snapshot; noopener starts without it
+ok 18 - opener sessionStorage is a snapshot; noopener starts without it
+  ---
+  duration_ms: 305.229292
+  type: 'test'
+  ...
+# Subtest: T01 corpus: 10 state variants × 3 repetitions across three real tabs
+ok 19 - T01 corpus: 10 state variants × 3 repetitions across three real tabs
+  ---
+  duration_ms: 1035.891083
+  type: 'test'
+  ...
+# Subtest: resource tree union deduplicates overlapping roots and excludes fixture/sampler siblings
+ok 20 - resource tree union deduplicates overlapping roots and excludes fixture/sampler siblings
+  ---
+  duration_ms: 2.184333
+  type: 'test'
+  ...
+# Subtest: CPU uses cumulative nanosecond deltas, elapsed wall time and explicit core normalization
+ok 21 - CPU uses cumulative nanosecond deltas, elapsed wall time and explicit core normalization
+  ---
+  duration_ms: 0.348
+  type: 'test'
+  ...
+# Subtest: PID reuse, missing counters, warmup and counter resets do not manufacture zero usage
+ok 22 - PID reuse, missing counters, warmup and counter resets do not manufacture zero usage
+  ---
+  duration_ms: 0.133541
+  type: 'test'
+  ...
+# Subtest: native probe observes current process with a stable identity and increasing CPU counters
+ok 23 - native probe observes current process with a stable identity and increasing CPU counters
+  ---
+  duration_ms: 1140.989
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7894.345375

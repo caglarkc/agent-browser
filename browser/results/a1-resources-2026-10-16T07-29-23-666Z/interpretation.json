@@ -1,0 +1,17 @@
+{
+  "checks": 6440,
+  "conditions": 30,
+  "resourceHealth": "OPEN_NETWORK_MEMORY_RETENTION",
+  "nativeLastWindowDefaultMinusZeroBytes": 292962544,
+  "cpu": [
+    {
+      "name": "cpu-1p16t",
+      "meanTabTicksPerSecond": 6.244464127546502
+    },
+    {
+      "name": "cpu-4p4t",
+      "meanTabTicksPerSecond": 9.906801772568532
+    }
+  ],
+  "scriptSha256": "dfe28ae6ab6436fd3030df426ca8b588dd0673d0e64c6d516ae78e8f16aaf994"
+}

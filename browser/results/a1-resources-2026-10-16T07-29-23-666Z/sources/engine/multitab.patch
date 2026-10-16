@@ -1,0 +1,1152 @@
+--- a/src/Notification.zig
++++ b/src/Notification.zig
+@@ -135,7 +135,7 @@
+ };
+ pub const EventType = std.meta.FieldEnum(Events);
+ 
+-pub const FrameRemove = struct {};
++pub const FrameRemove = struct { frame_id: u32 = 0 };
+ 
+ pub const FrameNavigate = struct {
+     req_id: u32,
+@@ -269,6 +269,7 @@
+ };
+ 
+ pub const JavascriptDialogOpening = struct {
++    frame_id: u32 = 0,
+     url: [:0]const u8,
+     message: []const u8,
+     dialog_type: []const u8,
+@@ -351,6 +352,7 @@
+ };
+ 
+ pub const ConsoleMessage = struct {
++    frame_id: u32 = 0,
+     timestamp: u64,
+     source: enum {
+         xml,
+@@ -376,6 +378,7 @@
+ // listener: what Chrome logs as "Uncaught …" and sends as
+ // Runtime.exceptionThrown.
+ pub const ExceptionThrown = struct {
++    frame_id: u32 = 0,
+     timestamp: u64,
+     value: js.Value,
+     location: js.Value.ErrorLocation,
+--- a/src/browser/Frame.zig
++++ b/src/browser/Frame.zig
+@@ -355,6 +355,7 @@
+     const parent = opts.parent;
+ 
+     const session = page.session;
++    try session.ensureNavigation(frame_id);
+     const call_arena = try session.getArena(.medium, "call_arena");
+     errdefer call_arena.release();
+ 
+@@ -458,6 +459,14 @@
+     lp.assert(document._page == page, "unexpected document page", .{});
+     document._frame = self;
+ 
++    // Every browsing context starts with an about:blank history entry,
++    // including iframes/popups before their first HTTP response commits.
++    const navigation_state = self.navigation();
++    if (navigation_state._entries.items.len == 0) {
++        _ = try navigation_state.pushEntry(self.url, .{ .source = .navigation, .value = null }, self, false);
++        navigation_state._initial_entry = true;
++    }
++
+     if (comptime lp.IS_TEST == false) {
+         if (parent == null) {
+             // HTML test runner manually calls these as necessary
+@@ -473,6 +482,7 @@
+ }
+ 
+ pub fn deinit(self: *Frame) void {
++    if (self != &self.page.frame) self.navigation().onRemoveFrame();
+     for (self.child_frames.items) |frame| {
+         frame.deinit();
+     }
+@@ -609,6 +619,16 @@
+ // The base a relative navigation URL resolves against: this frame's base,
+ // unless it's "about:blank", in which case we have to walk up the parents and
+ // find a real base.
++pub fn topLevelId(self: *const Frame) u32 {
++    var frame = self;
++    while (frame.parent) |parent| frame = parent;
++    return frame._frame_id;
++}
++
++pub fn navigation(self: *const Frame) *@import("webapi/navigation/Navigation.zig") {
++    return self._session.navigationFor(self._frame_id);
++}
++
+ pub fn navigationBase(self: *const Frame) [:0]const u8 {
+     var maybe_not_blank_frame = self;
+     while (true) {
+@@ -871,8 +891,8 @@
+         });
+ 
+         if (self.parent == null) {
+-            session.navigation._current_navigation_kind = opts.kind;
+-            try session.navigation.commitNavigation(self);
++            self.navigation()._current_navigation_kind = opts.kind;
++            try self.navigation().commitNavigation(self);
+         }
+ 
+         self.documentIsComplete();
+@@ -969,7 +989,7 @@
+     // Record telemetry for navigation
+     self.recordNavigateTelemetry(std.ascii.startsWithIgnoreCase(self.url, "https://"));
+ 
+-    session.navigation._current_navigation_kind = opts.kind;
++    self.navigation()._current_navigation_kind = opts.kind;
+ 
+     transfer.submit() catch |err| {
+         log.debug(.frame, "navigate request", .{ .url = self.url, .err = err, .type = self._type });
+@@ -1102,7 +1122,7 @@
+         });
+ 
+         if (target.parent == null) {
+-            try session.navigation.updateEntries(target.url, opts.kind, target, true);
++            try target.navigation().updateEntries(target.url, opts.kind, target, true);
+         }
+ 
+         // `:target` matches off the fragment, which just changed.
+@@ -1910,7 +1930,7 @@
+     }
+ 
+     //We need to handle different navigation types differently.
+-    try self._session.navigation.commitNavigation(self);
++    try self.navigation().commitNavigation(self);
+ 
+     if (self._pending_content_type) |content_type| {
+         self.document._content_type = content_type;
+@@ -2337,6 +2357,7 @@
+     errdefer page.arena.destroy(popup);
+ 
+     const frame_id = session.nextFrameId();
++    _ = try session.createTabState(frame_id, if (opts.opener) |opener| opener._frame.topLevelId() else null);
+     try Frame.init(popup, frame_id, page, .{});
+     errdefer popup.deinit();
+ 
+--- a/src/browser/Session.zig
++++ b/src/browser/Session.zig
+@@ -48,10 +48,14 @@
+ // lifecycle (create, remove, replace on root navigation).
+ 
+ const Session = @This();
++const TabState = struct { navigation: *Navigation, storage_shed: storage.Shed = .{} };
+ 
+ browser: *Browser,
+ arena: *lp.Arena,
+ navigation: *Navigation,
++
++// Top-level browsing contexts retain their own history and sessionStorage.
++tabs: std.AutoHashMapUnmanaged(u32, TabState) = .empty,
+ storage_shed: storage.Shed,
+ idb: IdbManager, // Per-origin IndexedDB engines
+ cache_store: CacheStore, // Per-origin CacheStorage
+@@ -212,6 +216,9 @@
+         env.memoryPressureNotification(.critical);
+     }
+ 
++    var tabs = self.tabs.valueIterator();
++    while (tabs.next()) |tab| tab.storage_shed.deinit(self.browser.app.allocator);
++    self.tabs.deinit(self.arena.allocator());
+     self.storage_shed.deinit(self.browser.app.allocator);
+     self.idb.deinit();
+     self.cache_store.deinit();
+@@ -356,9 +363,9 @@
+ // which interleaves the OLD-page teardown with the pending-page promotion
+ // in a specific order.
+ fn tearDownPage(self: *Session, page: *Page) void {
+-    self.notification.dispatch(.frame_remove, .{});
++    self.notification.dispatch(.frame_remove, .{ .frame_id = page.frame._frame_id });
++    self.navigationFor(page.frame._frame_id).onRemoveFrame();
+     self.retire(page);
+-    self.navigation.onRemoveFrame();
+ }
+ 
+ // Allocate a Page in a free slot, publish it as the active page, and
+@@ -384,6 +391,38 @@
+     return frame;
+ }
+ 
++pub fn createTabState(self: *Session, frame_id: u32, opener_id: ?u32) !*Navigation {
++    const navigation = if (self.tabs.count() == 0) self.navigation else try Factory.chainedWithAllocator(self.arena.allocator(), .{
++        EventTarget{ ._type = .navigation },
++        Navigation{ ._proto = undefined },
++    });
++    try self.tabs.put(self.arena.allocator(), frame_id, .{ .navigation = navigation });
++    if (opener_id) |source_id| {
++        const allocator = self.browser.app.allocator;
++        const source = self.sessionStorageFor(source_id);
++        const dest = self.sessionStorageFor(frame_id);
++        var origins = source._origins.iterator();
++        while (origins.next()) |entry| {
++            const bucket = try dest.getOrPut(allocator, entry.key_ptr.*);
++            var values = entry.value_ptr.*.session._data.iterator();
++            while (values.next()) |value| try bucket.session.setItem(value.key_ptr.*, value.value_ptr.*);
++        }
++    }
++    return navigation;
++}
++
++pub fn ensureNavigation(self: *Session, frame_id: u32) !void {
++    if (!self.tabs.contains(frame_id)) _ = try self.createTabState(frame_id, null);
++}
++
++pub fn navigationFor(self: *Session, frame_id: u32) *Navigation {
++    return self.tabs.get(frame_id).?.navigation;
++}
++
++pub fn sessionStorageFor(self: *Session, frame_id: u32) *storage.Shed {
++    return &self.tabs.getPtr(frame_id).?.storage_shed;
++}
++
+ pub fn createPage(self: *Session) !PageHandle {
+     // Drain any pending Page deinits now, while we're at a known-safe point
+     self.processDestroyQueues();
+@@ -393,22 +432,10 @@
+     }
+ 
+     const frame_id = self.nextFrameId();
++    _ = try self.createTabState(frame_id, null);
+     const frame = try self.installNewActivePage(frame_id);
+ 
+     frame.document._ready_state = .complete;
+-
+-    // https://html.spec.whatwg.org/multipage/document-sequences.html --
+-    // Creating a new browsing context always produces an initial about:blank
+-    // Document with its own session history entry, even before any real
+-    // navigation happens. Without this, navigation.currentEntry crashes on
+-    // a page that hasn't navigated yet.
+-    _ = try self.navigation.pushEntry(
+-        frame.url,
+-        .{ .source = .navigation, .value = null },
+-        frame,
+-        false,
+-    );
+-    self.navigation._initial_entry = true;
+ 
+     return .{ .session = self, .frame_id = frame_id };
+ }
+@@ -432,6 +459,7 @@
+ // where pages get destroyed.
+ pub fn closeAllPages(self: *Session) void {
+     for (self.pages.items) |page| {
++        self.navigationFor(page.frame._frame_id).onRemoveFrame();
+         page.frame.abortTransfers();
+         self.queuePageDestruction(page);
+     }
+@@ -992,8 +1020,8 @@
+     // Step 1: clear the OLD page's CDP / V8 inspector state while it is still
+     // walkable (node_registry, inspector context group, isolated worlds). OLD
+     // is still the live page (index 0); its memory stays alive until step 4.
+-    self.notification.dispatch(.frame_remove, .{});
+-    self.navigation.onRemoveFrame();
++    self.notification.dispatch(.frame_remove, .{ .frame_id = replacement.frame._frame_id });
++    self.navigationFor(replacement.frame._frame_id).onRemoveFrame();
+ 
+     // Step 2: register the new page with CDP. `replacement.replaces` is still
+     // set, so the session still reports an in-flight nav and CDP's frameCreated
+--- a/src/browser/webapi/Console.zig
++++ b/src/browser/webapi/Console.zig
+@@ -36,6 +36,7 @@
+     const ts = lp.datetime.timestamp(.boot);
+ 
+     notification.dispatch(.console_message, &.{
++        .frame_id = exec.frameId(),
+         .source = .javascript,
+         .type = console_type,
+         .values = values,
+@@ -43,6 +44,7 @@
+     });
+ 
+     notification.dispatch(.runtime_console_message, &.{
++        .frame_id = exec.frameId(),
+         .source = .javascript,
+         .type = console_type,
+         .values = values,
+--- a/src/browser/webapi/History.zig
++++ b/src/browser/webapi/History.zig
+@@ -30,11 +30,11 @@
+ _scroll_restoration: ScrollRestoration = .auto,
+ 
+ pub fn getLength(_: *const History, frame: *Frame) u32 {
+-    return @intCast(frame._session.navigation._entries.items.len);
++    return @intCast(frame.navigation()._entries.items.len);
+ }
+ 
+ pub fn getState(_: *const History, frame: *Frame) !?js.Value {
+-    if (frame._session.navigation.getCurrentEntry()._state.value) |state| {
++    if (frame.navigation().getCurrentEntry()._state.value) |state| {
+         const value = try frame.js.local.?.parseJSON(state);
+         return value;
+     } else return null;
+@@ -59,7 +59,7 @@
+         try arena.dupeSentinel(u8, frame.url, 0);
+ 
+     const json = state.toJson(arena.allocator()) catch return error.DataClone;
+-    _ = try session.navigation.pushEntry(url, .{ .source = .history, .value = json }, frame, true);
++    _ = try frame.navigation().pushEntry(url, .{ .source = .history, .value = json }, frame, true);
+ 
+     frame.url = url;
+     // setHref == reinitializing.
+@@ -83,7 +83,7 @@
+         try arena.dupeSentinel(u8, frame.url, 0);
+ 
+     const json = state.toJson(arena.allocator()) catch return error.DataClone;
+-    _ = try session.navigation.replaceEntry(url, .{ .source = .history, .value = json }, frame, true);
++    _ = try frame.navigation().replaceEntry(url, .{ .source = .history, .value = json }, frame, true);
+ 
+     frame.url = url;
+     // setHref == reinitializing.
+@@ -101,19 +101,19 @@
+ fn goInner(delta: i32, frame: *Frame) !void {
+     // 0 behaves the same as no argument, both reloading the frame.
+ 
+-    const current = frame._session.navigation._index;
++    const current = frame.navigation()._index;
+     const index_s: i64 = @intCast(@as(i64, @intCast(current)) + @as(i64, @intCast(delta)));
+-    if (index_s < 0 or index_s > frame._session.navigation._entries.items.len - 1) {
++    if (index_s < 0 or index_s > frame.navigation()._entries.items.len - 1) {
+         return;
+     }
+ 
+     const index = @as(usize, @intCast(index_s));
+-    const entry = frame._session.navigation._entries.items[index];
++    const entry = frame.navigation()._entries.items[index];
+     // popstate fires on the document that stays; a traversal to another
+     // document replaces this one instead.
+     const same_document = entry.sameDocument(frame);
+ 
+-    _ = try frame._session.navigation.navigateInner(entry._url, .{ .traverse = index }, frame);
++    _ = try frame.navigation().navigateInner(entry._url, .{ .traverse = index }, frame);
+ 
+     if (same_document) {
+         const target = frame.window.asEventTarget();
+--- a/src/browser/webapi/Window.zig
++++ b/src/browser/webapi/Window.zig
+@@ -301,7 +301,9 @@
+ }
+ 
+ fn getSessionStorage(self: *Window) *storage.Lookup {
+-    return &self.bucketForOrigin().session;
++    const shed = self._frame._session.sessionStorageFor(self._frame.topLevelId());
++    const bucket = shed.getOrPut(self._frame._session.browser.app.allocator, self._frame.js.origin.key) catch @panic("OOM");
++    return &bucket.session;
+ }
+ 
+ fn getCookieStore(self: *Window, exec: *Execution) !*CookieStore {
+@@ -367,7 +369,7 @@
+ }
+ 
+ fn getNavigation(_: *Window, frame: *Frame) *Navigation {
+-    return frame._session.navigation;
++    return frame.navigation();
+ }
+ 
+ fn setNavigation(self: *Window, value: js.Value) void {
+@@ -682,6 +684,7 @@
+ // clients learn about it through Runtime.exceptionThrown.
+ fn notifyExceptionThrown(err: js.Value, location: js.Value.ErrorLocation, frame: *Frame) void {
+     frame._session.notification.dispatch(.exception_thrown, &.{
++        .frame_id = frame._frame_id,
+         .timestamp = lp.datetime.timestamp(.boot),
+         .value = err,
+         .location = location,
+@@ -1289,6 +1292,7 @@
+         fn alert(_: *const Window, message: ?[]const u8, frame: *Frame) void {
+             var response: Notification.DialogResponse = .{};
+             frame._session.notification.dispatch(.javascript_dialog_opening, &.{
++                .frame_id = frame._frame_id,
+                 .url = frame.url,
+                 .message = message orelse "",
+                 .dialog_type = "alert",
+@@ -1302,6 +1306,7 @@
+         fn confirm(_: *const Window, message: ?[]const u8, frame: *Frame) bool {
+             var response: Notification.DialogResponse = .{};
+             frame._session.notification.dispatch(.javascript_dialog_opening, &.{
++                .frame_id = frame._frame_id,
+                 .url = frame.url,
+                 .message = message orelse "",
+                 .dialog_type = "confirm",
+@@ -1314,6 +1319,7 @@
+         fn prompt(_: *const Window, message: ?[]const u8, default_text: ?[]const u8, frame: *Frame) ?[]const u8 {
+             var response: Notification.DialogResponse = .{};
+             frame._session.notification.dispatch(.javascript_dialog_opening, &.{
++                .frame_id = frame._frame_id,
+                 .url = frame.url,
+                 .message = message orelse "",
+                 .dialog_type = "prompt",
+--- a/src/browser/webapi/navigation/NavigationHistoryEntry.zig
++++ b/src/browser/webapi/navigation/NavigationHistoryEntry.zig
+@@ -49,7 +49,7 @@
+ }
+ 
+ pub fn index(self: *const NavigationHistoryEntry, frame: *Frame) i32 {
+-    const navigation = frame._session.navigation;
++    const navigation = frame.navigation();
+ 
+     for (navigation._entries.items, 0..) |entry, i| {
+         if (std.mem.eql(u8, entry._id, self._id)) {
+--- a/src/server/Driver.zig
++++ b/src/server/Driver.zig
+@@ -257,9 +257,11 @@
+ fn pageWait(self: *const Driver) ?PageWait {
+     switch (self.impl) {
+         .cdp => |cdp| {
+-            const bc = &(cdp.browser_context orelse return null);
+-            const page = bc.page_handle orelse return null;
+-            return .{ .session = bc.session, .frame_id = page.frame_id };
++            var i: usize = 0;
++            while (cdp.targetAt(i)) |bc| : (i += 1) {
++                if (bc.page_handle) |page| return .{ .session = bc.session, .frame_id = page.frame_id };
++            }
++            return null;
+         },
+         .bidi => |bidi| {
+             const context = bidi.browsing_context orelse return null;
+--- a/src/server/bidi/browsing_context.zig
++++ b/src/server/bidi/browsing_context.zig
+@@ -307,7 +307,7 @@
+ 
+ // Whether the session history has an entry `delta` steps from the current one.
+ pub fn canTraverse(frame: *const Frame, delta: i32) bool {
+-    const navigation = frame._session.navigation;
++    const navigation = frame.navigation();
+     const target = @as(i64, @intCast(navigation._index)) + delta;
+     return target >= 0 and target < navigation._entries.items.len;
+ }
+--- a/src/server/cdp/CDP.zig
++++ b/src/server/cdp/CDP.zig
+@@ -81,6 +81,8 @@
+ browser_session_id: ?[]const u8 = null,
+ 
+ browser_context: ?BrowserContext,
++page_targets: std.ArrayList(*BrowserContext) = .empty,
++profile_state_generation: u64 = 0,
+ disable_set_cache_disabled: bool = false,
+ 
+ // Re-used arena for processing a message. Works because we strictly process
+@@ -90,9 +92,6 @@
+ // Retained until the outermost notification handler returns.
+ notification_arena: std.heap.ArenaAllocator,
+ notification_depth: u32 = 0,
+-
+-// Valid for 1 frame navigation (what CDP calls a "renderer")
+-frame_arena: std.heap.ArenaAllocator,
+ 
+ // Valid for the entire lifetime of the BrowserContext. Should minimize
+ // (or altogether eliminate) our use of this.
+@@ -114,7 +113,6 @@
+             .browser = undefined,
+             .allocator = allocator,
+             .browser_context = null,
+-            .frame_arena = std.heap.ArenaAllocator.init(allocator),
+             .message_arena = std.heap.ArenaAllocator.init(allocator),
+             .notification_arena = std.heap.ArenaAllocator.init(allocator),
+             .browser_context_arena = std.heap.ArenaAllocator.init(allocator),
+@@ -130,11 +128,9 @@
+ }
+ 
+ pub fn deinit(self: *CDP) void {
+-    if (self.browser_context) |*bc| {
+-        bc.deinit();
+-    }
++    self.disposeBrowserContext();
++    self.page_targets.deinit(self.allocator);
+     self.browser.deinit();
+-    self.frame_arena.deinit();
+     self.message_arena.deinit();
+     self.notification_arena.deinit();
+     self.browser_context_arena.deinit();
+@@ -227,6 +223,10 @@
+         } else if (self.isValidSessionId(input_session_id) == false) {
+             return command.sendError(-32001, "Unknown sessionId", .{});
+         }
++    }
++
++    if (input.sessionId) |sid| {
++        if (self.targetForSession(sid)) |bc| command.browser_context = bc;
+     }
+ 
+     if (is_startup) {
+@@ -351,7 +351,11 @@
+         }
+     }
+     const browser_context = if (self.browser_context) |*bc| bc else return null;
+-    return browser_context.attached_sessions.getKey(input_session_id);
++    if (browser_context.attached_sessions.getKey(input_session_id)) |sid| return sid;
++    for (self.page_targets.items) |bc| {
++        if (bc.attached_sessions.getKey(input_session_id)) |sid| return sid;
++    }
++    return null;
+ }
+ 
+ fn isValidSessionId(self: *const CDP, input_session_id: []const u8) bool {
+@@ -371,10 +375,51 @@
+     return id;
+ }
+ 
++pub fn targetAt(self: *CDP, index: usize) ?*BrowserContext {
++    if (index == 0) return if (self.browser_context) |*bc| bc else null;
++    if (index > self.page_targets.items.len) return null;
++    return self.page_targets.items[index - 1];
++}
++
++pub fn targetForSession(self: *CDP, sid: []const u8) ?*BrowserContext {
++    var i: usize = 0;
++    while (self.targetAt(i)) |bc| : (i += 1) {
++        if (bc.attached_sessions.contains(sid)) return bc;
++    }
++    return null;
++}
++
++pub fn targetById(self: *CDP, tid: []const u8) ?*BrowserContext {
++    var i: usize = 0;
++    while (self.targetAt(i)) |bc| : (i += 1) {
++        if (bc.target_id) |*id_value| {
++            if (std.mem.eql(u8, id_value, tid)) return bc;
++        }
++    }
++    return null;
++}
++
++pub fn allocatePageTarget(self: *CDP) !*BrowserContext {
++    const root = &self.browser_context.?;
++    for (self.page_targets.items) |existing| {
++        if (existing.target_id == null) {
++            existing.deinit();
++            try existing.initShared(root.id, self, root);
++            return existing;
++        }
++    }
++    const bc = try self.browser_context_arena.allocator().create(BrowserContext);
++    try bc.initShared(root.id, self, root);
++    errdefer bc.deinit();
++    try self.page_targets.append(self.allocator, bc);
++    return bc;
++}
++
+ pub fn disposeBrowserContext(self: *CDP) void {
+-    const bc = &(self.browser_context orelse return);
+-    bc.deinit();
+-    self.browser.closeSession();
++    if (self.browser_context == null) return;
++    for (self.page_targets.items) |bc| bc.deinit();
++    self.page_targets.clearRetainingCapacity();
++    self.browser_context.?.deinit();
+     self.browser_context = null;
+     _ = self.browser_context_arena.reset(.{ .retain_with_limit = 1024 * 16 });
+ }
+@@ -423,6 +468,7 @@
+         parent_id: ?[]const u8,
+         bc: *BrowserContext,
+         inspector_session: js.Inspector.Session,
++        profile_state_events: bool = false,
+ 
+         /// V8 -> this session. Stamp OUR id on responses and events.
+         pub fn onInspectorResponse(ctx: *anyopaque, _: u32, msg: []const u8) void {
+@@ -458,6 +504,10 @@
+     // our Session more or less maps to a BrowserContext. THIS HAS ZERO
+     // RELATION TO SESSION_ID
+     session: *Session,
++    owns_session: bool = true,
++    creating_target: bool = false,
++    target_initialized: bool = false,
++    owned_frame_arena: std.heap.ArenaAllocator,
+ 
+     // Tied to the lifetime of the BrowserContext
+     arena: Allocator,
+@@ -471,13 +521,12 @@
+     // request->response, and thus don't have a cmd and don't have an arena.
+     notification_arena: Allocator,
+ 
+-    // Maps to our Page. (There are other types of targets, but we only
+-    // deal with "pages" for now). Since we only allow 1 open page at a
+-    // time, we only have 1 target_id.
++    // This wrapper owns one page target; siblings share its native Session
++    // and browserContextId. Only the root wrapper owns the Session lifetime.
+     target_id: ?[14]u8,
+ 
+     // Navigation-safe handle to this context's page, set when `frameCreated`
+-    // fires. A BrowserContext is single-target by protocol, so it resolves its
++    // fires. Each target wrapper resolves its
+     // (live) page/frame through this handle — see `mainFrame` / `mainPage`. The
+     // handle's frame_id is stable across navigations (the replacement reuses
+     // it). null until the first page is created.
+@@ -565,15 +614,15 @@
+     webmcp_invocations: std.AutoHashMapUnmanaged(u32, *@import("domains/webmcp.zig").Invocation) = .empty,
+ 
+     fn init(self: *BrowserContext, id: []const u8, cdp: *CDP) !void {
++        return self.initShared(id, cdp, null);
++    }
++
++    fn initShared(self: *BrowserContext, id: []const u8, cdp: *CDP, shared: ?*BrowserContext) !void {
+         const allocator = cdp.allocator;
+-
+-        // Create notification for this BrowserContext
+-        const notification = try Notification.init(allocator);
+-        errdefer notification.deinit();
+-
+-        const session = try cdp.browser.newSession(notification);
+-        if (cdp.app.config.cookieFile()) |cookie_path| {
+-            lp.cookies.loadFromFile(session, cookie_path);
++        const notification = if (shared) |root| root.notification else try Notification.init(allocator);
++        const session = if (shared) |root| root.session else try cdp.browser.newSession(notification);
++        if (shared == null) {
++            if (cdp.app.config.cookieFile()) |cookie_path| lp.cookies.loadFromFile(session, cookie_path);
+         }
+ 
+         var registry = NodeRegistry.init(allocator);
+@@ -591,7 +640,9 @@
+             .node_registry = registry,
+             .node_search_list = undefined,
+             .isolated_worlds = .empty,
+-            .frame_arena = cdp.frame_arena.allocator(),
++            .frame_arena = undefined,
++            .owns_session = shared == null,
++            .owned_frame_arena = std.heap.ArenaAllocator.init(allocator),
+             .arena = cdp.browser_context_arena.allocator(),
+             .notification_arena = cdp.notification_arena.allocator(),
+             .intercept_state = try InterceptState.init(allocator),
+@@ -599,9 +650,11 @@
+             .captured_responses = .empty,
+             .notification = notification,
+         };
++        self.frame_arena = self.owned_frame_arena.allocator();
+         self.node_search_list = Node.Search.List.init(allocator, &self.node_registry);
+         errdefer self.deinit();
+ 
++        if (self.owns_session) try notification.register(.cookie_changed, self, onProfileCookieChanged);
+         try notification.register(.frame_remove, self, onFrameRemove);
+         try notification.register(.frame_created, self, onFrameCreated);
+         try notification.register(.frame_navigate, self, onFrameNavigate);
+@@ -622,7 +675,7 @@
+         // resetContextGroup detach the inspector from all contexts.
+         // It appends async tasks, so we make sure we run the message loop
+         // before deinit it.
+-        env.inspector.?.resetContextGroup();
++        if (self.owns_session) env.inspector.?.resetContextGroup();
+         self.detachAllSessions();
+ 
+         // abort all intercepted requests before closing the session/page
+@@ -655,7 +708,7 @@
+         // If the session has a frame, we need to clear it first. The page
+         // context is always nested inside of the isolated world context,
+         // so we need to shutdown the page one first.
+-        browser.closeSession();
++        if (self.owns_session) browser.closeSession();
+ 
+         self.node_registry.deinit();
+         self.node_search_list.deinit();
+@@ -664,7 +717,7 @@
+ 
+         // Session.deinit (called via closeSession above) already cleared this
+         // notification off any ownerless CorsGate/RobotsGate transfers.
+-        self.notification.deinit();
++        if (self.owns_session) self.notification.deinit();
+ 
+         if (self.http_proxy_changed) {
+             // has to be called after browser.closeSession, since it won't
+@@ -676,8 +729,9 @@
+         if (self.user_agent_changed) {
+             browser.http_client.clearUserAgentOverride();
+         }
+-        browser.http_client.clearAcceptLanguageOverride();
++        if (self.owns_session) browser.http_client.clearAcceptLanguageOverride();
+         self.intercept_state.deinit();
++        self.owned_frame_arena.deinit();
+     }
+ 
+     pub fn reset(self: *BrowserContext) void {
+@@ -965,6 +1019,7 @@
+ 
+     fn onDownloadWillBegin(ctx: *anyopaque, msg: *const Notification.DownloadWillBegin) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         return @import("domains/browser.zig").downloadWillBegin(self, msg);
+     }
+ 
+@@ -985,31 +1040,67 @@
+ 
+     fn onModelContextToolAdded(ctx: *anyopaque, event: *const Notification.ModelContextToolEvent) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(event.exec.frameId()))) return;
+         return @import("domains/webmcp.zig").onToolAdded(self, event);
+     }
+ 
+     fn onModelContextToolRemoved(ctx: *anyopaque, event: *const Notification.ModelContextToolEvent) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(event.exec.frameId()))) return;
+         return @import("domains/webmcp.zig").onToolRemoved(self, event);
+     }
+ 
+-    fn onFrameRemove(ctx: *anyopaque, _: Notification.FrameRemove) !void {
+-        const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++    fn onProfileCookieChanged(ctx: *anyopaque, _: *const Notification.CookieChanged) !void {
++        const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        const cdp = self.cdp;
++        cdp.profile_state_generation += 1;
++        var i: usize = 0;
++        while (cdp.targetAt(i)) |target| : (i += 1) {
++            for (target.attached_sessions.values()) |attached| {
++                if (!attached.profile_state_events) continue;
++                try cdp.sendEvent("Browser.profileStateChanged", .{
++                    .generation = cdp.profile_state_generation,
++                    .kind = "cookies",
++                }, .{ .session_id = attached.id });
++            }
++        }
++    }
++
++    fn ownsTransfer(self: *BrowserContext, transfer: *const HttpClient.Transfer) bool {
++        const req = transfer.req;
++        return self.ownsFrameId(req.document_frame_id orelse req.frame_id);
++    }
++
++    fn ownsFrameId(self: *BrowserContext, frame_id: u32) bool {
++        if (self.page_handle == null and (self.creating_target or (self.owns_session and !self.target_initialized))) return true;
++        const handle = self.page_handle orelse return false;
++        if (handle.frame_id == frame_id) return true;
++        const frame = self.session.findFrameByFrameId(frame_id) orelse return false;
++        return frame.page.frame._frame_id == handle.frame_id;
++    }
++
++    fn onFrameRemove(ctx: *anyopaque, msg: Notification.FrameRemove) !void {
++        const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         @import("domains/page.zig").frameRemove(self);
+     }
+ 
+     fn onFrameCreated(ctx: *anyopaque, frame: *Frame) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(frame._frame_id))) return;
++        self.target_initialized = true;
+         return @import("domains/page.zig").frameCreated(self, frame);
+     }
+ 
+     fn onFrameNavigate(ctx: *anyopaque, msg: *const Notification.FrameNavigate) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         return @import("domains/page.zig").frameNavigate(self, msg);
+     }
+ 
+     fn onFrameNavigated(ctx: *anyopaque, msg: *const Notification.FrameNavigated) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         const arena = self.acquireNotificationArena();
+         defer self.releaseNotificationArena();
+         return @import("domains/page.zig").frameNavigated(arena, self, msg);
+@@ -1017,36 +1108,43 @@
+ 
+     fn onFrameNavigateFailed(ctx: *anyopaque, msg: *const Notification.FrameNavigateFailed) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         return @import("domains/page.zig").frameNavigateFailed(self, msg);
+     }
+ 
+     fn onFrameNavigatedWithinDocument(ctx: *anyopaque, msg: *const Notification.FrameNavigatedWithinDocument) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         return @import("domains/page.zig").frameNavigatedWithinDocument(self, msg);
+     }
+ 
+     fn onFrameDestroyed(ctx: *anyopaque, frame: *const Frame) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(frame._frame_id))) return;
+         @import("domains/page.zig").frameDestroyed(self, frame);
+     }
+ 
+     fn onFrameChildFrameCreated(ctx: *anyopaque, msg: *const Notification.FrameChildFrameCreated) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.parent_id))) return;
+         return @import("domains/page.zig").frameChildFrameCreated(self, msg);
+     }
+ 
+     fn onFrameNetworkIdle(ctx: *anyopaque, msg: *const Notification.FrameNetworkIdle) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         return @import("domains/page.zig").frameNetworkIdle(self, msg);
+     }
+ 
+     fn onFrameNetworkAlmostIdle(ctx: *anyopaque, msg: *const Notification.FrameNetworkAlmostIdle) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         return @import("domains/page.zig").frameNetworkAlmostIdle(self, msg);
+     }
+ 
+     fn onHttpRequestStart(ctx: *anyopaque, msg: *const Notification.RequestStart) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsTransfer(msg.transfer))) return;
+         {
+             // capture the request
+             const transfer = msg.transfer;
+@@ -1066,6 +1164,7 @@
+ 
+     fn onHttpRequestIntercept(ctx: *anyopaque, msg: *const Notification.RequestIntercept) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsTransfer(msg.transfer))) return;
+         const arena = self.acquireNotificationArena();
+         defer self.releaseNotificationArena();
+         try @import("domains/fetch.zig").requestIntercept(arena, self, msg);
+@@ -1073,21 +1172,25 @@
+ 
+     fn onHttpRequestFail(ctx: *anyopaque, msg: *const Notification.RequestFail) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsTransfer(msg.transfer))) return;
+         return network_domain.httpRequestFail(self, msg);
+     }
+ 
+     fn onFrameDOMContentLoaded(ctx: *anyopaque, msg: *const Notification.FrameDOMContentLoaded) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         return @import("domains/page.zig").frameDOMContentLoaded(self, msg);
+     }
+ 
+     fn onFrameLoaded(ctx: *anyopaque, msg: *const Notification.FrameLoaded) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         return @import("domains/page.zig").frameLoaded(self, msg);
+     }
+ 
+     fn onJavascriptDialogOpening(ctx: *anyopaque, msg: *const Notification.JavascriptDialogOpening) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         return @import("domains/page.zig").javascriptDialogOpening(self, msg);
+     }
+ 
+@@ -1100,6 +1203,7 @@
+ 
+     fn onHttpResponseHeadersDone(ctx: *anyopaque, msg: *const Notification.ResponseHeaderDone) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsTransfer(msg.transfer))) return;
+         const arena = self.acquireNotificationArena();
+         defer self.releaseNotificationArena();
+ 
+@@ -1138,11 +1242,13 @@
+ 
+     fn onHttpRequestDone(ctx: *anyopaque, msg: *const Notification.RequestDone) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsTransfer(msg.transfer))) return;
+         return network_domain.httpRequestDone(self, msg);
+     }
+ 
+     pub fn onHttpResponseData(ctx: *anyopaque, msg: *const Notification.ResponseData) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsTransfer(msg.transfer))) return;
+ 
+         const key = keyFromTransfer(msg.transfer);
+         const resp = self.captured_responses.getPtr(key) orelse lp.assert(false, "onHttpResponseData missing captured response", .{});
+@@ -1164,6 +1270,7 @@
+ 
+     fn onHttpRequestAuthRequired(ctx: *anyopaque, data: *const Notification.RequestAuthRequired) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsTransfer(data.transfer))) return;
+         const arena = self.acquireNotificationArena();
+         defer self.releaseNotificationArena();
+         try @import("domains/fetch.zig").requestAuthRequired(arena, self, data);
+@@ -1171,11 +1278,13 @@
+ 
+     fn onHttpRequestServedFromCache(ctx: *anyopaque, msg: *const Notification.RequestServedFromCache) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsTransfer(msg.transfer))) return;
+         return network_domain.httpServedFromCache(self, msg);
+     }
+ 
+     fn onConsoleMessage(ctx: *anyopaque, msg: *const Notification.ConsoleMessage) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         const arena = self.acquireNotificationArena();
+         defer self.releaseNotificationArena();
+         return @import("domains/console.zig").consoleMessage(arena, self, msg);
+@@ -1183,6 +1292,7 @@
+ 
+     fn onRuntimeConsoleMessage(ctx: *anyopaque, msg: *const Notification.ConsoleMessage) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         const arena = self.acquireNotificationArena();
+         defer self.releaseNotificationArena();
+         return @import("domains/runtime.zig").consoleMessage(arena, self, msg);
+@@ -1190,6 +1300,7 @@
+ 
+     fn onExceptionThrown(ctx: *anyopaque, msg: *const Notification.ExceptionThrown) !void {
+         const self: *BrowserContext = @ptrCast(@alignCast(ctx));
++        if (!(self.ownsFrameId(msg.frame_id))) return;
+         const arena = self.acquireNotificationArena();
+         defer self.releaseNotificationArena();
+         return @import("domains/runtime.zig").exceptionThrown(arena, self, msg);
+@@ -1278,6 +1389,9 @@
+     /// Forwards `cmd`'s raw JSON to the inspector session of the session it was sent through.
+     pub fn callInspector(self: *BrowserContext, cmd: *const Command) !void {
+         const inspector_session = try self.inspectorSession(cmd.input.session_id);
++        // Runtime.evaluate without contextId must resolve to this target,
++        // not whichever sibling most recently created a V8 context.
++        if (self.mainFrame()) |frame| self.inspector().default_context = frame.js.handle;
+         inspector_session.send(cmd.input.json);
+         self.session.browser.env.runMicrotasks();
+     }
+--- a/src/server/cdp/domains/browser.zig
++++ b/src/server/cdp/domains/browser.zig
+@@ -47,6 +47,7 @@
+ pub fn processMessage(cmd: *CDP.Command) !void {
+     const action = std.meta.stringToEnum(enum {
+         getVersion,
++        watchProfileState,
+         setPermission,
+         setWindowBounds,
+         resetPermissions,
+@@ -56,6 +57,13 @@
+     }, cmd.input.action) orelse return error.UnknownMethod;
+ 
+     switch (action) {
++        .watchProfileState => {
++            const bc = cmd.browser_context orelse return error.BrowserContextNotLoaded;
++            const sid = cmd.input.session_id orelse return error.SessionNotAttached;
++            const attached = bc.attached_sessions.get(sid) orelse return error.SessionNotAttached;
++            attached.profile_state_events = true;
++            return cmd.sendResult(null, .{});
++        },
+         .getVersion => return getVersion(cmd),
+         .setPermission => return setPermission(cmd),
+         .setWindowBounds => return setWindowBounds(cmd),
+--- a/src/server/cdp/domains/page.zig
++++ b/src/server/cdp/domains/page.zig
+@@ -449,7 +449,7 @@
+         return error.SessionIdNotLoaded;
+     }
+ 
+-    const nav = bc.session.navigation;
++    const nav = (bc.mainFrame() orelse return error.FrameNotLoaded).navigation();
+     const entries_in = nav._entries.items;
+ 
+     const entries_out = try cmd.arena.alloc(NavigationEntry, entries_in.len);
+@@ -484,7 +484,7 @@
+     }
+ 
+     const session = bc.session;
+-    const nav = session.navigation;
++    const nav = (bc.mainFrame() orelse return error.FrameNotLoaded).navigation();
+ 
+     var target_index: ?usize = null;
+     var target_url: ?[:0]const u8 = null;
+@@ -577,9 +577,8 @@
+ }
+ 
+ pub fn frameRemove(bc: *CDP.BrowserContext) void {
+-    // Clear all remote object mappings to prevent stale objectIds from being used
+-    // after the context is destroy
+-    bc.inspector().resetContextGroup();
++    // Env destroys only this document's inspector context and remote handles;
++    // resetting the whole group would invalidate every sibling tab.
+ 
+     // The main frame is going to be removed, we need to remove contexts from other worlds first.
+     for (bc.isolated_worlds.items) |isolated_world| {
+@@ -605,12 +604,12 @@
+     // created BEFORE clearing `replaces` (deliberate ordering — see
+     // Session.commitPendingPage), so the replacement still reports as in-flight.
+     // The captured_response for the request we just committed was inserted by
+-    // onHttpResponseHeadersDone moments ago and lives in cdp.frame_arena;
++    // onHttpResponseHeadersDone moments ago and lives in this target's frame arena;
+     // resetting either would lose it.
+     const in_commit = bc.inCommit();
+ 
+     if (!in_commit) {
+-        _ = bc.cdp.frame_arena.reset(.{ .retain_with_limit = 1024 * 512 });
++        _ = bc.owned_frame_arena.reset(.{ .retain_with_limit = 1024 * 512 });
+         bc.main_world_touched = false;
+     }
+ 
+--- a/src/server/cdp/domains/target.zig
++++ b/src/server/cdp/domains/target.zig
+@@ -64,19 +64,22 @@
+ }
+ 
+ fn getTargets(cmd: *CDP.Command) !void {
+-    // If no context available, return an empty array.
+-    const bc = cmd.browser_context orelse {
+-        return cmd.sendResult(.{
+-            .targetInfos = [_]TargetInfo{},
+-        }, .{});
+-    };
+-
+-    const info = pageTargetInfo(bc) orelse {
+-        return cmd.sendResult(.{
+-            .targetInfos = [_]TargetInfo{},
+-        }, .{});
+-    };
+-    return cmd.sendResult(.{ .targetInfos = [_]TargetInfo{info} }, .{});
++    var infos: std.ArrayList(TargetInfo) = .empty;
++    var i: usize = 0;
++    while (cmd.cdp.targetAt(i)) |bc| : (i += 1) {
++        if (pageTargetInfo(bc)) |info| try infos.append(cmd.arena, info);
++    }
++    return cmd.sendResult(.{ .targetInfos = infos.items }, .{});
++}
++
++fn requirePageTarget(cmd: *CDP.Command, target_id: []const u8) !*CDP.BrowserContext {
++    if (cmd.cdp.browser_context == null) return error.BrowserContextNotLoaded;
++    if (cmd.cdp.targetById(target_id)) |bc| return bc;
++    var i: usize = 0;
++    while (cmd.cdp.targetAt(i)) |bc| : (i += 1) {
++        if (bc.target_id != null) return error.UnknownTargetId;
++    }
++    return error.TargetNotLoaded;
+ }
+ 
+ fn pageTargetInfo(bc: *const CDP.BrowserContext) ?TargetInfo {
+@@ -156,7 +159,8 @@
+     }
+ 
+     // Disposing a context closes its target; drivers wait on those events.
+-    try bc.closeTarget();
++    var i: usize = 0;
++    while (cmd.cdp.targetAt(i)) |target| : (i += 1) try target.closeTarget();
+     cmd.cdp.disposeBrowserContext();
+     try cmd.sendResult(null, .{});
+ }
+@@ -173,14 +177,13 @@
+         // forTab: ?bool = null,
+     })) orelse return error.InvalidParams;
+ 
+-    const bc = cmd.browser_context orelse cmd.createBrowserContext() catch |err| switch (err) {
++    var bc = cmd.browser_context orelse cmd.createBrowserContext() catch |err| switch (err) {
+         error.AlreadyExists => unreachable,
+         else => return err,
+     };
+ 
+-    if (bc.target_id != null) {
+-        return error.TargetAlreadyLoaded;
+-    }
++    if (bc.target_initialized) bc = try cmd.cdp.allocatePageTarget();
++    cmd.browser_context = bc;
+     if (params.browserContextId) |param_browser_context_id| {
+         if (std.mem.eql(u8, param_browser_context_id, bc.id) == false) {
+             return error.UnknownBrowserContextId;
+@@ -188,11 +191,14 @@
+     }
+ 
+     // if target_id is null, we should never have a blank frame
+-    lp.assert(!bc.session.hasPage(), "CDP.target.createTarget not null page", .{});
++    // A target owns one Page; its profile Session may own sibling Pages.
+ 
+     // if target_id is null, we should never have a session_id
+     lp.assert(bc.session_id == null, "CDP.target.createTarget not null session_id", .{});
+ 
++    bc.target_initialized = true;
++    bc.creating_target = true;
++    defer bc.creating_target = false;
+     const page = try bc.session.createPage();
+     const frame = page.frame().?;
+ 
+@@ -257,11 +263,9 @@
+         flatten: bool = true,
+     })) orelse return error.InvalidParams;
+ 
+-    const bc = cmd.browser_context orelse return error.BrowserContextNotLoaded;
+-    const target_id = &(bc.target_id orelse return error.TargetNotLoaded);
+-    if (std.mem.eql(u8, target_id, params.targetId) == false) {
+-        return error.UnknownTargetId;
+-    }
++    const bc = try requirePageTarget(cmd, params.targetId);
++    cmd.browser_context = bc;
++    const target_id = &bc.target_id.?;
+ 
+     // The first attach becomes the page's primary session, which all
+     // Page/Network/... events are emitted to. Later attaches — e.g.
+@@ -320,11 +324,8 @@
+         targetId: []const u8,
+     })) orelse return error.InvalidParams;
+ 
+-    const bc = cmd.browser_context orelse return error.BrowserContextNotLoaded;
+-    const target_id = &(bc.target_id orelse return error.TargetNotLoaded);
+-    if (std.mem.eql(u8, target_id, params.targetId) == false) {
+-        return error.UnknownTargetId;
+-    }
++    const bc = try requirePageTarget(cmd, params.targetId);
++    cmd.browser_context = bc;
+ 
+     // can't be null if we have a target_id
+     lp.assert(bc.session.hasPage(), "CDP.target.closeTarget null frame", .{});
+@@ -340,11 +341,8 @@
+     const params = (try cmd.params(Params)) orelse Params{};
+ 
+     if (params.targetId) |param_target_id| {
+-        const bc = cmd.browser_context orelse return error.BrowserContextNotLoaded;
++        const bc = try requirePageTarget(cmd, param_target_id);
+         const info = pageTargetInfo(bc) orelse return error.TargetNotLoaded;
+-        if (std.mem.eql(u8, info.targetId, param_target_id) == false) {
+-            return error.UnknownTargetId;
+-        }
+         return cmd.sendResult(.{ .targetInfo = info }, .{});
+     }
+ 
+@@ -397,6 +395,12 @@
+     };
+     const params = (try cmd.params(Params)) orelse Params{};
+ 
++    if (params.sessionId) |sid| {
++        cmd.browser_context = cmd.cdp.targetForSession(sid) orelse return error.UnknownSessionId;
++    } else if (params.targetId) |tid| {
++        cmd.browser_context = cmd.cdp.targetById(tid) orelse return error.UnknownTargetId;
++    }
++
+     if (cmd.browser_context) |bc| {
+         // Without a sessionId, detach the primary session (if any).
+         if (params.sessionId orelse bc.session_id) |requested_session_id| {
+@@ -452,17 +456,20 @@
+         filter: ?[]const TargetFilter = null,
+     })) orelse return error.InvalidParams;
+ 
++    if (cmd.input.session_id) |sid| {
++        if (cmd.cdp.targetForSession(sid) != null) return cmd.sendResult(null, .{});
++    }
++
+     // set a flag to send Target.attachedToTarget events
+     cmd.cdp.target_auto_attach = params.autoAttach;
+ 
+     if (cmd.cdp.target_auto_attach == false) {
+-        // detach from all currently attached targets.
+-        if (cmd.browser_context) |bc| {
++        // Detach every page, including secondary targets in this profile.
++        var i: usize = 0;
++        while (cmd.cdp.targetAt(i)) |bc| : (i += 1) {
+             if (bc.session_id) |session_id| {
+                 bc.fetchDisableForSession(session_id);
+-                try cmd.sendEvent("Target.detachedFromTarget", .{
+-                    .sessionId = session_id,
+-                }, .{});
++                try cmd.sendEvent("Target.detachedFromTarget", .{ .sessionId = session_id }, .{});
+                 _ = bc.detachSession(session_id);
+             }
+         }
+@@ -470,17 +477,18 @@
+         return;
+     }
+ 
+-    // autoAttach is set to true, we must attach to all existing targets.
+-    if (cmd.browser_context) |bc| {
+-        if (bc.target_id == null) {
+-            if (bc.mainFrame()) |frame| {
+-                // the target_id == the frame_id of the "root" frame
+-                bc.target_id = id.toFrameId(frame._frame_id);
+-                try doAttachtoTarget(cmd, &bc.target_id.?);
++    // Auto-attach each existing page in the profile independently.
++    if (cmd.cdp.browser_context != null) {
++        var i: usize = 0;
++        while (cmd.cdp.targetAt(i)) |bc| : (i += 1) {
++            if (bc.target_id) |*tid| {
++                if (bc.session_id == null) {
++                    cmd.browser_context = bc;
++                    try doAttachtoTarget(cmd, tid);
++                }
+             }
+         }
+-        try cmd.sendResult(null, .{});
+-        return;
++        return cmd.sendResult(null, .{});
+     }
+ 
+     // This is a hack. Puppeteer, and probably others, expect the Browser to

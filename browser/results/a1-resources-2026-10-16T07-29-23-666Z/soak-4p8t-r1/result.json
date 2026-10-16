@@ -1,0 +1,1474 @@
+{
+  "config": {
+    "name": "soak-4p8t",
+    "profiles": 4,
+    "tabs": 8,
+    "mode": "active",
+    "repeat": 1,
+    "seconds": 600
+  },
+  "status": "PASS",
+  "errors": [],
+  "workerPids": [
+    32427,
+    32428,
+    32429,
+    32430
+  ],
+  "checks": 3808,
+  "startedAt": "2026-10-16T07:45:37.486Z",
+  "sustainedSeconds": 600.00020525,
+  "leakedWorkerPids": [],
+  "phases": {
+    "baseline": {
+      "samples": 3,
+      "product": {
+        "footprintBytes": {
+          "n": 3,
+          "median": 36196504,
+          "p95": 36245656,
+          "max": 36245656
+        },
+        "rssBytes": {
+          "n": 3,
+          "median": 74792960,
+          "p95": 74858496,
+          "max": 74858496
+        },
+        "lifetimePeakBytes": {
+          "n": 3,
+          "median": 36196504,
+          "p95": 36245656,
+          "max": 36245656
+        },
+        "cpuOneCorePercent": {
+          "n": 2,
+          "median": 0.8850302994000021,
+          "p95": 1.08580676179279,
+          "max": 1.08580676179279
+        },
+        "cpuMachinePercent": {
+          "n": 2,
+          "median": 0.08850302994000021,
+          "p95": 0.108580676179279,
+          "max": 0.108580676179279
+        },
+        "threads": {
+          "n": 3,
+          "median": 11,
+          "p95": 11,
+          "max": 11
+        },
+        "fds": {
+          "n": 3,
+          "median": 18,
+          "p95": 18,
+          "max": 18
+        },
+        "sockets": {
+          "n": 3,
+          "median": 6,
+          "p95": 6,
+          "max": 6
+        },
+        "processes": {
+          "n": 3,
+          "median": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "cpuTimeWeightedPercent": 0.9858384998924156,
+        "diskReadBytesDeltaTotal": 0,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 0,
+        "faultsDeltaTotal": 39,
+        "contextSwitchesDeltaTotal": 231,
+        "idleWakeupsDeltaTotal": 68,
+        "interruptWakeupsDeltaTotal": 204
+      },
+      "workers": {
+        "footprintBytes": {
+          "n": 3,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "rssBytes": {
+          "n": 3,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "lifetimePeakBytes": {
+          "n": 3,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "cpuOneCorePercent": {
+          "n": 2,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "cpuMachinePercent": {
+          "n": 2,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "threads": {
+          "n": 3,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "fds": {
+          "n": 3,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "sockets": {
+          "n": 3,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "processes": {
+          "n": 3,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "cpuTimeWeightedPercent": 0,
+        "diskReadBytesDeltaTotal": 0,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 0,
+        "faultsDeltaTotal": 0,
+        "contextSwitchesDeltaTotal": 0,
+        "idleWakeupsDeltaTotal": 0,
+        "interruptWakeupsDeltaTotal": 0
+      },
+      "driver": {
+        "footprintBytes": {
+          "n": 3,
+          "median": 36196504,
+          "p95": 36245656,
+          "max": 36245656
+        },
+        "rssBytes": {
+          "n": 3,
+          "median": 74792960,
+          "p95": 74858496,
+          "max": 74858496
+        },
+        "lifetimePeakBytes": {
+          "n": 3,
+          "median": 36196504,
+          "p95": 36245656,
+          "max": 36245656
+        },
+        "cpuOneCorePercent": {
+          "n": 2,
+          "median": 0.8850302994000021,
+          "p95": 1.08580676179279,
+          "max": 1.08580676179279
+        },
+        "cpuMachinePercent": {
+          "n": 2,
+          "median": 0.08850302994000021,
+          "p95": 0.108580676179279,
+          "max": 0.108580676179279
+        },
+        "threads": {
+          "n": 3,
+          "median": 11,
+          "p95": 11,
+          "max": 11
+        },
+        "fds": {
+          "n": 3,
+          "median": 18,
+          "p95": 18,
+          "max": 18
+        },
+        "sockets": {
+          "n": 3,
+          "median": 6,
+          "p95": 6,
+          "max": 6
+        },
+        "processes": {
+          "n": 3,
+          "median": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "cpuTimeWeightedPercent": 0.9858384998924156,
+        "diskReadBytesDeltaTotal": 0,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 0,
+        "faultsDeltaTotal": 39,
+        "contextSwitchesDeltaTotal": 231,
+        "idleWakeupsDeltaTotal": 68,
+        "interruptWakeupsDeltaTotal": 204
+      },
+      "fixture": {
+        "footprintBytes": {
+          "n": 3,
+          "median": 23857840,
+          "p95": 23857840,
+          "max": 23857840
+        },
+        "rssBytes": {
+          "n": 3,
+          "median": 59244544,
+          "p95": 59244544,
+          "max": 59244544
+        },
+        "lifetimePeakBytes": {
+          "n": 3,
+          "median": 23857840,
+          "p95": 23857840,
+          "max": 23857840
+        },
+        "cpuOneCorePercent": {
+          "n": 2,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "cpuMachinePercent": {
+          "n": 2,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "threads": {
+          "n": 3,
+          "median": 8,
+          "p95": 8,
+          "max": 8
+        },
+        "fds": {
+          "n": 3,
+          "median": 16,
+          "p95": 16,
+          "max": 16
+        },
+        "sockets": {
+          "n": 3,
+          "median": 3,
+          "p95": 3,
+          "max": 3
+        },
+        "processes": {
+          "n": 3,
+          "median": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "cpuTimeWeightedPercent": 0,
+        "diskReadBytesDeltaTotal": 0,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 0,
+        "faultsDeltaTotal": 0,
+        "contextSwitchesDeltaTotal": 0,
+        "idleWakeupsDeltaTotal": 0,
+        "interruptWakeupsDeltaTotal": 0
+      },
+      "probeMs": {
+        "n": 3,
+        "median": 33.947374999999965,
+        "p95": 34.53266699999995,
+        "max": 34.53266699999995
+      },
+      "eventLoopP99Ms": {
+        "n": 2,
+        "median": 21.086207,
+        "p95": 21.118975,
+        "max": 21.118975
+      },
+      "systemCpuBusyPercent": {
+        "n": 2,
+        "median": 7.515030060120241,
+        "p95": 8.73015873015873,
+        "max": 8.73015873015873
+      }
+    },
+    "setup": {
+      "samples": 4,
+      "product": {
+        "footprintBytes": {
+          "n": 4,
+          "median": 203039072,
+          "p95": 203809168,
+          "max": 203809168
+        },
+        "rssBytes": {
+          "n": 4,
+          "median": 324550656,
+          "p95": 325287936,
+          "max": 325287936
+        },
+        "lifetimePeakBytes": {
+          "n": 4,
+          "median": 203104608,
+          "p95": 203841936,
+          "max": 203841936
+        },
+        "cpuOneCorePercent": {
+          "n": 3,
+          "median": 2.3776549994964924,
+          "p95": 2.4641876932915867,
+          "max": 2.4641876932915867
+        },
+        "cpuMachinePercent": {
+          "n": 3,
+          "median": 0.23776549994964924,
+          "p95": 0.24641876932915868,
+          "max": 0.24641876932915868
+        },
+        "threads": {
+          "n": 4,
+          "median": 75,
+          "p95": 77,
+          "max": 77
+        },
+        "fds": {
+          "n": 4,
+          "median": 74,
+          "p95": 74,
+          "max": 74
+        },
+        "sockets": {
+          "n": 4,
+          "median": 30,
+          "p95": 30,
+          "max": 30
+        },
+        "processes": {
+          "n": 4,
+          "median": 5,
+          "p95": 5,
+          "max": 5
+        },
+        "cpuTimeWeightedPercent": 2.116947930678418,
+        "diskReadBytesDeltaTotal": 77824,
+        "diskWriteBytesDeltaTotal": 4096,
+        "logicalWriteBytesDeltaTotal": 32768,
+        "pageinsDeltaTotal": 0,
+        "faultsDeltaTotal": 222,
+        "contextSwitchesDeltaTotal": 763,
+        "idleWakeupsDeltaTotal": 193,
+        "interruptWakeupsDeltaTotal": 615
+      },
+      "workers": {
+        "footprintBytes": {
+          "n": 4,
+          "median": 68225688,
+          "p95": 68258456,
+          "max": 68258456
+        },
+        "rssBytes": {
+          "n": 4,
+          "median": 150454272,
+          "p95": 150487040,
+          "max": 150487040
+        },
+        "lifetimePeakBytes": {
+          "n": 4,
+          "median": 68225688,
+          "p95": 68291224,
+          "max": 68291224
+        },
+        "cpuOneCorePercent": {
+          "n": 3,
+          "median": 1.1682887547198841,
+          "p95": 1.3272017691038667,
+          "max": 1.3272017691038667
+        },
+        "cpuMachinePercent": {
+          "n": 3,
+          "median": 0.11682887547198842,
+          "p95": 0.13272017691038668,
+          "max": 0.13272017691038668
+        },
+        "threads": {
+          "n": 4,
+          "median": 63,
+          "p95": 65,
+          "max": 65
+        },
+        "fds": {
+          "n": 4,
+          "median": 48,
+          "p95": 48,
+          "max": 48
+        },
+        "sockets": {
+          "n": 4,
+          "median": 16,
+          "p95": 16,
+          "max": 16
+        },
+        "processes": {
+          "n": 4,
+          "median": 4,
+          "p95": 4,
+          "max": 4
+        },
+        "cpuTimeWeightedPercent": 0.7589264670194957,
+        "diskReadBytesDeltaTotal": 0,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 0,
+        "faultsDeltaTotal": 4,
+        "contextSwitchesDeltaTotal": 329,
+        "idleWakeupsDeltaTotal": 100,
+        "interruptWakeupsDeltaTotal": 318
+      },
+      "driver": {
+        "footprintBytes": {
+          "n": 4,
+          "median": 134813384,
+          "p95": 135550712,
+          "max": 135550712
+        },
+        "rssBytes": {
+          "n": 4,
+          "median": 174096384,
+          "p95": 174800896,
+          "max": 174800896
+        },
+        "lifetimePeakBytes": {
+          "n": 4,
+          "median": 134878920,
+          "p95": 135550712,
+          "max": 135550712
+        },
+        "cpuOneCorePercent": {
+          "n": 4,
+          "median": 1.2093662447766083,
+          "p95": 82.68595772550228,
+          "max": 82.68595772550228
+        },
+        "cpuMachinePercent": {
+          "n": 4,
+          "median": 0.12093662447766082,
+          "p95": 8.268595772550228,
+          "max": 8.268595772550228
+        },
+        "threads": {
+          "n": 4,
+          "median": 12,
+          "p95": 12,
+          "max": 12
+        },
+        "fds": {
+          "n": 4,
+          "median": 26,
+          "p95": 26,
+          "max": 26
+        },
+        "sockets": {
+          "n": 4,
+          "median": 14,
+          "p95": 14,
+          "max": 14
+        },
+        "processes": {
+          "n": 4,
+          "median": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "cpuTimeWeightedPercent": 24.78179216528084,
+        "diskReadBytesDeltaTotal": 172032,
+        "diskWriteBytesDeltaTotal": 16384,
+        "logicalWriteBytesDeltaTotal": 94208,
+        "pageinsDeltaTotal": 1,
+        "faultsDeltaTotal": 6157,
+        "contextSwitchesDeltaTotal": 9446,
+        "idleWakeupsDeltaTotal": 297,
+        "interruptWakeupsDeltaTotal": 2233
+      },
+      "fixture": {
+        "footprintBytes": {
+          "n": 4,
+          "median": 24562400,
+          "p95": 24562400,
+          "max": 24562400
+        },
+        "rssBytes": {
+          "n": 4,
+          "median": 60686336,
+          "p95": 60686336,
+          "max": 60686336
+        },
+        "lifetimePeakBytes": {
+          "n": 4,
+          "median": 24562400,
+          "p95": 24562400,
+          "max": 24562400
+        },
+        "cpuOneCorePercent": {
+          "n": 4,
+          "median": 0,
+          "p95": 1.8150178814890847,
+          "max": 1.8150178814890847
+        },
+        "cpuMachinePercent": {
+          "n": 4,
+          "median": 0,
+          "p95": 0.18150178814890847,
+          "max": 0.18150178814890847
+        },
+        "threads": {
+          "n": 4,
+          "median": 8,
+          "p95": 8,
+          "max": 8
+        },
+        "fds": {
+          "n": 4,
+          "median": 20,
+          "p95": 20,
+          "max": 20
+        },
+        "sockets": {
+          "n": 4,
+          "median": 7,
+          "p95": 7,
+          "max": 7
+        },
+        "processes": {
+          "n": 4,
+          "median": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "cpuTimeWeightedPercent": 0.5279021611183795,
+        "diskReadBytesDeltaTotal": 0,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 3,
+        "faultsDeltaTotal": 88,
+        "contextSwitchesDeltaTotal": 96,
+        "idleWakeupsDeltaTotal": 2,
+        "interruptWakeupsDeltaTotal": 36
+      },
+      "probeMs": {
+        "n": 4,
+        "median": 31.565583000000515,
+        "p95": 44.551000000000386,
+        "max": 44.551000000000386
+      },
+      "eventLoopP99Ms": {
+        "n": 4,
+        "median": 21.102591,
+        "p95": 28.213247,
+        "max": 28.213247
+      },
+      "systemCpuBusyPercent": {
+        "n": 4,
+        "median": 9.813542688910697,
+        "p95": 29.107981220657276,
+        "max": 29.107981220657276
+      }
+    },
+    "sustained": {
+      "samples": 600,
+      "product": {
+        "footprintBytes": {
+          "n": 600,
+          "median": 155722968,
+          "p95": 198009640,
+          "max": 216261416
+        },
+        "rssBytes": {
+          "n": 600,
+          "median": 374571008,
+          "p95": 413630464,
+          "max": 418971648
+        },
+        "lifetimePeakBytes": {
+          "n": 600,
+          "median": 244392792,
+          "p95": 284418904,
+          "max": 288269144
+        },
+        "cpuOneCorePercent": {
+          "n": 600,
+          "median": 1.4922468488151226,
+          "p95": 6.01074600292272,
+          "max": 63.47154183956925
+        },
+        "cpuMachinePercent": {
+          "n": 600,
+          "median": 0.14922468488151225,
+          "p95": 0.601074600292272,
+          "max": 6.347154183956925
+        },
+        "threads": {
+          "n": 600,
+          "median": 68,
+          "p95": 68,
+          "max": 73
+        },
+        "fds": {
+          "n": 600,
+          "median": 66,
+          "p95": 66,
+          "max": 74
+        },
+        "sockets": {
+          "n": 600,
+          "median": 22,
+          "p95": 22,
+          "max": 30
+        },
+        "processes": {
+          "n": 600,
+          "median": 5,
+          "p95": 5,
+          "max": 5
+        },
+        "cpuTimeWeightedPercent": 3.663148771446127,
+        "diskReadBytesDeltaTotal": 49152,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 2,
+        "faultsDeltaTotal": 19577,
+        "contextSwitchesDeltaTotal": 219345,
+        "idleWakeupsDeltaTotal": 49206,
+        "interruptWakeupsDeltaTotal": 156830
+      },
+      "workers": {
+        "footprintBytes": {
+          "n": 600,
+          "median": 105581304,
+          "p95": 145738488,
+          "max": 150096632
+        },
+        "rssBytes": {
+          "n": 600,
+          "median": 213221376,
+          "p95": 247431168,
+          "max": 252280832
+        },
+        "lifetimePeakBytes": {
+          "n": 600,
+          "median": 106220280,
+          "p95": 146246392,
+          "max": 150096632
+        },
+        "cpuOneCorePercent": {
+          "n": 600,
+          "median": 0.6943684150442428,
+          "p95": 3.0778682519071667,
+          "max": 54.54724904881495
+        },
+        "cpuMachinePercent": {
+          "n": 600,
+          "median": 0.06943684150442428,
+          "p95": 0.30778682519071665,
+          "max": 5.454724904881495
+        },
+        "threads": {
+          "n": 600,
+          "median": 56,
+          "p95": 56,
+          "max": 61
+        },
+        "fds": {
+          "n": 600,
+          "median": 44,
+          "p95": 44,
+          "max": 48
+        },
+        "sockets": {
+          "n": 600,
+          "median": 12,
+          "p95": 12,
+          "max": 16
+        },
+        "processes": {
+          "n": 600,
+          "median": 4,
+          "p95": 4,
+          "max": 4
+        },
+        "cpuTimeWeightedPercent": 2.5048880158475995,
+        "diskReadBytesDeltaTotal": 0,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 0,
+        "faultsDeltaTotal": 13546,
+        "contextSwitchesDeltaTotal": 106066,
+        "idleWakeupsDeltaTotal": 22075,
+        "interruptWakeupsDeltaTotal": 60099
+      },
+      "driver": {
+        "footprintBytes": {
+          "n": 600,
+          "median": 48011912,
+          "p95": 82483296,
+          "max": 138156128
+        },
+        "rssBytes": {
+          "n": 600,
+          "median": 164741120,
+          "p95": 173670400,
+          "max": 177340416
+        },
+        "lifetimePeakBytes": {
+          "n": 600,
+          "median": 138172512,
+          "p95": 138172512,
+          "max": 138172512
+        },
+        "cpuOneCorePercent": {
+          "n": 600,
+          "median": 0.7928023850331902,
+          "p95": 2.6741190021728034,
+          "max": 11.679992202804494
+        },
+        "cpuMachinePercent": {
+          "n": 600,
+          "median": 0.07928023850331903,
+          "p95": 0.26741190021728034,
+          "max": 1.1679992202804494
+        },
+        "threads": {
+          "n": 600,
+          "median": 12,
+          "p95": 12,
+          "max": 12
+        },
+        "fds": {
+          "n": 600,
+          "median": 22,
+          "p95": 22,
+          "max": 26
+        },
+        "sockets": {
+          "n": 600,
+          "median": 10,
+          "p95": 10,
+          "max": 14
+        },
+        "processes": {
+          "n": 600,
+          "median": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "cpuTimeWeightedPercent": 1.1582607555985336,
+        "diskReadBytesDeltaTotal": 49152,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 2,
+        "faultsDeltaTotal": 6031,
+        "contextSwitchesDeltaTotal": 113279,
+        "idleWakeupsDeltaTotal": 27131,
+        "interruptWakeupsDeltaTotal": 96731
+      },
+      "fixture": {
+        "footprintBytes": {
+          "n": 600,
+          "median": 29789424,
+          "p95": 29904112,
+          "max": 29904112
+        },
+        "rssBytes": {
+          "n": 600,
+          "median": 65585152,
+          "p95": 68780032,
+          "max": 68780032
+        },
+        "lifetimePeakBytes": {
+          "n": 600,
+          "median": 29789424,
+          "p95": 29936880,
+          "max": 29936880
+        },
+        "cpuOneCorePercent": {
+          "n": 600,
+          "median": 0,
+          "p95": 0.9051738676365753,
+          "max": 2.9248888064253675
+        },
+        "cpuMachinePercent": {
+          "n": 600,
+          "median": 0,
+          "p95": 0.09051738676365753,
+          "max": 0.29248888064253675
+        },
+        "threads": {
+          "n": 600,
+          "median": 8,
+          "p95": 8,
+          "max": 8
+        },
+        "fds": {
+          "n": 600,
+          "median": 16,
+          "p95": 20,
+          "max": 20
+        },
+        "sockets": {
+          "n": 600,
+          "median": 3,
+          "p95": 7,
+          "max": 7
+        },
+        "processes": {
+          "n": 600,
+          "median": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "cpuTimeWeightedPercent": 0.10722998272937048,
+        "diskReadBytesDeltaTotal": 0,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 6,
+        "faultsDeltaTotal": 499,
+        "contextSwitchesDeltaTotal": 5209,
+        "idleWakeupsDeltaTotal": 323,
+        "interruptWakeupsDeltaTotal": 2715
+      },
+      "probeMs": {
+        "n": 600,
+        "median": 33.73633300000802,
+        "p95": 35.678250000000844,
+        "max": 55.226917000021785
+      },
+      "eventLoopP99Ms": {
+        "n": 600,
+        "median": 21.512191,
+        "p95": 22.822911,
+        "max": 62.783487
+      },
+      "systemCpuBusyPercent": {
+        "n": 599,
+        "median": 7.2434607645875255,
+        "p95": 17.487437185929647,
+        "max": 78.0264496439471
+      }
+    },
+    "teardown": {
+      "samples": 0,
+      "product": {
+        "footprintBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "rssBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "lifetimePeakBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuOneCorePercent": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuMachinePercent": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "threads": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "fds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "sockets": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "processes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuTimeWeightedPercent": null,
+        "diskReadBytesDeltaTotal": null,
+        "diskWriteBytesDeltaTotal": null,
+        "logicalWriteBytesDeltaTotal": null,
+        "pageinsDeltaTotal": null,
+        "faultsDeltaTotal": null,
+        "contextSwitchesDeltaTotal": null,
+        "idleWakeupsDeltaTotal": null,
+        "interruptWakeupsDeltaTotal": null
+      },
+      "workers": {
+        "footprintBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "rssBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "lifetimePeakBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuOneCorePercent": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuMachinePercent": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "threads": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "fds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "sockets": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "processes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuTimeWeightedPercent": null,
+        "diskReadBytesDeltaTotal": null,
+        "diskWriteBytesDeltaTotal": null,
+        "logicalWriteBytesDeltaTotal": null,
+        "pageinsDeltaTotal": null,
+        "faultsDeltaTotal": null,
+        "contextSwitchesDeltaTotal": null,
+        "idleWakeupsDeltaTotal": null,
+        "interruptWakeupsDeltaTotal": null
+      },
+      "driver": {
+        "footprintBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "rssBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "lifetimePeakBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuOneCorePercent": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuMachinePercent": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "threads": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "fds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "sockets": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "processes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuTimeWeightedPercent": null,
+        "diskReadBytesDeltaTotal": null,
+        "diskWriteBytesDeltaTotal": null,
+        "logicalWriteBytesDeltaTotal": null,
+        "pageinsDeltaTotal": null,
+        "faultsDeltaTotal": null,
+        "contextSwitchesDeltaTotal": null,
+        "idleWakeupsDeltaTotal": null,
+        "interruptWakeupsDeltaTotal": null
+      },
+      "fixture": {
+        "footprintBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "rssBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "lifetimePeakBytes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuOneCorePercent": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuMachinePercent": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "threads": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "fds": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "sockets": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "processes": {
+          "n": 0,
+          "median": null,
+          "p95": null,
+          "max": null
+        },
+        "cpuTimeWeightedPercent": null,
+        "diskReadBytesDeltaTotal": null,
+        "diskWriteBytesDeltaTotal": null,
+        "logicalWriteBytesDeltaTotal": null,
+        "pageinsDeltaTotal": null,
+        "faultsDeltaTotal": null,
+        "contextSwitchesDeltaTotal": null,
+        "idleWakeupsDeltaTotal": null,
+        "interruptWakeupsDeltaTotal": null
+      },
+      "probeMs": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "max": null
+      },
+      "eventLoopP99Ms": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "max": null
+      },
+      "systemCpuBusyPercent": {
+        "n": 0,
+        "median": null,
+        "p95": null,
+        "max": null
+      }
+    },
+    "recovery": {
+      "samples": 6,
+      "product": {
+        "footprintBytes": {
+          "n": 6,
+          "median": 50584560,
+          "p95": 50584560,
+          "max": 50584560
+        },
+        "rssBytes": {
+          "n": 6,
+          "median": 166658048,
+          "p95": 166658048,
+          "max": 166658048
+        },
+        "lifetimePeakBytes": {
+          "n": 6,
+          "median": 138172512,
+          "p95": 138172512,
+          "max": 138172512
+        },
+        "cpuOneCorePercent": {
+          "n": 6,
+          "median": 0.686539622447559,
+          "p95": 6.061842652318584,
+          "max": 6.061842652318584
+        },
+        "cpuMachinePercent": {
+          "n": 6,
+          "median": 0.0686539622447559,
+          "p95": 0.6061842652318584,
+          "max": 0.6061842652318584
+        },
+        "threads": {
+          "n": 6,
+          "median": 12,
+          "p95": 12,
+          "max": 12
+        },
+        "fds": {
+          "n": 6,
+          "median": 18,
+          "p95": 18,
+          "max": 18
+        },
+        "sockets": {
+          "n": 6,
+          "median": 6,
+          "p95": 6,
+          "max": 6
+        },
+        "processes": {
+          "n": 6,
+          "median": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "cpuTimeWeightedPercent": 1.0462223774500827,
+        "diskReadBytesDeltaTotal": 4096,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 40960,
+        "pageinsDeltaTotal": 0,
+        "faultsDeltaTotal": 61,
+        "contextSwitchesDeltaTotal": 699,
+        "idleWakeupsDeltaTotal": 220,
+        "interruptWakeupsDeltaTotal": 528
+      },
+      "workers": {
+        "footprintBytes": {
+          "n": 6,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "rssBytes": {
+          "n": 6,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "lifetimePeakBytes": {
+          "n": 6,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "cpuOneCorePercent": {
+          "n": 6,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "cpuMachinePercent": {
+          "n": 6,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "threads": {
+          "n": 6,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "fds": {
+          "n": 6,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "sockets": {
+          "n": 6,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "processes": {
+          "n": 6,
+          "median": 0,
+          "p95": 0,
+          "max": 0
+        },
+        "cpuTimeWeightedPercent": 0,
+        "diskReadBytesDeltaTotal": 0,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 0,
+        "faultsDeltaTotal": 0,
+        "contextSwitchesDeltaTotal": 0,
+        "idleWakeupsDeltaTotal": 0,
+        "interruptWakeupsDeltaTotal": 0
+      },
+      "driver": {
+        "footprintBytes": {
+          "n": 6,
+          "median": 50584560,
+          "p95": 50584560,
+          "max": 50584560
+        },
+        "rssBytes": {
+          "n": 6,
+          "median": 166658048,
+          "p95": 166658048,
+          "max": 166658048
+        },
+        "lifetimePeakBytes": {
+          "n": 6,
+          "median": 138172512,
+          "p95": 138172512,
+          "max": 138172512
+        },
+        "cpuOneCorePercent": {
+          "n": 6,
+          "median": 0.686539622447559,
+          "p95": 6.061842652318584,
+          "max": 6.061842652318584
+        },
+        "cpuMachinePercent": {
+          "n": 6,
+          "median": 0.0686539622447559,
+          "p95": 0.6061842652318584,
+          "max": 0.6061842652318584
+        },
+        "threads": {
+          "n": 6,
+          "median": 12,
+          "p95": 12,
+          "max": 12
+        },
+        "fds": {
+          "n": 6,
+          "median": 18,
+          "p95": 18,
+          "max": 18
+        },
+        "sockets": {
+          "n": 6,
+          "median": 6,
+          "p95": 6,
+          "max": 6
+        },
+        "processes": {
+          "n": 6,
+          "median": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "cpuTimeWeightedPercent": 1.0462223774500827,
+        "diskReadBytesDeltaTotal": 4096,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 40960,
+        "pageinsDeltaTotal": 0,
+        "faultsDeltaTotal": 61,
+        "contextSwitchesDeltaTotal": 699,
+        "idleWakeupsDeltaTotal": 220,
+        "interruptWakeupsDeltaTotal": 528
+      },
+      "fixture": {
+        "footprintBytes": {
+          "n": 6,
+          "median": 28577008,
+          "p95": 28577008,
+          "max": 28577008
+        },
+        "rssBytes": {
+          "n": 6,
+          "median": 68730880,
+          "p95": 68730880,
+          "max": 68730880
+        },
+        "lifetimePeakBytes": {
+          "n": 6,
+          "median": 29936880,
+          "p95": 29936880,
+          "max": 29936880
+        },
+        "cpuOneCorePercent": {
+          "n": 6,
+          "median": 0,
+          "p95": 0.01981139772478222,
+          "max": 0.01981139772478222
+        },
+        "cpuMachinePercent": {
+          "n": 6,
+          "median": 0,
+          "p95": 0.001981139772478222,
+          "max": 0.001981139772478222
+        },
+        "threads": {
+          "n": 6,
+          "median": 8,
+          "p95": 8,
+          "max": 8
+        },
+        "fds": {
+          "n": 6,
+          "median": 16,
+          "p95": 16,
+          "max": 16
+        },
+        "sockets": {
+          "n": 6,
+          "median": 3,
+          "p95": 3,
+          "max": 3
+        },
+        "processes": {
+          "n": 6,
+          "median": 1,
+          "p95": 1,
+          "max": 1
+        },
+        "cpuTimeWeightedPercent": 0.005766614343220302,
+        "diskReadBytesDeltaTotal": 0,
+        "diskWriteBytesDeltaTotal": 0,
+        "logicalWriteBytesDeltaTotal": 0,
+        "pageinsDeltaTotal": 0,
+        "faultsDeltaTotal": 0,
+        "contextSwitchesDeltaTotal": 4,
+        "idleWakeupsDeltaTotal": 1,
+        "interruptWakeupsDeltaTotal": 3
+      },
+      "probeMs": {
+        "n": 6,
+        "median": 31.535040999995545,
+        "p95": 35.308832999900915,
+        "max": 35.308832999900915
+      },
+      "eventLoopP99Ms": {
+        "n": 6,
+        "median": 21.135359,
+        "p95": 26.886143,
+        "max": 26.886143
+      },
+      "systemCpuBusyPercent": {
+        "n": 6,
+        "median": 7.931726907630522,
+        "p95": 12.250996015936256,
+        "max": 12.250996015936256
+      }
+    }
+  },
+  "latencies": {
+    "openProfile": {
+      "n": 4,
+      "median": 182.27795800000013,
+      "p95": 187.69441700000016,
+      "max": 187.69441700000016
+    },
+    "newTab": {
+      "n": 32,
+      "median": 4.2372919999997976,
+      "p95": 4.923749999999927,
+      "max": 10.060042000000067
+    },
+    "navigate": {
+      "n": 32,
+      "median": 1.136833000000479,
+      "p95": 2.5655409999999392,
+      "max": 7.017124999999851
+    },
+    "inspect": {
+      "n": 3808,
+      "median": 0.49154099996667355,
+      "p95": 2.0622919999877922,
+      "max": 3.800875000015367
+    },
+    "reload": {
+      "n": 608,
+      "median": 4.420750000048429,
+      "p95": 6.805250000004889,
+      "max": 12.106750000006286
+    },
+    "closeHost": {
+      "n": 1,
+      "median": 24.994500000029802,
+      "p95": 24.994500000029802,
+      "max": 24.994500000029802
+    }
+  },
+  "network": {
+    "requests": 1856,
+    "responseBodyBytes": 82468672,
+    "requestBodyBytes": 0,
+    "scope": "Fixture HTTP body bytes; excludes headers, CDP/WebSocket, TLS and external traffic"
+  },
+  "probeFailures": 0
+}

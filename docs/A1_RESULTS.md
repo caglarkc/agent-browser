@@ -53,3 +53,7 @@ Native opener storage semantiği test edildi; tam popup target keşfi/bağımsı
 - [Core test makbuzu](../browser/results/a1-2026-10-16T06-40-50-588Z/test-manifest.json), [TAP](../browser/results/a1-2026-10-16T06-40-50-588Z/test.tap), [native regresyon makbuzu](../browser/results/a1-2026-10-16T06-40-50-588Z/native-test-manifest.json).
 - [1 profil × 1 tab](../browser/results/a1-2026-10-16T06-40-50-588Z/1p-1t-samples.json), [1 profil × 10 tab](../browser/results/a1-2026-10-16T06-40-50-588Z/1p-10t-samples.json), [4 profil × 1 tab](../browser/results/a1-2026-10-16T06-40-50-588Z/4p-1t-samples.json) bellek örnekleri.
 - Aynı klasörde test edilen kaynak snapshot’ları, içerik kontrolleri, olaylar ve native test logları bulunur.
+
+## Genişletilmiş kaynak incelemesi
+
+RAM dışında CPU, disk I/O, thread/FD/socket ve yük altındaki gecikmeleri kapsayan ek deneyler [A1 kaynak kullanımı raporunda](A1_RESOURCE_RESULTS.md) ayrı sunulur. Yeni işlev kontrolleri geçse de yoğun ağda native RAM tutulumu açık bulgudur; önceki A1 işlev kabulü sabit bellek tüketimi onayı değildir. Buradaki önceki kabul ölçümleri ve kaynak snapshot’ları değiştirilmez.

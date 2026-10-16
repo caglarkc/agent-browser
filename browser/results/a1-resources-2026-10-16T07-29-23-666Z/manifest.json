@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "runId": "a1-resources-2026-10-16T07-29-23-666Z",
+  "smoke": false,
+  "startedAt": "2026-10-16T07:29:23.684Z",
+  "commit": "2d1006857254e58631805d173589df6d25876b8f",
+  "workingDiffSha256": "556f9c9bdf27791faa8d41fd513039c665999440db7dc562b56d29c17bf38117",
+  "sourceHashes": {
+    "package.json": "7909bc4d3d63a626c6bed2f214a7616ed1fa562a4f3db42a702ea0ac43de6bad",
+    "package-lock.json": "fa5be686f5d77625216b964e671766a29e254d54493c31a178742f51e257e4d9",
+    "engine/manifest.json": "7f304d9669725ba510296996f731bf652187e54fa82196998b2f9374dfb4b2e3",
+    "engine/source.json": "555089ad76216fa0415569a78c0c7c51bdab667fa147f030972465306e971269",
+    "engine/multitab.patch": "cd3bc998e1e8ccb183376f91d3245a7e8ce61fa1991d64e6f238b987dd0e0fbf",
+    "native/resource-probe.c": "65b3b51a541ddbd000cd4dc726d3070d5e4afc0192ec774544bc9b0ec4ebd0c4",
+    "src/cli.mjs": "f8533c5a6c690d44e3ef7fda75c1fb47aecf673116af4f459e516f92e2f741b2",
+    "src/engine.mjs": "58406e4b01288aaafb2aa7a120047ec3f66236d79e9e8a8a6b98b0a2598cb3e2",
+    "src/errors.mjs": "142fffa7531939d1e9f3aa8b28548a81d7f9d51292199f08d68d2fed3192f7c3",
+    "src/fixture-progress.mjs": "f5792191f32ebb3b81ac44401fe2f69addb42b2c3e06b044adba29bfbcc18e46",
+    "src/host.mjs": "02ae80703f311a13b33d11076cd13631114f3d2ae3f2d2621d159fb001c73267",
+    "src/memory.mjs": "3ffee22d51493b6967e9ffb078f68fd07592240917f770f15fac18448f49f6e9",
+    "src/resources.mjs": "93522216be0b103694674aa3b7fab280770a4ce685db9f337867a13653101648",
+    "scripts/build-engine.mjs": "4582d67870488e29d5ca960e28023e0314a4e272b40b3bb0e8ac08d0354973bf",
+    "scripts/build-resource-probe.mjs": "de4336fb12e80ba25aa56d7e19520351d976e3b1431666b9d7210abbbd2543b7",
+    "scripts/fixture-worker.mjs": "5ddf180f73a0277cb4785a5250d97895519b441dade3f1b33eca7bc4b1f5edd7",
+    "scripts/measure-resources.mjs": "79059f09f8f76ca5bbd5e5674d097b76d9281e13e8dda7048d72260cad8e4c50",
+    "scripts/measure.mjs": "ffe4f8e9d1d9124e955c5fd18ceab119de7c62ff452ca1ede8fe3db17626c9c8",
+    "scripts/publish-a1.mjs": "8bf7cfad5bbd1ac61e395b882dd24cc9b8c4aec4f9fbaab031edd007a54738ed",
+    "scripts/record-tests.mjs": "5f3f3c7519a6b535a9e545ac991fa54d414778dd6626e00514f79ad8ef6a5cc5",
+    "scripts/report-resources.mjs": "aa300daf671806df0f553c7b2699b293b43baa0c7795da1f9ee02eb39b686fe1",
+    "scripts/resource-case.mjs": "6a026ad11ec5d30818480a79b3a19b75dbcf6b6c368a3b2b2616aa7f1c354b68",
+    "scripts/resource-fixture.mjs": "b0e4aabd54763546a191494c0d1a70c6ba3b3551ed7fe7d3a28b55b5cc1cde7d",
+    "test/cli.test.mjs": "e7794d1a97e5dd6b0765b2d9ec4faab45cfdc583e7cf2666c3afc46e8bd3bd34",
+    "test/fixture-progress.test.mjs": "78f8ce6a068961764c593d2d50b8bab998dfc243e3789bcb7f54079cfe932f51",
+    "test/fixtures.mjs": "d3c1dad693fac713f7def69680d44a98e079aec76232cdb92deb49461ad07763",
+    "test/host.test.mjs": "5032ea03d3880c73178e597033d46de0de459278af10d43e294daf863589df14",
+    "test/memory.test.mjs": "02a613824bcfafeb35f8b33634e53790e48c384cd1d4a9ff79cd1f6b268f0d52",
+    "test/native-tabs.test.mjs": "8f0d0e81fe17cfe8fbc30002985ba040fa52275e32bf1e0212f0e465b7946f1f",
+    "test/resources.test.mjs": "1c4276ded1e84802468b1e27e1cebffbefc3e068edf5d78199c65ce0c9384b42"
+  },
+  "binary": {
+    "sha256": "ebdcd3f8bdb61922237d9b1a376d3f3146ca9e625fb554c01bfe7aaeab1972a3"
+  },
+  "probeSha256": "61d2d30bb6cb7e9486e2a97663c6cdb9737b38fe604a76c697fb7853ca142418",
+  "machine": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "release": "25.6.0",
+    "cpu": "Apple M4",
+    "logicalCores": 10,
+    "ramBytes": 17179869184,
+    "node": "v25.8.2",
+    "osVersion": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83",
+    "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)"
+  },
+  "schedule": [
+    {
+      "name": "host-only",
+      "profiles": 0,
+      "tabs": 0,
+      "mode": "idle",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "idle-1p1t",
+      "profiles": 1,
+      "tabs": 1,
+      "mode": "idle",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "active-1p1t",
+      "profiles": 1,
+      "tabs": 1,
+      "mode": "active",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "active-1p10t",
+      "profiles": 1,
+      "tabs": 10,
+      "mode": "active",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "active-1p32t",
+      "profiles": 1,
+      "tabs": 32,
+      "mode": "active",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "active-4p1t",
+      "profiles": 4,
+      "tabs": 1,
+      "mode": "active",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "active-4p8t",
+      "profiles": 4,
+      "tabs": 8,
+      "mode": "active",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "active-8p4t",
+      "profiles": 8,
+      "tabs": 4,
+      "mode": "active",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "dom-1p10t",
+      "profiles": 1,
+      "tabs": 10,
+      "mode": "dom",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "cpu-1p4t",
+      "profiles": 1,
+      "tabs": 4,
+      "mode": "cpu",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "network-1p10t",
+      "profiles": 1,
+      "tabs": 10,
+      "mode": "network",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "churn-1p4t",
+      "profiles": 1,
+      "tabs": 4,
+      "mode": "churn",
+      "repeat": 1,
+      "seconds": 30
+    },
+    {
+      "name": "churn-1p4t",
+      "profiles": 1,
+      "tabs": 4,
+      "mode": "churn",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "network-1p10t",
+      "profiles": 1,
+      "tabs": 10,
+      "mode": "network",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "cpu-1p4t",
+      "profiles": 1,
+      "tabs": 4,
+      "mode": "cpu",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "dom-1p10t",
+      "profiles": 1,
+      "tabs": 10,
+      "mode": "dom",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "active-8p4t",
+      "profiles": 8,
+      "tabs": 4,
+      "mode": "active",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "active-4p8t",
+      "profiles": 4,
+      "tabs": 8,
+      "mode": "active",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "active-4p1t",
+      "profiles": 4,
+      "tabs": 1,
+      "mode": "active",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "active-1p32t",
+      "profiles": 1,
+      "tabs": 32,
+      "mode": "active",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "active-1p10t",
+      "profiles": 1,
+      "tabs": 10,
+      "mode": "active",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "active-1p1t",
+      "profiles": 1,
+      "tabs": 1,
+      "mode": "active",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "idle-1p1t",
+      "profiles": 1,
+      "tabs": 1,
+      "mode": "idle",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "host-only",
+      "profiles": 0,
+      "tabs": 0,
+      "mode": "idle",
+      "repeat": 2,
+      "seconds": 30
+    },
+    {
+      "name": "soak-4p8t",
+      "profiles": 4,
+      "tabs": 8,
+      "mode": "active",
+      "repeat": 1,
+      "seconds": 600
+    }
+  ],
+  "sampleIntervalMs": 1000,
+  "baselineSeconds": 3,
+  "recoverySeconds": 5,
+  "methodology": "Fresh Node host per case; serial cases, repeat 2 reversed order. Product = host + unique worker descendants; fixture excluded and measured separately. Probe and ps short-lived children excluded; their latency recorded, host overhead included. CPU from native cumulative ns / actual elapsed monotonic time, 100% = one logical core. Machine CPU = core-percent / logical cores. RSS separate from physical footprint. Disk counters = kernel physical I/O, logical writes separate. Fixture body bytes exclude headers/CDP/TLS; no claim of per-process wire accounting. Counter deltas can miss work between process birth/death and sample, especially teardown. No watts/temperature estimate. Exact topologies/limits are diagnostic overrides, not changed production limits or A7 acceptance.",
+  "workloads": {
+    "idle": "200 DOM nodes; no timer/fetch",
+    "active": "200 nodes, 500ms counter, 64KiB fetch/15s; inspect/5s; reload/30s",
+    "dom": "5000 nodes/tab, 250 mutations/500ms, 64KiB fetch/15s",
+    "cpu": "4 tabs each ~10ms synchronous compute/100ms timer; checksum and operation counter verified",
+    "network": "10 tabs each 64KiB fetch/250ms, max 2 pending per tab; progress verified",
+    "churn": "4 persistent active tabs plus batches of 5 new/navigate/close tabs every >=2s; native process retained",
+    "soak": "4 profiles ×8 active tabs, 600s; reload/30s"
+  },
+  "guard": "Stop on sampled product physical footprint >2GiB, system pressure >=4, sampler errors, content/progress failure, worker death or leaks. No hard OS sandbox/cap."
+}

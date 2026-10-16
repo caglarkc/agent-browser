@@ -12,7 +12,10 @@
     "cli": "node src/cli.mjs",
     "engine:build": "node scripts/build-engine.mjs",
     "engine:verify": "node scripts/build-engine.mjs --verify-patch",
-    "test:record": "node scripts/record-tests.mjs"
+    "test:record": "node scripts/record-tests.mjs",
+    "resources:build": "node scripts/build-resource-probe.mjs",
+    "measure:resources": "npm run resources:build && node scripts/measure-resources.mjs",
+    "pretest": "node scripts/build-resource-probe.mjs --if-supported"
   },
   "dependencies": {
     "puppeteer-core": "25.13.0"

@@ -1,0 +1,6 @@
+{
+  "scripts/report-resources.mjs": "14b13b0dde4eeb9f458979059ec2e7f50abf3f27b0f8563803eb483c5f44fd82",
+  "scripts/verify-resource-followups.mjs": "9017c2d7bc4c5d7226169f9b1039b487f4b3b6146c41b92d7637162b432bc8f4",
+  "scripts/analyze-resources.py": "dfe28ae6ab6436fd3030df426ca8b588dd0673d0e64c6d516ae78e8f16aaf994",
+  "scripts/plot-resources.py": "507b9bc727793164c58d167afdf4881dfb8caffc4b576b1ff4e539a94f4130cf"
+}

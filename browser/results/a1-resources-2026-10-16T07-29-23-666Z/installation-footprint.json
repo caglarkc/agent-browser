@@ -1,0 +1,9 @@
+{
+  "engineLogicalBytes": 91641512,
+  "engineAllocatedBytes": 91643904,
+  "probeLogicalBytes": 34304,
+  "nodeRuntimeLogicalBytes": 68384,
+  "nodeModulesAllocatedBytes": 33316864,
+  "developmentCacheAllocatedBytes": 5772546048,
+  "note": "One native engine file shared by profile processes, not copied per profile. Node runtime is separate. engine-work includes toolchains, source/build caches and offline plotting venv; ignored development data, not product runtime."
+}

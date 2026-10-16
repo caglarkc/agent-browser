@@ -1,0 +1,12 @@
+{
+  "drift": {
+    "workersFootprintFirstMiB": 72.76825714111328,
+    "workersFootprintLastMiB": 138.98705291748047,
+    "driverFootprintFirstMiB": 78.66220092773438,
+    "driverFootprintLastMiB": 47.959922790527344,
+    "workerFdFirst": 44,
+    "workerFdLast": 44
+  },
+  "checks": 5560,
+  "leaks": 0
+}

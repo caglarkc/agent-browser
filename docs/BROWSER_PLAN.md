@@ -134,6 +134,8 @@ Tam güvenlik katmanı A2’de kurulur; A1 yalnız anahtarsız yerel fixtures ve
 
 **Bağımsız kabul:** T01, T02’nin lifecycle kısmı ve T11’in erken ölçümü. Üç tab’ın adres/geçmişi ayrı, aynı-origin paylaşımı doğru, profiller arasında sıfır sızıntı; worker kill bütün etkilenen tab’ları görünür biçimde kayıp yapar; kapatılan tab/ref yeniden kullanılamaz. Ölçüm raporu ve topoloji ADR’si olmadan A2’ye geçilmez.
 
+A1’in genişletilmiş kaynak incelemesi: [RAM, CPU, I/O, thread/FD ve dayanıklılık raporu](A1_RESOURCE_RESULTS.md). **A1 kaynak takibi açık:** İşlev/ilerleme kontrolleri geçse de yoğun ağda native RAM büyümesi doğrulandı. CDP body/request kayıtlarının hedef ve toplam bütçeleri ile fetch resolver/reference ömrü A1 kaynak iyileştirmesi olarak ele alınmalı; aynı ağ/soak koşuları yeniden sınanmadan sabit bellek tüketimi iddia edilmez. Tanı için yükseltilen sekme/profil kotaları ürünün varsayılan limitlerini veya A7 kabulünü değiştirmez.
+
 ### Aşama 2 Agent kimliği izinler ve ağ çıkışı
 
 **B-ID kapsamı:** B18, B31–B35, B37–B40; B36’nın erişim kısmı. **Başlangıç limitleri:** L02–L04, L06, L10–L12, L16.

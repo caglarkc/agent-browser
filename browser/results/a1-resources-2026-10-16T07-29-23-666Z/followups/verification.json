@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "binarySha256": "ebdcd3f8bdb61922237d9b1a376d3f3146ca9e625fb554c01bfe7aaeab1972a3",
+  "conditions": 5,
+  "verifiedAt": "2026-10-16T08:20:02.606Z",
+  "checks": 880,
+  "note": "Functional/progress and evidence checks passed; this does not assert bounded/acceptable memory usage."
+}

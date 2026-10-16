@@ -1,0 +1,9 @@
+{
+  "excluded": [
+    {
+      "name": "a1-network-excluded-timing-gap-2026-10-16",
+      "reason": "default-continuous contains a large scheduling/observation gap; only 150 checks and 206.8s elapsed for a planned 120s. Entire three-condition follow-up excluded; fresh full rerun with caffeinate, explicit gap/duration guards and optional post-run GC probe.",
+      "manifestSha256": "5de7be021149c5d0699c1b6317d5d6d1b4b5f6564cc7eb5029c412ea960a2ad9"
+    }
+  ]
+}

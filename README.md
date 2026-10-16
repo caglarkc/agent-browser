@@ -157,3 +157,5 @@ The [browser requirements](docs/BROWSER_REQUIREMENTS.md) define an agent-only br
 [MIT](LICENSE) for this repository's original code and documentation. Lightpanda, Puppeteer and the hosted JEV service are separate upstream dependencies with their own licenses and terms. Browser binaries are downloaded separately and are not bundled here.
 
 Built by [Ali Çağlar Koçer](https://github.com/caglarkc).
+
+A1’in RAM, CPU, I/O, thread/FD ve dayanıklılık incelemesi: [geniş kaynak raporu](docs/A1_RESOURCE_RESULTS.md). İşlev testleri geçiyor; ağ yükünde native bellek tutulumu açık bulgudur.

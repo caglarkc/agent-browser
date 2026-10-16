@@ -1,0 +1,86 @@
+[
+  {
+    "config": {
+      "name": "default-reload",
+      "capture": "default",
+      "reloadMs": 30000
+    },
+    "status": "PASS",
+    "errors": [],
+    "workerPid": 40181,
+    "seconds": 120.000529917,
+    "network": {
+      "requests": 4800,
+      "responseBodyBytes": 312640200
+    },
+    "gcProbe": {
+      "status": "UNAVAILABLE",
+      "message": "Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"
+    },
+    "leakedWorkerPids": [],
+    "checks": 240,
+    "workerFootprint": {
+      "firstWindowMedianBytes": 123028248,
+      "lastWindowMedianBytes": 269485088,
+      "lastBytes": 352732240,
+      "maxBytes": 352732240
+    },
+    "workerCpuTimeWeightedPercent": 3.4638884606164493
+  },
+  {
+    "config": {
+      "name": "default-continuous",
+      "capture": "default",
+      "reloadMs": 0
+    },
+    "status": "PASS",
+    "errors": [],
+    "workerPid": 41090,
+    "seconds": 120.000111125,
+    "network": {
+      "requests": 4780,
+      "responseBodyBytes": 313262080
+    },
+    "gcProbe": {
+      "status": "UNAVAILABLE",
+      "message": "Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"
+    },
+    "leakedWorkerPids": [],
+    "checks": 240,
+    "workerFootprint": {
+      "firstWindowMedianBytes": 121389848,
+      "lastWindowMedianBytes": 680281336,
+      "lastBytes": 772015448,
+      "maxBytes": 772015448
+    },
+    "workerCpuTimeWeightedPercent": 3.1832119083737527
+  },
+  {
+    "config": {
+      "name": "zero-capture-continuous",
+      "capture": "zero",
+      "reloadMs": 0
+    },
+    "status": "PASS",
+    "errors": [],
+    "workerPid": 42035,
+    "seconds": 120.00109491600003,
+    "network": {
+      "requests": 4780,
+      "responseBodyBytes": 313262080
+    },
+    "gcProbe": {
+      "status": "UNAVAILABLE",
+      "message": "Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"
+    },
+    "leakedWorkerPids": [],
+    "checks": 240,
+    "workerFootprint": {
+      "firstWindowMedianBytes": 77857512,
+      "lastWindowMedianBytes": 387318792,
+      "lastBytes": 438142008,
+      "maxBytes": 438142008
+    },
+    "workerCpuTimeWeightedPercent": 2.8701000277527067
+  }
+]

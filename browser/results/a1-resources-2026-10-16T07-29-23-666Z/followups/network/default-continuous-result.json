@@ -1,0 +1,28 @@
+{
+  "config": {
+    "name": "default-continuous",
+    "capture": "default",
+    "reloadMs": 0
+  },
+  "status": "PASS",
+  "errors": [],
+  "workerPid": 41090,
+  "seconds": 120.000111125,
+  "network": {
+    "requests": 4780,
+    "responseBodyBytes": 313262080
+  },
+  "gcProbe": {
+    "status": "UNAVAILABLE",
+    "message": "Protocol error (HeapProfiler.collectGarbage): 'HeapProfiler.collectGarbage' wasn't found"
+  },
+  "leakedWorkerPids": [],
+  "checks": 240,
+  "workerFootprint": {
+    "firstWindowMedianBytes": 121389848,
+    "lastWindowMedianBytes": 680281336,
+    "lastBytes": 772015448,
+    "maxBytes": 772015448
+  },
+  "workerCpuTimeWeightedPercent": 3.1832119083737527
+}

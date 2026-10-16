@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "case": "Reject scheduling gap/duration overrun despite a legacy PASS status",
+  "rejectedRun": "a1-network-excluded-timing-gap-2026-10-16",
+  "exitCode": 1,
+  "reason": "Incomplete network condition or duration overrun"
+}

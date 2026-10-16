@@ -1,0 +1,12 @@
+{
+  "runId": "a1-resources-2026-10-16T07-29-23-666Z",
+  "python": "3.14.4",
+  "matplotlib": "3.11.2",
+  "scriptSha256": "507b9bc727793164c58d167afdf4881dfb8caffc4b576b1ff4e539a94f4130cf",
+  "runManifestSha256": "f121fd08ab5eed25962c07a1d92ab932fd1e563d7538fecf3e42312e42557f70",
+  "plots": {
+    "network-memory.png": "94a6e33870f9a661cc421a73a891aa2c3e1a4e48a4b44284e08186a8f29f0620",
+    "overview.png": "66c0a27796f1181c4c6b8b347e530065012b2d245a5cb17cee2a079cd48ea4d9",
+    "soak.png": "250b1e1ab20337fdc4b65cc2998468d5207c35d9db567b1dd60b2093fa2263de"
+  }
+}
