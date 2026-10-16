@@ -159,3 +159,5 @@ The [browser requirements](docs/BROWSER_REQUIREMENTS.md) define an agent-only br
 Built by [Ali Çağlar Koçer](https://github.com/caglarkc).
 
 A1’in RAM, CPU, I/O, thread/FD ve dayanıklılık incelemesi: [geniş kaynak raporu](docs/A1_RESOURCE_RESULTS.md). Takip [Fetch/CDP bellek düzeltmesi](docs/A1_MEMORY_FIX.md) ile aynı 120 s ağ koşulunda native tepe 736,25 →46,09 MiB’a indi; 600 s reload’suz yükte tepe 51,56 MiB. Daha küçük footprint artışı ve uzun vadeli toplam RAM sınırı açık takip konusudur.
+
+Ürünün neden değiştiğini ve hangi sorunların nasıl ele alındığını izlemek için [geliştirme sorunları ve düzeltme geçmişi](docs/DEVELOPMENT_HISTORY.md): lab, mimari kararlar, native motor, ölçüm hataları, kanıtlar ve açık işler tek indekste tutulur.

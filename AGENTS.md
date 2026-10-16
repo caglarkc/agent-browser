@@ -16,3 +16,12 @@ Kullanıcının sürekli talimatı: **Tamamlanan her işi, ilgili doğrulamalar�
 - İlgili değişiklikleri anlamlı commit mesajıyla kaydet ve çalışılan dalı yapılandırılmış GitHub remote’una gönder. Force push veya geçmişi yeniden yazma yapma.
 - Push sonrasında uzak dalın commit SHA’sını yerel HEAD ile karşılaştır ve çalışma ağacını kontrol et. Son yanıtta commit ve push durumunu bildir.
 - Push başarısızsa nedeni ve yerel commit durumunu açıkça bildir; GitHub’a gönderilmiş gibi tamamlandı deme.
+
+## Sorun ve değişiklik gerekçesi kaydı
+
+Kullanıcının sürekli talimatı: **Geliştirmede karşılaşılan sorunların, yapılan düzeltmelerin ve değişiklik gerekçelerinin tamamını ileride izlenebilir biçimde kaydet.** Ana kayıt `docs/DEVELOPMENT_HISTORY.md` dosyasıdır.
+
+- Her tamamlanan işle birlikte ilgili mevcut DEV kaydına tarihli takip ekle veya sıradaki kalıcı DEV-ID ile yeni kayıt oluştur. Ürün/mimari kararları, kod, test/ölçüm aracı ve belge hataları; başarısız/dışlanan denemeler ve reddedilen yaklaşımlar da kapsamda.
+- Belirti/etki, doğrulanmış veya aday neden, önce/sonra değişiklik ve neden seçildiği, test/sürüm/kanıt, commit ilişkisi ve açık kalan işi yaz. Kanıt yoksa düzeltildi/PASS deme; plan kararı ile çalışan özelliği ayır.
+- Eski kayıt ve ham sonuçları silerek yeniden yazma. Düzeltme, kapanış veya yeniden açılmayı tarihli takip ile görünür tut; secret/credential/kişisel veriyi kayda koyma.
+- Kayıt güncellemesini ilgili kod/test/plan değişikliğiyle aynı commit'e al ve mevcut commit/push kuralını uygula. Yalnız sohbet özeti kalıcı kayıt sayılmaz.

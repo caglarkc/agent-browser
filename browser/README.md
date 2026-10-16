@@ -1,5 +1,7 @@
 # Agent Browser core
 
+[Development history and change rationale](../docs/DEVELOPMENT_HISTORY.md) records problems, fixes, evidence and remaining work across the lab and browser product.
+
 A1 introduces the browser's trusted local SDK and machine JSON-lines CLI. It launches our source-pinned, patched Lightpanda binary directly. It has no JEV dependency, Chrome path, OCR, screenshots, human browsing interface or credential API.
 
 ```sh
